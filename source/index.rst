@@ -2,27 +2,14 @@
 Welcome to the SRCF's documentation!
 *************************************
 
-Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever your goal may be.
+Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services.
 
-As a quick reminder, the **Student-Run Computing Facility**, known as the *SRCF*, exists as a university society to provide useful and flexible computing and network services, for University of Cambridge staff and students of all degrees of ability.
+As a quick reminder, the **Student-Run Computing Facility**, known as the *SRCF*, exists as a university society to provide useful and flexible computing and network services for University of Cambridge staff and students of all degrees of ability.
 
-Available services
-------------------
+Head over to our `main website <http://www.srcf.net/>`_ for more information on what we offer. In the meantime, you can find lots of information on these pages on how to get started with our systems.
 
-All user and society accounts come with:
-
-    * website hosting with a rich variety of features
-    * email and mailing lists @srcf.net
-    * 2 GB of file or web space
-    * free lifelong email and website forwarding
-    * friendly and helpful sysadmins
-
-...and much much more, all for *free*!
-
-Head over to our `main website <http://www.srcf.net/>`_ for more information. 
-
-..informattion::
-The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider <https://www.srcf.net/donate>`_ donating.
+.. important::
+   The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`_.
 
 .. toctree::
    :maxdepth: 2

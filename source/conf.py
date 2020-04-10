@@ -24,7 +24,7 @@ author = 'Matias Silva'
 version = 'April 2020'
 # The full version, including alpha/beta/rc tags.
 release = '2020.3'
-
+pygments_style = 'sphinx'
 
 # -- General configuration ---------------------------------------------------
 

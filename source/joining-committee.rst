@@ -1,5 +1,5 @@
 .. _JoinCommittee:
 
 ===========
-Joining us!
+Joining us
 ===========
