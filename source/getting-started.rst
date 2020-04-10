@@ -1,2 +1,5 @@
+.. _Deliverables:
+
+===============
 Getting Started
 ===============

@@ -4,7 +4,7 @@ Welcome to the SRCF's documentation!
 
 Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever your goal may be.
 
-As a quick reminder, the *Student-Run Computing Facility*, known as the SRCF, exists as a university society to provide useful and flexible computing and network services, for University of Cambridge staff and students of all degrees of ability.
+As a quick reminder, the **Student-Run Computing Facility**, known as the *SRCF*, exists as a university society to provide useful and flexible computing and network services, for University of Cambridge staff and students of all degrees of ability.
 
 Available services
 ------------------
@@ -16,14 +16,13 @@ All user and society accounts come with:
     * 2 GB of file or web space
     * free lifelong email and website forwarding
     * friendly and helpful sysadmins
-
+    
 ...and much much more, all for *free*!
 
 Head over to our `main website <http://www.srcf.net/>`_ for more information.
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :caption: User guide
 
    getting-started

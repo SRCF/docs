@@ -1,20 +1,59 @@
-.. srcf-docs documentation master file, created by
-   sphinx-quickstart on Fri Apr 10 17:01:41 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+*************************************
+Welcome to the SRCF's documentation!
+*************************************
 
-Welcome to srcf-docs's documentation!
-=====================================
+Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever your goal may be.
+
+As a quick reminder, the **Student-Run Computing Facility**, known as the *SRCF*, exists as a university society to provide useful and flexible computing and network services, for University of Cambridge staff and students of all degrees of ability.
+
+Available services
+------------------
+
+All user and society accounts come with:
+
+    * website hosting with a rich variety of features
+    * email and mailing lists @srcf.net
+    * 2 GB of file or web space
+    * free lifelong email and website forwarding
+    * friendly and helpful sysadmins
+    
+...and much much more, all for *free*!
+
+Head over to our `main website <http://www.srcf.net/>`_ for more information.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: User guide
+
+   getting-started
+   advanced
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: Helping out
+
+   sysadmin
+   donate
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: FAQs and others
+
+   faqs
+   about
+
+.. rubric:: Document license and copyright
+
+These documents are licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License.  See
+http://creativecommons.org/licenses/by-sa/4.0/ for the license.
+
+Copyright 2020 by Matias Silva (treasurer@srcf.net).
 
 
+.. rubric:: Documentation repository
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+These documents are managed at
+https://github.com/matiasilva/srcf.
