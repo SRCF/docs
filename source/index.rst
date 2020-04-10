@@ -16,10 +16,13 @@ All user and society accounts come with:
     * 2 GB of file or web space
     * free lifelong email and website forwarding
     * friendly and helpful sysadmins
-    
+
 ...and much much more, all for *free*!
 
-Head over to our `main website <http://www.srcf.net/>`_ for more information.
+Head over to our `main website <http://www.srcf.net/>`_ for more information. 
+
+..informattion::
+The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider <https://www.srcf.net/donate>`_ donating.
 
 .. toctree::
    :maxdepth: 2
@@ -30,17 +33,16 @@ Head over to our `main website <http://www.srcf.net/>`_ for more information.
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :caption: Helping out
 
    sysadmin
-   donate
+   joining-committee
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :caption: FAQs and others
 
+   how-systems
    faqs
    about
 
