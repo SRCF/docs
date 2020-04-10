@@ -20,6 +20,10 @@
 project = 'srcf-docs'
 copyright = '2020, Matias Silva'
 author = 'Matias Silva'
+# The short X.Y version.
+version = 'April 2020'
+# The full version, including alpha/beta/rc tags.
+release = '2020.3'
 
 
 # -- General configuration ---------------------------------------------------
@@ -37,6 +41,8 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
+
+master_doc = 'index'
 
 
 # -- Options for HTML output -------------------------------------------------
