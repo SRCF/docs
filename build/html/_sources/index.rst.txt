@@ -36,7 +36,7 @@ The SRCF is run by volunteers who help to maintain its services for hundreds of 
    :caption: Helping out
 
    sysadmin
-   donate
+   joining-committee
 
 .. toctree::
    :maxdepth: 2
