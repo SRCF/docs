@@ -67,6 +67,13 @@ Head over to our `main website <http://www.srcf.net/>`_ for more information on 
    web-hosting/applications
    web-hosting/domains
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Legacy FAQs and imports
+   :glob:
+
+   faq/*
+
 .. rubric:: Document license and copyright
 
 These documents are licensed under a Creative Commons
