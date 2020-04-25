@@ -33,6 +33,40 @@ Head over to our `main website <http://www.srcf.net/>`_ for more information on 
    faqs
    about
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Personal accounts
+
+   personal-accounts/passwords
+   personal-accounts/email
+   personal-accounts/after-graduation
+   personal-accounts/soc-srcf-lists
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Society accounts
+
+   society-accounts/administrators
+   society-accounts/permissions
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Shell and files
+
+   shell-and-files/ssh
+   shell-and-files/files
+   shell-and-files/cron
+   shell-and-files/software
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Web hosting
+
+   web-hosting/apache
+   web-hosting/raven
+   web-hosting/applications
+   web-hosting/domains
+
 .. rubric:: Document license and copyright
 
 These documents are licensed under a Creative Commons
