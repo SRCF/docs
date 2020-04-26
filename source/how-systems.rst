@@ -7,7 +7,7 @@ A guide to how our systems work
 This section looks at how the SRCF operates and is able to provide its services.
 
 .. note::
-    We maintain and manage all of our own hardware (physically located in Cambridge) and software. We primarily use Ubuntu Linux as it is free (`in all senses <http://www.gnu.org/philosophy/free-sw.html>`_), stable and relatively easy to maintain.
+    We maintain and manage all of our own hardware (physically located in Cambridge) and software. We primarily use Ubuntu Linux as it is free (`in all senses <http://www.gnu.org/philosophy/free-sw.html>`__), stable and relatively easy to maintain.
 
 A summary
 ---------
@@ -17,4 +17,3 @@ Of these, 6 form a *cluster* of machines that host our virtual machines (VMs), c
 
 .. note::
     Software upgrades usually occur once every year or two during the summer.
-

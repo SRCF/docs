@@ -10,11 +10,11 @@ Unlike most hosting providers, websites are run using your own (or your society'
 Directory root
 ~~~~~~~~~~~~~~
 
-Websites are served out of ``public_html`` directories, present in your public file space (``/public/home/<crsid>/public_html`` or ``/public/societies/<name>/public_html``).
+Websites are served out of ``public_html`` directories, present in your public file space (``/public/home/<crsid>/public_html`` or ``/public/societies/<socname>/public_html``).
 
 To use Apache directives, you should use a ``.htaccess`` file, which provides a subset of functionality at a per-site level.
 
 Logs
 ~~~~
 
-Web server logs (including PHP errors) can be found in ``/var/log/apache2/user/<crsid>`` for users, and ``/var/log/apache2/soc/<name>`` for societies.  You can access them over SSH or with a file transfer program.
+Web server logs (including PHP errors) can be found in ``/var/log/apache2/user/<crsid>`` for users, and ``/var/log/apache2/soc/<socname>`` for societies.  You can access them over SSH or with a file transfer program.

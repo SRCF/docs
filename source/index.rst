@@ -6,17 +6,10 @@ Whether you're a society webmaster, budding sysadmin or just an interested brows
 
 As a quick reminder, the **Student-Run Computing Facility**, known as the *SRCF*, exists as a university society to provide useful and flexible computing and network services for University of Cambridge staff and students of all degrees of ability.
 
-Head over to our `main website <http://www.srcf.net/>`_ for more information on what we offer. In the meantime, you can find lots of information on these pages on how to get started with our systems.
+Head over to our `main website <https://www.srcf.net>`__ for more information on what we offer. In the meantime, you can find lots of information on these pages on how to get started with our systems.
 
 .. important::
-   The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`_.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: User guide
-
-   getting-started
-   advanced
+   The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`__.
 
 .. toctree::
    :maxdepth: 2
@@ -27,11 +20,10 @@ Head over to our `main website <http://www.srcf.net/>`_ for more information on 
 
 .. toctree::
    :maxdepth: 2
-   :caption: FAQs and others
+   :caption: Others
 
-   how-systems
-   faqs
    about
+   how-systems
 
 .. toctree::
    :maxdepth: 2
@@ -55,7 +47,7 @@ Head over to our `main website <http://www.srcf.net/>`_ for more information on 
 
    shell-and-files/ssh
    shell-and-files/files
-   shell-and-files/cron
+   shell-and-files/schedule
    shell-and-files/software
 
 .. toctree::

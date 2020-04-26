@@ -1,5 +1,0 @@
-.. _Deliverables:
-
-===============
-Getting started
-===============

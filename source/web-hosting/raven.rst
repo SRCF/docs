@@ -1,12 +1,12 @@
 Raven authentication
 --------------------
 
-You can configure your site, or a subset of pages, to require user authentication with `Raven <https://raven.cam.ac.uk>`_, the university's authentication system.
+You can configure your site, or a subset of pages, to require user authentication with `Raven <https://raven.cam.ac.uk>`__, the university's authentication system.
 
 With .htaccess
 ~~~~~~~~~~~~~~
 
-The SRCF has the `mod_ucam_webauth <https://raven.cam.ac.uk/project/apache/>`_ module installed, which makes it easy to do basic authentication using Raven.  `Full documentation <https://raven.cam.ac.uk/project/apache/README.Config>`_ is available, though here are a few common cases.
+The SRCF has the `mod_ucam_webauth <https://raven.cam.ac.uk/project/apache/>`__ module installed, which makes it easy to do basic authentication using Raven.  `Full documentation <https://raven.cam.ac.uk/project/apache/README.Config>`__ is available, though here are a few common cases.
 
 To protect a directory (whether ``public_html`` for your entire site, or a subdirectory of it), create or edit a ``.htaccess`` file in that directory, and add the following::
 
@@ -25,7 +25,7 @@ Alternatively, you may want to limit access to Raven-authenticated users or visi
     Require valid-user
     Satisfy any
 
-To create a "logout" link, add the following to your .htaccess file (which will create ``/logout`` relative to the directory where the directive is placed)::
+To create a "logout" link, add the following to your .htaccess file (which will create ``/logout`` relative to the directory containing the ``.htaccess`` file)::
 
     <FilesMatch "logout">
         SetHandler AALogout
@@ -34,4 +34,4 @@ To create a "logout" link, add the following to your .htaccess file (which will 
 Within an application
 ~~~~~~~~~~~~~~~~~~~~~
 
-If you're writing or maintaining a webapp that needs to authenticate users for certain pages, you'll likely need a Raven or UCamWebAuth library.  The `Raven developer documentation <https://docs.raven.cam.ac.uk>`_ may be useful for finding a suitable integration.
+If you're writing or maintaining a webapp that needs to authenticate users for certain pages, you'll likely need a Raven or UCamWebAuth library.  The `Raven developer documentation <https://docs.raven.cam.ac.uk>`__ may be useful for finding a suitable integration.

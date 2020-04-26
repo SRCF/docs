@@ -1,7 +1,7 @@
 Custom domains
 --------------
 
-As part of our web hosting, we provide domains for both individuals (of the form ``<crsid>.user.srcf.net``) and societies (``<society>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective user or society (subject to a 20 minute delay when publishing a new website).
+As part of our web hosting, we provide domains for both individuals (of the form ``<crsid>.user.srcf.net``) and societies (``<socname>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective user or society (subject to a 20 minute delay when publishing a new website).
 
 We also support external domains purchased from a domain registrar.  For these to serve your site, you'll first need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure.  The base domain (e.g. ``example.com``) is generally represented by *@*, and subdomains (e.g. ``bubbles.example.com``) would just be *bubbles*.
 
@@ -22,7 +22,7 @@ You may wish to run more than one website under a single account.  This can be d
 
 First, make sure all the desired domains are configured as above.  When emailing us, tell us which directory each site should be served from -- **this must be a subdirectory of public_html**, or public_html itself.
 
-For example, you may wish to serve ``example.com`` from */societies/<society>/public_html*, and ``bubbles.example.com`` from */societies/<society>/public_html/bubbles*.
+For example, you may wish to serve ``example.com`` from */societies/<socname>/public_html*, and ``bubbles.example.com`` from */societies/<socname>/public_html/bubbles*.
 
 What about email?
 ~~~~~~~~~~~~~~~~~
