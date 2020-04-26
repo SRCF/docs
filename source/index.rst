@@ -24,11 +24,13 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
 
    about
    how-systems
+   common-requests
 
 .. toctree::
    :maxdepth: 2
    :caption: Personal accounts
 
+   personal-accounts/start
    personal-accounts/passwords
    personal-accounts/email
    personal-accounts/after-graduation
@@ -40,6 +42,7 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
 
    society-accounts/administrators
    society-accounts/permissions
+   society-accounts/email
 
 .. toctree::
    :maxdepth: 2
@@ -58,6 +61,13 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
    web-hosting/raven
    web-hosting/applications
    web-hosting/domains
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Services
+
+   services/databases
+   services/mailman
 
 .. toctree::
    :maxdepth: 2

@@ -25,6 +25,14 @@ Alternatively, you may want to limit access to Raven-authenticated users or visi
     Require valid-user
     Satisfy any
 
+To limit page access to society account admins only, add a ``unix-group`` *Require* directive::
+
+    Require unix-group <socname>
+
+You can also list specific users::
+
+    Require user <crsid> <crsid>...
+
 To create a "logout" link, add the following to your .htaccess file (which will create ``/logout`` relative to the directory containing the ``.htaccess`` file)::
 
     <FilesMatch "logout">
