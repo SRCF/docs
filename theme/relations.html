@@ -1,0 +1,12 @@
+<ul class="relations fa-ul">
+  {%- set home = pathto(master_doc) %}
+  {%- if pagename != master_doc %}
+  <li><a href="{{ home }}"><i class="fa fa-li fa-home"></i> {{ shorttitle|e }}</a></li>
+  {%- endif %}
+  {%- if prev and prev.link != home %}
+  <li><a href="{{ prev.link|e }}"><i class="fa fa-li fa-arrow-left" title="{{ _('Previous chapter') }}"></i> {{ prev.title }}</a>
+  {%- endif %}
+  {%- if next %}
+  <li><a href="{{ next.link|e }}"><i class="fa fa-li fa-arrow-right" title="{{ _('Next chapter') }}"></i> {{ next.title }}</a>
+  {%- endif %}
+</ul>

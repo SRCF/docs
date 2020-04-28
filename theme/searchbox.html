@@ -1,0 +1,10 @@
+<form action="{{ pathto('search') }}">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+  <div class="input-group">
+    <input name="q" type="text" class="form-control" placeholder="Search..." aria-label="{{ _('Search...') }}" aria-describedby="search-submit">
+    <div class="input-group-append">
+      <button class="btn btn-outline-primary" type="submit" id="search-submit" aria-label="{{ _('Go') }}"><i class="fa fa-search"></i></button>
+    </div>
+  </div>
+</form>

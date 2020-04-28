@@ -1,0 +1,207 @@
+{% block doctype -%}
+<!DOCTYPE html>
+{%- endblock %}
+<html lang="en">
+  <head>
+    <meta charset="{{ encoding }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ title|striptags|e }}{% if not embedded and docstitle and pagename != master_doc %} - {{ docstitle }}{% endif %}</title>
+    <link href="/_srcf/vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/_srcf/vendor/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/_srcf/srcf-bs.css" rel="stylesheet">
+    <link href="{{ pathto('_static/pygments.css', 1) }}" rel="stylesheet">
+    {%- for css in css_files %}
+    <link href="{{ pathto(css, 1) }}" rel="stylesheet">
+    {%- endfor %}
+    <style>
+      .headerlink {
+        margin-left: 0.25em;
+        display: none;
+      }
+      :hover > .headerlink {
+        display: inline;
+      }
+      .highlighted {
+        background-color: #ff8;
+        margin: -0.1rem;
+        padding: 0.1rem;
+      }
+      .toc > ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .relations {
+        margin-left: 1.57142856em;
+      }
+      .copyright {
+        margin-top: 1.5rem;
+        border-top: 1px solid #5f5f5f;
+        padding-top: 1.5rem;
+      }
+      /* These probably want to be in srcf-bs.css: */
+      .alert {
+        clear: right;
+      }
+      .alert p:last-child, .alert ul:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16 24x24">
+    <link href="/favicon.svg" rel="icon" type="image/svg">
+    {{ metatags }}
+    {%- if not embedded %}
+    {%- if use_opensearch %}
+    <link href="{{ pathto('_static/opensearch.xml', 1) }}" rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}">
+    {%- endif %}
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT: '{{ pathto('', 1) }}',
+        VERSION: '{{ release|e }}',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+        HAS_SOURCE: {{ has_source|lower }}
+      };
+    </script>
+    {%- for script in script_files %}
+    <script src="{{ pathto(script, 1) }}"></script>
+    {%- endfor %}
+    {%- endif %}
+    <link rel="top" title="{{ docstitle|e }}" href="{{ pathto(master_doc) }}" />
+    {%- if parents %}
+    <link rel="up" title="{{ parents[-1].title|striptags|e }}" href="{{ parents[-1].link|e }}" />
+    {%- endif %}
+    {%- if next %}
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
+    {%- endif %}
+    {%- if prev %}
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
+    {%- endif %}
+    {%- block extrahead %}{% endblock %}
+  </head>
+  <body class="layout-footer">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container">
+        <h1 class="navbar-brand">
+          <a href="{{ theme_domain_web }}/">
+            <img src="/_srcf/images/logo.svg">
+            <span>
+              <span class="text-danger">Student-Run</span>
+              <span class="text-primary">Computing Facility</span>
+            </span>
+          </a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="{{ theme_domain_control }}/"><i class="fa fa-fw fa-wrench"></i> Control Panel</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ theme_domain_web }}/services"><i class="fa fa-fw fa-cubes"></i> Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ theme_domain_web }}/contact"><i class="fa fa-fw fa-paper-plane-o"></i> Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ theme_domain_control }}/signup"><i class="fa fa-fw fa-user"></i> <strong>Join</strong></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      {%- set sidebar %}
+        {%- for panel in sidebars %}
+        {%- include panel %}
+        {%- endfor %}
+      {%- endset %}
+      {%- block header %}{% endblock %}
+      {%- block content %}{%- block document %}
+      {%- if not embedded and not (theme_nosidebar|tobool) %}
+      {%- block sidebar1 %}
+      {%- if sidebar %}
+      <p class="d-block d-md-none">
+        <a href="#mobilenav"><i class="fa fa-fw fa-arrow-down"></i> Jump to navigation</a>
+      </p>
+      <div class="sidebar">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Navigation</h4>
+            {{ sidebar }}
+          </div>
+        </div>
+      </div>
+      {%- endif %}
+      {%- endblock %}
+      {%- endif %}
+      {% block body %}{% endblock %}
+      {%- endblock %}{%- endblock %}
+      {%- block footer %}
+      {%- set text %}
+        {%- if show_copyright %}
+        {% trans copyright=copyright|e %}&copy; Copyright <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> {{ copyright }}.{% endtrans %}
+        {%- endif %}
+        {%- if last_updated %}
+        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+        {%- endif %}
+        {%- if show_sphinx %}
+        {% trans sphinx_version=sphinx_version|e %}Created using <a href="https://sphinx-doc.org">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+        {%- endif %}
+      {%- endset %}
+      {%- if text %}
+      <p class="copyright text-muted">
+        {{ text }}
+      </p>
+      {%- endif %}
+      {%- endblock %}
+      {%- block sidebar2 %}
+      {%- if sidebar %}
+      <div id="mobilenav" class="d-block d-md-none">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Navigation</h4>
+            <ul class="relations fa-ul">
+              <li><a href="#"><i class="fa fa-li fa-arrow-up"></i> Jump to content</a></li>
+            </ul>
+            {{ sidebar }}
+          </div>
+        </div>
+      </div>
+      {%- endif %}
+      {%- endblock %}
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Membership</h5>
+            <ul class="fa-ul">
+              <li><a href="{{ theme_domain_control }}/signup"><i class="fa fa-li fa-user"></i> Join the SRCF</a></li>
+              <li><a href="{{ theme_domain_control }}/signup/society"><i class="fa fa-li fa-users"></i> Create society account</a></li>
+              <li><a href="{{ theme_domain_web }}/services"><i class="fa fa-li fa-cubes"></i> List of services</a></li>
+              <li><a href="{{ theme_domain_web }}/donate"><i class="fa fa-li fa-money"></i> Donate</a></li>
+              <li><a href="{{ theme_domain_web }}/tos"><i class="fa fa-li fa-balance-scale"></i> Terms of service</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Services</h5>
+            <ul class="fa-ul">
+              <li><a href="{{ theme_domain_control }}/"><i class="fa fa-li fa-wrench"></i> Control panel</a></li>
+              <li><a href="https://webmail.srcf.net"><i class="fa fa-li fa-envelope-o"></i> Webmail</a></li>
+              <li><a href="https://lists.srcf.net"><i class="fa fa-li fa-bullhorn"></i> Mailing lists</a></li>
+              <li><a href="https://www.srcf.net/terminal/"><i class="fa fa-li fa-terminal"></i> Web terminal</a></li>
+              <li><a href="https://status.srcf.net"><i class="fa fa-li fa-toggle-on"></i> Server status</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>About</h5>
+            <ul class="fa-ul">
+              <li><a href="{{ theme_domain_web }}/committee"><i class="fa fa-li fa-id-card-o"></i> Committee</a></li>
+              <li><a href="{{ theme_domain_web }}/constitution"><i class="fa fa-li fa-university"></i> Constitution</a></li>
+              <li><a href="{{ theme_domain_web }}/minutes/"><i class="fa fa-li fa-book"></i> Minutes</a></li>
+              <li><a href="{{ theme_domain_web }}/contact"><i class="fa fa-li fa-paper-plane-o"></i> Contact addresses</a></li>
+              <li><a href="{{ theme_domain_web }}/faq/"><i class="fa fa-li fa-bookmark-o"></i> FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--<script src="/_srcf/vendor/js/jquery.min.js"></script>-->
+    <script src="/_srcf/vendor/js/popper.min.js"></script>
+    <script src="/_srcf/vendor/js/bootstrap.min.js"></script>
+  </body>
+</html>
