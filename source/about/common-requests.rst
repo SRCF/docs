@@ -1,6 +1,8 @@
 Common requests
 ---------------
 
+Before contacting the sysadmins, check we haven't already answered your question here.
+
 .. _join-society:
 
 I want to gain access to an existing society account

@@ -1,18 +1,9 @@
 Email accounts
 --------------
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   email-hades
-   email-pip
-
 Every member of the SRCF has an email address on the *srcf.net* domain.  If your SRCF username is ``spqr2``, your SRCF email address is **spqr2@srcf.net**.
 
-.. tip::
-
-   In fact you have as many email addresses as you want, by appending a suffix of your choosing: **spqr2-<something>@srcf.net**.  You can use this for filtering different types of email in different ways.  You also have equivalent addresses in our old domain, *srcf.ucam.org*.
+In fact, you have as many email addresses as you want, by appending a suffix of your choosing: **spqr2-<something>@srcf.net**.  You can use this for filtering different types of email in different ways.  You also have equivalent addresses in our old domain, *srcf.ucam.org*.
 
 Incoming mail
 ~~~~~~~~~~~~~

@@ -1,6 +1,5 @@
-*************************************
-Welcome to the SRCF's documentation!
-*************************************
+SRCF documentation
+==================
 
 Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services.
 
@@ -11,20 +10,18 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
 .. important::
    The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`__.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Helping out
-
-   sysadmin
-   joining-committee
+Contents
+--------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Others
+   :caption: About us
 
-   about
-   how-systems
-   common-requests
+   about/srcf
+   about/systems
+   about/committee
+   about/sysadmins
+   about/common-requests
 
 .. toctree::
    :maxdepth: 2
@@ -33,6 +30,8 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
    personal-accounts/start
    personal-accounts/passwords
    personal-accounts/email
+   personal-accounts/email-hades
+   personal-accounts/email-pip
    personal-accounts/after-graduation
    personal-accounts/soc-srcf-lists
 
@@ -73,5 +72,6 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
    :maxdepth: 2
    :caption: Legacy FAQs and imports
    :glob:
+   :hidden:
 
    faq/*
