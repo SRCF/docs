@@ -75,17 +75,3 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
    :glob:
 
    faq/*
-
-.. rubric:: Document license and copyright
-
-These documents are licensed under a Creative Commons
-Attribution-ShareAlike 4.0 International License.  See
-http://creativecommons.org/licenses/by-sa/4.0/ for the license.
-
-Copyright 2020 by Matias Silva (treasurer@srcf.net).
-
-
-.. rubric:: Documentation repository
-
-These documents are managed at
-https://github.com/matiasilva/srcf.
