@@ -79,7 +79,7 @@ Once you've defined your roles, you need to build the actual ``.forward`` file::
 Mail filtering
 ~~~~~~~~~~~~~~
 
-We have the `Exim <http://www.exim.org>`__ mail transfer agent installed -- see `the Exim filtering documentation <http://www.exim.org/exim-html-current/doc/html/spec_html/filter_ch01.html>`__ for how to write filters in your ``.forward`` file.
+We have the `Exim <https://www.exim.org>`__ mail transfer agent installed -- see `the Exim filtering documentation <https://www.exim.org/exim-html-current/doc/html/spec_html/filter_ch01.html>`__ for how to write filters in your ``.forward`` file.
 
 Filters in Exim are more complicated than :ref:`Hades' Sieve filters <hades-filters>`, though there are a few things supported which cannot be done on Hades, such as piping your email into a custom program.
 

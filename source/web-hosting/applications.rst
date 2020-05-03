@@ -21,8 +21,8 @@ WordPress will likely refuse to do automatic updates, instead requesting FTP cre
 
     /**
      * Force WordPress to use direct filesystem access so that upgrades work properly.
-     * http://core.trac.wordpress.org/ticket/10205
-     * http://codex.wordpress.org/Editing_wp-config.php
+     * https://core.trac.wordpress.org/ticket/10205
+     * https://codex.wordpress.org/Editing_wp-config.php
      */
     define('FS_METHOD', 'direct');
     define('FS_CHMOD_DIR', (02775 & ~ umask()));
