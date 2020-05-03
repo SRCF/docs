@@ -1,3 +1,5 @@
+.. _society-perms:
+
 File permissions
 ----------------
 
