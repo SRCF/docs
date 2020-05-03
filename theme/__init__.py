@@ -1,5 +1,8 @@
 from docutils import nodes
+import os.path
+import subprocess
 
+from sphinx.jinja2glue import BuiltinTemplateLoader
 from sphinx.locale import admonitionlabels
 from sphinx.writers.html import HTMLTranslator
 
@@ -18,6 +21,21 @@ ALERTS = {
     "todo": "info",
     "warning": "warning",
 }
+
+
+class Jinja2TemplateBridge(BuiltinTemplateLoader):
+
+    def init(self, builder, *args, **kwargs):
+        super(Jinja2TemplateBridge, self).init(builder, *args, **kwargs)
+        self._srcdir = builder.srcdir
+        print(self._srcdir)
+        self.environment.globals["contributors"] = self.contributors
+
+    def contributors(self, path):
+        out = subprocess.check_output(("git", "shortlog",
+                                       "--summary", "--numbered", "--",
+                                       os.path.join(self._srcdir, "{}.rst".format(path))))
+        return [line.split(None, 1)[1] for line in out.splitlines()]
 
 
 class BootstrapHTMLTranslator(HTMLTranslator):

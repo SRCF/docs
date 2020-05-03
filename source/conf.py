@@ -6,7 +6,6 @@ import theme
 
 project = "SRCF"
 author = "The Student-Run Computing Facility"
-copyright = "2020, {}".format(author)
 
 extensions = []
 
@@ -16,6 +15,10 @@ html_theme = "theme"
 html_theme_path = [".."]
 html_title = "SRCF docs"
 html_sidebars = {"**": ["localtoc.html", "relations.html", "searchbox.html"]}
+html_theme_options = {
+    "footer_contributors": True,
+}
+template_bridge = "theme.Jinja2TemplateBridge"
 
 
 def setup(app):

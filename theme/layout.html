@@ -133,7 +133,11 @@
       {%- block footer %}
       {%- set text %}
         {%- if show_copyright %}
-        {% trans copyright=copyright|e %}&copy; Copyright <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> {{ copyright }}.{% endtrans %}
+        {% trans %}&copy; Copyright <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>{% endtrans %}
+        {%- if copyright %} {{ copyright }}{% endif %}.
+        {%- endif %}
+        {%- if theme_footer_contributors %}
+        {% trans authors=contributors(pagename)|join(", ") %}Contributors: {{ authors }}.{% endtrans %}
         {%- endif %}
         {%- if last_updated %}
         {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
