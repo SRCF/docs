@@ -36,7 +36,7 @@ class Jinja2TemplateBridge(BuiltinTemplateLoader):
         out = subprocess.check_output(("git", "shortlog",
                                        "--summary", "--numbered", "--",
                                        os.path.join(self._srcdir, "{}.rst".format(path))))
-        authors = [line.split(None, 1)[1] for line in out.splitlines()]
+        authors = [line.split(None, 1)[1] for line in out.decode("utf-8").splitlines()]
         if meta and meta["contributors"]:
             authors.extend(author for author in meta["contributors"].split(", ")
                            if author not in authors)
