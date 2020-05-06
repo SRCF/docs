@@ -2,6 +2,8 @@ from docutils import nodes
 import os.path
 import subprocess
 
+from jinja2 import Undefined
+
 from sphinx.jinja2glue import BuiltinTemplateLoader
 from sphinx.locale import admonitionlabels
 from sphinx.writers.html import HTMLTranslator
@@ -28,14 +30,17 @@ class Jinja2TemplateBridge(BuiltinTemplateLoader):
     def init(self, builder, *args, **kwargs):
         super(Jinja2TemplateBridge, self).init(builder, *args, **kwargs)
         self._srcdir = builder.srcdir
-        print(self._srcdir)
         self.environment.globals["contributors"] = self.contributors
 
-    def contributors(self, path):
+    def contributors(self, path, meta):
         out = subprocess.check_output(("git", "shortlog",
                                        "--summary", "--numbered", "--",
                                        os.path.join(self._srcdir, "{}.rst".format(path))))
-        return [line.split(None, 1)[1] for line in out.splitlines()]
+        authors = [line.split(None, 1)[1] for line in out.splitlines()]
+        if meta and meta["contributors"]:
+            authors.extend(author for author in meta["contributors"].split(", ")
+                           if author not in authors)
+        return authors
 
 
 class BootstrapHTMLTranslator(HTMLTranslator):

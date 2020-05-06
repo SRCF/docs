@@ -137,7 +137,8 @@
         {%- if copyright %} {{ copyright }}{% endif %}.
         {%- endif %}
         {%- if theme_footer_contributors %}
-        {% trans authors=contributors(pagename)|join(", ") %}Contributors: {{ authors }}.{% endtrans %}
+        {%- set authors = contributors(pagename, meta) %}
+        {% trans authors=authors|join(", ") %}Contributors: {{ authors }}.{% endtrans %}
         {%- endif %}
         {%- if last_updated %}
         {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}

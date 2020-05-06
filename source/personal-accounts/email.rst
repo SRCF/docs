@@ -1,3 +1,5 @@
+:contributors: Malcolm Scott
+
 Email accounts
 --------------
 

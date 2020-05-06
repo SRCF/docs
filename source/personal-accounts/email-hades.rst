@@ -1,3 +1,5 @@
+:contributors: Malcolm Scott
+
 .. _hades-email:
 
 Hades email service

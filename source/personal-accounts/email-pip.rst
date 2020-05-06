@@ -1,3 +1,5 @@
+:contributors: Malcolm Scott
+
 .. _pip-email:
 
 Legacy mail on pip
