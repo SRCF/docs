@@ -13,9 +13,11 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
 Contents
 --------
 
+About us
+~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-   :caption: About us
 
    about/srcf
    about/systems
@@ -23,9 +25,11 @@ Contents
    about/sysadmins
    about/common-requests
 
+Personal accounts
+~~~~~~~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-   :caption: Personal accounts
 
    personal-accounts/start
    personal-accounts/passwords
@@ -35,42 +39,49 @@ Contents
    personal-accounts/after-graduation
    personal-accounts/soc-srcf-lists
 
+Society accounts
+~~~~~~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-   :caption: Society accounts
 
    society-accounts/administrators
    society-accounts/permissions
    society-accounts/email
 
+Shell and files
+~~~~~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-   :caption: Shell and files
 
    shell-and-files/ssh
    shell-and-files/files
    shell-and-files/schedule
    shell-and-files/software
 
+Web hosting
+~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-   :caption: Web hosting
 
    web-hosting/apache
    web-hosting/raven
    web-hosting/applications
    web-hosting/domains
 
+More services
+~~~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-   :caption: Services
 
    services/databases
    services/mailman
 
 .. toctree::
    :maxdepth: 2
-   :caption: Legacy FAQs and imports
    :glob:
    :hidden:
 
