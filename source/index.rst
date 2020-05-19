@@ -1,6 +1,10 @@
 SRCF documentation
 ==================
 
+.. warning::
+   
+   For more information regarding Timeout, our video conferencing service, please scroll down and access the relevant documentation under ``Timeout``.
+
 Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services.
 
 As a quick reminder, the **Student-Run Computing Facility**, known as the *SRCF*, exists as a university society to provide useful and flexible computing and network services for University of Cambridge staff and students of all degrees of ability.
@@ -24,6 +28,17 @@ About us
    about/committee
    about/sysadmins
    about/common-requests
+
+Timeout
+~~~~~~~
+
+.. toctree::
+   :maxdepth: 2
+
+   timeout/getting-started
+   timeout/more-info
+   timeout/recommendations
+   timeout/tos
 
 Personal accounts
 ~~~~~~~~~~~~~~~~~
