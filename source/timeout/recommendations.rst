@@ -26,9 +26,14 @@ Video
 ~~~~~
 
 * Webcams should work without restrictions if they are set up correctly. 
-   - You can test if your webcam works at https://test.webrtc.org. 
-   - If there are any problems, please switch browsers in accordance with our browser recommendations above.
-* We ask you to avoid using cameras or settling webcame quality to "low", if possible
-   - Webcams generate a lot more load on our servers than pure autdio transmission.
-   - When sharing your webcam, choose the "low quality" option in the dropdown menu
+  
+  * You can test if your webcam works at https://test.webrtc.org. 
+  
+  * If there are any problems, please switch browsers in accordance with our browser recommendations above.
+
+* We ask you to avoid using cameras or setting webcam quality to "low", if possible
+  
+  * Webcams generate a lot more load on our servers than pure autdio transmission.
+  
+  * When sharing your webcam, choose the "low quality" option in the dropdown menu
 

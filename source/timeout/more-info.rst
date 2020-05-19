@@ -21,13 +21,20 @@ Using an interactive whiteboard
 The default presentation that comes with each meeting has a few empty slides and grid slides to emulate the whiteboard functionality. You may then use the whiteboard by accessing the edit tools to the right of the whiteboard and even enable multi-user edit access. If you wish to upload a custom whiteboard layout or even your own slides to annotate, do so using the ``upload presentation`` button. These are a few possible implementations of the interactive whiteboard model:
 
 * Running the call from your mobile device (iPad, tablet) and editing the whiteboard with your digital pen
-   - Has shown to not work on some Android tablets
+
+  * Has shown to not work on some Android tablets
+
 * Running the call from your laptop and editing the whiteboard using a pen tablet, such as those offered by Wacom
+
 * Running the call from your laptop but using your mobile device as a second participant to edit the whiteboard
+
 * Avoiding the use of the integrated whiteboard and instead opting to use *Microsoft Whiteboard* or *Google JAMboard*
-   - Use your laptop for video and audio and share your screen, which is displaying the whiteboard
-   - Load the whiteboard on your mobile device and edit directly
-   - This avoids having to be in the call on two devices and possibly more flexibility in case you want to share your notes with the participants
+
+  * Use your laptop for video and audio and share your screen, which is displaying the whiteboard
+
+  * Load the whiteboard on your mobile device and edit directly
+
+  * This avoids having to be in the call on two devices and possibly more flexibility in case you want to share your notes with the participants
 
 .. warning::
 
@@ -59,9 +66,13 @@ Breakout rooms
 ^^^^^^^^^^^^^^
 
 * Breakout rooms are temporary spaces
+
 * You can set a time after which the rooms will be closed
-   - Note any links or material shared in the chat will not return to the main room afterwards
+
+  * Note any links or material shared in the chat will not return to the main room afterwards
+
 * All participants have presenter rights and the first to enter the room has moderator rights
+
 * Breakout rooms are extremely useful for groupwork
 
 The whiteboard and presentations

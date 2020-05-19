@@ -55,7 +55,7 @@ You can use Timeout by going to https://timeout.srcf.net and playing around. We 
 I love Timeout. How can I help?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Timeout is entirely run and hosted by a team of dedicated volunteers. Please consider `donating to us <https://www.srcf.net/donate>`__ to allow us to continue providing awesome services to the University community.
+Timeout is entirely run and hosted by a team of dedicated volunteers. If you'd be interested in helping make this possible, consider joining us or `donating to us <https://www.srcf.net/donate>`__ to allow us to continue providing awesome services to the University community. Anyone can contribute to the SRCF and you don't have to know much to start with - in fact this documentation was written by someone with little technical expertise before starting at the SRCF.
 
 Reporting problems and getting help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +72,7 @@ If you need help, and have already :ref:`read our recommendations <recommendatio
 
 Why does this exist?
 ~~~~~~~~~~~~~~~~~~~~
-Timeout came about in mid-May when members of the SRCF were increasingly frustrated by the University's embarassingly inadequate response to online teaching. UIS has failed to deliver a suitable platform for use and the University did not go through with purchasing a Zoom license for all departments, thankfully. (did we mention the `security risks <https://www.vice.com/en_us/article/qjdqgv/hackers-selling-critical-zoom-zero-day-exploit-for-500000>`__?..). In doing so, supervisors or departments are forced to purchase licenses to other platforms resulting in inconsistency and putting members of the University at risk. The SRCF decided to do something about this..and so Timeout was born!
+Timeout came about in mid-May when members of the SRCF were increasingly frustrated by the University's embarassingly inadequate response to online teaching. UIS has failed to deliver a suitable platform for use and the University did not go through with purchasing a Zoom license for all departments, thankfully (did we mention the `security risks <https://www.vice.com/en_us/article/qjdqgv/hackers-selling-critical-zoom-zero-day-exploit-for-500000>`__?..). In doing so, supervisors or departments are forced to purchase licenses to other platforms resulting in inconsistency and putting members of the University at risk. The SRCF decided to do something about this..and so Timeout was born!
 
 Contributions and thanks
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,14 +82,23 @@ A special thanks to Malcolm Scott, Edwin Balani, Matias Silva for conceiving the
 Timeout, like many other services, is built on the shoulders of many. It is largely based on the following open-source software:
 
 * BigBlueButton - the actual conference software and its components:
-   - FreeSWITCH  - as an audio transmission solution
-   - Kurento Media Server - as a video transmission solution
-   - coturn - as an audio / video relay
+  
+  * FreeSWITCH  - as an audio transmission solution
+  
+  * Kurento Media Server - as a video transmission solution
+  
+  * coturn - as an audio / video relay
+
 * Greenlight - as a room management system
+
 * Scalelite - as a load distribution system
+
 * bbb-easy-join - for quick room tests
+
 * Prometheus - for monitoring
-   - bbb-exporter - for statistics from BBB
+  
+  * bbb-exporter - for statistics from BBB
+
 * Grafana - dashboard and visualization of monitoring
 
 One last thanks to the folks over at `Ulmlernt <https://ulmlernt.de>`__ for building a fantastic Ansible playbook and for sharing that with us.
