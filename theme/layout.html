@@ -12,15 +12,9 @@
       {{ title|striptags|e }}{% if not embedded and docstitle and pagename !=
       master_doc %} - {{ docstitle }}{% endif %}
     </title>
-    <link
-      href="https://www.srcf.net/_srcf/vendor/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://www.srcf.net/_srcf/vendor/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://www.srcf.net/_srcf/srcf-bs.css" rel="stylesheet" />
+    <link href="/_srcf/vendor/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/_srcf/vendor/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/_srcf/srcf-bs.css" rel="stylesheet" />
     <link href="{{ pathto('_static/pygments.css', 1) }}" rel="stylesheet" />
     {%- for css in css_files %}
     <link href="{{ pathto(css, 1) }}" rel="stylesheet" />
