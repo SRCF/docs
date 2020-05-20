@@ -15,7 +15,7 @@ As any other service we offer, use of Timeout is subject to specific terms of se
 * Use of Timeout for work not directly related to the University is allowed as we understand the value of keeping in touch with friends and family during these trying times. However, please be sensible about this.
 
 Privacy concerns
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 As usual, your use of Timeout is fully compliant with `the SRCF privacy policy <https://www.srcf.net/privacy>`__, but here we note a few other privacy-related concerns:
 
