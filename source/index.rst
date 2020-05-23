@@ -48,9 +48,6 @@ Personal accounts
 
    personal-accounts/start
    personal-accounts/passwords
-   personal-accounts/email
-   personal-accounts/email-hades
-   personal-accounts/email-pip
    personal-accounts/after-graduation
    personal-accounts/soc-srcf-lists
 
@@ -62,7 +59,6 @@ Society accounts
 
    society-accounts/administrators
    society-accounts/permissions
-   society-accounts/email
 
 Shell and files
 ~~~~~~~~~~~~~~~
@@ -85,6 +81,17 @@ Web hosting
    web-hosting/raven
    web-hosting/applications
    web-hosting/domains
+
+Email
+~~~~~
+
+.. toctree::
+   :maxdepth: 2
+
+   email/summary
+   email/hades
+   email/pip
+   email/societies
 
 More services
 ~~~~~~~~~~~~~
