@@ -6,7 +6,7 @@ Last updated: 20/05/2020
 Terms of Service
 ~~~~~~~~~~~~~~~~
 
-As any other service we offer, use of Timeout is subject to specific terms of service. Our `general terms of service <https://www.srcf.net/tos>`__ still applies.
+As with any other service we offer, use of Timeout is subject to specific terms of service. Our `general terms of service <https://www.srcf.net/tos>`__ still applies.
 
 * As Timeout is still in its early stages, please understand that downtime may occur at any given moment. We have worked hard on putting measures in place to prevent this, but given that the SRCF itself is still learning the ins and outs of this new system, we ask you to recognize this as a possibility.
 * Timeout is a service we foresee being heavily used. For this reason, please do not leave meetings open for hours on end or set your webcam quality to anything excessive for long periods of time. Rememeber that the quality of Timeout is in part dependent on its users and whether they respect others using it.
@@ -21,7 +21,7 @@ The following privacy applies when using Timeout and all of its related services
 
 .. warning::
 
-   Note that `the SRCF privacy policy <https://www.srcf.net/privacy>`__,which is more geared towards our other services, does not apply when using Timeout.
+   Note that `the SRCF privacy policy <https://www.srcf.net/privacy>`__, which is more geared towards our other services, does not apply when using Timeout.
 
 .. note::
 
@@ -34,12 +34,12 @@ The SRCF does not use the personal information we collect about you for any comm
 Data controlling entity and contact
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This service is run by:
+This service is run by::
 
-The Student-Run Computing Facility
-Cambridge University
-17 Mill lane, CUSU
-Cambridge CB2 1RX
+   The Student-Run Computing Facility
+   Cambridge University
+   17 Mill lane, CUSU
+   Cambridge CB2 1RX
 
 You can contact the operators of this service at:  ``support@srcf.net``.
 
@@ -50,7 +50,7 @@ As a user of Timeout, you have the following rights:
 
 * The right to confirmation whether and which personally identifiable information about you is being processed, information about this data, further information on the data processing activities and a copy of all processed data.
 * The right to correction and completion of false or incomplete data about you.
-* The right to deletion of all your personally identifiable information, as long as retention is not required to fulfill legal obligations.
+* The right to delete all of your personally identifiable information, as long as retention is not required to fulfill legal obligations.
 * The right to receive a copy of all data we hold on you and the transfer of this data to another service provider in case you request it.
 * The right to file a complaint with the responsible data protection agency in case you conclude that we processed or distributed your personal data in a way that is not compliant with this privacy policy or legal regulations.
 * The right to know with whom we share your data.
@@ -123,6 +123,7 @@ Data type: Account data
 """""""""""""""""""""""
 
 What this includes:
+
 * Your name
 * Your email address (or CRSid)
 
@@ -202,12 +203,20 @@ We only share your personal data for the reasons outlined below:
 Recordings
 """"""""""
 
+When a room is created that allows recordings (ie. the recording button is present), BBB will always record the session *independently of whether the button is actually pressed*. For this reason, **you may request a retroactive recording of your session, even if you forgot to press the record button**. We have chosen to globally enable recordings on our system as we see this as a useful feature, if used correctly. By default, these raw video files are securely stored on our system and deleted after seven days. These raw files are processed and cut according to the markers you set when you press stop/start recording. The outcome of this video processing is what is stored on our systems indefinitely and made available to you (the host) and to any other parties you share it with.
+
+As of this moment, BBB stores recordings on an enumerable URL, which poses a potential security risk to any sensitive content recorded. Your room recording availability settings can be configured in Greenlight (what you use to create rooms) but the URL generated for viewing of this recording is out of Greenlight's control. The best solution in this case is for you to directly request us to download the recording, after which we may distribute it to you and purge it from our system. While we don't expect this to be a major problem (and we will monitor access to room recordings in order to detect any suspicious behavior), it is sensible for you to follow the instructions above if your session includes any sensitive or private content.
+
 By default, recordings are not publicly accessible. However, at the discretion of a room's hosts, recording can be made public or shared with others directly via our platform or as downloaded files. As outlined in the previous section, we will solicit your consent to a session being recorded and potentially shared before you can join a room to be recorded. In case you want to retroactively widthdraw your consent to a recording, please contact ``support@srcf.net``. However, please note that the recording may already have been shared publicly and/or outside of our platform.
 
 Server statistics
 ^^^^^^^^^^^^^^^^^
 
-We collect aggregate statistics to monitor the utilization, performance, and availability of our servers. While this data is agregated, and does not contain personally identifiable information, personally identifiable information may be utilized for computing these aggregate values, e.g., the number of users and rooms per cluster node. Personally identifiable information used during the computation of aggregate statistics is not stored.
+We collect aggregate statistics to monitor the utilization, performance, and availability of our servers. While this data is agregated, and does not contain personally identifiable information, personally identifiable information may be utilized for computing these aggregate values, e.g., the number of users and rooms per cluster node. Personally identifiable information used during the computation of aggregate statistics is not stored. More specifically, we store (for an indefinite period of time):
+
+* Details related to session management (creation, hosting, etc)
+* The duration and time of each session
+* The number of participants in each session
 
 Server location
 ^^^^^^^^^^^^^^^
@@ -218,26 +227,6 @@ Changes to this privacy policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We may change this privacy policy from time to time. If we make any changes to this Privacy Policy, we will change the Last Updated date above. If such changes impact the collection and processing of your data, a notice of the changes will be posted along with the revised privacy policy and you will be asked to consent to the changes. We encourage you to visit this page from time to time for the latest on our privacy practices.
-
-Further details regarding Timeout's operation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-When a room is created that allows recordings (ie. the recording button is present), BBB will always record the session *independently of whether the button is actually pressed*. We have chosen to globally enable recordings on our system as we see this as a useful feature, if used correctly. By default, these files are securely stored on our system and deleted after seven days. For this reason, you may request a retroactive recording of your session, even if you forgot to press the record button.
-
-As of this moment, BBB stores recordings on an enumerable URL, which poses a potential security risk to any sensitive content recorded. Your room recording availability settings can be configured in Greenlight (what you use to create rooms) but the URL generated for viewing of this recording is out of Greenlight's control. The best solution in this case is for you to directly request us to download the recording, after which we may distribute it to you and purge it from our system. While we don't expect this to be a major problem (and we will monitor access to room recordings in order to detect any suspicious behavior), it is sensible for you to follow the instructions above if your session includes any sensitive or private content.
-
-Cache and logs
-^^^^^^^^^^^^^^
-
-BBB has a wide variety of dependencies, each of which log activities. This means the following are stored on our system:
-
-* The number of sessions tied to your account
-* When and how many times you hosted a particular session
-* The presentation uploaded by you to BBB
-* All interactions with rooms including who joined and when they left
-* The IP addresses of participants
-
-Note that most of these logs are rotated every 8 days, so they will be purged from our system at some point.
 
 URL generation
 ^^^^^^^^^^^^^^
