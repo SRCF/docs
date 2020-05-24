@@ -1,3 +1,4 @@
+from collections import Counter
 from docutils import nodes
 import os.path
 import subprocess
@@ -33,10 +34,12 @@ class Jinja2TemplateBridge(BuiltinTemplateLoader):
         self.environment.globals["contributors"] = self.contributors
 
     def contributors(self, path, meta):
-        out = subprocess.check_output(("git", "shortlog",
-                                       "--summary", "--numbered", "--",
-                                       os.path.join(self._srcdir, "{}.rst".format(path))))
-        authors = [line.split(None, 1)[1] for line in out.decode("utf-8").splitlines()]
+        abspath = os.path.join(self._srcdir, "{}.rst".format(path))
+        authors = []
+        if os.path.exists(abspath):
+            out = subprocess.check_output(("git", "log", "--follow", "--format=%an", abspath))
+            counts = Counter(out.decode("utf-8").splitlines())
+            authors.extend(author for author, _ in counts.most_common())
         if meta and meta["contributors"]:
             authors.extend(author for author in meta["contributors"].split(", ")
                            if author not in authors)
