@@ -35,7 +35,7 @@ Timeout
 .. toctree::
    :maxdepth: 2
 
-   timeout/getting-started
+   timeout/index
    timeout/more-info
    timeout/recommendations
    timeout/tos
