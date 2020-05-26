@@ -125,11 +125,11 @@ Data type: Account data
 What this includes:
 
 * Your name
-* Your email address (or CRSid)
+* Your CRSid
 
 Why we collect this data:
 
-In case you create an account to host rooms with our service, we collect the email address you use for sign-up and your CRSid via Raven authentication. This data is necessary for providing the service and authenticating you to your account. You are free to modify your "Full Name".
+When you sign in with Raven, we create a Timeout user account associated to your CRSid. The default full name is retrieved from `the University Lookup Directory <https://help.uis.cam.ac.uk/service/collaboration/lookup>`__, which you are free to modify afterwards. This data is necessary for providing the service and authenticating you to your account.
 
 Data processing details
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -182,11 +182,6 @@ To offer our services, we use the open-source software BigBlueButton, together w
 * Results of votes conducted in sessions
 
 In case a room is **configured to be recorded**, we store the audio, video, chat, and drawing contributions made in that session for an indefinite time. In case you are trying to join a session that is being recorded, we will inform you about this before you join the session and request your consent to the recording. At the moment, it is sadly technically not possible to selectively record only contributions from participants that consented to being recorded. Hence, in case you do not consent to a recording, it is sadly not possible to join such a session.
-
-User accounts
-"""""""""""""
-
-In case you create a user account, we will use the information you enter upon registration (name, email address, CRSid, timestamp) and create an account. This data is not shared with third parties. You can always request the complete deletion of your user account and all associated data, or, prior to that, extraction of all data related to your account. For that, please contact ``support@srcf.net``.
 
 Sharing of Data
 ^^^^^^^^^^^^^^^
