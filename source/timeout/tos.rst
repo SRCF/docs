@@ -221,7 +221,7 @@ The servers we use for this service are provided by the SRCF, a society dedicate
 Changes to this privacy policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We may change this privacy policy from time to time. If we make any changes to this Privacy Policy, we will change the Last Updated date above. If such changes impact the collection and processing of your data, a notice of the changes will be posted along with the revised privacy policy and you will be asked to consent to the changes. We encourage you to visit this page from time to time for the latest on our privacy practices.
+We may change this privacy policy from time to time. If we make any changes to this Privacy Policy, we will change the Last Updated date above. We encourage you to visit this page from time to time for the latest on our privacy practices.
 
 URL generation
 ^^^^^^^^^^^^^^
