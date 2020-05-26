@@ -144,7 +144,7 @@ We operate this service following good practices of system and network engineeri
 Log files
 """""""""
 
-Timeout reduces logging to the necessary minimum. Nonetheless, collectd data may include:
+Timeout reduces logging to the necessary minimum. Nonetheless, collected data may include:
 
 * Type and Version of your Webbrowser
 * Your operating system
