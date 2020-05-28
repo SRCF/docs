@@ -40,19 +40,6 @@ The latest version of this statement can be found on our website at https://docs
 
 Please note: this statement only applies to data held by the SRCF for which it is the data controller. Timeout also processes data for which the SRCF is not the data controller, for example any content within a meeting provided by its participants. You should refer to the privacy statement of the controller of that data where this applies to you as a data subject.
 
-Your rights
-^^^^^^^^^^^
-
-As a user of Timeout, you have the following rights:
-
-* The right to confirmation whether and which personally identifiable information about you is being processed, information about this data, further information on the data processing activities and a copy of all processed data.
-* The right to correction and completion of false or incomplete data about you.
-* The right to delete all of your personally identifiable information, as long as retention is not required to fulfill legal obligations.
-* The right to receive a copy of all data we hold on you and the transfer of this data to another service provider in case you request it.
-* The right to file a complaint with the responsible data protection agency in case you conclude that we processed or distributed your personal data in a way that is not compliant with this privacy policy or legal regulations.
-* The right to know with whom we share your data.
-* The right to retract consent for all further data processing
-
 Summary of collected and processed data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -221,3 +208,19 @@ Changes to this privacy policy
 We may change this privacy policy from time to time. If we make any changes to this Privacy Policy, we will change the Last Updated date above. We encourage you to visit this page from time to time for the latest on our privacy practices.
  
 For more technical information, please `visit this link <https://github.com/ichdasich/bbb-privacy>`__. Note that we may make changes to our platform that would make statements in the above link invalid.
+
+Your rights
+^^^^^^^^^^^
+You have the right to ask for:
+
+* access to your personal information;
+* the correction of any errors in your personal information;
+* the erasure of your personal information;
+* restriction on processing of your personal information pending correction or erasure; and
+* the transfer of your personal information to a third party by electronic means.
+
+Some of these rights are not automatic, and we reserve the right to discuss with you why we might not comply with a request from you to exercise them.
+
+If you have any questions or concerns about your personal information, please get in touch with the designated data protection contact listed at the top of this document. Please note that in dealing with your request, we may also need to share details of your request with entities with whom we have shared your personal data.
+
+If you remain unhappy with the way your information is being handled, or with the response received from us, you have the right to lodge a complaint with the Information Commissioner's Office at Wycliffe House, Water Lane, Wilmslow, SK9 5AF or online at https://ico.org.uk/.
