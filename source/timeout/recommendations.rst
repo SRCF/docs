@@ -33,7 +33,7 @@ Video
 
 * We ask you to avoid using cameras or setting webcam quality to "low", if possible
   
-  * Webcams generate a lot more load on our servers than pure autdio transmission.
+  * Webcams generate a lot more load on our servers than pure audio transmission.
   
   * When sharing your webcam, choose the "low quality" option in the dropdown menu
 
