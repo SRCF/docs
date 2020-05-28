@@ -121,6 +121,8 @@ Why we collect this data:
 
 When you sign in with Raven, we create a Timeout user account associated to your CRSid. The default full name is retrieved from `the University Lookup Directory <https://help.uis.cam.ac.uk/service/collaboration/lookup>`__, which you are free to modify afterwards. This data is necessary for providing the service and authenticating you to your account.
 
+Timeout allows users to share room with other users. Any other user is able to view your name and crsid from within Timeout.
+
 Data processing details
 ^^^^^^^^^^^^^^^^^^^^^^^
 
