@@ -200,9 +200,7 @@ Recordings
 ^^^^^^^^^^
 When a room is created, the host can choose to recording the room. We consider the host of the room to be the data controller, and the SRCF acts as the data processor.
 
-When a room is created that allows recordings (i.e. the recording button is present), BBB will always record the entirety of the session *independently of whether the button is actually pressed*. After a meeting ends, the raw files are processed and cut according to the markers you set when you press stop/start recording.
-
-At the moment, for technical reasons, the raw files are retained indefinitely after the meeting. For this reason, **you may request a retroactive recording of your session, even if you forgot to press the record button**. This policy is likely to change in the future as technology evolves.
+When a room is created that allows recordings (i.e. the recording button is present), BBB will always record the entirety of the session *independently of whether the button is actually pressed*. After a meeting ends, the raw files are processed and cut according to the markers you set when you press stop/start recording. At the moment, for technical reasons, the raw files are retained indefinitely after the meeting. This policy is likely to change in the future as technology evolves.
 
 By default, recordings are not publicly accessible. However, at the discretion of a room's hosts, recording can be made public or shared with others directly via our platform or as downloaded files. If a recording is made public, anyone with the url can access the recording.
 
