@@ -199,6 +199,8 @@ Server location
 
 The servers we use for this service are provided by the SRCF, a society dedicated to providing computing services to all members of the University. All servers used in our service are located in Cambridge.
 
+.. _Recordings:
+
 Recordings
 ^^^^^^^^^^
 When a room is created, the host can choose to recording the room. We consider the host of the room to be the data controller, and the SRCF acts as the data processor.
