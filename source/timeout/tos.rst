@@ -1,7 +1,7 @@
 Terms of Service and Privacy Policy
 -----------------------------------
 
-Last updated: 20/05/2020
+Last updated: 28/05/2020
 
 Terms of Service
 ~~~~~~~~~~~~~~~~
@@ -97,7 +97,7 @@ Why we collect this data:
 
 This data is the core of the web conferencing system, and as such processed by our servers. Of course, this data is only processed in case you use the corresponding service, i.e., explicitly enable your webcam.
 
-For sessions where the host did not configure recordings, all data related to the session is deleted as soon as it ends. Furthermore, there are sessions that are being recorded, e.g., as they are a university lecture the lecturer wants to share with students who could not make it to the live session. In case a session is supposed to be recorded, we will inform you before you join the room, and explicitly request your consent to the recording.
+For sessions where the host did not configure recordings, all data related to the session is deleted shortly after it ends. See the :ref:`Recordings<Recordings>` section for details on how recordings are processed.
 
 Data type: Transfer of data to third parties
 """"""""""""""""""""""""""""""""""""""""""""
@@ -153,7 +153,6 @@ Timeout reduces logging to the necessary minimum. Nonetheless, collected data ma
 * Timestamps of your accesses
 * The IPv4/IPv6 addresses from which you access our service
 * The names of rooms you visit
-* Your phone number if you dial-in via your phone
 * Metadata of the conference system (start/end of sessions, number of users, the name you selected when joining a room)
 
 We collect this data to provide, improve, and secure the service we are providing. Your data will be deleted after seven days, if a longer retention is not necessary to solve immanent technical issues. In any case, it will not be retained longer than legally allowed.
@@ -181,28 +180,13 @@ To offer our services, we use the open-source software BigBlueButton, together w
 * The presentations you upload
 * Results of votes conducted in sessions
 
-In case a room is **configured to be recorded**, we store the audio, video, chat, and drawing contributions made in that session for an indefinite time. In case you are trying to join a session that is being recorded, we will inform you about this before you join the session and request your consent to the recording. At the moment, it is sadly technically not possible to selectively record only contributions from participants that consented to being recorded. Hence, in case you do not consent to a recording, it is sadly not possible to join such a session.
-
 Sharing of Data
 ^^^^^^^^^^^^^^^
 
-General data sharing
-""""""""""""""""""""
-
 We only share your personal data for the reasons outlined below:
 
-* You explicitly consent.
-* If it is necessary to provide this service to you, e.g., when using phone dial-in, you data is shared with our SIP provider speakup.nl
+* If it is necessary to provide this service to you. For example, your name is visible to participants of the same meeting.
 * If we are legally obliged to share this data, e.g., with law enforcement, to comply with applicable law. Up to this point we have not received any requests for data from any law enforcement agency.
-
-Recordings
-""""""""""
-
-When a room is created that allows recordings (ie. the recording button is present), BBB will always record the session *independently of whether the button is actually pressed*. For this reason, **you may request a retroactive recording of your session, even if you forgot to press the record button**. We have chosen to globally enable recordings on our system as we see this as a useful feature, if used correctly. By default, these raw video files are securely stored on our system and deleted after seven days. These raw files are processed and cut according to the markers you set when you press stop/start recording. The outcome of this video processing is what is stored on our systems indefinitely and made available to you (the host) and to any other parties you share it with.
-
-As of this moment, BBB stores recordings on an enumerable URL, which poses a potential security risk to any sensitive content recorded. Your room recording availability settings can be configured in Greenlight (what you use to create rooms) but the URL generated for viewing of this recording is out of Greenlight's control. The best solution in this case is for you to directly request us to download the recording, after which we may distribute it to you and purge it from our system. While we don't expect this to be a major problem (and we will monitor access to room recordings in order to detect any suspicious behavior), it is sensible for you to follow the instructions above if your session includes any sensitive or private content.
-
-By default, recordings are not publicly accessible. However, at the discretion of a room's hosts, recording can be made public or shared with others directly via our platform or as downloaded files. As outlined in the previous section, we will solicit your consent to a session being recorded and potentially shared before you can join a room to be recorded. In case you want to retroactively widthdraw your consent to a recording, please contact ``support@srcf.net``. However, please note that the recording may already have been shared publicly and/or outside of our platform.
 
 Server statistics
 ^^^^^^^^^^^^^^^^^
@@ -218,14 +202,23 @@ Server location
 
 The servers we use for this service are provided by the SRCF, a society dedicated to providing computing services to all members of the University. All servers used in our service are located in Cambridge.
 
+Recordings
+^^^^^^^^^^
+When a room is created, the host can choose to recording the room. We consider the host of the room to be the data controller, and the SRCF acts as the data processor.
+
+When a room is created that allows recordings (i.e. the recording button is present), BBB will always record the entirety of the session *independently of whether the button is actually pressed*. After a meeting ends, the raw files are processed and cut according to the markers you set when you press stop/start recording.
+
+At the moment, for technical reasons, the raw files are retained indefinitely after the meeting. For this reason, **you may request a retroactive recording of your session, even if you forgot to press the record button**. This policy is likely to change in the future as technology evolves.
+
+By default, recordings are not publicly accessible. However, at the discretion of a room's hosts, recording can be made public or shared with others directly via our platform or as downloaded files. If a recording is made public, anyone with the url can access the recording.
+
+Note that the url of the recording is obtained by combining the meeting id with the time the recording was made. Thus, a determined meeting participant may be able to find the recordings of other meetings held in the same room. If this is a concern, you should use a different from for each set of participants.
+
+In case you are trying to join a session that is being recorded, we will inform you about this before you join the session and request your consent to the recording. Since we cannot selectively record only contributions from participants that consented to being recorded, in case you do not consent, it is sadly not possible to join such a session.
+
 Changes to this privacy policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We may change this privacy policy from time to time. If we make any changes to this Privacy Policy, we will change the Last Updated date above. We encourage you to visit this page from time to time for the latest on our privacy practices.
-
-URL generation
-^^^^^^^^^^^^^^
-
-Greenlight generates URLs with the first three letters of your name. There is currently active work being done to change this.
  
 For more technical information, please `visit this link <https://github.com/ichdasich/bbb-privacy>`__. Note that we may make changes to our platform that would make statements in the above link invalid.

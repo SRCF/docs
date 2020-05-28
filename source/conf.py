@@ -8,7 +8,7 @@ import theme
 project = "SRCF"
 author = "The Student-Run Computing Facility"
 
-extensions = []
+extensions = ['sphinx.ext.autosectionlabel']
 
 master_doc = "index"
 
