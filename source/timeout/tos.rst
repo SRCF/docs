@@ -25,11 +25,7 @@ The following privacy applies when using Timeout and all of its related services
 
 .. note::
 
-   All the items listed below are a consequence of the technical set-up of BBB and while they may be modified by us it would take a significant amount of effort and time, which is currently not seen as a priority by those responsible for hosting Timeout.
-
-The SRCF have set up this instance of BigBlueButton as a pilot for faculty, staff and students at Cambridge University to use for online learning during the closure of the university due to measures related to the novel coronavirus pandemic. Timeout only collects information necessary to run this instance successfully and is committed to protecting the privacy of its users. We have prepared this privacy policy to describe our practices regarding the personal information that may be collected while using Timeout.
-
-The SRCF does not use the personal information we collect about you for any commercial or other purpose than providing you with this service. Your privacy is one of our highest priorities when designing Timeout.
+   Many of the items listed below are a consequence of the technical set-up of BBB, which would take a significant amount of effort and time to modify. For more technical information, please `visit this link <https://github.com/ichdasich/bbb-privacy>`__. Note that we may make changes to our platform that would make statements in the above link invalid.
 
 Introduction and contact
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -39,6 +35,16 @@ This service is run by the Student-Run Computing Facility (referred to hencefort
 The latest version of this statement can be found on our website at https://docs.srcf.net/timeout/tos.html. The SRCF is the data controller for data held under this privacy statement. The SRCF Executive is the designated data protection contact, and are in charge of data protection matters. They can be contacted at ``data-protection@srcf.net``.
 
 Please note: this statement only applies to data held by the SRCF for which it is the data controller. Timeout also processes data for which the SRCF is not the data controller, for example any content within a meeting provided by its participants. You should refer to the privacy statement of the controller of that data where this applies to you as a data subject.
+
+Definitions
+^^^^^^^^^^^
+"Personal data" or "personal information" means information relating to you that can be used in some way to identify you, either on its own or in combination with other such information available to its holder.
+
+"Processing" of personal data is any action taken on that data, such as storage, retrieval, organisation, transmission or erasure, and/or as defined by relevant legislation.
+
+"University" means the University of Cambridge.
+
+A "CRSid" is a unique identifier issued to a person by the University. According to the University, CRSids are never reissued, so we assume that a CRSid will uniquely identify the same person forever. Usernames on our computer systems are also assigned to match a person’s CRSid.
 
 Summary of collected and processed data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -201,13 +207,6 @@ By default, recordings are not publicly accessible. However, at the discretion o
 Note that the url of the recording is obtained by combining the meeting id with the time the recording was made. Thus, a determined meeting participant may be able to find the recordings of other meetings held in the same room. If this is a concern, you should use a different from for each set of participants.
 
 In case you are trying to join a session that is being recorded, we will inform you about this before you join the session and request your consent to the recording. Since we cannot selectively record only contributions from participants that consented to being recorded, in case you do not consent, it is sadly not possible to join such a session.
-
-Changes to this privacy policy
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We may change this privacy policy from time to time. If we make any changes to this Privacy Policy, we will change the Last Updated date above. We encourage you to visit this page from time to time for the latest on our privacy practices.
- 
-For more technical information, please `visit this link <https://github.com/ichdasich/bbb-privacy>`__. Note that we may make changes to our platform that would make statements in the above link invalid.
 
 Your rights
 ^^^^^^^^^^^
