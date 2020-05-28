@@ -31,17 +31,14 @@ The SRCF have set up this instance of BigBlueButton as a pilot for faculty, staf
 
 The SRCF does not use the personal information we collect about you for any commercial or other purpose than providing you with this service. Your privacy is one of our highest priorities when designing Timeout.
 
-Data controlling entity and contact
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Introduction and contact
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-This service is run by::
+This service is run by the Student-Run Computing Facility (referred to henceforth as "the SRCF", "the Society", "we", "our" or "us").
 
-   The Student-Run Computing Facility
-   Cambridge University
-   17 Mill lane, CUSU
-   Cambridge CB2 1RX
+The latest version of this statement can be found on our website at https://docs.srcf.net/timeout/tos.html. The SRCF is the data controller for data held under this privacy statement. The SRCF Executive is the designated data protection contact, and are in charge of data protection matters. They can be contacted at ``data-protection@srcf.net``.
 
-You can contact the operators of this service at:  ``support@srcf.net``.
+Please note: this statement only applies to data held by the SRCF for which it is the data controller. Timeout also processes data for which the SRCF is not the data controller, for example any content within a meeting provided by its participants. You should refer to the privacy statement of the controller of that data where this applies to you as a data subject.
 
 Your rights
 ^^^^^^^^^^^
