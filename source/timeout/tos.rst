@@ -63,7 +63,7 @@ We also collect video and audio data during meetings to share with other partici
 
 Please get in touch with the designated data protection contact if you have concerns or queries about any of these stated purposes.
 
-How we obtain and sharing your personal data
+How we obtain and share your personal data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We primarily obtain your personal data through you providing it to us, for example when you sign up as a user. The initial signup process also involves automatic retrieval of your name from `the University Lookup Directory <https://help.uis.cam.ac.uk/service/collaboration/lookup>`__ based on your CRSid, which itself is obtained from the University's Raven service used to authenticate. You are free to modify your name after signing up.
