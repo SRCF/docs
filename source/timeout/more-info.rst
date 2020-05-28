@@ -88,4 +88,6 @@ In order to record a session, you must first turn on "Record sessions" in the Ro
 
 The software is designed to first record the session in its entirety, and then processed and cut after the meeting ends. In particular, the session is recorded even if the "Start recording" button has never been pressed, as long as the "Record sessions" setting is enabled. Thus, if you forget to record the session, the system administrators may be able to help retrieve the recordings nevertheless. On the contrary, if you don't want to be recorded at all, turn off the "Record sessions" setting (it is off by default).
 
+Note that after the meeting, it may take a while for the recording to be processed. It will not show up immediately in the interface.
+
 Users joining a meeting for which "Record sessions" is enabled are notified before they join. If no such notification is present, you can safely assume we are not recording you (of course, we make no guarantees about whether another participants is pointing a camera at their screens).
