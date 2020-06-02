@@ -43,7 +43,6 @@ Why should I use this over Zoom or Teams?
 
 See our :ref:`comparison of Timeout vs. other popular platforms <comparison>`.
 
-
 This is great! What can I use it for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

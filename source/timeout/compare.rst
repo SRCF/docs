@@ -1,4 +1,4 @@
-.. comparison:
+.. _comparison:
 
 Comparing Timeout with Zoom/Teams/Jitsi
 ---------------------------------------
@@ -9,7 +9,7 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
    :widths: 25 25 25 25 25 25
    :header-rows: 1
 
-   * - X
+   * - 
      - Timeout
      - Zoom
      - Teams
