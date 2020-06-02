@@ -38,6 +38,7 @@ Timeout
    timeout/index
    timeout/more-info
    timeout/recommendations
+   timeout/compare
    timeout/tos
    timeout/changelog
 
