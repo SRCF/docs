@@ -47,7 +47,8 @@ Why should I use this over Zoom or Teams?
 * It has constant support from your friendly SRCF sysadmins
 * It’s open source and driven by an excellent developer community
 * It’s FREE!
-* It’s very convenient to use and built by students!
+* It’s built by the SRCF who have 21 years of experience providing services to the University community
+
 
 This is great! What can I use it for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,6 +83,10 @@ If you need help, and have already :ref:`read our recommendations <recommendatio
 * Which audio devices were used (headset? microphone? speakers?)
 * When the problem occurred
 * The server used (visible in the URL)
+
+Why does this exist?
+~~~~~~~~~~~~~~~~~~~~
+Timeout came about in mid-May when members of the SRCF were increasingly frustrated by the University's embarassingly inadequate response to online teaching. UIS has failed to deliver a suitable platform for use and the University did not go through with purchasing a Zoom license for all departments, thankfully (did we mention the `security risks <https://www.vice.com/en_us/article/qjdqgv/hackers-selling-critical-zoom-zero-day-exploit-for-500000>`__?..). In doing so, supervisors or departments are forced to purchase licenses to other platforms resulting in inconsistency and putting members of the University at risk. The SRCF decided to do something about this..and so Timeout was born!
 
 Contributions and thanks
 ~~~~~~~~~~~~~~~~~~~~~~~~
