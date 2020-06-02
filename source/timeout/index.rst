@@ -31,6 +31,7 @@ Why should I use Timeout?
 Timeout is built by the SRCF, a team of volunteers dedicated to providing robust and secure computing services for all University members. We've been around since 1999 and we host over 800 active society websites and over 1000 personal user accounts. If that's not enough to convince you, perhaps these might:
 
 * Timeout is **fast** - our servers are located in Cambridge so your traffic will not have to go to some data center in the US. 
+* You can invite anyone - no requirement on participants having Raven
 * Timeout is **free** for all
 * Timeout does not have any time limits, restrictions or any such nonsense
 * Timeout is **ridiculously easy** to use
@@ -40,14 +41,7 @@ Timeout is built by the SRCF, a team of volunteers dedicated to providing robust
 Why should I use this over Zoom or Teams?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* As mentioned, we have premium features that Teams lacks
-* There is NO NEED to install any apps or download anything – it’s all in your browser
-* It’s mobile friendly as it runs on your web browser!
-* It does not have any known security issues
-* It has constant support from your friendly SRCF sysadmins
-* It’s open source and driven by an excellent developer community
-* It’s FREE!
-* It’s built by the SRCF who have 21 years of experience providing services to the University community
+See our :ref:`comparison of Timeout vs. other popular platforms <comparison>`.
 
 
 This is great! What can I use it for?
