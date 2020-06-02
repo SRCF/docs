@@ -43,7 +43,7 @@ Why should I use this over Zoom or Teams?
 * As mentioned, we have premium features that Teams lacks
 * There is NO NEED to install any apps or download anything – it’s all in your browser
 * It’s mobile friendly as it runs on your web browser!
-* It does not have vulnerabilities or major security issues
+* It does not have any known security issues
 * It has constant support from your friendly SRCF sysadmins
 * It’s open source and driven by an excellent developer community
 * It’s FREE!
