@@ -66,7 +66,7 @@ Please get in touch with the designated data protection contact if you have conc
 How we obtain and share your personal data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We primarily obtain your personal data through you providing it to us, for example when you sign up as a user. The initial signup process also involves automatic retrieval of your name from `the University Lookup Directory <https://help.uis.cam.ac.uk/service/collaboration/lookup>`__ based on your CRSid, which itself is obtained from the University's Raven service used to authenticate. You are free to modify your name after signing up.
+We primarily obtain your personal data through publicly accessible information via the University Lookup. The initial signup process  involves automatic retrieval of your name from `the University Lookup Directory <https://help.uis.cam.ac.uk/service/collaboration/lookup>`__ based on your CRSid, which itself is obtained from the University's Raven service used to authenticate. You details are tied to the Lookup directory, so if you wish to change your name you are free to do so by editing your name on your Lookup page.
 
 Your name and CRSid can be viewed by all users.
 

@@ -39,6 +39,7 @@ Timeout
    timeout/more-info
    timeout/recommendations
    timeout/tos
+   timeout/changelog
 
 Personal accounts
 ~~~~~~~~~~~~~~~~~
