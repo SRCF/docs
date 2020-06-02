@@ -31,13 +31,13 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
      - No!
      - Yes
      - Yes
-     - No
+     - No (app is needed on mobile)
      - No
    * - Guests need Raven/an account?
      - No!
-     - Yes
-     - Yes
-     - Yes
+     - Not strictly
+     - Yes (mostly)
+     - No - but requires approval
      - No
    * - Mobile friendly?
      - Yes!
@@ -46,7 +46,7 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
      - No
      - Yes
    * - Other features
-     - Breakout rooms, interactive polls, live YouTube integration, waiting rooms, passwords for sessions
+     - Breakout rooms, interactive polls, live YouTube integration, waiting rooms, passwords for sessions, private and public chat
      - Simultaneous multi-screenshare (not on mobile/breakout rooms)
      - None could be found
      - Integrated with Google calendar and Gmail
@@ -54,7 +54,7 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
    * - Other notes
      - Fast and hosted in Cambridge, free for all University members, no known security issues
      - Proprietary, not free, requires software install to work properly
-     - Lacking features, not open to non-Raven guests
+     - Lacking features, not easily open to non-Raven guests, can only display 8 people simultaneously
      - Lacking teaching-oriented features, requires Google account
      - No breakout rooms, open source
 
