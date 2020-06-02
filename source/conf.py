@@ -19,6 +19,7 @@ html_sidebars = {"**": ["localtoc.html", "relations.html", "searchbox.html"]}
 html_theme_options = {
     "footer_contributors": True,
 }
+html_use_opensearch = "https://docs.srcf.net/"
 template_bridge = "theme.Jinja2TemplateBridge"
 
 
