@@ -46,10 +46,7 @@ class Jinja2TemplateBridge(BuiltinTemplateLoader):
         return authors
 
 
-class BootstrapHTMLTranslator(HTMLTranslator):
-
-    def visit_bullet_list(self, node):
-        super(BootstrapHTMLTranslator, self).visit_bullet_list(node)
+class BootstrapHTMLTranslator(HTMLTranslator, object):
 
     def visit_admonition(self, node, name=""):
         cls = None
