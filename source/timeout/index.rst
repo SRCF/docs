@@ -19,7 +19,9 @@ Timeout is the SRCF's solution to a free, robust and multipurpose video conferen
 * Core video conferencing capabilities (video, audio)
 * Live screensharing
 * A fully functional web client
+* Interacive live polling
 * Interactive whiteboard
+* Support for live YouTube video integration
 * Global and private chat
 * Ability to split groups into breakout rooms
 
@@ -35,6 +37,17 @@ Timeout is built by the SRCF, a team of volunteers dedicated to providing robust
 * Timeout runs in your browser - no additional software needed
 * Timeout does not spy on you ;)
 
+Why should I use this over Zoom or Teams?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* As mentioned, we have premium features that Teams lacks
+* There is NO NEED to install any apps or download anything – it’s all in your browser
+* It’s mobile friendly as it runs on your web browser!
+* It does not have vulnerabilities or major security issues
+* It has constant support from your friendly SRCF sysadmins
+* It’s open source and driven by an excellent developer community
+* It’s FREE!
+* It’s very convenient to use and built by students!
 
 This is great! What can I use it for?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
