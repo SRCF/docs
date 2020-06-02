@@ -86,7 +86,7 @@ If you need help, and have already :ref:`read our recommendations <recommendatio
 
 Why does this exist?
 ~~~~~~~~~~~~~~~~~~~~
-Timeout came about in mid-May when members of the SRCF were increasingly frustrated by the University's embarassingly inadequate response to online teaching. UIS has failed to deliver a suitable platform for use and the University did not go through with purchasing a Zoom license for all departments, thankfully (did we mention the `security risks <https://www.vice.com/en_us/article/qjdqgv/hackers-selling-critical-zoom-zero-day-exploit-for-500000>`__?..). In doing so, supervisors or departments are forced to purchase licenses to other platforms resulting in inconsistency and putting members of the University at risk. The SRCF decided to do something about this..and so Timeout was born!
+Read more about this on our `blog <https://www.blog.srcf.net>`__!
 
 Contributions and thanks
 ~~~~~~~~~~~~~~~~~~~~~~~~
