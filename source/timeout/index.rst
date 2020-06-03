@@ -7,7 +7,7 @@ Timeout
 
 .. warning::
 
-   Timeout is still in its *beta phase*. We are gradually improving and rolling out new features. Though we have taken every step to minimize downtime, we cannot guarantee that the service will be available 24/7 (excluding our scheduled Sunday maintenance hours). Please `report <mailto:soc-srcf-admin@lists.cam.ac.uk>`__ all issues and problems to us - this system thrives on feedback and it is only with your help that we can make Timeout better for all.
+   Timeout is still in its *beta phase*. We are gradually improving and rolling out new features. Though we have taken every step to minimize downtime, we cannot guarantee that the service will be available 24/7 (excluding our scheduled Sunday maintenance hours). Please `report <mailto:support@srcf.net>`__ all issues and problems to us - this system thrives on feedback and it is only with your help that we can make Timeout better for all.
 
 What is Timeout?
 ~~~~~~~~~~~~~~~~
@@ -24,6 +24,8 @@ Timeout is the SRCF's solution to a free, robust and multipurpose video conferen
 * Support for live YouTube video integration
 * Global and private chat
 * Ability to split groups into breakout rooms
+
+Want to request a feature? You can do so by emailing ``support@srcf.net``.
 
 Why should I use Timeout?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,7 +69,7 @@ Timeout is entirely run and hosted by a team of dedicated volunteers. If you'd b
 Reporting problems and getting help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you've encountered any problem, it is most helpful if you report this to us so we can fix it. Report problems to us at ``soc-srcf-admin@lists.cam.ac.uk``.
+If you've encountered any problem, it is most helpful if you report this to us so we can fix it. Report problems to us at ``support@srcf.net``.
 
 If you need help, and have already :ref:`read our recommendations <recommendations>` regarding the use of Timeout, then please submit a request, providing the following information in your email:
 

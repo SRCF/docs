@@ -47,10 +47,10 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - Fully
    * - Works in browser (mobile)
      - Fully
-     - No
-     - No
-     - No
-     - No
+     - No (app required)
+     - No (app required)
+     - No (app required)
+     - No (app required)
    * - Breakout rooms
      - Yes
      - Yes
@@ -78,14 +78,14 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
    * - Highlighted features
      - Interactive polls, live YouTube integration
      - Simultaneous multi-screenshare (not on mobile/breakout rooms)
-     - 
+     - Live YouTube integration, native Outlook integration
      - Native Google calendar and Gmail integration
-     - 
+     - Live YouTube integration, live streaming
    * - Other notes
-     - Interactive polls, live YouTube integration, hosted in Cambridge
-     - Simultaneous multi-screenshare (not on mobile/breakout rooms)
+     - Hosted in Cambridge
+     - 
      - Can display at most 8 people simultaneously
-     - Lacks common teaching features: whiteboard, private/public chat, permissions
+     - Lacks common teaching features: whiteboard, private chat, permissions/roles
      - UI is cleaner for 1-1 meetings
 
 And also remember: Timeout is built by the SRCF who have 21 years of experience providing services to the Cambridge community :)
