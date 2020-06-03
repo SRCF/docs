@@ -4,6 +4,7 @@ Changelog
 ---------
 
 3/6/2020
+~~~~~~~~
 
 * Fixed incorrect footer
 * Fixed some stale links
@@ -11,7 +12,7 @@ Changelog
 * Removed the annoying alone sound
 
 2/6/2020
-^^^^^^^^^
+~~~~~~~~
 
 * Added support for alumni emails
 * Improved the Lookup API call
@@ -19,6 +20,6 @@ Changelog
 * Updated to Greenlight 2.6.2
 
 26/5/2020
-^^^^^^^^^^
+~~~~~~~~~
 
 * Added ability for recording to be toggleable per room
