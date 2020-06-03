@@ -1,9 +1,9 @@
 .. _comparison:
 
-Comparing Timeout with Zoom/Teams/Jitsi
----------------------------------------
+Comparing Timeout with other platforms
+--------------------------------------
 
-Timeout runs on the open source software BigBlueButton and as such has both several benefits and drawbacks, most of which are outlined below. Comments marked in * are not normally true and are rather a result of pandemic-related extensions.
+Timeout runs on the open source software Greenlight/BigBlueButton. Comparison with other video conferencing platforms is presented below to the best of our knowledge. Comments marked in * are not normally true and are rather a result of pandemic-related extensions.
 
 .. list-table:: Comparison
    :widths: 25 25 25 25 25 25
@@ -12,7 +12,7 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
    * - 
      - Timeout
      - Zoom
-     - Teams
+     - MS Teams
      - Google Meet
      - Jitsi Meet
    * - Maximum number of users
@@ -22,38 +22,56 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
      - 250*
      - 75
    * - Time limit
-     - Non!
+     - None
      - 40 minutes
      - None
      - None
      - None
-   * - Need to install software?
-     - No
-     - Yes
-     - Yes
-     - No (app is needed on mobile)
-     - No
    * - Guests need Raven/an account?
      - No
      - Not strictly
      - Yes (mostly)
      - No - but requires approval
      - No
-   * - Mobile friendly?
+   * - Works in (desktop) browser
      - Yes
-     - Eh
-     - Eh
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+   * - Mobile support
+     - Works in browser
+     - Mobile app
+     - Mobile app
+     - Mobile app
+     - Mobile app
+   * - Breakout rooms
+     - Yes
+     - Yes
+     - Yes
+     - No
+     - No
+   * - Open Source
+     - Yes
+     - No
+     - No
      - No
      - Yes
-   * - Other features
+   * - Native recording support
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - No
+   * - Other notes
+     - Hosted in Cambridge. Provided by the SRCF, with 21 years of experience serving the Cambridge community.
+     -
+     - Can display at most 8 people simultaneously
+     - Native Google calendar and Gmail integration
+     - No accounts needed
+..   * - Other features
      - Breakout rooms, interactive polls, live YouTube integration, waiting rooms, passwords for sessions, private and public chat
      - Simultaneous multi-screenshare (not on mobile/breakout rooms)
      - None could be found
      - Integrated with Google calendar and Gmail
      - Passwords for sessions, hand-raising signal
-   * - Other notes
-     - Fast and hosted in Cambridge, free for all University members. Provided by the SRCF, with 21 years of experience serving the Cambridge community.
-     - Proprietary, not free, requires software install to work properly
-     - Lacking features, not easily open to non-Raven guests, can only display 8 people simultaneously
-     - Lacking teaching-oriented features, requires Google account
-     - No breakout rooms, open source
