@@ -48,6 +48,15 @@ class Jinja2TemplateBridge(BuiltinTemplateLoader):
 
 class BootstrapHTMLTranslator(HTMLTranslator, object):
 
+    def visit_table(self, node):
+        node.attributes["classes"].extend(["table", "table-bordered"])
+        super(BootstrapHTMLTranslator, self).visit_table(node)
+
+    def visit_row(self, node):
+        if node.parent.tagname == "thead":
+            node.attributes["classes"].append("thead-light")
+        super(BootstrapHTMLTranslator, self).visit_row(node)
+
     def visit_admonition(self, node, name=""):
         cls = None
         if name:
