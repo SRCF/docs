@@ -22,25 +22,25 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
      - 250*
      - 75
    * - Time limit
-     - None!
+     - Non!
      - 40 minutes
      - None
      - None
      - None
    * - Need to install software?
-     - No!
+     - No
      - Yes
      - Yes
      - No (app is needed on mobile)
      - No
    * - Guests need Raven/an account?
-     - No!
+     - No
      - Not strictly
      - Yes (mostly)
      - No - but requires approval
      - No
    * - Mobile friendly?
-     - Yes!
+     - Yes
      - Eh
      - Eh
      - No
@@ -52,11 +52,8 @@ Timeout runs on the open source software BigBlueButton and as such has both seve
      - Integrated with Google calendar and Gmail
      - Passwords for sessions, hand-raising signal
    * - Other notes
-     - Fast and hosted in Cambridge, free for all University members, no known security issues
+     - Fast and hosted in Cambridge, free for all University members. Provided by the SRCF, with 21 years of experience serving the Cambridge community.
      - Proprietary, not free, requires software install to work properly
      - Lacking features, not easily open to non-Raven guests, can only display 8 people simultaneously
      - Lacking teaching-oriented features, requires Google account
      - No breakout rooms, open source
-
-And also remember: Timeout is built by the SRCF who have 21 years of experience providing services to the University community
-
