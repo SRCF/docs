@@ -69,6 +69,12 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - Yes
      - Yes
      - No
+   * - Virtual background
+     - No
+     - Yes
+     - Limited (recent CPUs only)
+     - No
+     - No
    * - Highlighted features
      - Interactive polls, live YouTube integration
      - Simultaneous multi-screenshare (not on mobile/breakout rooms)
