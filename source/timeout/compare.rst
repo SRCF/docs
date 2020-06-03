@@ -3,7 +3,7 @@
 Comparing Timeout with other platforms
 --------------------------------------
 
-Timeout runs on the open source software Greenlight/BigBlueButton. Comparison with other video conferencing platforms is presented below to the best of our knowledge. Comments marked in * are not normally true and are rather a result of pandemic-related extensions.
+Timeout runs on the open source software Greenlight/BigBlueButton and as such has both several benefits and drawbacks compared to other existing platforms. Comments marked in * are not normally true and are rather a result of pandemic-related extensions.
 
 .. list-table:: Comparison
    :widths: 25 25 25 25 25 25
@@ -15,40 +15,46 @@ Timeout runs on the open source software Greenlight/BigBlueButton. Comparison wi
      - MS Teams
      - Google Meet
      - Jitsi Meet
-   * - Maximum number of users
-     - 150 per session
-     - 100*
+   * - Maximum number of users per session
+     - 150
+     - 100
      - 250
-     - 250*
+     - 100
      - 75
    * - Time limit
      - None
-     - Depends on plan
+     - 40 min free
      - None
+     - 1 hour free
      - None
-     - None
+   * - Price
+     - Free forever
+     - Pay-to-use (free version limited)
+     - Free within the University, otherwise paid
+     - Pay-to-use (free version limited)
+     - Free forever   
    * - Guests need Raven/an account?
      - No
-     - Not strictly
-     - Yes (mostly)
-     - No - but requires approval
      - No
-   * - Works in (desktop) browser
-     - Yes
-     - Yes
-     - Yes
-     - Yes
-     - Yes
+     - No - non-Raven permitted but fussy
+     - No - but external users require approval
+     - No
+   * - Works without external softare?
+     - Full
+     - Limited
+     - Limited
+     - Fully
+     - Fully
    * - Mobile support
-     - Works in browser
-     - Mobile app
-     - Mobile app
-     - Mobile app
-     - Mobile app
+     - No external app => uses browser
+     - External mobile app required
+     - External mobile app required
+     - External mobile app required
+     - External mobile app required
    * - Breakout rooms
      - Yes
      - Yes
-     - Yes
+     - No
      - No
      - No
    * - Open Source
@@ -64,14 +70,10 @@ Timeout runs on the open source software Greenlight/BigBlueButton. Comparison wi
      - Yes
      - No
    * - Other notes
-     - Hosted in Cambridge. Provided by the SRCF, with 21 years of experience serving the Cambridge community.
-     -
-     - Can display at most 8 people simultaneously
-     - Native Google calendar and Gmail integration
-     - No accounts needed
-..   * - Other features
-     - Breakout rooms, interactive polls, live YouTube integration, waiting rooms, passwords for sessions, private and public chat
-     - Simultaneous multi-screenshare (not on mobile/breakout rooms)
-     - None could be found
-     - Integrated with Google calendar and Gmail
-     - Passwords for sessions, hand-raising signal
+     - Interactive polls, live YouTube integration, hosted in Cambridge
+     - Simultaneous multi-screenshare (not on mobile/breakout rooms), virtual backgrounds
+     - Can display at most 8 people simultaneously, limited virtual backgrounds
+     - Native Google calendar and Gmail integration, lacking teaching features
+     - UI is cleaner for 1-1 meetings
+
+And also remember: Timeout is built by the SRCF who have 21 years of experience providing services to the Cambridge community :)
