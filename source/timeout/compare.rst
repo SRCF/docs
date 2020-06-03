@@ -90,7 +90,7 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
    * - Polls
      - Yes
      - Yes
-     - Yes
+     - Limited
      - No
      - No
    * - Private chat
