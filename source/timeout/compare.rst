@@ -23,7 +23,7 @@ Timeout runs on the open source software Greenlight/BigBlueButton. Comparison wi
      - 75
    * - Time limit
      - None
-     - 40 minutes
+     - Depends on plan
      - None
      - None
      - None
