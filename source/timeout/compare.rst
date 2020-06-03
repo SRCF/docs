@@ -84,7 +84,7 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
    * - Whiteboard
      - Yes
      - Yes
-     - Yes
+     - Yes (requires external integration)
      - No
      - No
    * - Polls
@@ -96,11 +96,11 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
    * - Private chat
      - Yes
      - Yes
-     - Yes
+     - Yes (cannot toggle on/off)
      - No
-     - Yes
+     - Yes (cannot toggle on/off)
    * - Other features
-     -
+     - Live captioning
      - Simultaneous multi-screenshare (not on mobile/breakout rooms)
      - Native Outlook integration
      - Native Google calendar and Gmail integration
