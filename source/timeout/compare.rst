@@ -39,18 +39,18 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - No - non-Raven permitted but fussy
      - No - but external users require approval
      - No
-   * - Works without external softare?
+   * - Works in browser (desktop)
      - Fully
      - Limited
      - Limited
      - Fully
      - Fully
-   * - External mobile app required?
+   * - Works in browser (mobile)
+     - Fully
      - No
-     - Yes
-     - Yes
-     - Yes
-     - Yes
+     - No
+     - No
+     - No
    * - Breakout rooms
      - Yes
      - Yes
