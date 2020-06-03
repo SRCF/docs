@@ -50,7 +50,7 @@ Guidelines for using Timeout
 * Rooms can be further configured by clicking the gear next to the participant list → *Restrict viewer rights*.
 * Encouraging your participants to respect muting and excess noise is much better than outright banning microphones
 * The use the mute function is recommended in order to avoid sending too much background noise. This helps with intelligibility and ensures better transmission of the sound of the person speaking.
-* Try, if possible, to either set webcam quality to "low" or avoid using them at all. For teaching, the teacher should be the only one with webcams or the student if they need to clarity something. For general meetings, you may use webcams provided that you set them to "low" and there are less than 8 participants. Otherwise, refrain from using webcams.
+* Webcam use is allowed and encouraged provided that the webcam quality is set to "medium" or lower.
 
 Key features
 ~~~~~~~~~~~~

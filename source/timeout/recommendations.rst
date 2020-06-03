@@ -31,9 +31,9 @@ Video
   
   * If there are any problems, please switch browsers in accordance with our browser recommendations above.
 
-* We ask you to avoid using cameras or setting webcam quality to "low", if possible
+* We ask you to set webcam quality to "medium" or lower, if possible
   
   * Webcams generate a lot more load on our servers than pure audio transmission.
   
-  * When sharing your webcam, choose the "low quality" option in the dropdown menu
+  * When sharing your webcam, choose the "medium quality" or "low quality" option in the dropdown menu
 
