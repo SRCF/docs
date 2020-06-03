@@ -79,7 +79,7 @@ If you need help, and have already :ref:`read our recommendations <recommendatio
 
 Why does this exist?
 ~~~~~~~~~~~~~~~~~~~~
-Read more about this on our `blog <https://www.blog.srcf.net>`__!
+Read more about this on our `blog <https://blog.srcf.net>`__!
 
 Contributions and thanks
 ~~~~~~~~~~~~~~~~~~~~~~~~
