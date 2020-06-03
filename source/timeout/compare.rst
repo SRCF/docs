@@ -40,17 +40,17 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - No - but external users require approval
      - No
    * - Works without external softare?
-     - Full
+     - Fully
      - Limited
      - Limited
      - Fully
      - Fully
-   * - Mobile support
-     - No external app => uses browser
-     - External mobile app required
-     - External mobile app required
-     - External mobile app required
-     - External mobile app required
+   * - External mobile app required?
+     - No
+     - Yes
+     - Yes
+     - Yes
+     - Yes
    * - Breakout rooms
      - Yes
      - Yes
