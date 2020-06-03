@@ -28,11 +28,11 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - 1 hour free
      - None
    * - Price
-     - Free forever
+     - Free
      - Pay-to-use (free version limited)
-     - Free within the University, otherwise paid
+     - Paid by the University
      - Pay-to-use (free version limited)
-     - Free forever   
+     - Free
    * - Guests need Raven/an account?
      - No
      - No
@@ -75,17 +75,41 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - Limited (recent CPUs only)
      - No
      - No
-   * - Highlighted features
-     - Interactive polls, live YouTube integration
+   * - Live Youtube integration
+     - Yes
+     - No
+     - Yes
+     - No
+     - Yes
+   * - Whiteboard
+     - Yes
+     - Yes
+     - Yes
+     - No
+     - No
+   * - Polls
+     - Yes
+     - Yes
+     - Yes
+     - No
+     - No
+   * - Private chat
+     - Yes
+     - Yes
+     - Yes
+     - No
+     - Yes
+   * - Other features
+     -
      - Simultaneous multi-screenshare (not on mobile/breakout rooms)
-     - Live YouTube integration, native Outlook integration
+     - Native Outlook integration
      - Native Google calendar and Gmail integration
-     - Live YouTube integration, live streaming
+     - Live streaming
    * - Other notes
      - Hosted in Cambridge
-     - 
+     -
      - Can display at most 8 people simultaneously
-     - Lacks common teaching features: whiteboard, private chat, permissions/roles
+     - Lacks permissions/roles
      - UI is cleaner for 1-1 meetings
 
 And also remember: Timeout is built by the SRCF who have 21 years of experience providing services to the Cambridge community :)
