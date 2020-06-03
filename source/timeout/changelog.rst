@@ -3,6 +3,13 @@
 Changelog
 ---------
 
+3/6/2020
+
+* Fixed incorrect footer
+* Fixed some stale links
+* Now on latest version of front-end
+* Removed the annoying alone sound
+
 2/6/2020
 ^^^^^^^^^
 
