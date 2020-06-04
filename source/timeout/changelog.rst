@@ -3,6 +3,11 @@
 Changelog
 ---------
 
+4/6/2020
+~~~~~~~~
+
+* Applied Grafana security update
+
 3/6/2020
 ~~~~~~~~
 
