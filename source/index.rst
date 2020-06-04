@@ -3,7 +3,7 @@ SRCF documentation
 
 .. warning::
    
-   For more information regarding Timeout, our video conferencing service, please scroll down and access the relevant documentation under ``Timeout``.
+   For more information regarding Timeout, our video conferencing service, please scroll down and access the relevant documentation under `Timeout`_.
 
 Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services.
 
