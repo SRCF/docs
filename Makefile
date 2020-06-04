@@ -8,6 +8,8 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 
+-include Makefile.local
+
 default: html
 .PHONY: default Makefile
 
