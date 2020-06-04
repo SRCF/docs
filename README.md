@@ -15,4 +15,4 @@ Linux/macOS: `make html`
 
 2.  Set variables, e.g.:
 
-    BUILDDIR = /public/home/spqr2/srcf-docs
+        BUILDDIR = /public/home/spqr2/srcf-docs
