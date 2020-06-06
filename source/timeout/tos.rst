@@ -8,11 +8,11 @@ Terms of Service
 
 As with any other service we offer, use of Timeout is subject to specific terms of service. Our `general terms of service <https://www.srcf.net/tos>`__ still applies.
 
-* As Timeout is still in its early stages, please understand that downtime may occur at any given moment. We have worked hard on putting measures in place to prevent this, but given that the SRCF itself is still learning the ins and outs of this new system, we ask you to recognize this as a possibility. There is an expected vulnerability period from 2-3AM on Sundays, as is the case for our other services.
-* Timeout is a service we foresee being heavily used. For this reason, please do not leave meetings open for hours on end or set your webcam quality to anything excessive for long periods of time. Rememeber that the quality of Timeout is in part dependent on its users and whether they respect others using it.
+* There is an expected vulnerability period from 2-3AM on Sundays, as is the case for our other services.
+* Timeout is a service we foresee being heavily used. For this reason, please do not abuse our system, for example by creating 10 different rooms and running them all at the same time. If you want to host a large-scale event, email us at ``support@srcf.net`` so that we can better support you. Rememeber that the quality of Timeout is in part dependent on its users and whether they respect others using it.
 * Do not misuse our systems. Any attempt to backdoor, tamper with, or access unauthorized information will be swiftly dealt with and reported to the relevant authorities.
 * You are responsible for maintaining the security of your account. As is stated in our general ToS, we are not responsible for any attempts to access your account, including all possible events occurring following said access.
-* Use of Timeout for work not directly related to the University is allowed as we understand the value of keeping in touch with friends and family during these trying times. However, please be sensible about this.
+* Use of Timeout for purposes not directly related to the University is allowed and encouraged as we understand the value of keeping in touch with friends and family during these trying times. Societies are more than welcome to use it to host their meetings and events.
 
 Privacy policy
 ~~~~~~~~~~~~~~
