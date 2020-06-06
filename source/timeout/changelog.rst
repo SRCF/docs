@@ -3,6 +3,12 @@
 Changelog
 ---------
 
+6/6/2020
+~~~~~~~~
+
+* Updated BBB to 2.2.16
+* Using SRCF Goose for authentication
+
 4/6/2020
 ~~~~~~~~
 
