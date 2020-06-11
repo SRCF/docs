@@ -44,6 +44,13 @@ The default presentation that comes with each meeting has a few empty slides and
 
    If you wish to use pen and paper, we recommend entering the call using a second device with a camera (disabling the microphone and muting the speakers to avoid echo) and turning it on, perhaps propped on some books or a stand. If you have an overhead camera, you can feed this to your laptop as a camera. For those who are more tech-savvy, you may use software that can toggle video inputs on-the-fly, allowing you to set any stream as your video source, be it text, an external camera, or your webcam. A future version of BBB will allow multiple cameras per user.
 
+Obtaining a custom URL
+^^^^^^^^^^^^^^^^^^^^^^
+
+A custom URL makes it easy for participants to remember your meeting location. You can have URLs of the form ``https://timeout.srcf.net/srcf`` or ``https://timeout.srcf.net/foobar``. Email us at ``support@srcf.net`` with your request.
+
+If you intend to use your meeting URL for a large event this is highly recommended. For such one-off events, it is best to add a redirect to your meeting URL rather than us creating a custom one for you.
+
 Guidelines for using Timeout
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

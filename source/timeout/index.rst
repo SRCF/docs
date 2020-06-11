@@ -7,7 +7,7 @@ Timeout
 
 .. warning::
 
-   Timeout is still in its *beta phase*. We are gradually improving and rolling out new features. Though we have taken every step to minimize downtime, we cannot guarantee that the service will be available 24/7 (excluding our scheduled Sunday maintenance hours). Please `report <mailto:support@srcf.net>`__ all issues and problems to us - this system thrives on feedback and it is only with your help that we can make Timeout better for all.
+   Timeout is still in its *beta phase*. Please `report <mailto:support@srcf.net>`__ all issues and problems to us - this system thrives on feedback and it is only with your help that we can make Timeout better for all.
 
 What is Timeout?
 ~~~~~~~~~~~~~~~~
@@ -24,6 +24,7 @@ Timeout is the SRCF's solution to a free, robust and multipurpose video conferen
 * Support for live YouTube video integration
 * Global and private chat
 * Ability to split groups into breakout rooms
+* A custom URL for your meeting
 
 Want to request a feature? You can do so by emailing ``support@srcf.net``.
 
