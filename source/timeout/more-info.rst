@@ -47,9 +47,9 @@ The default presentation that comes with each meeting has a few empty slides and
 Obtaining a custom URL
 ^^^^^^^^^^^^^^^^^^^^^^
 
-A custom URL makes it easy for participants to remember your meeting location. You can have URLs of the form ``https://timeout.srcf.net/srcf`` or ``https://timeout.srcf.net/foobar``. Email us at ``support@srcf.net`` with your request.
+A custom URL makes it easy for participants to remember your meeting location. You can have URLs of the form ``https://timeout.srcf.net/srcf`` or ``https://timeout.srcf.net/foobar``. Request one if you intend to have a meeting room being used for a defined purpose multiple times. Email us at ``support@srcf.net`` with your request.
 
-If you intend to use your meeting URL for a large event this is highly recommended. For such one-off events, it is best to add a redirect to your meeting URL rather than us creating a custom one for you.
+For one-off events, it is best to add a redirect to your meeting URL rather than us creating a custom one for you.
 
 Guidelines for using Timeout
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
