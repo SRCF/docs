@@ -21,7 +21,7 @@ Timeout is the SRCF's solution to a free, robust and multipurpose video conferen
 * A fully functional web client
 * Interacive live polling
 * Interactive whiteboard
-* Support for live YouTube video integration
+* Support for live YouTube, Vimeo, Twitch, Facebook and DailyMotion integration
 * Global and private chat
 * Ability to split groups into breakout rooms
 * A custom URL for your meeting

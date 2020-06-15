@@ -39,6 +39,12 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - No - non-Raven permitted but fussy
      - No - but external users require approval
      - No
+   * - Room management
+     - Yes and per-room settings available
+     - Yes
+     - No 
+     - No
+     - No
    * - Works in browser (desktop)
      - Fully
      - Limited
@@ -69,18 +75,12 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - Yes
      - Yes
      - No
-   * - Virtual background
+   * - Live video integration
+     - YouTube, Facebook, Twitch, Vimeo, DailyMotion, `others <https://www.npmjs.com/package/react-player>`__
      - No
-     - Yes
-     - Limited (recent CPUs only)
+     - YouTube only, pause/play not broadcasted
      - No
-     - No
-   * - Live Youtube integration
-     - Yes
-     - No
-     - Yes
-     - No
-     - Yes
+     - YouTube only
    * - Whiteboard
      - Yes
      - Yes
@@ -100,13 +100,13 @@ Timeout runs on the open source software Greenlight/BigBlueButton and as such ha
      - No
      - Yes (cannot toggle on/off)
    * - Other features
-     - Live captioning
+     - Live captioning, external live streaming
      - Simultaneous multi-screenshare (not on mobile/breakout rooms)
      - Native Outlook integration
      - Native Google calendar and Gmail integration
      - Live streaming
    * - Other notes
-     - Hosted in Cambridge
+     - Hosted in Cambridge, BigBlueButton offers best teaching-oriented experience
      -
      - Can display at most 8 people simultaneously
      - Lacks permissions/roles
