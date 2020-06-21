@@ -6,7 +6,7 @@ Last updated: 28/05/2020
 Terms of Service
 ~~~~~~~~~~~~~~~~
 
-As with any other service we offer, use of Timeout is subject to specific terms of service. Our `general terms of service <https://www.srcf.net/tos>`__ still applies.
+As with any other service we offer, use of Timeout is subject to specific terms of service. Our `general terms of service <https://www.srcf.net/tos>`__ still apply.
 
 * There is an expected vulnerability period from 2-3AM on Sundays, as is the case for our other services.
 * Timeout is a service we foresee being heavily used. For this reason, please do not abuse our system, for example by creating 10 different rooms and running them all at the same time. If you want to host a large-scale event, email us at ``support@srcf.net`` so that we can better support you. Rememeber that the quality of Timeout is in part dependent on its users and whether they respect others using it.
