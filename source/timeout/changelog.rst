@@ -3,6 +3,16 @@
 Changelog
 ---------
 
+26/6/2020
+~~~~~~~~~
+
+* Upgraded BBB to 2.2.19 (with our own patches!)
+* Webcams are now mirrored
+* Changed logo in recordings
+* Sharing of Vimeo, Dailymotion, Facebook, YouTube, Twitch and raw .mp4 files now allowed
+* Prevent drag and drop of files closing session
+
+
 6/6/2020
 ~~~~~~~~
 
