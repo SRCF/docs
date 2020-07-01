@@ -1,15 +1,18 @@
 SRCF documentation
 ==================
 
-.. warning::
-   
-   For more information regarding Timeout, our video conferencing service, please scroll down and access the relevant documentation under `Timeout`_.
+Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services. To see what we offer you, head on over to our `main website <https://www.srcf.net>`__ for more information.
 
-Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services.
+Getting help
+~~~~~~~~~~~~
 
-As a quick reminder, the **Student-Run Computing Facility**, known as the *SRCF*, exists as a university society to provide useful and flexible computing and network services for University of Cambridge staff and students of all degrees of ability.
+Should you at any point need help, we offer three different solutions:
 
-Head over to our `main website <https://www.srcf.net>`__ for more information on what we offer. In the meantime, you can find lots of information on these pages on how to get started with our systems.
+1. this growing collection of documentation
+2. `a 24/7 live chat support service <https://webchat.srcf.net/?channels=support>`__
+3. email: ``support@srcf.net``
+
+Please do not be afraid to ask for help! Asking for help is an essential stage of the learning process. In the first instance, check the common requests below and see if that helps you. If not, or if you don't know where to start or what to look for, hop in our live support channel and we'll help get you sorted.
 
 .. important::
    The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`__.
@@ -25,7 +28,7 @@ Common requests
 
    common-requests/index
 
-Timeout
+Video conferencing
 ~~~~~~~
 
 .. toctree::
