@@ -12,7 +12,7 @@ Should you at any point need help, we offer three different solutions:
 2. `a 24/7 live chat support service <https://webchat.srcf.net/?channels=support>`__
 3. email: ``support@srcf.net``
 
-*Please do not be afraid to ask for help!* Asking for help is an essential stage of the learning process. In the first instance, check the common requests below and see if that helps you. If not, or if you don't know where to start or what to look for, hop in our live support channel and we'll help get you sorted.
+**Please do not be afraid to ask for help!** Asking for help is an essential stage of the learning process. In the first instance, check the common requests below and see if that helps you. If not, or if you don't know where to start or what to look for, hop in our live support channel and we'll help get you sorted.
 
 .. important::
    The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`__.
