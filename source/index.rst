@@ -17,17 +17,13 @@ Head over to our `main website <https://www.srcf.net>`__ for more information on
 Contents
 --------
 
-About us
-~~~~~~~~
+Common requests
+~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
 
-   about/srcf
-   about/systems
-   about/committee
-   about/sysadmins
-   about/common-requests
+   common-requests/index
 
 Timeout
 ~~~~~~~
