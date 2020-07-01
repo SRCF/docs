@@ -29,7 +29,7 @@ Common requests
    common-requests/index
 
 Video conferencing
-~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
