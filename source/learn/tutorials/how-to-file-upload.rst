@@ -21,7 +21,7 @@ We recommend one of the following:
 
 Some of these might only be available for macOS or Windows or vice versa.
 
-.. hint::
+.. attention::
   If you use WinSCP then `this
   documentation <http://winscp.net/eng/docs/introduction>`__ and also the
   win-built documentation (in the “Help” menu) will be handy.
@@ -29,7 +29,7 @@ Some of these might only be available for macOS or Windows or vice versa.
 2. Connecting
 ~~~~~~~~~~~~~
 
-.. important::
+.. hint::
   If you have any questions about the user interface, we recommend checking the documentation of the SFTP client you chose in the first instance. We'll be more broadly discussing here what you should do, but won't focus on one particular client.
 
 1. Use ``files.srcf.net`` as the server name (sometimes referred to as the hostname)
