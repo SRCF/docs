@@ -28,7 +28,7 @@ If you're running a Unix-based computer (including macOS) then logging in is eas
 2. Type in ``ssh <username>@shell.srcf.net``
 3. Enter your password when prompted
 
-.. note::
+.. hint::
   You will not see your password as you type it. This is intentional!
 
 Windows
@@ -59,7 +59,7 @@ The last command we'll try is ``cd public_html``. This **changes your directory*
 
 The ``public_html`` directory is special. Any content placed here will be served by our web server, Apache. Check out the tutorials to learn what to do 
 
-.. note:
+.. tip:
   You can use ``cd`` with either absolute or relative paths. ``.`` represents your current directory. So ``cd .`` should not do anything, you can verify with ``ls`` or ``pwd`` to see if you're in the same directory. If you want to move up a directory you can use ``cd ..``. If you want to go to your home directory you can use ``cd ~``. ``~`` has a special meaning like ``..``, it points to your home directory. Can you guess what ``cd ~/public_html`` does? Try it out and see if you were right!
 
 4. Closing remarks
