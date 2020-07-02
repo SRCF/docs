@@ -24,6 +24,12 @@ Learning
 
 The SRCF is run by a community of volunteers, all of which are constantly learning new things as we improve and grow the SRCF. Being a newcomer to many of the things in this documentation shouldn't stop you from using our systems or one day joining us. We've produced a series of tutorials and gathered recommended links for you below. **These are highly recommended if you're just getting started with the SRCF or Linux.**
 
+.. toctree::
+   :maxdepth: 1
+
+   learn/index
+   learn/recommended-resources
+
 Contents
 --------
 
@@ -117,11 +123,3 @@ More services
 
    faq/*
 
-Learn
-~~~~~
-
-.. toctree::
-   :maxdepth: 1
-
-   learn/index
-   learn/recommended-resources

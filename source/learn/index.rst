@@ -5,8 +5,8 @@ Tutorials
 
 So you want to learn how to make cool stuff on SRCF systems? We can help you with that! Find below a growing list of tutorials that go into the various things you can do.
 
-.. list-table:: Comparison
-   :widths: 1 2 1 1
+.. list-table:: List of tutorials
+   :widths: 2 4 1 1
    :header-rows: 1
 
    * - Title
