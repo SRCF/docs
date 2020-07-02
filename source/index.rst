@@ -3,6 +3,8 @@ SRCF documentation
 
 Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services. To see what we offer you, head on over to our `main website <https://www.srcf.net>`__ for more information.
 
+.. _get-help:
+
 Getting help
 ------------
 
@@ -20,7 +22,7 @@ Should you at any point need help, we offer three different solutions:
 Learning
 --------
 
-The SRCF is run by a community of volunteers, all of which are constantly learning new things as we improve and grow the SRCF. Being a newcomer to many of the things in this documentation shouldn't stop you from using our systems or one day joining us. We've produced a series of tutorials and gathered recommended links for you below.
+The SRCF is run by a community of volunteers, all of which are constantly learning new things as we improve and grow the SRCF. Being a newcomer to many of the things in this documentation shouldn't stop you from using our systems or one day joining us. We've produced a series of tutorials and gathered recommended links for you below. **These are highly recommended if you're just getting started with the SRCF or Linux.**
 
 Contents
 --------

@@ -42,3 +42,19 @@ I want to update forwarding addresses on my domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The SRCF does not (and cannot) provide email forwarding outside of *@srcf.net* addresses, so we don't have control over these.  You'll most likely need to consult your domain registrar to do this.
+
+Can you design/upload/run/fix my website for me?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Unfortunately, our support team does not have the capacity to maintain
+both our servers and the thousands of websites hosted on it. If you have
+a specific technical question (e.g. an error message you don't
+understand), :ref:`be sure to seek help <get-help>`. 
+
+You may upload a website designed elsewhere to be hosted on the SRCF.
+However, it must be you who performs the upload -- you must not share
+access to your SRCF account with anyone else, even if they are acting on
+your behalf. If you are unable to maintain your own website, we suggest
+you use an external hosting provider such as
+`Wordpress.com <https://wordpress.com/>`__, or hire a web design/hosting
+firm.
