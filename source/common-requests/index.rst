@@ -58,3 +58,10 @@ your behalf. If you are unable to maintain your own website, we suggest
 you use an external hosting provider such as
 `Wordpress.com <https://wordpress.com/>`__, or hire a web design/hosting
 firm.
+
+Can you help me debug my PHP document/Perl Script/C++ Program?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Only if we have time - our support team are all volunteers, however
+we generally like hacking code, so if you're having problems :ref:`drop us a
+line <get-help>` and we might be able to help you out.

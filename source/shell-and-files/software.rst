@@ -13,3 +13,8 @@ Port binding
 ~~~~~~~~~~~~
 
 When running programs that bind to ports, please ensure you only bind to ``localhost`` so they're not publicly accessible, and choose a random high-numbered port to try and avoid conflicts with other users.
+
+Java
+~~~~
+
+We have this installed.

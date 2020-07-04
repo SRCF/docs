@@ -30,6 +30,16 @@ The SRCF is run by a community of volunteers, all of which are constantly learni
    learn/index
    learn/recommended-resources
 
+Read this
+---------
+
+It is recommended you read the following:
+
+.. toctree::
+   :maxdepth: 1
+
+   read-first/important
+
 Contents
 --------
 
@@ -95,6 +105,7 @@ Web hosting
    web-hosting/raven
    web-hosting/applications
    web-hosting/domains
+   web-hosting/cgi-php
 
 Email
 ~~~~~
@@ -115,6 +126,8 @@ More services
 
    services/databases
    services/mailman
+   services/irc
+   services/usenet
 
 .. toctree::
    :maxdepth: 2
@@ -122,4 +135,3 @@ More services
    :hidden:
 
    faq/*
-
