@@ -40,7 +40,7 @@ class Jinja2TemplateBridge(BuiltinTemplateLoader):
             out = subprocess.check_output(("git", "log", "--follow", "--format=%an", abspath))
             counts = Counter(out.decode("utf-8").splitlines())
             authors.extend(author for author, _ in counts.most_common())
-        if meta and meta["contributors"]:
+        if meta and meta.get("contributors"):
             authors.extend(author for author in meta["contributors"].split(", ")
                            if author not in authors)
         return authors
