@@ -3,6 +3,13 @@
 Tutorials
 =========
 
+.. toctree::
+   :maxdepth: 2
+   :glob:
+   :hidden:
+
+   tutorials/*
+
 So you want to learn how to make cool stuff on SRCF systems? We can help you with that! Find below a growing list of tutorials that go into the various things you can do.
 
 .. list-table:: List of tutorials

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _first-ssh:
 
 Hello World: logging into the SRCF for the first time

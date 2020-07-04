@@ -1,5 +1,3 @@
-:orphan:
-
 .. _website-wordpress:
 
 Create your own website with WordPress
@@ -44,7 +42,7 @@ Once your ``.zip`` file has finished downloading, we need to get the files from 
 5. Configuration and final steps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Great! Now if you head to your website in a browser ``http://crsid.user.srcf.net`` for an indvidual account or ``http://**societyname**.soc.srcf.net`` for a society) you should see a friendly welcome screen. Fill in all of the details that it asks for - leave ``localhost`` as it is, try not to use ``wp_`` as the database prefix or ``admin`` as the administrator username *(this makes it harder for hackers to infiltrate your site).*
+Great! Now if you head to your website in a browser ``http://**crsid**.user.srcf.net`` for an indvidual account or ``http://**societyname**.soc.srcf.net`` for a society) you should see a friendly welcome screen. Fill in all of the details that it asks for - leave ``localhost`` as it is, try not to use ``wp_`` as the database prefix or ``admin`` as the administrator username *(this makes it harder for hackers to infiltrate your site).*
 
 That's it - you have a website! We told you it was easy.
 
@@ -72,10 +70,9 @@ If you want to extend the functionality of WordPress, you need to install a Plug
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Ensure your ``wp-config.php`` is not world-readable, as that will contain your database credentials. You can set permissions in your FTP client or in the console, eg. ``chmod 0660`` to get ``-rw-rw----``
-2. It is advised to lock down WordPress’ admin panel at /wp-admin/ by putting that directory behind Raven authentication – see public_html/wordpress/wp-admin/.htaccess. 
+2. It is advised to lock down WordPress’ admin panel at /wp-admin/ by putting that directory behind Raven authentication – see ``public_html/wordpress/wp-admin/.htaccess``. 
 3. We also recommend you disable *Allow link notifications from other blogs (pingbacks and trackbacks)* on new posts, under ``Settings`` > ``Discussion`` in the admin panel.
-4. To ensure your site is as secure as possible, you should make sure the latest security patches are added by enabling automatic updates. See below.
-5. Ensure that the **permissions on files in your society directory are writable by the society group** (and therefore the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
+4. To ensure your site is as secure as possible, you should make sure the latest security patches are added by enabling automatic updates. See section below.
 
 
 7. Optional steps
@@ -84,7 +81,7 @@ If you want to extend the functionality of WordPress, you need to install a Plug
 Custom domain
 ^^^^^^^^^^^^^
 
-You may have thought that the web address of your spangly new site isn't particularly inspiring. Don't panic! You can register any domain you like (or even multiple domains) and point them to your SRCF address without anyone knowing. For instructions, check out :ref:`our documentation <custom-domains>`. Past users have usually bought domain names from `123-reg.co.uk <http://www.123-reg.co.uk>__`.
+You may have thought that the web address of your spangly new site isn't particularly inspiring. Don't panic! You can register any domain you like (or even multiple domains) and point them to your SRCF address without anyone knowing. For instructions, check out :ref:`our documentation <custom-domains>`. Past users have usually bought domain names from `123-reg.co.uk <http://www.123-reg.co.uk>`__.
 
 Raven
 ^^^^^
@@ -110,6 +107,9 @@ WordPress will likely refuse to do automatic updates, instead requesting FTP cre
 If configured correctly, the updates page should include text similar to *Future security updates will be applied automatically*.
 
 If you have a low-traffic or private site, WordPress’ cron service (which handles updates and other background tasks) may not run regularly enough. You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` respectively.
+
+.. warning::
+  Ensure that the **permissions on files in your society directory are writable by the society group** (and therefore the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
 
 8. Closing remarks
 ~~~~~~~~~~~~~~~~~~
