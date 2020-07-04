@@ -21,12 +21,10 @@ So you want to learn how to make cool stuff on SRCF systems? We can help you wit
      - Learn how to upload your files to the SRCF
      - Easy
      - 10 min
-
-These tutorials show you how to do something on the *SRCF systems*. They may assume some prior knowledge in the relevant sections. If you're starting out from scratch, check out our :ref:`recommended learning resources <recommended-resources>` for a curated list of resources on web development, linux, networking and more.
-
-..
-   * - :ref:`Hello World! <website-wordpress>`
-     - Learn how to create your own website with WordPress
-     - Easy
+   * - :ref:`WordPress guide <website-wordpress>`
+     - Learn how to create your own website with software that powers 35% of the web!
+     - Medium
      - 20 min
+
+These tutorials show you how to do a variety of things on the *SRCF systems*. They may assume some prior knowledge in the relevant sections. If you're starting out from scratch, check out our :ref:`recommended learning resources <recommended-resources>` for a curated list of resources on web development, linux, networking and more.
 
