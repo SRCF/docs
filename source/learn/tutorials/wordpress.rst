@@ -37,7 +37,7 @@ Head over to `wordpress.org <http://wordpress.org/download/>`__ and hit the big 
 Once your ``.zip`` file has finished downloading, we need to get the files from your computer onto the SRCF hosting. Unzip the file on your computer and upload the files into ``public_html``, making sure that they're not in a subfolder called ``wordpress``. 
 
 .. note::
-  You can do this more efficiently by uploading the ``.zip`` file and unzipping it using the terminal.
+  You can do this more efficiently by doing ``wget http://wordpress.org/latest`` and extracting the files, e.g. ``tar zxvf wordpress-1.0.2-blakey.tar.gz``.
 
 5. Configuration and final steps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +66,13 @@ Features
 
 If you want to extend the functionality of WordPress, you need to install a Plugin. Millions of plugins have been written and are dead easy to install. The chances are that if you want your site to do something then someone has probably written a plugin to do it.
 
+Accounts
+^^^^^^^^
+
+* Log in to WP as ``admin`` using the password given at the end of the installation process.
+* Click on ``My Profile`` and change the ``admin`` password using the form provided.
+* Click on ``Users`` and create an account for yourself. 
+
 8. Last (important!) touches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -73,7 +80,8 @@ If you want to extend the functionality of WordPress, you need to install a Plug
 2. It is advised to lock down WordPress’ admin panel at /wp-admin/ by putting that directory behind Raven authentication – see ``public_html/wordpress/wp-admin/.htaccess``. 
 3. We also recommend you disable *Allow link notifications from other blogs (pingbacks and trackbacks)* on new posts, under ``Settings`` > ``Discussion`` in the admin panel.
 4. To ensure your site is as secure as possible, you should make sure the latest security patches are added by enabling automatic updates. See section below.
-
+5. Activate a spam filtering plugin like Akismet and a capatcha system like reCAPTCHA. Akismet is installed by default and just needs activiating. Go to ``.../wp-admin/plugins.php`` to install and activate plugins.
+6. You may optionaly want to modify your theme so that it no longer puts the Wordpress version into the html - this may help stop hackers finding that you installation is outdated but it does not protect against problems caused by the version you are using being compromised.
 
 7. Optional steps
 ~~~~~~~~~~~~~~~~~~
@@ -118,4 +126,4 @@ Did you like this or find this cool? We invite you to check out :ref:`more tutor
 
 
 
-A big thanks to `Phil Ewels <http://phil.ewels.co.uk/>`__ for writing this up originally on his own blog. This tutorial contains some slight updates and modifications.
+A big thanks to `Phil Ewels <http://phil.ewels.co.uk/>`__ for writing this up originally on his own blog and to hmw26 for some of their tips. This tutorial contains some slight updates and modifications. 

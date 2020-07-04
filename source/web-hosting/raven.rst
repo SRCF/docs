@@ -41,6 +41,33 @@ To create a "logout" link, add the following to your .htaccess file (which will 
         SetHandler AALogout
     </FilesMatch>
 
+Example configuration:
+^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=permanent]
+
+    AuthType Ucam-WebAuth
+    Require user CRSID
+
+Replace CRSID with your CRSID.
+
+The ``Rewrite`` section makes all connections to ``.../wp-admin/``
+use SSL which will protect your password, the ``AuthType`` section
+uses Raven to restrict access to the directory, you probably want
+to use your CRSID on the ``Require`` line.
+
+.. note::
+    A file beginning with a ``.`` is a hidden file on unix.
+    If you are using the gnome `graphical desktop <../webdesktop/>`__
+    then pressing Ctrl-h in nautilus (the default file browser) will
+    show hidden files. (If you are using something else you should be
+    able to work out what to do.)
+
+
 Within an application
 ~~~~~~~~~~~~~~~~~~~~~
 

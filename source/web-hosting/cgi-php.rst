@@ -79,7 +79,7 @@ readable (but is group readable), and include that file from your main
 PHP script.
 
 Managing memory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 By default we have a maximum memory limit of 64MB set for PHP scripts.
 You can override this by placing a file called ``php_override.ini`` at
@@ -89,19 +89,8 @@ the top level of your site containing, for example,
 Please consider the memory requirement of other users / system processes
 / etc. before doing this.
 
-Other questions
-~~~~~~~~~~~~~~~
-
-Where do errors (STDERR) from my CGI scripts end up?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-They are appended to Apache's main error\_log:
-``/var/log/apache2/error.log``. (Your account has its own error log for
-web server messages but not CGI STDERR:
-``/var/log/apache2/soc|user/USERNAME/error.log``.)
-
-How do I turn CGI off so that people can download the file?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Turn CGI off
+~~~~~~~~~~~~
 
 Several kinds of file will automatically be interpreted as CGI scripts,
 and so the CGI handler will try to run them when you visit their URL,
@@ -121,59 +110,6 @@ example, ``.php``.
 Troubleshooting
 ~~~~~~~~~~~~~~~
 
-Is there something wrong with PHP session tracking?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Because PHP runs as 'you', not as the webserver, if you enable PHP
-session tracking, the temporary session files it creates are not
-writable by other users. As a result, if users visit two different user
-or society sites on the SRCF which both use PHP sessions, they'll get an
-error message.
-
-The way to avoid this is for everybody to restrict their session cookies
-only to your own website (a good idea for security reasons in any case).
-Do this by putting the following line at the top of your PHP script:
-
-::
-
-    ini_set('session.cookie_path','/~abc23/');
-
-(for individual users, replacing abc23 with your userid), or
-
-::
-
-    ini_set('session.cookie_path','/socname/');
-
-(for societies), replacing socname with your society abbreviation.
-
-You don't need to do this if you have your own virtually hosted domain
-name.
-
-Unfortunately, even if you do this, users of your site may still see
-errors if they visit someone else's SRCF-hosted site which uses PHP
-session cookies (without the above ini\_set) and then visits yours. A
-more advanced solution which stops this problem is to also set
-session.save\_path to a directory within your society or user filespace
-(but not within public\_html). This will store session files in the
-specified location, rather than in /tmp which is shared between all
-users.
-
-For example, the society socname might create a directory
-/societies/socname/tmp with the shell command
-``mkdir /societies/socname/tmp`` and then put
-
-::
-
-    ini_set('session.save_path','/societies/socname/tmp');
-
-and
-
-::
-
-    ini_set('session.cookie_path','/socname/');
-
-at the start of all its PHP scripts.
-
 How do I send custom HTTP headers using PHP?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -184,10 +120,6 @@ Error" message (in the browser), and the following in the server log
 ::
 
     [Thu Apr 15 13:35:51 2004] [error] [client XX.XX.XX.XX] malformed header from script. Bad header=HTTP/1.1 301 Moved Permanently: /usr/lib/cgi-bin/srcf-php-handler
-
-The chances are that the php code you are using has not been designed to
-work with our version of PHP in "CGI mode" (which is how we do it on the
-SRCF), only when PHP is running as an Apache module.
 
 In detail... the problem comes when your script effectively does:
 
