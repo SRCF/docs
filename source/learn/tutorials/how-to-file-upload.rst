@@ -10,6 +10,10 @@ In this tutorial, you will be using SFTP to upload your files. Let's get started
 .. note::
   You may or may not have heard of another file transfer protocol called SCP. Most clients like FileZilla and WinSCP are equally compatible with this.
 
+0. Introduction
+~~~~~~~~~~~~~~~
+  FTP stands for ‘file transfer protocol’ and is another method of connecting to a web server (different to HTTP). It’s the quickest and easiest way to transfer files between the computer you’re working on and the web server where they’ll be supplied to people viewing your website.
+
 1. Get an SFTP/SCP client
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -13,30 +13,7 @@ Scripts in ``public_html`` using ``.php`` extensions will be executed by PHP by 
 `WordPress <https://sample.soc.srcf.net/wordpress/>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Follow WordPress' `installation guide <https://wordpress.org/support/article/how-to-install-wordpress/>`__.  To serve the site from the root of your SRCF domain, extract the contents of the ``wordpress`` folder in the download to your ``public_html``.  Databases should be created and configured as noted above.  Ensure your ``wp-config.php`` is not world-readable, as that will contain your database credentials.
-
-It is advised to lock down WordPress' admin panel at ``/wp-admin/`` by putting that directory behind Raven authentication – see ``public_html/wordpress/wp-admin/.htaccess``.  We also recommend you disable *Allow link notifications from other blogs (pingbacks and trackbacks) on new posts*, under *Settings* > *Discussion* in the admin panel.
-
-WordPress will likely refuse to do automatic updates, instead requesting FTP credentials – this is because it assumes it can't write its own files on the server.  To make this work you can add the following few lines to your ``wp-config.php``, near the bottom but above the line that says "stop editing"::
-
-    /**
-     * Force WordPress to use direct filesystem access so that upgrades work properly.
-     * https://core.trac.wordpress.org/ticket/10205
-     * https://codex.wordpress.org/Editing_wp-config.php
-     */
-    define('FS_METHOD', 'direct');
-    define('FS_CHMOD_DIR', (02775 & ~ umask()));
-    define('FS_CHMOD_FILE', (0664 & ~ umask()));
-
-If configured correctly, the updates page should include text similar to *Future security updates will be applied automatically*.
-
-.. warning::
-
-    It is very important that you ensure that the **permissions on files in your society directory are writable by the society group** (and therefore the user that WordPress will run as).
-
-    WordPress will not check in advance -- if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
-
-If you have a low-traffic or private site, WordPress' cron service (which handles updates and other background tasks) may not run regularly enough.  You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` respectively.
+Follow :ref:`our full WordPress installation tutorial <website-wordpress>`.
 
 Python applications
 ~~~~~~~~~~~~~~~~~~~

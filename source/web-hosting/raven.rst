@@ -1,3 +1,5 @@
+.. _raven:
+
 Raven authentication
 --------------------
 

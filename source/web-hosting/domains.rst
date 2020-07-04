@@ -1,3 +1,5 @@
+.. _custom-domains:
+
 Custom domains
 --------------
 
