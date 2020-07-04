@@ -1,3 +1,4 @@
+:orphan:
 .. _website-wordpress:
 
 Create your own website with WordPress

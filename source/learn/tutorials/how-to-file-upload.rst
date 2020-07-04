@@ -1,3 +1,4 @@
+:orphan:
 .. _first-file-upload:
 
 Let's get filin': upload your files via SFTP
