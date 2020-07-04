@@ -1,4 +1,5 @@
 :orphan:
+
 .. _website-wordpress:
 
 Create your own website with WordPress
@@ -95,7 +96,8 @@ Automatic updates
 
 WordPress will likely refuse to do automatic updates, instead requesting FTP credentials – this is because it assumes it can’t write its own files on the server. To make this work you can add the following few lines to your ``wp-config``.php, near the bottom but above the line that says “stop editing”:
 
-..code-block::apache
+.. code-block::apache
+
   /**
   * Force WordPress to use direct filesystem access so that upgrades work properly.
   * https://core.trac.wordpress.org/ticket/10205
