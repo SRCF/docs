@@ -109,6 +109,11 @@ If configured correctly, the updates page should include text similar to *Future
 
 If you have a low-traffic or private site, WordPress’ cron service (which handles updates and other background tasks) may not run regularly enough. You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` respectively.
 
+8. Closing remarks
+~~~~~~~~~~~~~~~~~~
+
+Did you like this or find this cool? We invite you to check out :ref:`more tutorials <tutorials>`, :ref:`read our recommended resources<recommended-resources>` or :ref:`talk to us <get-help>` to tell us what you thought!
+
 
 
 A big thanks to `Phil Ewels <http://phil.ewels.co.uk/>`__ for writing this up originally on his own blog. This tutorial contains some slight updates and modifications.
