@@ -17,7 +17,6 @@ We recommend one of the following:
 
 * `Cyberduck <http://cyberduck.io>`__.
 * `WinSCP <http://winscp.net/eng/index.php>`__
-* `FileZilla <https://filezilla-project.org/download.php?type=client>`__
 
 Some of these might only be available for macOS or Windows or vice versa.
 
