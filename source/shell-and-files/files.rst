@@ -18,7 +18,7 @@ Consider searching for cache files in your home directory that may be taking up 
 Snapshots
 ~~~~~~~~~
 
-Although *the SRCF Does Not Take Backups*, snapshots of ``/home``, ``/public`` and ``/societies`` are taken regularly. At any given time, 24 hourly, 14 daily and 4 weekly snapshots should be available. Snapshots may be accessed using the hidden (it will not show up in ls -a or in shell autocomplete) directory ``.snapshot``, available at any level of the file hierarchy.
+Although *the SRCF does not guarantee to take backups* of users' data, snapshots of ``/home``, ``/public`` and ``/societies`` are generally taken regularly for disaster recovery purposes. Snapshots may be accessed using the hidden (it will not show up in ls -a or in shell autocomplete) directory ``.snapshot``, available at any level of the file hierarchy.
 
 For example:
 ::
@@ -55,7 +55,7 @@ For example:
 	drwxr-x--- 2 spqr2 spqr2 8192 Jul  3 01:00 sv_daily.3
 	drwxr-x--- 2 spqr2 spqr2 8192 Jul  2 01:00 sv_daily.4
 	drwxr-x--- 2 spqr2 spqr2 8192 Jul  1 01:00 sv_daily.5
-	drwxr-x--- 2 spqr2 spqr2 8192 Jun 2 01:00 sv_daily.6
+	drwxr-x--- 2 spqr2 spqr2 8192 Jun  2 01:00 sv_daily.6
 	drwxr-x--- 2 spqr2 spqr2 8192 Jun 29 01:00 sv_daily.7
 	drwxr-x--- 2 spqr2 spqr2 8192 Jun 28 01:00 sv_daily.8
 	drwxr-x--- 2 spqr2 spqr2 8192 Jun 27 01:00 sv_weekly.1
@@ -67,6 +67,8 @@ For example:
 	drwxr-x--- 2 spqr2 spqr2 8192 Jun 20 01:00 sv_weekly.2
 	drwxr-x--- 2 spqr2 spqr2 8192 Jun 13 01:00 sv_weekly.3
 
-Note that snapshots are named ``sv_[type].[index]``, with index 0 indicating the most recent snapshot of that type.
+Note that snapshots are named ``sv_[type].[index]``, with index 0 indicating the most recent snapshot of that type. The listing above shows 24 hourly, 14 daily and 4 weekly snapshots; you may see fewer or more than this.
 
 Snapshots preserve file permissions and are read-only, so if you wish to retrieve something from a snapshot, you must have had permission to access it at the time the snapshot was taken, and must copy (rather than move) it out of the snapshot.
+
+Snapshots going further back in time *may* be available on an off-site disaster-recovery replica; if you need access to these, contact the sysadmins (but please don't count on them being available; you should take your own backups regardless).
