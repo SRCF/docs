@@ -58,6 +58,26 @@ To install dependencies::
 
 Then see ``nodejs/app.js`` for a minimum base application.
 
+Forwarding requests to your application server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The SRCF uses Apache to serve websites so if you need to forward requests to a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests.
+
+Using TCP ports
+^^^^^^^^^^^^^^^
+
+TODO.
+
+Using UNIX sockets
+^^^^^^^^^^^^^^^^^^
+
+You will need to configure you server application to use a UNIX socket and then add the following to your ``.htaccess`` file, replacing as necessary::
+
+    RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
+    RequestHeader set Host expr=%{HTTP_HOST}
+    RewriteCond %{HTTP_HOST} ^your\.hostname\.tld$
+    RewriteRule ^(.*)$ unix:/home/crsid/myapp/web.sock|http://your.hostname.tld/$1 [P,NE,L]
+
 Static site generators
 ~~~~~~~~~~~~~~~~~~~~~~
 
