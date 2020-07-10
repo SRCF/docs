@@ -99,7 +99,7 @@ You will need to pick a port (we've used 999 here but you should pick a differen
 Using UNIX sockets
 ^^^^^^^^^^^^^^^^^^
 
-You will need to configure your application to use a UNIX socket and then add the following to your ``.htaccess`` file, replacing as necessary::
+You will need to configure your application to use a UNIX socket. You should make sure the socket is only accessible to you, either by using appropriate file modes or by picking a path that is only accessible to you such as ``/home/crsid/myapp/web.sock``. Then add the following to your ``.htaccess`` file, replacing as necessary::
 
     RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
     RequestHeader set Host expr=%{HTTP_HOST}
