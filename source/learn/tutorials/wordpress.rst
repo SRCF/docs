@@ -101,7 +101,7 @@ Automatic updates
 
 WordPress will likely refuse to do automatic updates, instead requesting FTP credentials – this is because it assumes it can’t write its own files on the server. To make this work you can add the following few lines to your ``wp-config``.php, near the bottom but above the line that says “stop editing”:
 
-.. code-block:: aconfig
+.. code-block:: apacheconf
 
   /**
   * Force WordPress to use direct filesystem access so that upgrades work properly.
