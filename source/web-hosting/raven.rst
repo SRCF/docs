@@ -42,7 +42,7 @@ To create a "logout" link, add the following to your .htaccess file (which will 
     </FilesMatch>
 
 Example configuration:
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 

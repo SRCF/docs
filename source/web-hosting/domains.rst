@@ -3,9 +3,26 @@
 Custom domains
 --------------
 
-As part of our web hosting, we provide domains for both individuals (of the form ``<crsid>.user.srcf.net``) and societies (``<socname>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective user or society (subject to a 20 minute delay when publishing a new website).
+As part of our web hosting, we provide free domains for both individuals (of the form ``<crsid>.user.srcf.net``) and societies (``<socname>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective user or society (subject to a 20 minute delay when publishing a new website).
 
-We also support external domains purchased from a domain registrar.  For these to serve your site, you'll first need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure.  The base domain (e.g. ``example.com``) is generally represented by *@*, and subdomains (e.g. ``bubbles.example.com``) would just be *bubbles*.
+We also support external domains purchased from a domain registrar.  For these to serve your site, you'll first need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure.
+
+.. hint::
+    The base domain (e.g. ``example.com``) is generally represented by *@*, and subdomains (e.g. ``bubbles.example.com``) would just be *bubbles*.
+
+Add the following records in your DNS:
+
+1. @ A 131.111.179.82
+2. @ AAAA 2001:630:212:700:2::1
+3. www CNAME webserver.srcf.societies.cam.ac.uk
+
+The first sets your base domain to forward to our webserver's IPv4 address, the second does much the same but for IPv6. The third sets an alias from www.yourwebsite.co.uk to our webserver.
+
+.. note::
+    Alternatively, you could use an external DNS provider such as CloudFlare. They tend to be much more flexible in what one is able to do with their registrar's DNS.
+
+More information
+^^^^^^^^^^^^^^^^
 
 The preferred method is a **CNAME** record, which acts as an alias from your domain to ours.  The value of this record should be ``webserver.srcf.societies.cam.ac.uk`` -- this means your domain will continue to work even if we move servers, as our hostname will stay the same.  Note that you must remove any other non-CNAME records for this particular (sub)domain.
 
