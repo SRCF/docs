@@ -36,6 +36,11 @@ Soc-SRCF-social
 
 This is a more open mailing list for announcement and discussion of social events (pub meets, LAN parties, garden parties and so on).  Any SRCF member is welcome to join or leave this list at any time.
 
+Soc-SRCF-careers
+^^^^^^^^^^^^^^^^
+
+The SRCF has in the past provided career opportunities informally. Join this new list to keep up to date with any employment opportunities, internships and news directly from companies we trust.
+
 Unsubscribing from Soc-SRCF and/or -users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -50,6 +55,7 @@ You can subscribe to or unsubscribe from a list from its information page:
 
 - `Soc-SRCF-maintenance <https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-maintenance>`__
 - `Soc-SRCF-social <https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-social>`__
+- `Soc-SRCF-careers <https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-careers>`__
 
 List archives
 ~~~~~~~~~~~~~
