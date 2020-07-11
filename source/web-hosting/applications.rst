@@ -61,12 +61,12 @@ Then see ``nodejs/app.js`` for a minimum base application.
 Forwarding requests to your application server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The SRCF uses Apache to serve websites so if you need to forward requests to a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. Make sure you run your application server on ``sinkhole`` rather than ``pip`` or another SRCF server.
+The SRCF uses Apache to serve websites so if you need to run a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. Make sure you run your application server on ``sinkhole`` rather than ``pip`` or another SRCF server.
 
 Using TCP ports
 ^^^^^^^^^^^^^^^
 
-You will need to pick a port (we've used 999 here but you should pick a different one above 1024) and configure your application to bind to that port. Then stick the following in you ``.htaccess`` file::
+You will need to pick a port (we've used 999 here but you should pick a different one above 1024) and configure your application to bind to that port. Then stick the following in your ``.htaccess`` file::
 
     RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
     RequestHeader set Host expr=%{HTTP_HOST}
