@@ -63,16 +63,6 @@ Forwarding requests to your application server
 
 The SRCF uses Apache to serve websites so if you need to run a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. Make sure you run your application server on ``sinkhole`` rather than ``pip`` or another SRCF server.
 
-Using TCP ports
-^^^^^^^^^^^^^^^
-
-You will need to pick a port (we've used 999 here but you should pick a different one above 1024) and configure your application to bind to that port. Then stick the following in your ``.htaccess`` file::
-
-    RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
-    RequestHeader set Host expr=%{HTTP_HOST}
-    RewriteCond %{HTTP_HOST} ^your\.hostname\.tld$
-    RewriteRule "^(.*)$" http://localhost:999/$1 [P,NE,L,QSA]
-
 Using UNIX sockets
 ^^^^^^^^^^^^^^^^^^
 
@@ -82,6 +72,16 @@ You will need to configure your application to use a UNIX socket. You should mak
     RequestHeader set Host expr=%{HTTP_HOST}
     RewriteCond %{HTTP_HOST} ^your\.hostname\.tld$
     RewriteRule ^(.*)$ unix:/home/crsid/myapp/web.sock|http://your.hostname.tld/$1 [P,NE,L,QSA]
+
+Using TCP ports
+^^^^^^^^^^^^^^^
+
+You will need to pick a port (we've used 999 here but you should pick a different one above 1024) and configure your application to bind to that port. Be aware that port-based forwarding offers less security than UNIX socket-based forwarding and that any other user will be able to forward requests to the same port you are using. For that reason, we don't set the headers we do above as they can easily be forged by another user. Those things being considered, you can put the following in your ``.htaccess`` file to enable forwarding requests to a port::
+
+    RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
+    RequestHeader set Host expr=%{HTTP_HOST}
+    RewriteCond %{HTTP_HOST} ^your\.hostname\.tld$
+    RewriteRule "^(.*)$" http://localhost:999/$1 [P,NE,L,QSA]
 
 Static site generators
 ~~~~~~~~~~~~~~~~~~~~~~
