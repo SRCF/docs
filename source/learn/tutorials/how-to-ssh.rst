@@ -46,6 +46,11 @@ Once downloaded,
 2. Enter the server name as ``shell.srcf.net``, the protocol as SSH (port 22) and click to connect
 3. Enter your username and SRCF password when prompted
 
+.. note::
+  Note that for obvious reasons your password will not
+  be printed on the screen. The password is case-sensitive, so make sure
+  that caps lock is not on if you are having problems.
+
 3. Baby steps
 ~~~~~~~~~~~~~
 
@@ -67,6 +72,8 @@ The ``public_html`` directory is special. Any content placed here will be served
   If you want to go to your home directory you can use ``cd ~``. 
   
   ``~`` has a special meaning like ``..`` does, it points to your home directory. Can you guess what ``cd ~/public_html`` does? Try it out and see if you were right!
+
+If you're interested in what else you can do with the shell, check out :ref:`our more advanced tutorial<more-terminal>`.
 
 4. Closing remarks
 ~~~~~~~~~~~~~~~~~~
