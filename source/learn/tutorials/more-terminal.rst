@@ -12,7 +12,7 @@ Introduction
 ~~~~~~~~~~~~
 
 The SRCF offers you much more than just a web server - everyone who has
-an account has full shell access to our Linux server. This allows you to
+an account has full shell access to our Linux servers. This allows you to
 manipulate and edit the contents of your filespace directly without
 having to worry about downloading and uploading files, as well as
 running all sorts of other software which you might not have available

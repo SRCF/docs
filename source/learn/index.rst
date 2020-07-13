@@ -28,6 +28,10 @@ So you want to learn how to make cool stuff on SRCF systems? We can help you wit
      - Learn how to upload your files to the SRCF
      - Easy
      - 10 min
+   * - :ref:`Basic terminal guide <more-terminal>`
+     - Learn how to use the Linux shell that is present across all our servers
+     - Medium
+     - 15 min
    * - :ref:`WordPress guide <website-wordpress>`
      - Learn how to create your own website with software that powers 35% of the web!
      - Medium
