@@ -21,7 +21,7 @@ This contains *members* of the SRCF (membership is for life), and receives messa
 Soc-SRCF-users
 ^^^^^^^^^^^^^^
 
-This contains *users* of the SRCF (which only applies whilst you have CUDN access, as per the Terms of Service), and receives messages from the sysadmins which are important to account holders, for example:
+This contains *users* of the SRCF (which only applies whilst you have an active shell account), and receives messages from the sysadmins which are important to account holders, for example:
 
 - urgent messages which require the attention of every SRCF user (e.g. security compromises) -- very infrequent, we hope!
 - rare but important system administrative information (e.g. terms of service changes) which affect all users
@@ -46,7 +46,7 @@ Unsubscribing from Soc-SRCF and/or -users
 
 Because we must be able to contact everyone with an SRCF account, you may only unsubscribe from **Soc-SRCF** or **Soc-SRCF-users** if you are willing to give up your membership of the SRCF and access to its services.  If this is what you want, please `contact the sysadmins <https://www.srcf.net/contact>`__ saying you want to terminate your membership.
 
-Usually, when you leave the University and lose your access to our services, you will be automatically unsubscribed from Soc-SRCF-users, but *not* Soc-SRCF as you remain a SRCF member for life and are still welcome to attend SRCF events.  As above, if you wish to give up this right you should contact the sysadmins.
+If you wish to do so, you may give up your shell account (and so cease to be an SRCF *user*) while remaining a *member* of the SRCF. In this case, you will be unsubscribed from Soc-SRCF-users, but *not* Soc-SRCF, and you are still welcome to attend SRCF events. As above, please contact the sysadmins to arrange this.
 
 Unsubscribing or rejoining -maintenance and/or -social
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
