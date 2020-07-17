@@ -14,7 +14,7 @@ SRCF specific policies and features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * A user must sign up with an ``@srcf.net``, ``@cam.ac.uk`` or
    ``@*.cam.ac.uk`` email, unless they have an invitation from an existing
-   user. A user can change their email address to their person email after
+   user. A user can change their email address to their personal email after
    signing up.
 
  * Only team administrators are allowed to create and delete channels and
