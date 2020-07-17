@@ -126,6 +126,7 @@ More services
 
    services/databases
    services/mailman
+   services/mattermost
    services/irc
    services/usenet
 
