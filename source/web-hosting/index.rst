@@ -11,9 +11,8 @@ with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flex
    :maxdepth: 2
    :glob:
 
-   web-hosting/index
-   web-hosting/apache
-   web-hosting/domains
-   web-hosting/cgi-php
-   web-hosting/raven
-   web-hosting/hosting
+   apache
+   domains
+   cgi-php
+   raven
+   hosting

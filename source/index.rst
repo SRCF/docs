@@ -108,6 +108,14 @@ Web hosting
    web-hosting/raven
    web-hosting/hosting
 
+Application hosting
+~~~~~~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+
+   app-hosting/index
+
 Email
 ~~~~~
 
