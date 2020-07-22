@@ -14,7 +14,7 @@ with the OCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flexi
 App hosting eligibility
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can host an app if you have a *.user.srcf.net, *.soc.srcf.net or a separately purchased domain name.
+You can host an app if you have a ``user.srcf.net``, ``soc.srcf.net`` or a separately purchased domain name.
 
 Requesting app hosting
 ^^^^^^^^^^^^^^^^^^^^^^
