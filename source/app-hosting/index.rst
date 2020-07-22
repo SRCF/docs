@@ -6,28 +6,15 @@ Web application hosting
 Introduction
 ^^^^^^^^^^^^
 
-All accounts include our :ref:`regular web hosting <web-hosting>` ,
+All accounts include our :ref:`regular web hosting <web-hosting>`,
 which is suitable for static content, PHP (WordPress, Joomla, etc.), and
 CGI/FastCGI. For student groups wishing to host more advanced web apps
-with the OCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flexibility, we provide this guide and :ref:`more custom tutorials <tutorials>` too.
+with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flexibility, we provide this guide and :ref:`more custom tutorials <tutorials>` too.
 
 App hosting eligibility
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 You can host an app if you have a ``user.srcf.net``, ``soc.srcf.net`` or a separately purchased domain name.
-
-Requesting app hosting
-^^^^^^^^^^^^^^^^^^^^^^
-
-To request app hosting, you need to first [[create an OCF group
-account|doc membership]]. Once you have an account, email
-``hostmaster@ocf.berkeley.edu`` with at least the following information:
-
--  Group’s account name
--  Group’s current website, if any (even if not hosted by OCF)
--  Desired domain name for the app (either group.berkeley.edu, or your
-   own domain)
--  The technologies/languages your site is built on
 
 Requirements for hosted apps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -87,7 +74,7 @@ Supervising and starting your app
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
-  We provide sample tutorials for common frameworks in our ::ref:`tutorial section <tutorials>` 
+  We provide sample tutorials for common frameworks in our :ref:`tutorial section <tutorials>` 
 
 .. attention::
   **Make sure you do these steps on the web server.** If you start
