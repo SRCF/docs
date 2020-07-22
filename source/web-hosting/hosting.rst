@@ -1,5 +1,5 @@
-Applications
-------------
+Available hosting types
+-----------------------
 
 This page lists examples of applications and frameworks you can use to build a website.  They can also be seen at https://sample.soc.srcf.net, and you can take a look at their configuration inside ``/public/societies/sample``.
 
@@ -58,28 +58,6 @@ To install dependencies::
 
 Then see ``nodejs/app.js`` for a minimum base application.
 
-Forwarding requests to your application server
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The SRCF uses Apache to serve websites so if you need to run a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. Make sure you run your application server on ``sinkhole`` rather than ``pip`` or another SRCF server.
-
-Using UNIX sockets
-^^^^^^^^^^^^^^^^^^
-
-You will need to configure your application to use a UNIX socket. You should make sure the socket is only accessible to you, either by using appropriate file modes or by picking a path that is only accessible to you such as ``/home/crsid/myapp/web.sock``. Then add the following to your ``.htaccess`` file, replacing as necessary::
-
-    RequestHeader set Host expr=%{HTTP_HOST}
-    RequestHeader set X-Forwarded-For expr=%{REMOTE_ADDR}
-    RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
-    RequestHeader set X-Real-IP expr=%{REMOTE_ADDR}
-    RewriteRule ^(.*)$ unix:/home/crsid/myapp/web.sock|http://your.hostname.tld/$1 [P,NE,L,QSA]
-
-Using TCP ports
-^^^^^^^^^^^^^^^
-
-You will need to pick a port (we've used 999 here but you should pick a different one above 1024) and configure your application to bind to that port. Be aware that port-based forwarding offers less security than UNIX socket-based forwarding and that any other user will be able to forward requests to the same port you are using. For that reason, we don't set the headers we do above as they can easily be forged by another user. Those things being considered, you can put the following in your ``.htaccess`` file to enable forwarding requests to a port::
-
-    RewriteRule "^(.*)$" http://localhost:999/$1 [P,NE,L,QSA]
 
 Static site generators
 ~~~~~~~~~~~~~~~~~~~~~~
