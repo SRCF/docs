@@ -159,8 +159,10 @@ Your app’s standard output and error streams are sent to systemd’s
 journal (by default). You can view them using ``journalctl --user -n``.
 See ``man journalctl`` for more options.
 
+After this, make sure to email the system administrators add ``sysadmins@srcf.net`` to give your app one final check and enable the ``systemd`` service.
+
 Frequently asked questions
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Can you install a package on the web server?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,5 +198,4 @@ MySQL and PostgreSQL accounts are included with your SRCF
 account.
 
 .. note::
-
-These docs are generously provided by the Open Computing Foundation. Read more about them `here <https://www.ocf.berkeley.edu>`__.
+  These docs are generously provided by the Open Computing Foundation. Read more about them `here <https://www.ocf.berkeley.edu>`__.

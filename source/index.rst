@@ -101,7 +101,12 @@ Web hosting
 .. toctree::
    :maxdepth: 2
 
-   web-hosting/*
+   web-hosting/index
+   web-hosting/apache
+   web-hosting/domains
+   web-hosting/cgi-php
+   web-hosting/hosting
+
 
 Email
 ~~~~~
