@@ -1,2 +1,0 @@
-Volunteering as a sysadmin
---------------------------

@@ -107,7 +107,6 @@ Web hosting
    web-hosting/cgi-php
    web-hosting/hosting
 
-
 Email
 ~~~~~
 
@@ -130,10 +129,3 @@ More services
    services/mattermost
    services/irc
    services/usenet
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-   :hidden:
-
-   faq/*

@@ -1,2 +1,0 @@
-Joining the committee
----------------------
