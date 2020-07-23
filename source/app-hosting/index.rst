@@ -53,6 +53,8 @@ and password.
 -  **Host:** webserver.srcf.net
 -  **Port:** 22
 
+.. _forward-requests:
+
 Routing traffic to your app
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -193,4 +195,4 @@ MySQL and PostgreSQL accounts are included with your SRCF
 account.
 
 .. note::
-  These docs are generously provided by the Open Computing Foundation. Read more about them `here <https://www.ocf.berkeley.edu>`__.
+  The source for these docs are generously provided by the Open Computing Facility. They have been amended to include SRCF-specific information. Read more about them `here <https://www.ocf.berkeley.edu>`__.

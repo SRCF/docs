@@ -67,6 +67,11 @@ To install dependencies::
 
 Then see ``nodejs/app.js`` for a minimum base application.
 
+Forward your web requests
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The SRCF uses Apache to serve websites so if you need to run a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
+
 Preparing your app to be supervised
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -108,4 +113,4 @@ If you have a better way to host Node.js-based apps on the web server
 (or a suggestion for how we could improve this documentation), send us an email at ``support@srcf.net``!
 
 .. note::
-  These docs are generously provided by the Open Computing Foundation. Read more about them `here <https://www.ocf.berkeley.edu>`__.
+  The source for these docs are generously provided by the Open Computing Facility. They have been amended to include SRCF-specific information. Read more about them `here <https://www.ocf.berkeley.edu>`__.
