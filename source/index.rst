@@ -102,11 +102,6 @@ Web hosting
    :maxdepth: 2
 
    web-hosting/index
-   web-hosting/apache
-   web-hosting/domains
-   web-hosting/cgi-php
-   web-hosting/raven
-   web-hosting/hosting
 
 Application hosting
 ~~~~~~~~~~~~~~~~~~~
