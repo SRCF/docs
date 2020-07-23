@@ -93,7 +93,7 @@ Create a file at ``~/myapp/run`` with content like:
    #!/bin/bash -e
    . ~/myapp/venv/bin/activate
    PYTHONPATH=~/myapp/src:$PYTHONPATH \
-       exec gunicorn -w 2 -b unix:/srv/apps/$(whoami)/$(whoami).sock \
+       exec gunicorn -w 2 -b unix:/home/crsid/myapp/web.sock \
        --log-file - main:app
 
 Replace ``main:app`` with the module containing the app, and name of
