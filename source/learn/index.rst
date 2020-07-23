@@ -36,6 +36,18 @@ So you want to learn how to make cool stuff on SRCF systems? We can help you wit
      - Learn how to create your own website with software that powers 35% of the web!
      - Medium
      - 20 min
+   * - :ref:`Deploy a Node app <deploy-node>`
+     - Learn how to deploy a Node web app 
+     - Medium
+     - 20 min
+   * - :ref:`Deploy a Ruby on Rails app <deploy-rails>`
+     - Learn how to deploy a Ruby on Rails web app
+     - Medium
+     - 20 min
+   * - :ref:`Deploy a Django app <deploy-django>`
+     - Learn how to deploy Python web app like Django or Flask
+     - Medium
+     - 20 min
 
 These tutorials show you how to do a variety of things on the *SRCF systems*. They may assume some prior knowledge in the relevant sections. If you're starting out from scratch, check out our :ref:`recommended learning resources <recommended-resources>` for a curated list of resources on web development, linux, networking and more.
 
