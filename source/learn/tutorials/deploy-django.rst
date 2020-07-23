@@ -84,7 +84,7 @@ Now take a look at ``django/example/settings.py`` for how to configure your site
 See ``flask/app.py`` for a minimum base application.
 
 Preparing your app to be supervised
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a file at ``~/myapp/run`` with content like:
 
@@ -107,7 +107,7 @@ Test executing the run script. You should be able to access your website
 while running it (or see any errors in your terminal).
 
 Supervise your app with systemd
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Cool, your app works. [[Set up systemd|doc services/webapps#supervise]]
 to supervise your app (so that it starts and restarts automatically).
@@ -129,14 +129,6 @@ use ``systemctl`` to reload your app:
 ::
 
    systemctl --user reload myapp
-
-Suggestions/improvements?
--------------------------
-
-If you have a better way to host Python-based apps on the app server (or
-a suggestion for how we could improve this documentation), [[send us an
-email|doc contact]]!
-
 
 Suggestions/improvements?
 ^^^^^^^^^^^^^^^^^^^^^^^^^
