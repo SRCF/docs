@@ -9,7 +9,13 @@ Introduction
 All accounts include our :ref:`regular web hosting <web-hosting>`,
 which is suitable for static content, PHP (WordPress, Joomla, etc.), and
 CGI/FastCGI. For student groups wishing to host more advanced web apps
-with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flexibility, we provide this guide and :ref:`more custom tutorials <tutorials>` too.
+with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flexibility, we provide these overview docs and :ref:`more custom tutorials <tutorials>` too:
+
+* :ref:`Node apps <deploy-node>`
+* :ref:`Rails apps <deploy-rails>`
+* :ref:`Django apps <deploy-django>`
+
+We also provide a number of sample websites for you. You can explore them live at https://sample.soc.srcf.net/ and view the backend at ``/public/societies/sample``.
 
 App hosting eligibility
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,6 +75,8 @@ Using TCP ports
 You will need to pick a port (we've used 999 here but you should pick a different one above 1024) and configure your application to bind to that port. Be aware that port-based forwarding offers less security than UNIX socket-based forwarding and that any other user will be able to forward requests to the same port you are using. For that reason, we don't set the headers we do above as they can easily be forged by another user. Those things being considered, you can put the following in your ``.htaccess`` file to enable forwarding requests to a port::
 
     RewriteRule "^(.*)$" http://localhost:999/$1 [P,NE,L,QSA]
+
+.. _supervise-systemd:
 
 Supervising and starting your app
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
