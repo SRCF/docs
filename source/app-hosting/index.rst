@@ -17,20 +17,10 @@ with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flex
 
 We also provide a number of sample websites for you. You can explore them live at https://sample.soc.srcf.net/ and view the backend at ``/public/societies/sample``.
 
-App hosting eligibility
-^^^^^^^^^^^^^^^^^^^^^^^
-
-You can host an app if you have a ``user.srcf.net``, ``soc.srcf.net`` or a separately purchased domain name.
-
-Requirements for hosted apps
+Requirements and eligibility
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are no requirements, other than your compliance with our friendly terms of service.
-
-Adding the SRCF badge
-~~~~~~~~~~~~~~~~~~~~~
-
-We encourage you to add the SRCF badge to your website to tie your website back to the SRCF for others and for us. It's also a great way to help us out as it costs little to you but helps us out immensely, in turn allowing us to provide better services to you. You can find the badges `here <https://srcf.net/publicity>`__.
+There are no requirements, other than your compliance with our friendly terms of service. You can host your app on your ``user.srcf.net`` or ``soc.srcf.net`` subdomain, or on your own separately purchased domain name. We do encourage you to add the SRCF badge to your website so that others can find us. It's a great way to help us out as it costs little to you but helps us out immensely, in turn allowing us to provide better services to you. You can find the badges `here <https://srcf.net/publicity>`__.
 
 Technical documentation
 ^^^^^^^^^^^^^^^^^^^^^^^
