@@ -122,8 +122,8 @@ If you have a low-traffic or private site, WordPress’ cron service (which hand
 8. Closing remarks
 ~~~~~~~~~~~~~~~~~~
 
-Did you like this or find this cool? We invite you to check out :ref:`more tutorials <tutorials>`, :ref:`read our recommended resources<recommended-resources>` or :ref:`talk to us <get-help>` to tell us what you thought!
+Did you like this or find this cool? We invite you to check out :ref:`more tutorials <tutorials>`, :ref:`read our  recommended resources<recommended-resources>` or :ref:`talk to us <get-help>` to tell us what you thought!
 
+If you have any suggestions for how we could improve this documentation please send us an email at ``support@srcf.net`` or submit a Pull Request on `GitHub <https://github.com/SRCF/docs>`!
 
-
-A big thanks to `Phil Ewels <http://phil.ewels.co.uk/>`__ for writing this up originally on his own blog and to hmw26 for some of their tips. This tutorial contains some slight updates and modifications. 
+A big thanks to `Phil Ewels <http://phil.ewels.co.uk/>`__ for writing this on his own blog and to hmw26 for some of their tips. This tutorial contains some adaptations to their work.
