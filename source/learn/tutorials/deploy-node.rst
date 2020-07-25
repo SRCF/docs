@@ -11,11 +11,10 @@ Node is a popular web framework that allows you to write a custom application wi
 Setting up nvm
 ^^^^^^^^^^^^^^
 
-You will want to deploy your application using ``nvm`` so that you can
-easily install and manage dependencies and versions.
+You will want to deploy your application using ``nvm`` so that you can easily install and manage dependencies and versions.
 
 .. hint::
-  ``nvm`` stands for Node Version Manager. Ubuntu only provides a significantly outdated version of Node.js (v4.2.6 at the time of writing) in its repositories. ``nvm`` allows you to choose any version of Node to use in your environment. Note that it is your responsibility to keep it updated.
+  ``nvm`` stands for Node Version Manager. Ubuntu only provides a significantly outdated version of Node.js (v4.2.6 at the time of writing) in its repositories. Using ``nvm`` allows you to choose any version of Node to use in your environment. Note that it is your responsibility to keep your node installations and ``nvm`` itself updated.
 
 1. Create a directory for your app to live in:
 
@@ -24,18 +23,11 @@ easily install and manage dependencies and versions.
       mkdir -p ~/myapp
       cd ~/myapp
 
-2. Install ``nvm`` in your home directory. Note that ``nvm`` is terrible and
-   will modify your shell config files without asking. But maybe that’s
-   what you want?
-
-   Go find the latest version from `the NVM
-   GitHub <https://github.com/creationix/nvm>`__, and copy the nasty
-   one-liner straight into your shell to install it. At the time of
-   writing, it looks like this:
+2. Install ``nvm`` in your home directory. You'll need to find the latest version from `the NVM GitHub <https://github.com/nvm-sh/nvm>`__, and copy the one-liner straight into your shell to install it. At the time of writing, it looks like this:
 
    ::
 
-      curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
    Go ahead and run it, and close/re-open your terminal as it suggests.
 
@@ -43,20 +35,17 @@ easily install and manage dependencies and versions.
 
    ::
 
-      nvm install 6
-      nvm alias default 6
+      nvm install 12
+      nvm alias default 12
 
-4. Copy your code to ``~/myapp/src`` or similar, and install any
-   dependencies using ``npm``.
+4. Done! The version of Node.js you specified is now installed and hooked into your shell.
 
-Create or add your web app
+Add or create your web app
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have an existing app written in Node with Express, for example, you can simply copy your code to a directory of your choosing, ``src`` for example. 
+If you have an existing Node.js app you can simply copy the code to a directory of your choosing, ``~/myapp/src`` for example. If you're new to Node, follow the `getting started guide <https://nodejs.org/en/docs/guides/getting-started-guide/>`__ on the their website to deploy your first web app.
 
-If you're new to Node, follow the `getting started guide <https://nodejs.org/en/docs/guides/getting-started-guide/>`__ on the node website to deploy your first web app.
-
-Below are some tips on Express, an HTTP server:
+Below are some tips on setting up Express, a popular HTTP server that's written for Node.js:
 
 `Express <https://sample.soc.srcf.net/nodejs/>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,21 +77,18 @@ Create a file at ``~/myapp/run`` with content like:
    NODE_ENV=production PORT="/home/crsid/myapp/web.sock" \
        exec ~/myapp/src/bin/www
 
-Replace ``~/myapp/src/bin/www`` with the path to your app, then make
-``run`` executable:
+Replace ``~/myapp/src/bin/www`` with the path to your app, then make ``run`` executable:
 
 ::
 
    chmod +x ~/myapp/run
 
-Test executing the run script. You should be able to access your website
-while running it (or see any errors in your terminal).
+Test executing the run script. You should be able to access your website while running it (or see any errors in your terminal).
 
 Supervise your app with systemd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cool, your app works. Set up ``systemd``
-to :ref:`supervise your app <supervise-systemd>` (so that it starts and restarts automatically).
+Cool, your app works. Set up ``systemd`` to :ref:`supervise your app <supervise-systemd>` (so that it starts and restarts automatically).
 
 Suggestions/improvements?
 ^^^^^^^^^^^^^^^^^^^^^^^^^
