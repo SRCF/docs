@@ -128,7 +128,7 @@ recommended setup is:
       Restart=always
 
 4. Tell systemd to start your app on startup, by running
-   ``systemctl --user    enable myapp``.
+   ``systemctl --user enable myapp``.
 
 5. You’ll need to start your app manually once (on future reboots, it
    will be started for you). To do that, run
