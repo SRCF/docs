@@ -47,12 +47,12 @@ directory on our server. Inside your home directory you will find a
 ``public_html`` directory — this is where you can put your personal
 website.
 
-If you want to upload a society website, you need to connect to the
+If you want to upload a group website, you need to connect to the
 server in the same way, still using your personal username and password.
 However, rather than putting your files in the ``public_html`` directory
 in your filespace, you should also find a directory named after the
-abbreviation used for your society. Inside here you'll find another
-``public_html`` directory which is where the society website files go.
+abbreviation used for the group's account. Inside here you'll find another
+``public_html`` directory which is where the group website files go.
 
 Please note that it can take up to 20 minutes between uploading a new
 site and that site being published on the web. Please be patient.

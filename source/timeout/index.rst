@@ -38,7 +38,7 @@ Here's a preview of what Timeout looks like:
 Why should I use Timeout?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Timeout is built by the SRCF, a team of volunteers dedicated to providing robust and secure computing services for all University members. We've been around since 1999 and we host over 800 active society websites and over 1000 personal user accounts. If that's not enough to convince you, perhaps these might:
+Timeout is built by the SRCF, a team of volunteers dedicated to providing robust and secure computing services for all University members. We've been around since 1999 and we host over 800 active group account websites and over 1000 personal user accounts. If that's not enough to convince you, perhaps these might:
 
 * Timeout is **fast** - our servers are located in Cambridge so your traffic will not have to go to some data center in the US. 
 * You can invite anyone - no requirement on participants having Raven

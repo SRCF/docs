@@ -5,7 +5,7 @@ Getting to know the terminal
 
 This tutorial will walk you through some more advanced commands that you can perform in a UNIX-like terminal, which the SRCF provides you with. You will learn many of the basic commands that are used and why in conjunction with other tools they can be very powerful.
 
-This tutorial assumes you have an SRCF personal account (with or without society admin permissions) and can SSH. See our :ref:`other tutorials <tutorials>` for that.
+This tutorial assumes you have an SRCF personal account (with or without group account admin permissions) and can SSH. See our :ref:`other tutorials <tutorials>` for that.
 
 
 Introduction
@@ -122,13 +122,13 @@ To view the contents of the working directory, use the command 'ls':
 .. code-block:: bash
 
    pip:~$ ls
-   public_html  mysoc  my_file.txt
+   public_html  mygroup  my_file.txt
    pip:~$
 
 Althernatively, use 'ls -alF' to give more detailed information. The
 above example shows that the working directory has two directories
-'public_html' and 'mysoc', the first of which contains your webspace and
-the latter of which is a link to the 'mysoc' society filespace. There is
+'public_html' and 'mygroup', the first of which contains your webspace and
+the latter of which is a link to the 'mygroup' group account filespace. There is
 also one file, 'my_file.txt' (there is no way of differentiating between
 files and directories in the above example - you need to use the 'ls
 -alF' form to show that information).

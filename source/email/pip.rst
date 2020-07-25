@@ -66,7 +66,7 @@ The SRCF offers a simple interactive tool to create this file for you.  Run ``sr
 Auto-forward
 ^^^^^^^^^^^^
 
-We also provide ``srcf-autoforward``, a tool to generate role-like addresses with a simpler syntax.  You need to create a file called ``autoforward`` in a society's directory (or your home directory, for your own roles), where each line consists of a role name, a colon, and a comma-separated list of target addresses::
+We also provide ``srcf-autoforward``, a tool to generate role-like addresses with a simpler syntax.  You need to create a file called ``autoforward`` in a group accont's directory (or your home directory, for your own roles), where each line consists of a role name, a colon, and a comma-separated list of target addresses::
 
    <role>:<email>,<email>...
 
@@ -76,7 +76,7 @@ For example::
 
 Once you've defined your roles, you need to build the actual ``.forward`` file::
 
-   $ srcf-autoforward [society]
+   $ srcf-autoforward [groupaccount]
 
 Mail filtering
 ~~~~~~~~~~~~~~
@@ -85,18 +85,18 @@ We have the `Exim <https://www.exim.org>`__ mail transfer agent installed -- see
 
 Filters in Exim are more complicated than :ref:`Hades' Sieve filters <hades-filters>`, though there are a few things supported which cannot be done on Hades, such as piping your email into a custom program.
 
-Here are a few examples of basic forwarding for a society account.  Note that the ``# Exim filter`` line is required.
+Here are a few examples of basic forwarding for a group account.  Note that the ``# Exim filter`` line is required.
 
 ::
 
    # Exim filter
 
-   # Forward emails for <socname>-webmaster@srcf.net to spqr2@cam.ac.uk:
+   # Forward emails for <groupname>-webmaster@srcf.net to spqr2@cam.ac.uk:
    if ($local_part_suffix is "-webmaster") then
       deliver spqr2@cam.ac.uk
    endif
 
-   # Forward <socname>-treasurer@srcf.net to spqr and an external address:
+   # Forward <groupname>-treasurer@srcf.net to spqr and an external address:
    if ($local_part_suffix is "-treasurer") then
       deliver spqr2@cam.ac.uk
       deliver treasurer@example.com
@@ -104,7 +104,7 @@ Here are a few examples of basic forwarding for a society account.  Note that th
 
    # Forward anything not yet processed to a lists.cam mailing list:
    if not delivered then
-      deliver soc-example-committee@lists.cam.ac.uk
+      deliver group-example-committee@lists.cam.ac.uk
    endif
 
 .. _pip-mbox:
