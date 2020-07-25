@@ -76,7 +76,7 @@ For example::
 
 Once you've defined your roles, you need to build the actual ``.forward`` file::
 
-   $ srcf-autoforward [groupaccount]
+   $ srcf-autoforward <groupname>
 
 Mail filtering
 ~~~~~~~~~~~~~~
