@@ -66,7 +66,7 @@ The SRCF offers a simple interactive tool to create this file for you.  Run ``sr
 Auto-forward
 ^^^^^^^^^^^^
 
-We also provide ``srcf-autoforward``, a tool to generate role-like addresses with a simpler syntax.  You need to create a file called ``autoforward`` in a group accont's directory (or your home directory, for your own roles), where each line consists of a role name, a colon, and a comma-separated list of target addresses::
+We also provide ``srcf-autoforward``, a tool to generate role-like addresses with a simpler syntax.  You need to create a file called ``autoforward`` in a group account's directory (or your home directory, for your own roles), where each line consists of a role name, a colon, and a comma-separated list of target addresses::
 
    <role>:<email>,<email>...
 
