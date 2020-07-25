@@ -61,10 +61,10 @@ Forward your web requests
 
 The SRCF uses Apache to serve websites so if you need to run a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
 
-Preparing your app to be supervised
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Preparing your app
+^^^^^^^^^^^^^^^^^^
 
-Create a file at ``~/myapp/run`` with content like:
+The SRCF uses systemd to supervise processes and Apache to serve web content so you will need to make sure you prepare your app for this before it can run. First create a script that will run your web app at ``~/myapp/run`` with the following content:
 
 ::
 
@@ -77,18 +77,17 @@ Create a file at ``~/myapp/run`` with content like:
    NODE_ENV=production PORT="/home/crsid/myapp/web.sock" \
        exec ~/myapp/src/bin/www
 
-Replace ``~/myapp/src/bin/www`` with the path to your app, then make ``run`` executable:
+Replace ``~/myapp/src/bin/www`` with the path to your app, then make the ``run`` script executable:
 
 ::
 
    chmod +x ~/myapp/run
 
-Test executing the run script. You should be able to access your website while running it (or see any errors in your terminal).
+You then need to configure Apache to forward web requests to the ``web.sock`` socket specified in the ``run`` script. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
 
-Supervise your app with systemd
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+You should now be able to execute the script and access your website (or see any errors in your terminal).
 
-Cool, your app works. Set up ``systemd`` to :ref:`supervise your app <supervise-systemd>` (so that it starts and restarts automatically).
+Now follow our instructions :ref:`here <supervise-systemd>` to setup the systemd user service that will manage your app and start it automatically at boot.
 
 Suggestions/improvements?
 ^^^^^^^^^^^^^^^^^^^^^^^^^
