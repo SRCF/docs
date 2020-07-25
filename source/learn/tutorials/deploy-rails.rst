@@ -134,6 +134,6 @@ Suggestions/improvements?
 
 Did you like this or find this cool? We invite you to check out :ref:`more tutorials <tutorials>` and :ref:`read our recommended resources<recommended-resources>`.
 
-If you have a better way to host Rails-based apps on the SRCF web server (or any other suggestions for how we could improve this documentation), send us an email at ``support@srcf.net`` or submit a Pull Request on `GitHub <https://github.com/SRCF/docs>`!
+If you have a better way to host Rails-based apps on the SRCF web server (or any other suggestions for how we could improve this documentation), send us an email at ``support@srcf.net`` or submit a Pull Request on `GitHub <https://github.com/SRCF/docs>`__!
 
 .. note:: This tutorial was originally based on content by the Open Computing Facility and amended to include SRCF-specific information. Read more about them `here <https://www.ocf.berkeley.edu>`__.
