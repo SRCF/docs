@@ -6,7 +6,9 @@ Deploy a Node web app
 Introduction
 ^^^^^^^^^^^^
 
-Node is a popular web framework that allows you to write a custom application with an active backend in JS. Find out more about the project here: https://nodejs.org/en/.
+Node.js is a popular runtime that allows you to write custom server-side applications in JS. This tutorial will help you get your Node-based web app setup on the SRCF.
+
+You can find out more about Node.js here: https://nodejs.org/en/.
 
 Setting up nvm
 ^^^^^^^^^^^^^^
