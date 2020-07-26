@@ -44,7 +44,7 @@ So you want to learn how to make cool stuff on SRCF systems? We can help you wit
      - Learn how to deploy a Ruby on Rails web app
      - Medium
      - 20 min
-   * - :ref:`Deploy a Django app <deploy-django>`
+   * - :ref:`Deploy a Python app <deploy-python>`
      - Learn how to deploy Python web app like Django or Flask
      - Medium
      - 20 min
