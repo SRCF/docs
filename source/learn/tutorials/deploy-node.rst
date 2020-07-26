@@ -58,11 +58,6 @@ To install dependencies::
 
 Then see ``nodejs/app.js`` for a minimum base application.
 
-Forward your web requests
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The SRCF uses Apache to serve websites so if you need to run a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
-
 Preparing your app
 ^^^^^^^^^^^^^^^^^^
 
