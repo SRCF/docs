@@ -48,16 +48,16 @@ If you already have a Python-based web app, then you can copy in your files to t
 
 If you're a beginner then take a look at some of the starter projects below.
 
-python
+Django
 ~~~~~~
 
-To create a skeleton python project::
+To create a skeleton Django project::
 
-    $ python-admin startproject example
+    $ django-admin startproject example
     $ mv example python
     $ cd python
 
-Now take a look at ``python/example/settings.py`` for how to configure your site. There is also a demo available at https://sample.soc.srcf.net/python/.
+Now take a look at ``django/example/settings.py`` for how to configure your site. There is also a demo available at https://sample.soc.srcf.net/django/.
 
 Flask
 ~~~~~
