@@ -1,1 +1,3 @@
-# TODO
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^docs.srcf.net$
+RewriteRule ^learn/tutorials/deploy-django(\.html)?$ /learn/tutorials/deploy-python
