@@ -1,9 +1,9 @@
 Files and transfer
 ------------------
 
-Your home directory on SRCF servers is ``/home/<crsid>`` and is private to you.  Group account files can be found at ``/societies/<groupname>`` and can only be accessed by group account admins.
+Your home directory on SRCF servers is ``/home/<crsid>`` and is private to you.  Group account files can be found at ``/groups/<groupname>`` and can only be accessed by group account admins.
 
-All accounts also come with a "public" directory (these are located at ``/public/home/<crsid>`` and ``/public/societies/<groupname>`` respectively).  This includes your website root ``public_html``, but you're free to use them as you wish.
+All accounts also come with a "public" directory (these are located at ``/public/home/<crsid>`` and ``/public/groups/<groupname>`` respectively).  This includes your website root ``public_html``, but you're free to use them as you wish.
 
 You can use SFTP or SCP to transfer files between your SRCF account and your personal computer.  Mac and Linux come with ``scp`` for per-file transfer; you may prefer a graphical client -- options include WinSCP on Windows, or Cyberduck for Mac/Windows.
 
@@ -18,7 +18,7 @@ Consider searching for cache files in your home directory that may be taking up 
 Snapshots
 ~~~~~~~~~
 
-Although *the SRCF does not guarantee to take backups* of users' data, snapshots of ``/home``, ``/public`` and ``/societies`` are generally taken regularly for disaster recovery purposes. Snapshots may be accessed using the hidden (it will not show up in ls -a or in shell autocomplete) directory ``.snapshot``, available at any level of the file hierarchy.
+Although *the SRCF does not guarantee to take backups* of users' data, snapshots of ``/home``, ``/public`` and ``/groups`` are generally taken regularly for disaster recovery purposes. Snapshots may be accessed using the hidden (it will not show up in ls -a or in shell autocomplete) directory ``.snapshot``, available at any level of the file hierarchy.
 
 For example:
 

@@ -41,7 +41,7 @@ You may wish to run more than one website under a single account.  This can be d
 
 First, make sure all the desired domains are configured as above.  When emailing us, tell us which directory each site should be served from -- **this must be a subdirectory of public_html**, or public_html itself.
 
-For example, you may wish to serve ``example.com`` from */societies/<groupname>/public_html*, and ``bubbles.example.com`` from */societies/<groupname>/public_html/bubbles*.
+For example, you may wish to serve ``example.com`` from */groups/<groupname>/public_html*, and ``bubbles.example.com`` from */groups/<groupname>/public_html/bubbles*.
 
 What about email?
 ~~~~~~~~~~~~~~~~~

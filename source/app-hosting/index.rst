@@ -15,7 +15,7 @@ with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flex
 * :ref:`Rails apps <deploy-rails>`
 * :ref:`Python apps <deploy-python>`
 
-We also provide a number of sample websites for you. You can explore them live at https://sample.soc.srcf.net/ and view the backend at ``/public/societies/sample``.
+We also provide a number of sample websites for you. You can explore them live at https://sample.soc.srcf.net/ and view the backend at ``/public/groups/sample``.
 
 Requirements and eligibility
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

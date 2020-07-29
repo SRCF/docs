@@ -13,7 +13,7 @@ By default, we also define **<groupname>-webmaster@srcf.net** as an alias to *<g
 Customising mail handling
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can set up a ``.forward`` file in your group account's directory at ``/societies/<groupname>/.forward``.  This will be used to process all email sent to addresses of the form ``<groupname>@srcf.net`` or ``<groupname>-<anything>@srcf.net``, with the exception of ``<groupname>-admins@srcf.net`` which is always forwarded to admins.
+You can set up a ``.forward`` file in your group account's directory at ``/groups/<groupname>/.forward``.  This will be used to process all email sent to addresses of the form ``<groupname>@srcf.net`` or ``<groupname>-<anything>@srcf.net``, with the exception of ``<groupname>-admins@srcf.net`` which is always forwarded to admins.
 
 .. note::
 

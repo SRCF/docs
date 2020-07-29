@@ -4,7 +4,7 @@ File permissions
 ----------------
 
 Each group account has a corresponding system (UNIX) group that manages access permissions for files
-and directories in the group account space. Both ``/societies/<groupname>`` and ``/public/societies/<groupname>`` are writable by the system group. Each admin of the account is then added to that system group, which grants the admin permissions to manage files.
+and directories in the group account space. Both ``/groups/<groupname>`` and ``/public/groups/<groupname>`` are writable by the system group. Each admin of the account is then added to that system group, which grants the admin permissions to manage files.
 
 When creating new files or directories, you should ensure the system group permissions are correct -- for each file the system group should match the group account name (and not your personal system group), and permissions should include group-write.  Example output from ``ls -l``::
 

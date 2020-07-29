@@ -1,7 +1,7 @@
 Available hosting types
 -----------------------
 
-This page lists examples of applications and frameworks you can use to build a website.  They can also be seen at https://sample.soc.srcf.net, and you can take a look at their configuration inside ``/public/societies/sample``.
+This page lists examples of applications and frameworks you can use to build a website.  They can also be seen at https://sample.soc.srcf.net, and you can take a look at their configuration inside ``/public/groups/sample``.
 
 All accounts include our :ref:`regular web hosting <web-hosting>`,
 which is suitable for static content, PHP (WordPress, Joomla, etc.), and
@@ -29,17 +29,17 @@ You can use a generator of your choice to manage your site.  Just have it output
 To create the skeleton project::
 
     $ jekyll new jekyll
-    New jekyll site installed in /public/societies/sample/jekyll.
+    New jekyll site installed in /public/groups/sample/jekyll.
     $ cd jekyll
 
 For a root site (i.e. top of public\_html)::
 
-    $ ln -s /public/societies/sample/public_html _site
+    $ ln -s /public/groups/sample/public_html _site
 
 ...or for a site in a subdirectory, edit ``_config.yaml`` to set ``baseurl`` to e.g. ``/jekyll``, then::
 
-    $ mkdir /public/societies/sample/public_html/jekyll
-    $ ln -s /public/societies/sample/public_html/jekyll _site
+    $ mkdir /public/groups/sample/public_html/jekyll
+    $ ln -s /public/groups/sample/public_html/jekyll _site
 
 To (re)build the site::
 

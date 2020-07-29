@@ -1,7 +1,7 @@
 Administrators
 --------------
 
-Each group account has a list of *admins*: SRCF users who manage the account and its services.  This includes access to the account in the control panel, permissions to edit files inside ``/societies/<groupname>``, and receiving administrative email sent to ``<groupname>-admins@srcf.net``.  This list may also be used by an account's website to limit page access to current admins.
+Each group account has a list of *admins*: SRCF users who manage the account and its services.  This includes access to the account in the control panel, permissions to edit files inside ``/groups/<groupname>``, and receiving administrative email sent to ``<groupname>-admins@srcf.net``.  This list may also be used by an account's website to limit page access to current admins.
 
 We recommend that you keep your own handover documentation, covering what services and software a group account is using.
 

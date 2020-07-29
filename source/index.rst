@@ -1,7 +1,7 @@
 SRCF documentation
 ==================
 
-Whether you're a society webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services. To see what we offer you, head on over to our `main website <https://www.srcf.net>`__ for more information.
+Whether you're a society/group webmaster, budding sysadmin or just an interested browser, these pages should contain all the necessary answers to help guide you in whatever you wish to make with our services. To see what we offer you, head on over to our `main website <https://www.srcf.net>`__ for more information.
 
 .. _get-help:
 
@@ -17,7 +17,7 @@ Should you at any point need help, we offer three different solutions:
 **Please do not be afraid to ask for help!** Asking for help is an essential stage of the learning process. In the first instance, check the common requests below and see if that helps you. If not, or if you don't know where to start or what to look for, hop in our live support channel and we'll help get you sorted.
 
 .. important::
-   The SRCF is run by volunteers who help to maintain its services for hundreds of societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`__.
+   The SRCF is run by volunteers who help to maintain its services for hundreds of groups and societies. Our services are free and therefore we rely on donations. If you can, please `consider donating <https://www.srcf.net/donate>`__.
 
 Learning
 --------

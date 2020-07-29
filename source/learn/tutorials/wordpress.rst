@@ -13,7 +13,7 @@ This tutorial assumes you have an SRCF personal account (with or without group a
 1. Sign up for the SRCF
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-If you don't have an SRCF account already, make sure to :ref:`create one <getting-started-personal>`. If you wish to create a website for a society or other group, you need to `create a group account too <https://control.srcf.net/signup/society>`__.
+If you don't have an SRCF account already, make sure to :ref:`create one <getting-started-personal>`. If you wish to create a website for a society or other group, you need to `create a group account too <https://control.srcf.net/signup/group>`__.
 
 2. Setting up your database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

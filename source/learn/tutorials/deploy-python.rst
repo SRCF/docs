@@ -11,7 +11,7 @@ Python is a popular programming language with a number of equally popular web fr
 You can find out more about the Python language here: https://www.python.org.
 
 
-.. There is a sample app available in ``/public/societies/sample`` for you to explore. Once there, see ``run.sh`` for command-line options, and ``crontab`` or ``python-web@.service`` for deployment.
+.. There is a sample app available in ``/public/groups/sample`` for you to explore. Once there, see ``run.sh`` for command-line options, and ``crontab`` or ``python-web@.service`` for deployment.
 
 Setting up a virtualenv
 ^^^^^^^^^^^^^^^^^^^^^^^

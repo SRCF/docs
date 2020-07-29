@@ -10,7 +10,7 @@ Unlike most hosting providers, websites are run using your own (or a group's) us
 Directory root
 ~~~~~~~~~~~~~~
 
-Websites are served out of ``public_html`` directories, present in your public file space (``/public/home/<crsid>/public_html`` or ``/public/societies/<groupname>/public_html``).
+Websites are served out of ``public_html`` directories, present in your public file space (``/public/home/<crsid>/public_html`` or ``/public/groups/<groupname>/public_html``).
 
 To use Apache directives, you should use a ``.htaccess`` file, which provides a subset of functionality at a per-site level.
 
