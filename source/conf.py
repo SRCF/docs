@@ -14,6 +14,7 @@ master_doc = "index"
 
 html_theme = "theme"
 html_theme_path = [".."]
+html_extra_path = [".htaccess"]
 html_title = "SRCF docs"
 html_sidebars = {"**": ["localtoc.html", "relations.html", "searchbox.html"]}
 html_theme_options = {
