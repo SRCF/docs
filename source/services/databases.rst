@@ -1,7 +1,7 @@
 MySQL and PostgreSQL databases
 ------------------------------
 
-Both user and society accounts can make use of databases, either in MySQL or PostgreSQL.  We don't create accounts for these by default -- you will need to request them separately via the control panel, which will give you a distinct password for authentication (don't use your personal SRCF password).
+Both user and group accounts can make use of databases, either in MySQL or PostgreSQL.  We don't create accounts for these by default -- you will need to request them separately via the control panel, which will give you a distinct password for authentication (don't use your personal SRCF password).
 
 You will receive a default database named after your account.  In MySQL, you can create additional databases of the form ``<username>/<something>``.  For PostgreSQL, you can make use of schemas to organise your tables if needed.
 
@@ -14,7 +14,7 @@ To connect to MySQL from an SRCF shell::
 
     $ mysql -h mysql -p <database>
 
-Here, ``-h`` specifies the hostname, ``-p`` prompts for your password, and you're connected to the database specified at the end -- either your CRSid for your personal database, or a society database name.
+Here, ``-h`` specifies the hostname, ``-p`` prompts for your password, and you're connected to the database specified at the end -- either your CRSid for your personal database, or a group database name.
 
 Similarly for PostgreSQL::
 
@@ -24,9 +24,9 @@ Providing a database is optional; by default, you'll be connected to the one mat
 
 You can also use `phpMyAdmin <https://www.srcf.net/phpmyadmin/>`__ for MySQL, and `phpPgAdmin <https://www.srcf.net/phppgadmin/>`__ PostgreSQL, to manage your databases in a browser.
 
-Society account access
+Group account access
 ~~~~~~~~~~~~~~~~~~~~~~
 
-If logged in using your personal database account, you can also access databases owned by societies you administrate.
+If logged in using your personal database account, you can also access databases owned by group accounts you administrate.
 
-When configuring software or websites in a society account, you must use the society database account to access its databases -- **do not use your personal credentials** as that would give other society admins access to your personal account (including personal and all owned societies' databases).
+When configuring software or websites in a group account, you must use the group database account to access its databases -- **do not use your personal credentials** as that would give other group account admins access to your personal account and all the databases (both personal and group) to which you have access!

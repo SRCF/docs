@@ -27,9 +27,9 @@ Alternatively, you may want to limit access to Raven-authenticated users or visi
     Require valid-user
     Satisfy any
 
-To limit page access to society account admins only, add a ``unix-group`` *Require* directive::
+To limit page access to group account admins only, add a ``unix-group`` *Require* directive::
 
-    Require unix-group <socname>
+    Require unix-group <groupname>
 
 You can also list specific users::
 

@@ -8,7 +8,7 @@ Introduction
 
 All accounts include our :ref:`regular web hosting <web-hosting>`,
 which is suitable for static content, PHP (WordPress, Joomla, etc.), and
-CGI/FastCGI. For student groups wishing to host more advanced web apps
+CGI/FastCGI. For those wishing to host more advanced web apps
 with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flexibility, we provide these overview docs and :ref:`more custom tutorials <tutorials>` too:
 
 * :ref:`Node apps <deploy-node>`

@@ -75,14 +75,14 @@ Personal accounts
    personal-accounts/after-graduation
    personal-accounts/soc-srcf-lists
 
-Society accounts
-~~~~~~~~~~~~~~~~
+Group accounts
+~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
 
-   society-accounts/administrators
-   society-accounts/permissions
+   group-accounts/administrators
+   group-accounts/permissions
 
 Shell and files
 ~~~~~~~~~~~~~~~
@@ -120,7 +120,7 @@ Email
    email/summary
    email/hades
    email/pip
-   email/societies
+   email/group-accounts
 
 More services
 ~~~~~~~~~~~~~

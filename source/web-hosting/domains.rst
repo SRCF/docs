@@ -3,7 +3,7 @@
 Custom domains
 --------------
 
-As part of our web hosting, we provide free domains for both individuals (of the form ``<crsid>.user.srcf.net``) and societies (``<socname>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective user or society (subject to a 20 minute delay when publishing a new website).
+As part of our web hosting, we provide free domains for both individuals (of the form ``<crsid>.user.srcf.net``) and group accounts (``<groupname>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective personal or group account (subject to a 20-minute delay when publishing a new website).
 
 We also support external domains purchased from a domain registrar.  For these to serve your site, you'll first need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure.
 
@@ -28,7 +28,7 @@ The preferred method is a **CNAME** record, which acts as an alias from your dom
 
 CNAMEs are generally not supported on base domains (``example.com``), only subdomains, so the alternative is to use **A** (for IPv4) and **AAAA** (IPv6) records to specify an IP address.  The A record should be set to ``131.111.179.82``, whilst AAAA should be ``2001:630:212:700:2::1``.  Make sure to remove any non-SRCF A/AAAA records for that domain, otherwise browsers may arbitrarily choose between our server and whatever else is configured.
 
-You can confirm if the domain is resolving to us correctly by visiting it in your browser -- you should be greeted with a "non-existent site" page on our site.  Once this is visible to you, use the SRCF control panel to assign the domain to your (society) account.
+You can confirm if the domain is resolving to us correctly by visiting it in your browser -- you should be greeted with a "non-existent site" page on our site.  Once this is visible to you, use the SRCF control panel to assign the domain to your (group) account.
 
 .. warning::
 
@@ -41,7 +41,7 @@ You may wish to run more than one website under a single account.  This can be d
 
 First, make sure all the desired domains are configured as above.  When emailing us, tell us which directory each site should be served from -- **this must be a subdirectory of public_html**, or public_html itself.
 
-For example, you may wish to serve ``example.com`` from */societies/<socname>/public_html*, and ``bubbles.example.com`` from */societies/<socname>/public_html/bubbles*.
+For example, you may wish to serve ``example.com`` from */societies/<groupname>/public_html*, and ``bubbles.example.com`` from */societies/<groupname>/public_html/bubbles*.
 
 What about email?
 ~~~~~~~~~~~~~~~~~

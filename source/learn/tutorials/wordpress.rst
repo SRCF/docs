@@ -5,7 +5,7 @@ Create your own website with WordPress
 
 In this tutorial, you'll learn how to create a fully functional blog/personal website using WordPress. This is a great first project if you're a user starting out with the SRCF, websites in general or want to use a tried-and-tested Content Management System.
 
-This tutorial assumes you have an SRCF personal account (with or without society admin permissions) and can SSH and transfer files. See our :ref:`other tutorials <tutorials>` for that.
+This tutorial assumes you have an SRCF personal account (with or without group account admin permissions) and can SSH and transfer files. See our :ref:`other tutorials <tutorials>` for that.
 
 .. note::
   WordPress started off as a blogging platform but then evolved into a fully featured `Content Management System <https://en.wikipedia.org/wiki/Content_management_system>`__. This means that with a few clicks and virtually no knowledge of website design or coding, you can have a very professional site up and running which is easy to update and maintain. WordPress has huge user and development bases meaning that there is a lot of help available, as well as a plugin to handle just about any desired function. WordPress powers 35% of the web!
@@ -13,7 +13,7 @@ This tutorial assumes you have an SRCF personal account (with or without society
 1. Sign up for the SRCF
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-If you don't have an SRCF account already, make sure to :ref:`create one <getting-started-personal>`. If you wish to create a website for your society, you need to `create a society account too <https://control.srcf.net/signup/society>`__.
+If you don't have an SRCF account already, make sure to :ref:`create one <getting-started-personal>`. If you wish to create a website for a society or other group, you need to `create a group account too <https://control.srcf.net/signup/society>`__.
 
 2. Setting up your database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -25,7 +25,7 @@ WordPress needs a MySQL database to run. This works a bit like Excel, storing al
 
 Now that you've got everything setup, let's check if you can log in with an FTP client. You’ll want to connect to files.srcf.net via SFTP (the S stands for secure). You should see a folder called public_html which we’ll be uploading all of our files to.
 
-Next up, check that you can access your database: log in to phpMyAdmin. This is a web-based control panel where you can view and edit your database manually. You should see your personal database on the left along with any society account databases. They should all look pretty empty at this point.
+Next up, check that you can access your database: log in to phpMyAdmin. This is a web-based control panel where you can view and edit your database manually. You should see your personal database on the left along with any group account databases. They should all look pretty empty at this point.
 
 If everything is working so far and you have all of your login details and passwords, we’re good to go! Congratulations, that was the hardest bit of the whole process…
 
@@ -42,7 +42,7 @@ Once your ``.zip`` file has finished downloading, we need to get the files from 
 5. Configuration and final steps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Great! Now if you head to your website in a browser ``http://**crsid**.user.srcf.net`` for an indvidual account or ``http://**societyname**.soc.srcf.net`` for a society) you should see a friendly welcome screen. Fill in all of the details that it asks for - leave ``localhost`` as it is, try not to use ``wp_`` as the database prefix or ``admin`` as the administrator username *(this makes it harder for hackers to infiltrate your site).*
+Great! Now if you head to your website in a browser ``http://**crsid**.user.srcf.net`` for an indvidual account or ``http://**groupname**.soc.srcf.net`` for a group account) you should see a friendly welcome screen. Fill in all of the details that it asks for - leave ``localhost`` as it is, try not to use ``wp_`` as the database prefix or ``admin`` as the administrator username *(this makes it harder for hackers to infiltrate your site).*
 
 That's it - you have a website! We told you it was easy.
 
@@ -117,7 +117,7 @@ If configured correctly, the updates page should include text similar to *Future
 If you have a low-traffic or private site, WordPress’ cron service (which handles updates and other background tasks) may not run regularly enough. You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` respectively.
 
 .. warning::
-  Ensure that the **permissions on files in your society directory are writable by the society group** (and therefore the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
+  Ensure that the **permissions on files in your group account directory are writable by the system group** (and therefore the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
 
 8. Closing remarks
 ~~~~~~~~~~~~~~~~~~

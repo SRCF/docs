@@ -7,7 +7,7 @@ If something is missing that you'd like to use, we may be able to install it for
 
 As we run long-term support releases of Ubuntu, you may find that the versions we have installed are rather outdated (typically several years behind, patched by Ubuntu with security fixes but without new features).
 
-In some cases, you may be able to set up or install your own copy of software within your (or a society's) home directory.  However, it is then your responsibility to keep it updated – accounts with security vulnerabilities may be suspended without notice.
+In some cases, you may be able to set up or install your own copy of software within your (or a group account's) home directory.  However, it is then your responsibility to keep it updated – accounts with security vulnerabilities may be suspended without notice.
 
 Port binding
 ~~~~~~~~~~~~
