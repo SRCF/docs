@@ -9,7 +9,7 @@ Just as a butterfly emerges from its coccoon to explore the great wonders of the
 ~~~~~~~~~~~~~~~
 
 Much of the functionality offered by the SRCF is accessible via a
-text-mode “shell” interface on our server — using this interface you can
+text-mode "shell" interface on our server — using this interface you can
 manipulate files on your website directly, as well as running other
 programs such as email software. When you get an SRCF account, you can
 connect to the server and issue commands by typing them. If you're not

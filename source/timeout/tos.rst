@@ -40,16 +40,16 @@ Definitions
 
 "University" means the University of Cambridge.
 
-A "CRSid" is a unique identifier issued to a person by the University. According to the University, CRSids are never reissued, so we assume that a CRSid will uniquely identify the same person forever. Usernames on our computer systems are also assigned to match a person’s CRSid.
+A "CRSid" is a unique identifier issued to a person by the University. According to the University, CRSids are never reissued, so we assume that a CRSid will uniquely identify the same person forever. Usernames on our computer systems are also assigned to match a person's CRSid.
 
 The bases on which we process personal data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Timeout usually processes members’ personal data on the basis that it is a legitimate interest of the service. Where we process your personal information for a purpose falling outside those listed in this statement or our other privacy statements (if applicable to you), we will seek your explicit consent before doing so.
+Timeout usually processes members' personal data on the basis that it is a legitimate interest of the service. Where we process your personal information for a purpose falling outside those listed in this statement or our other privacy statements (if applicable to you), we will seek your explicit consent before doing so.
 
 How users' personal data is used by Timeout
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Timeout collects and processes its users’ personal data for a number of purposes, namely:
+Timeout collects and processes its users' personal data for a number of purposes, namely:
 
 * Maintaining a list of users and associate rooms and recordings to the user;
 * Keeping system logs to identify issues and investigate security incidents;

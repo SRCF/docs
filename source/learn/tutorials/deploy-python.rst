@@ -68,7 +68,7 @@ Installing gunicorn
 
 We recommend using gunicorn to serve your application. After activating your virtualenv, install it with ``pip install gunicorn``.
 
-Note that you may see a warning about a syntax error. As long as the output ends in “Successfully installed gunicorn”, `it’s safe to ignore this <https://stackoverflow.com/a/25611194>`__.
+Note that you may see a warning about a syntax error. As long as the output ends in "Successfully installed gunicorn", `it's safe to ignore this <https://stackoverflow.com/a/25611194>`__.
 
 .. warning::
 

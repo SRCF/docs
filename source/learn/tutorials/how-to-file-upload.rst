@@ -13,7 +13,7 @@ In this tutorial, you will be using SFTP to upload your files. Let's get started
 0. Introduction
 ~~~~~~~~~~~~~~~
 
-FTP stands for ‘file transfer protocol’ and is another method of connecting to a web server (different to HTTP). It’s the quickest and easiest way to transfer files between the computer you’re working on and the web server where they’ll be supplied to people viewing your website.
+FTP stands for 'file transfer protocol' and is another method of connecting to a web server (different to HTTP). It's the quickest and easiest way to transfer files between the computer you're working on and the web server where they'll be supplied to people viewing your website.
 
 1. Get an SFTP/SCP client
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,7 +28,7 @@ Some of these might only be available for macOS or Windows or vice versa.
 .. hint::
   If you use WinSCP then `this
   documentation <http://winscp.net/eng/docs/introduction>`__ and also the
-  win-built documentation (in the “Help” menu) will be handy.
+  win-built documentation (in the "Help" menu) will be handy.
 
 2. Connecting
 ~~~~~~~~~~~~~

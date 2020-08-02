@@ -27,7 +27,7 @@ Technical documentation
 
 You can host basically any kind of web application that can bind to a
 socket. We provide suggested deployment instructions for some popular
-web applications below, but if you know what you’re doing, you needn’t
+web applications below, but if you know what you're doing, you needn't
 follow them.
 
 Connecting to our web server
@@ -78,10 +78,10 @@ Supervising and starting your app
 
 .. attention::
   **Make sure you do these steps on the web server.** If you start
-  your app on ``pip``, the public shell server, it won’t work.
+  your app on ``pip``, the public shell server, it won't work.
 
 We may restart the application server as part of regular maintenance,
-and you’ll want your app to start again when we do. You’ll also want
+and you'll want your app to start again when we do. You'll also want
 your app to automatically restart if it crashes.
 
 We highly recommend to use ``systemd`` to supervise your app. Our
@@ -92,7 +92,7 @@ recommended setup is:
 2. Place a startup script at ``~/myapp/run``. Your script should end by
    ``exec``\ ing the server process. If you followed one of our tutorials
    for Django, Node or Rails,
-   you’ve already created this file, so can move on to the next step.
+   you've already created this file, so can move on to the next step.
 
    Otherwise, an example would be:
 
@@ -106,7 +106,7 @@ recommended setup is:
    signals are sent to the server (and not to the shell that started
    it).
 
-   Once you’ve written the script, make it executable
+   Once you've written the script, make it executable
    (``chmod +x ~/myapp/run``). Test it by executing it in your terminal
    before moving on; it will be easier to debug problems.
 
@@ -130,7 +130,7 @@ recommended setup is:
 4. Tell systemd to start your app on startup, by running
    ``systemctl --user enable myapp``.
 
-5. You’ll need to start your app manually once (on future reboots, it
+5. You'll need to start your app manually once (on future reboots, it
    will be started for you). To do that, run
    ``systemctl --user start myapp``.
 
@@ -142,7 +142,7 @@ To control your app, you can use the ``systemctl`` tool. See
 -  **Bring an app back online.** ``systemctl --user start myapp``
 -  **Check the status of an app.** ``systemctl --user status myapp``
 
-Your app’s standard output and error streams are sent to systemd’s
+Your app's standard output and error streams are sent to systemd's
 journal (by default). You can view them using ``journalctl --user -n``.
 See ``man journalctl`` for more options.
 
@@ -157,7 +157,7 @@ Can you install a package on the web server?
 Probably. Feel free to email us at ``support@srcf.net`` and be sure to provide the
 name of the `Debian
 package <https://www.debian.org/distrib/packages#search_packages>`__ you
-want us to install. Keep in mind we’ll probably be installing the stable
+want us to install. Keep in mind we'll probably be installing the stable
 version of the package, so it might be old.
 
 You might prefer to install the package locally. See below.
@@ -165,12 +165,12 @@ You might prefer to install the package locally. See below.
 This package is 7 years old. Can you update it?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Probably not. Our servers run Ubuntu stable, so it’s expected that
-system packages aren’t current (indeed, they’re often a few years old).
+Probably not. Our servers run Ubuntu stable, so it's expected that
+system packages aren't current (indeed, they're often a few years old).
 We almost never make exceptions or install backported packages.
 
 For developing and deploying your app, you should almost certainly be
-using your platform’s version manager (rvm, virtualenv, nvm, gvm, etc.).
+using your platform's version manager (rvm, virtualenv, nvm, gvm, etc.).
 This will allow you to run the exact versions you want, and install any
 necessary dependencies, all without coordinating with us (or forcing the
 rest of our users to switch versions).

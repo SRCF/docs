@@ -23,11 +23,11 @@ WordPress needs a MySQL database to run. This works a bit like Excel, storing al
 3. Make sure everything is OK
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now that you've got everything setup, let's check if you can log in with an FTP client. You’ll want to connect to files.srcf.net via SFTP (the S stands for secure). You should see a folder called public_html which we’ll be uploading all of our files to.
+Now that you've got everything setup, let's check if you can log in with an FTP client. You'll want to connect to files.srcf.net via SFTP (the S stands for secure). You should see a folder called public_html which we'll be uploading all of our files to.
 
 Next up, check that you can access your database: log in to phpMyAdmin. This is a web-based control panel where you can view and edit your database manually. You should see your personal database on the left along with any group account databases. They should all look pretty empty at this point.
 
-If everything is working so far and you have all of your login details and passwords, we’re good to go! Congratulations, that was the hardest bit of the whole process…
+If everything is working so far and you have all of your login details and passwords, we're good to go! Congratulations, that was the hardest bit of the whole process…
 
 4. Installing WordPress
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,7 +77,7 @@ Accounts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Ensure your ``wp-config.php`` is not world-readable, as that will contain your database credentials. You can set permissions in your FTP client or in the console, eg. ``chmod 0660`` to get ``-rw-rw----``
-2. It is advised to lock down WordPress’ admin panel at /wp-admin/ by putting that directory behind Raven authentication – see ``public_html/wordpress/wp-admin/.htaccess``. 
+2. It is advised to lock down WordPress' admin panel at /wp-admin/ by putting that directory behind Raven authentication – see ``public_html/wordpress/wp-admin/.htaccess``.
 3. We also recommend you disable *Allow link notifications from other blogs (pingbacks and trackbacks)* on new posts, under ``Settings`` > ``Discussion`` in the admin panel.
 4. To ensure your site is as secure as possible, you should make sure the latest security patches are added by enabling automatic updates. See section below.
 5. Activate a spam filtering plugin like Akismet and a capatcha system like reCAPTCHA. Akismet is installed by default and just needs activiating. Go to ``.../wp-admin/plugins.php`` to install and activate plugins.
@@ -99,7 +99,7 @@ You can put any site (or parts of your site) behind Raven by following :ref:`our
 Automatic updates
 ^^^^^^^^^^^^^^^^^
 
-WordPress will likely refuse to do automatic updates, instead requesting FTP credentials – this is because it assumes it can’t write its own files on the server. To make this work you can add the following few lines to your ``wp-config``.php, near the bottom but above the line that says “stop editing”:
+WordPress will likely refuse to do automatic updates, instead requesting FTP credentials – this is because it assumes it can't write its own files on the server. To make this work you can add the following few lines to your ``wp-config``.php, near the bottom but above the line that says "stop editing":
 
 .. code-block:: apacheconf
 
@@ -114,7 +114,7 @@ WordPress will likely refuse to do automatic updates, instead requesting FTP cre
 
 If configured correctly, the updates page should include text similar to *Future security updates will be applied automatically*.
 
-If you have a low-traffic or private site, WordPress’ cron service (which handles updates and other background tasks) may not run regularly enough. You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` respectively.
+If you have a low-traffic or private site, WordPress' cron service (which handles updates and other background tasks) may not run regularly enough. You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` respectively.
 
 .. warning::
   Ensure that the **permissions on files in your group account directory are writable by the system group** (and therefore the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
