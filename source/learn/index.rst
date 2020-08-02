@@ -40,8 +40,8 @@ So you want to learn how to make cool stuff on SRCF systems? We can help you wit
      - Learn how to deploy a Node web app 
      - Medium
      - 20 min
-   * - :ref:`Deploy a Ruby on Rails app <deploy-rails>`
-     - Learn how to deploy a Ruby on Rails web app
+   * - :ref:`Deploy a Ruby app <deploy-ruby>`
+     - Learn how to deploy a Ruby web app such as Rails
      - Medium
      - 20 min
    * - :ref:`Deploy a Python app <deploy-python>`

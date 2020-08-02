@@ -114,8 +114,8 @@ Now follow our instructions :ref:`here <supervise-systemd>` to setup the systemd
 Some things to keep in mind:
 
 -  You may need to migrate your database first.
--  Make sure you’ve set secret keys for the app and any gems that need them (e.g. Devise).
--  Static file serving is off by default in production, but you’ll want to turn it on: set both ``config.assets.compile`` and ``config.public_file_server.enabled`` to true in ``config/environments/production.rb``.
+-  Make sure you've set secret keys for the app and any gems that need them (e.g. Devise).
+-  Static file serving is off by default in production, but you'll want to turn it on: set both ``config.assets.compile`` and ``config.public_file_server.enabled`` to true in ``config/environments/production.rb``.
 
 Suggestions/improvements?
 ^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -12,7 +12,7 @@ CGI/FastCGI. For those wishing to host more advanced web apps
 with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flexibility, we provide these overview docs and :ref:`more custom tutorials <tutorials>` too:
 
 * :ref:`Node apps <deploy-node>`
-* :ref:`Rails apps <deploy-rails>`
+* :ref:`Ruby apps <deploy-ruby>`
 * :ref:`Python apps <deploy-python>`
 
 We also provide a number of sample websites for you. You can explore them live at https://sample.soc.srcf.net/ and view the backend at ``/public/societies/sample``.
