@@ -6,13 +6,14 @@ Deploying a Ruby on Rails app
 Introduction
 ^^^^^^^^^^^^
 
-Ruby on Rails is a popular server-side web application framework written in Ruby.
+Ruby is a popular if esoteric programming language with several well-known web frameworks such as Sinatra and Ruby on Rails. This tutorial will help you get your Ruby-based web app setup on the SRCF.
 
-Setting up RVM
-^^^^^^^^^^^^^^
+You can find out more about the Ruby language here: https://www.ruby-lang.org/.
 
-You will want to deploy your application using `RVM <https://rvm.io/>`__
-so that you can easily install and manage dependencies and versions.
+Setting up rbenv
+^^^^^^^^^^^^^^^^
+
+You will want to deploy your application using ``rbenv`` so that you can easily install and manage dependencies and versions.
 
 1. Create a directory for your app to live in:
 
@@ -21,113 +22,100 @@ so that you can easily install and manage dependencies and versions.
       mkdir -p ~/myapp
       cd ~/myapp
 
-2. Install RVM in your home directory. Note that ``rvm`` is terrible and
-   will modify your shell config files without asking, but that’s
-   probably what you want, since it will make using and managing
-   Ruby/Rails easier.
-
-   Go find `the RVM commands <https://rvm.io/>`__ appropriate for your
-   app, and copy the lines straight into your shell to install it. In
-   general this is a bad way to install things, but it only has to be
-   done once. At the time of writing, it looks like this:
+2. Install ``rbenv`` in your home directory:
 
    ::
 
-      gpg2 --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
-      curl -sSL https://get.rvm.io | bash -s stable
+      git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+      cd ~/.rbenv && src/configure && make -C src
+      echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+      ~/.rbenv/bin/rbenv init
 
-   Go ahead and run it, and source ``rvm``:
-
-   ::
-
-      . ~/.rvm/scripts/rvm
-
-3. Install whatever version of Ruby you want. (Newer is better).
+3. Follow the printed instructions on appending to your ~/.bashrc file:
 
    ::
 
-      rvm install ruby-2.4.0
-      rvm use ruby-2.4.0
+      echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
-4. Copy your code to ``~/myapp/src`` or similar, and install any
-   dependencies using ``bundle install`` (or ``gem`` manually, if you
-   aren’t using bundler).
+4. Install ``ruby-build`` as a plugin:
 
-   This will download and build whatever gems you have in your
-   ``Gemfile``. We’ve tried to install all the headers (dev packages)
-   needed for building common gems, but if building a gem fails due to a
-   missing header, just [[send us an email|doc contact]] so we can add
-   it.
+   ::
 
-Installing unicorn
+      mkdir -p "$(rbenv root)"/plugins
+      git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+5. Install whichever version of Ruby you want.
+
+   ::
+
+      rbenv install 2.6.6
+      rbenv local 2.6.6
+
+6. Done! You now have a working Ruby installation that's hooked into your shell.
+
+Add or create your web app
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you already have a Ruby-based web app, then you can copy in your files to the directory you chose above. For example, you can use ``scp/sftp`` to upload it or clone it using ``git`` or some other source control tool.
+
+If you're a beginner then take a look at some of the starter projects below.
+
+Rails
+~~~~~
+
+Ruby on Rails is arguably one of the most popular and influential web frameworks. To create a skeleton Rails project::
+
+   ::
+
+      gem install rails
+      rails new myapp
+
+You should now have a new Ruby on Rails project setup in the ``myapp`` directory. Take a look at the `Rails documentation <https://guides.rubyonrails.org/getting_started.html>`__ for more help getting started.
+
+Sinatra
+~~~~~~~
+
+Sinatra is a lightweight web microframework that's well suited to simple projects. To install it run ``gem install sinatra`` and then put the following in ``myapp.rb``::
+
+   ::
+
+      require 'sinatra'
+      get '/' do
+          'Hello world!'
+      end
+
+You can then run this by typing ``ruby myapp.rb`` and going to http://localhost:4567 in your web browser. For futher information See the `Sinatra documentation <http://sinatrarb.com/intro.html>`__.
+
+Preparing your app
 ^^^^^^^^^^^^^^^^^^
 
-We recommend using unicorn to serve your application. After setting up
-RVM, add a few lines to your app’s ``Gemfile`` (or add a single line if
-you already have a ``:production`` group):
-
-::
-
-   group :production do
-     gem 'unicorn'
-   end
-
-and run ``bundle install`` to install it, as with any new gems.
-
-Creating or moving your app
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you already have a Rails web app, then you can copy in your files to the directory you chose above. For example, you can use ``scp/sftp`` to upload it, or if you're using source control, clone it using ``git`` (or another tool) into your home directory.
-
-If you are a beginner, take a look at the `Rails documentation <https://guides.rubyonrails.org/getting_started.html>`__ for help with that.
-
-Forward your web requests
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The SRCF uses Apache to serve websites so if you need to run a backend web app, for example a Django, Rails or Express server, then you will need to forward web requests. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
-
-Preparing your app to be supervised
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Create a file at ``~/myapp/run`` with content like:
+The SRCF uses systemd to supervise processes and Apache to serve web content so you will need to make sure you prepare your app for this before it can run. First create a script that will run your web app at ``~/myapp/run`` with the following content:
 
 ::
 
    #!/bin/bash -e
-   . ~/.rvm/scripts/rvm
+   eval "$(rbenv init -)"
    cd ~/myapp/src
    RAILS_ENV=production \
-         exec ~/.rvm/gems/ruby-2.4.0/bin/unicorn_rails \
-         -l /home/crsid/myapp/web.sock
+         exec bin/rails server -b /home/crsid/myapp/web.sock
 
-Replace ``~/myapp/src`` with the path to your app (make sure the path is
-correct for the version of Ruby you are using), then make ``run``
-executable:
+Replace ``~/myapp/src`` with the path to your app, then make the ``run`` script executable:
 
 ::
 
    chmod +x ~/myapp/run
 
-Test executing the ``run`` script. You should be able to access your
-website while running it (or see any errors in your terminal).
+You then need to configure Apache to forward web requests to the ``web.sock`` socket specified in the ``run`` script. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
+
+You should now be able to execute the script and access your website (or see any errors in your terminal).
+
+Now follow our instructions :ref:`here <supervise-systemd>` to setup the systemd user service that will manage your app and start it automatically at boot.
 
 Some things to keep in mind:
 
 -  You may need to migrate your database first.
--  Make sure you’ve set secret keys for the app and any gems that need
-   them (e.g. devise).
--  Static file serving is off by default in production, but you’ll want
-   to turn it on: set both ``config.assets.compile`` and
-   ``config.serve_static_assets`` (rails 4.1),
-   ``config.serve_static_files`` (rails 4.2), or
-   ``config.public_file_server.enabled`` (rails 5) to true in
-   ``config/environments/production.rb``.
-
-Supervise your app with systemd
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Cool, your app works. Set up ``systemd``
-to :ref:`supervise your app <supervise-systemd>` (so that it starts and restarts automatically).
+-  Make sure you’ve set secret keys for the app and any gems that need them (e.g. Devise).
+-  Static file serving is off by default in production, but you’ll want to turn it on: set both ``config.assets.compile`` and ``config.public_file_server.enabled`` to true in ``config/environments/production.rb``.
 
 Suggestions/improvements?
 ^^^^^^^^^^^^^^^^^^^^^^^^^
