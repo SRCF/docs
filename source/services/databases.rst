@@ -12,13 +12,13 @@ The canonical hostnames for database servers are ``mysql`` and ``postgres``, whi
 
 To connect to MySQL from an SRCF shell::
 
-    $ mysql -h mysql -p <database>
+    mysql -h mysql -p <database>
 
 Here, ``-h`` specifies the hostname, ``-p`` prompts for your password, and you're connected to the database specified at the end -- either your CRSid for your personal database, or a group database name.
 
 Similarly for PostgreSQL::
 
-    $ psql -h postgres [database]
+    psql -h postgres [database]
 
 Providing a database is optional; by default, you'll be connected to the one matching your username.  Ident authentication is enabled for PostgreSQL, which will authenticate you based on the underlying system account, so you usually don't need to provide a password.
 

@@ -54,7 +54,7 @@ Below are some tips on setting up Express, a popular HTTP server that's written 
 
 To install dependencies::
 
-    $ npm install --save express
+    npm install --save express
 
 Then see ``nodejs/app.js`` for a minimum base application.
 

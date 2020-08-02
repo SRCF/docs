@@ -53,14 +53,15 @@ Django
 
 To create a skeleton Django project::
 
-    $ django-admin startproject example
-    $ mv example python
-    $ cd python
+      django-admin startproject example
+      mv example python
+      cd python
 
 Now take a look at ``django/example/settings.py`` for how to configure your site. There is also a demo available at https://sample.soc.srcf.net/django/.
 
 Flask
 ~~~~~
+
 There is a demo flask app setup at https://sample.soc.srcf.net/flask/. See ``flask/app.py`` for a minimum base application.
 
 Installing gunicorn

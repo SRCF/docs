@@ -28,19 +28,18 @@ You can use a generator of your choice to manage your site.  Just have it output
 
 To create the skeleton project::
 
-    $ jekyll new jekyll
-    New jekyll site installed in /public/societies/sample/jekyll.
-    $ cd jekyll
+    jekyll new jekyll
+    cd jekyll
 
 For a root site (i.e. top of public\_html)::
 
-    $ ln -s /public/societies/sample/public_html _site
+    ln -s /public/societies/sample/public_html _site
 
 ...or for a site in a subdirectory, edit ``_config.yaml`` to set ``baseurl`` to e.g. ``/jekyll``, then::
 
-    $ mkdir /public/societies/sample/public_html/jekyll
-    $ ln -s /public/societies/sample/public_html/jekyll _site
+    mkdir /public/societies/sample/public_html/jekyll
+    ln -s /public/societies/sample/public_html/jekyll _site
 
 To (re)build the site::
 
-    $ jekyll build
+    jekyll build
