@@ -1,14 +1,16 @@
-Usenet
-------
+Usenet (NNTP)
+-------------
 
 Connecting
 ~~~~~~~~~~
 
-The SRCF now offers a Usenet server for active users.
+The SRCF offers a Usenet server for our users. To connect, you will
+need to point your newsreader at ``news.srcf.net`` and connect using a
+secure connection (SSL) to port 563. In order to combat spam, you will
+need to login with your SRCF username and password.
 
-To connect, point your newsreader to: ``news.srcf.net`` and connect
-using a secure connection (SSL) - port 563. You will need to use your
-SRCF username and password to login.
-
-To configure Pine, go (S)etup, (C)onfig, then set nntp-server to:
-news.srcf.net/ssl/user=\ *crsid*
+If you wish to use Alpine as your newsreader then you will find that our
+shell server ``pip`` has a default configuration ready to go. Otherwise
+you will need to configure it by going to (S)etup, (C)onfig and then
+setting nntp-server to ``news.srcf.net/ssl/user=pqrs2`` where ``pqrs2``
+is your CRSid.
