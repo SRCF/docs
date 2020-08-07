@@ -129,7 +129,8 @@ More services
    :maxdepth: 2
 
    services/databases
+   services/gopher
+   services/irc
    services/mailman
    services/mattermost
-   services/irc
    services/usenet
