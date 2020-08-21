@@ -110,9 +110,7 @@ recommended setup is:
    (``chmod +x ~/myapp/run``). Test it by executing it in your terminal
    before moving on; it will be easier to debug problems.
 
-3. Write a systemd service file so your app will be supervised on
-   startup. Save the following to the file
-   ``~/.config/systemd/user/myapp.service``:
+3. Write a systemd service file so your app will be supervised on startup. Save the following to the file ``~/.config/systemd/user/myapp.service``:
 
    ::
 
@@ -127,26 +125,30 @@ recommended setup is:
       ExecStart=/home/{CRSid}/myapp/run
       Restart=always
 
-4. Tell systemd to start your app on startup, by running
-   ``systemctl --user enable myapp``.
+4. Tell systemd to start your app on startup, by running ``systemctl --user enable myapp``.
 
-5. You'll need to start your app manually once (on future reboots, it
-   will be started for you). To do that, run
-   ``systemctl --user start myapp``.
+5. You'll need to start your app manually once (on future reboots, it will be started for you). To do that, run ``systemctl --user start myapp``.
 
-To control your app, you can use the ``systemctl`` tool. See
-``man systemctl`` for full details. In summary,
+To control your app, you can use the ``systemctl`` tool. See ``man systemctl`` for full details. In summary,
 
 -  **Restart an app.** ``systemctl --user restart myapp``
 -  **Bring an app offline.** ``systemctl --user stop myapp``
 -  **Bring an app back online.** ``systemctl --user start myapp``
 -  **Check the status of an app.** ``systemctl --user status myapp``
 
-Your app's standard output and error streams are sent to systemd's
-journal (by default). You can view them using ``journalctl --user -n``.
-See ``man journalctl`` for more options.
+Due to an implementation detail, you must call ``systemctl`` as follows when using a society account: ``sudo -Hu foosoc XDG_RUNTIME_DIR=/run/user/$(id -u foosoc) systemctl --user ...``. You might like to add a function to your ``~/.bashrc`` to make this easier to remember:
 
-After this, make sure to email the system administrators add ``sysadmins@srcf.net`` to give your app one final check and enable the ``systemd`` service.
+   ::
+
+      socsudo () {
+          soc=$1
+          shift
+          sudo -Hu $soc XDG_RUNTIME_DIR=/run/user/$(id -u $soc) "$@"
+      }
+
+and then run ``socsudo foosoc systemctl --user ...``.
+
+By default, your app's standard output and error streams are sent to systemd's journal however only the root user can access these. You will want to make your app write to a logfile rather than stdout or stderr.
 
 Frequently asked questions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
