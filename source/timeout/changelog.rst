@@ -3,6 +3,14 @@
 Changelog
 ---------
 
+22/08/2020
+~~~~~~~~~~
+
+* Updated Greenlight frontend to 2.7.1
+* Updated BBB to 2.2.22
+* Presentations can now be uploaded before a session
+* Improved reliability of infrastructure
+
 26/6/2020
 ~~~~~~~~~
 

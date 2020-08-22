@@ -1,14 +1,6 @@
 Timeout
 -------
 
-.. note::
-
-   This documentation is not yet complete and is being continuously expanded. It is worth visiting this page regularly. If you wish to expand the documentation yourself, please contact us! We also welcome whoever wants to pass on their knowledge in online teaching - and also those who are interested in taking a closer look under the hood of the system. 
-
-.. warning::
-
-   Timeout is still in its *beta phase*. Please `report <mailto:support@srcf.net>`__ all issues and problems to us - this system thrives on feedback and it is only with your help that we can make Timeout better for all.
-
 What is Timeout?
 ~~~~~~~~~~~~~~~~
 
@@ -62,7 +54,7 @@ Timeout is based on the open-source project BigBlueButton (BBB). BBB is extremel
 * Faculty/department/society meetings
 * Tutorial drop-in hours
 * Seminars with 20+ people
-* A chat between friends in these trying times
+* A chat between friends
 
 How can I use Timeout?
 ~~~~~~~~~~~~~~~~~~~~~~
