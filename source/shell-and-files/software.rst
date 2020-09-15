@@ -36,6 +36,11 @@ Python
 
 We have Python versions 2.7 and 3.5.  Note that the ``python`` and ``pip`` binaries are Python 2, use ``python3`` and ``pip3`` for Python 3.  Assorted Python modules (as packaged by Ubuntu) are installed for both, and others can be installed on request (subject to the notes above).  If you need a newer version of Python, consider using `pyenv <https://github.com/pyenv/pyenv>`_.
 
+Ruby
+^^^^
+
+The servers have version 2.3 of Ruby installed together with a handful of useful gems and development dependencies. If you need a more recent version then you might consider using `ruby-build <https://github.com/rbenv/ruby-build>`_ and/or `rbenv <https://github.com/rbenv/rbenv>`_.
+
 Port binding
 ~~~~~~~~~~~~
 
