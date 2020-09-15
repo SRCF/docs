@@ -1,10 +1,10 @@
 .. _app-hosting:
 
 Web application hosting
------------------------
+=======================
 
 Introduction
-^^^^^^^^^^^^
+------------
 
 All accounts include our :ref:`regular web hosting <web-hosting>`,
 which is suitable for static content, PHP (WordPress, Joomla, etc.), and
@@ -18,12 +18,12 @@ with the SRCF (Django, Flask, Rails, Node.js, etc.) and leverage their full flex
 We also provide a number of sample websites for you. You can explore them live at https://sample.soc.srcf.net/ and view the backend at ``/public/societies/sample``.
 
 Requirements and eligibility
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 There are no requirements, other than your compliance with our friendly terms of service. You can host your app on your ``user.srcf.net`` or ``soc.srcf.net`` subdomain, or on your own separately purchased domain name. We do encourage you to add the SRCF badge to your website so that others can find us. It's a great way to help us out as it costs little to you but helps us out immensely, in turn allowing us to provide better services to you. You can find the badges `here <https://srcf.net/publicity>`__.
 
 Technical documentation
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 You can host basically any kind of web application that can bind to a
 socket. We provide suggested deployment instructions for some popular
@@ -151,7 +151,7 @@ and then run ``socsudo foosoc systemctl --user ...``.
 By default, your app's standard output and error streams are sent to systemd's journal however only the root user can access these. You will want to make your app write to a logfile rather than stdout or stderr.
 
 Frequently asked questions
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 Can you install a package on the web server?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
