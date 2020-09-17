@@ -5,21 +5,31 @@ Custom domains
 
 As part of our web hosting, we provide free domains for both individuals (of the form ``<crsid>.user.srcf.net``) and group accounts (``<groupname>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective personal or group account (subject to a 20-minute delay when publishing a new website).
 
-We also support external domains purchased from a domain registrar.  For these to serve your site, you'll first need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure.
+We also support external domains purchased from a domain registrar.  For these to serve your site, you'll first need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure.  If you're using a third-party DNS service such as Cloudflare, you'll need to configure it there.
 
 .. hint::
     The base domain (e.g. ``example.com``) is generally represented by *@*, and subdomains (e.g. ``bubbles.example.com``) would just be *bubbles*.
 
-Add the following records in your DNS:
+Assuming you want to serve your site from the base domain ``example.com``, your DNS records should look something like the following:
 
-1. @ A 131.111.179.82
-2. @ AAAA 2001:630:212:700:2::1
-3. www CNAME webserver.srcf.societies.cam.ac.uk
+=========  =====  ==================================
+Subdomain  Type   Value
+=========  =====  ==================================
+@          A      131.111.179.82
+@          AAAA   2001:630:212:700:2::1
+www        CNAME  webserver.srcf.societies.cam.ac.uk
+=========  =====  ==================================
 
-The first sets your base domain to forward to our webserver's IPv4 address, the second does much the same but for IPv6. The third sets an alias from www.yourwebsite.co.uk to our webserver.
+The first record (``A``) makes your base domain point to our webserver's IPv4 address; the second (``AAAA``) does the same but for IPv6.  The third (``CNAME``) sets an alias from ``www.example.com`` to our webserver.
 
-.. note::
-    Alternatively, you could use an external DNS provider such as CloudFlare. They tend to be much more flexible in what one is able to do with their registrar's DNS.
+If instead you want to use the subdomain ``bubbles.example.com``:
+
+===========  =====  ==================================
+Subdomain    Type   Value
+===========  =====  ==================================
+bubbles      CNAME  webserver.srcf.societies.cam.ac.uk
+www.bubbles  CNAME  webserver.srcf.societies.cam.ac.uk
+===========  =====  ==================================
 
 More information
 ^^^^^^^^^^^^^^^^
@@ -34,14 +44,14 @@ You can confirm if the domain is resolving to us correctly by visiting it in you
 
     DNS takes time to propagate.  Each record has an associated time-to-live (TTL) -- this is how long the record is valid for, so a long TTL means browsers and computers will cache the resulting location for a longer period.  If you had a previous DNS record with a TTL of 1 day, you may need to wait that long before the domain starts resolving correctly.
 
-Multiple websites from one account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Document roots and multiple websites
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You may wish to run more than one website under a single account.  This can be done if you have your own domain, by delegating different (sub)domains to different sites.
 
-First, make sure all the desired domains are configured as above.  When emailing us, tell us which directory each site should be served from -- **this must be a subdirectory of public_html**, or public_html itself.
+``<crsid>.user.srcf.net`` and ``<groupname>.soc.srcf.net`` domains are fixed at serving the root of your ``public_html`` directory.  When adding custom domains to your account, you can optionally set a *Document root* -- this is a subdirectory of ``public_html`` which acts as the root of your domain.
 
-For example, you may wish to serve ``example.com`` from */societies/<groupname>/public_html*, and ``bubbles.example.com`` from */societies/<groupname>/public_html/bubbles*.
+For example, you may wish to serve ``example.com`` from */societies/<groupname>/public_html*, and ``bubbles.example.com`` from */societies/<groupname>/public_html/bubbles*.  This means that */societies/<groupname>/public_html/bubbles/index.html* would be served as the index page of ``bubbles.example.com``.
 
 What about email?
 ~~~~~~~~~~~~~~~~~
