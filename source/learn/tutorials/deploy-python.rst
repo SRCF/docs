@@ -13,10 +13,10 @@ You can find out more about the Python language here: https://www.python.org.
 
 .. There is a sample app available in ``/public/societies/sample`` for you to explore. Once there, see ``run.sh`` for command-line options, and ``crontab`` or ``python-web@.service`` for deployment.
 
-Setting up a virtualenv
+Setting up a venv
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You will want to deploy your application in a Python virtualenv so that you can easily install and manage dependencies and versions.
+You will want to deploy your application in a Python venv so that you can easily install and manage dependencies and versions. A venv is a virtual Python environment that contains its own Python binary as well as all of your dependencies. When you activate your venv, PATH variables like ``python`` and ``pip`` will use the correct versions specified when you created your venv.
 
 1. Create a directory for your app to live in:
 
@@ -25,13 +25,13 @@ You will want to deploy your application in a Python virtualenv so that you can 
       mkdir -p ~/myapp
       cd ~/myapp
 
-2. Set up a virtualenv:
+2. Set up a venv:
 
    ::
 
-      virtualenv venv
+      python3 -m venv venv
 
-3. Activate the virtualenv:
+3. Activate the venv:
 
    ::
 
@@ -39,7 +39,7 @@ You will want to deploy your application in a Python virtualenv so that you can 
 
    You should do this step every time before running your app or managing installed packages.
 
-4. Done! Your Python virtualenv is now installed and hooked into your shell.
+4. Done! Your Python venv is now installed and hooked into your shell.
 
 Add or create your web app
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -67,7 +67,7 @@ There is a demo flask app setup at https://sample.soc.srcf.net/flask/. See ``fla
 Installing gunicorn
 ^^^^^^^^^^^^^^^^^^^
 
-We recommend using gunicorn to serve your application. After activating your virtualenv, install it with ``pip install gunicorn``.
+We recommend using gunicorn to serve your application. After activating your venv, install it with ``pip install gunicorn``.
 
 Note that you may see a warning about a syntax error. As long as the output ends in "Successfully installed gunicorn", `it's safe to ignore this <https://stackoverflow.com/a/25611194>`__.
 

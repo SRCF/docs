@@ -172,7 +172,7 @@ system packages aren't current (indeed, they're often a few years old).
 We almost never make exceptions or install backported packages.
 
 For developing and deploying your app, you should almost certainly be
-using your platform's version manager (rvm, virtualenv, nvm, gvm, etc.).
+using your platform's version manager (rvm, venv, nvm, gvm, etc.).
 This will allow you to run the exact versions you want, and install any
 necessary dependencies, all without coordinating with us (or forcing the
 rest of our users to switch versions).
