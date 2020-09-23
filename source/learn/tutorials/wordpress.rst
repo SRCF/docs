@@ -46,6 +46,9 @@ Great! Now if you head to your website in a browser ``http://**crsid**.user.srcf
 
 That's it - you have a website! We told you it was easy.
 
+.. danger::
+    While installing WordPress is quite simple, you must follow the instructions below to ensure that you take the right precautions and protect your website. WordPress is a regular target of hackers and instances of WordPress on the SRCF are regularly compromised in various ways, leading to private data leaks, tampered files, and website irregularities. Most of these risks can be minimized by following all steps in this tutorial. It is important you regularly check up on the status of your installation and keep an eye on any vulnerabilities in the plugins you use!
+
 6. Customising WordPress
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -77,7 +80,7 @@ Accounts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Ensure your ``wp-config.php`` is not world-readable, as that will contain your database credentials. You can set permissions in your FTP client or in the console, eg. ``chmod 0660`` to get ``-rw-rw----``
-2. It is advised to lock down WordPress' admin panel at /wp-admin/ by putting that directory behind Raven authentication – see ``public_html/wordpress/wp-admin/.htaccess``.
+2. It is advised to lock down WordPress' admin panel at /wp-admin/ by putting that directory behind Raven authentication – see an example at ``/public/societies/sample/public_html/wordpress/wp-admin/.htaccess``.
 3. We also recommend you disable *Allow link notifications from other blogs (pingbacks and trackbacks)* on new posts, under ``Settings`` > ``Discussion`` in the admin panel.
 4. To ensure your site is as secure as possible, you should make sure the latest security patches are added by enabling automatic updates. See section below.
 5. Activate a spam filtering plugin like Akismet and a capatcha system like reCAPTCHA. Akismet is installed by default and just needs activiating. Go to ``.../wp-admin/plugins.php`` to install and activate plugins.
