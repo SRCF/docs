@@ -73,7 +73,7 @@ Accounts
 * Click on ``My Profile`` and change the ``admin`` password using the form provided.
 * Click on ``Users`` and create an account for yourself. 
 
-8. Last (important!) touches
+7. Last (important!) touches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Ensure your ``wp-config.php`` is not world-readable, as that will contain your database credentials. You can set permissions in your FTP client or in the console, eg. ``chmod 0660`` to get ``-rw-rw----``
@@ -83,7 +83,7 @@ Accounts
 5. Activate a spam filtering plugin like Akismet and a capatcha system like reCAPTCHA. Akismet is installed by default and just needs activiating. Go to ``.../wp-admin/plugins.php`` to install and activate plugins.
 6. You may optionaly want to modify your theme so that it no longer puts the Wordpress version into the html - this may help stop hackers finding that you installation is outdated but it does not protect against problems caused by the version you are using being compromised.
 
-7. Optional steps
+8. Optional steps
 ~~~~~~~~~~~~~~~~~~
 
 Custom domain
@@ -119,7 +119,7 @@ If you have a low-traffic or private site, WordPress' cron service (which handle
 .. warning::
   Ensure that the **permissions on files in your group account directory are writable by the system group** (and therefore the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
 
-8. Closing remarks
+9. Closing remarks
 ~~~~~~~~~~~~~~~~~~
 
 Did you like this or find this cool? We invite you to check out :ref:`more tutorials <tutorials>`, :ref:`read our  recommended resources<recommended-resources>` or :ref:`talk to us <get-help>` to tell us what you thought!
