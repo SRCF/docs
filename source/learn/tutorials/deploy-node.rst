@@ -10,6 +10,11 @@ Node.js is a popular runtime that allows you to write custom server-side applica
 
 You can find out more about Node.js here: https://nodejs.org/en/.
 
+Server
+^^^^^^
+
+You must host the app from the correct server. Please see the `app hosting docs <forward-requests>`.
+
 Setting up nvm
 ^^^^^^^^^^^^^^
 
