@@ -53,6 +53,11 @@ You may wish to run more than one website under a single account.  This can be d
 
 For example, you may wish to serve ``example.com`` from */societies/<groupname>/public_html*, and ``bubbles.example.com`` from */societies/<groupname>/public_html/bubbles*.  This means that */societies/<groupname>/public_html/bubbles/index.html* would be served as the index page of ``bubbles.example.com``.
 
+SSL
+~~~
+
+Once you have a domain configured you can request a lets-encrypt SSL certificate from https://srcf-admin.soc.srcf.net/lets-encrypt/.
+
 What about email?
 ~~~~~~~~~~~~~~~~~
 
