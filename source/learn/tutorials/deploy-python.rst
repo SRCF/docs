@@ -13,6 +13,11 @@ You can find out more about the Python language here: https://www.python.org.
 
 .. There is a sample app available in ``/public/societies/sample`` for you to explore. Once there, see ``run.sh`` for command-line options, and ``crontab`` or ``python-web@.service`` for deployment.
 
+Server
+^^^^^^
+
+You must host the app from the correct server. Please see the `app hosting docs <forward-requests>`.
+
 Setting up a venv
 ^^^^^^^^^^^^^^^^^^^^^^^
 

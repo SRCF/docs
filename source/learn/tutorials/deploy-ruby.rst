@@ -10,6 +10,11 @@ Ruby is a popular if esoteric programming language with several well-known web f
 
 You can find out more about the Ruby language here: https://www.ruby-lang.org/.
 
+Server
+^^^^^^
+
+You must host the app from the correct server. Please see the `app hosting docs <forward-requests>`.
+
 Setting up rbenv
 ^^^^^^^^^^^^^^^^
 
