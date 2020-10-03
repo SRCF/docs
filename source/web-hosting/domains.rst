@@ -36,13 +36,13 @@ More information
 
 The preferred method is a **CNAME** record, which acts as an alias from your domain to ours.  The value of this record should be ``webserver.srcf.societies.cam.ac.uk`` -- this means your domain will continue to work even if we move servers, as our hostname will stay the same.  Note that you must remove any other non-CNAME records for this particular (sub)domain.
 
-CNAMEs are generally not supported on base domains (``example.com``), only subdomains, so the alternative is to use **A** (for IPv4) and **AAAA** (IPv6) records to specify an IP address.  The A record should be set to ``131.111.179.82``, whilst AAAA should be ``2001:630:212:700:2::1``.  Make sure to remove any non-SRCF A/AAAA records for that domain, otherwise browsers may arbitrarily choose between our server and whatever else is configured.
+CNAMEs should **not** be used on base domains (``example.com``, sometimes called the zone apex), only on subdomains. The alternative is to use **A** (for IPv4) and **AAAA** (IPv6) records to specify an IP address. The A record should be set to ``131.111.179.82``, whilst AAAA should be ``2001:630:212:700:2::1``. Make sure to remove all other A/AAAA records for that domain, otherwise browsers and other software may arbitrarily choose between our web server and whatever else is configured.
 
 You can confirm if the domain is resolving to us correctly by visiting it in your browser -- you should be greeted with a "non-existent site" page on our site.  Once this is visible to you, use the SRCF control panel to assign the domain to your (group) account.
 
 .. warning::
 
-    DNS takes time to propagate.  Each record has an associated time-to-live (TTL) -- this is how long the record is valid for, so a long TTL means browsers and computers will cache the resulting location for a longer period.  If you had a previous DNS record with a TTL of 1 day, you may need to wait that long before the domain starts resolving correctly.
+    DNS takes time to propagate. Each record has an associated time-to-live (TTL) -- this is how long the record is valid for, so a long TTL means browsers and computers will cache the resulting location for a longer period. If you had a previous DNS record with a TTL of 1 day, you may need to wait that long before the domain starts resolving correctly. For testing purposes, it may be helpful to set your TTLs to the lowest value that your DNS provider permits so that changes to preexisting records propagate as quickly as possible.
 
 Document roots and multiple websites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
