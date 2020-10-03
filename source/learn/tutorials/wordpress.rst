@@ -32,7 +32,7 @@ If everything is working so far and you have all of your login details and passw
 4. Installing WordPress
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Head over to `wordpress.org <http://wordpress.org/download/>`__ and hit the big blue download button. Make sure you don't get confused with wordpress*.com* - that's where you can set up a blog directly with the WordPress organisation using their hosting. We want to host our own copy of WordPress on the SRCF.
+Head over to `wordpress.org <https://wordpress.org/download/>`__ and hit the big blue download button. Make sure you don't get confused with wordpress*.com* - that's where you can set up a blog directly with the WordPress organisation using their hosting. We want to host our own copy of WordPress on the SRCF.
 
 Once your ``.zip`` file has finished downloading, we need to get the files from your computer onto the SRCF hosting. Unzip the file on your computer and upload the files into ``public_html``, making sure that they're not in a subfolder called ``wordpress``. 
 
