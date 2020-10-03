@@ -92,7 +92,9 @@ Accounts
 Custom domain
 ^^^^^^^^^^^^^
 
-You may have thought that the web address of your spangly new site isn't particularly inspiring. Don't panic! You can register any domain you like (or even multiple domains) and point them to your SRCF address without anyone knowing. For instructions, check out :ref:`our documentation <custom-domains>`. Past users have usually bought domain names from `123-reg.co.uk <http://www.123-reg.co.uk>`__.
+You might be thinking that the ``*.user.srcf.net`` or ``*.soc.srcf.net`` web address of your spangly new site isn't particularly inspiring. Don't panic! You can register any domain you like (or even multiple domains) and point them to your new site by following :ref:`our custom domains documentation <custom-domains>`.
+
+There are a variety of registrars from whom you can purchase a domain name for a small yearly fee. The SRCF is sponsored by a local company called `Mythic Beasts <https://www.mythic-beasts.com>`__ which was founded by likeminded Cambridge University alumni and which we are more than happy to recommend to those who are in the market.
 
 Raven
 ^^^^^

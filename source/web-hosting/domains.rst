@@ -5,7 +5,7 @@ Custom domains
 
 As part of our web hosting, we provide free domains for both individuals (of the form ``<crsid>.user.srcf.net``) and group accounts (``<groupname>.soc.srcf.net``).  These are configured as standard, and will serve any web content placed in the ``public_html`` directory of the respective personal or group account (subject to a 20-minute delay when publishing a new website).
 
-We also support external domains purchased from a domain registrar.  For these to serve your site, you'll first need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure.  If you're using a third-party DNS service such as Cloudflare, you'll need to configure it there.
+We also support external domains purchased from a domain registrar. If you are looking to buy a domain for yourself or your society then we can happily recommend our sponsor `Mythic Beasts <https://www.mythic-beasts.com>`__ but you are free to use any registrar you wish. You'll need to make sure the domain resolves to us -- this is controlled by DNS records, which your registrar should allow you to configure. If you've delegated DNS from your registrar to a third-party service such as Cloudflare, you'll need to configure it there.
 
 .. hint::
     The base domain (e.g. ``example.com``) is generally represented by *@*, and subdomains (e.g. ``bubbles.example.com``) would just be *bubbles*.
