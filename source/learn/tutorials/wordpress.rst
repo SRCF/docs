@@ -32,27 +32,57 @@ If everything is working so far and you have all of your login details and passw
 4. Installing WordPress
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Head over to `wordpress.org <http://wordpress.org/download/>`__ and hit the big blue download button. Make sure you don't get confused with wordpress*.com* - that's where you can set up a blog directly with the WordPress organisation using their hosting. We want to host our own copy of WordPress on the SRCF.
+Head over to `wordpress.org <https://wordpress.org/download/>`__ and hit the big blue download button. Make sure you don't get confused with wordpress*.com* - that's where you can set up a blog directly with the WordPress organisation using their hosting. We want to host our own copy of WordPress on the SRCF.
 
-Once your ``.zip`` file has finished downloading, we need to get the files from your computer onto the SRCF hosting. Unzip the file on your computer and upload the files into ``public_html``, making sure that they're not in a subfolder called ``wordpress``. 
+Once your ``.zip`` file has finished downloading, we need to get the files from your computer onto the SRCF hosting. Unzip the file on your computer and upload the files into your ``public_html`` directory, making sure that they're not in a subfolder called ``wordpress``.
 
 .. note::
-  You can do this more efficiently by doing ``wget http://wordpress.org/latest`` and extracting the files, e.g. ``tar zxvf wordpress-1.0.2-blakey.tar.gz``.
+  You can do this more efficiently by doing ``wget https://wordpress.org/latest`` and extracting the files, e.g. ``tar zxvf wordpress-5.5.1.tar.gz``.
 
-5. Configuration and final steps
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5. Configure WordPress
+~~~~~~~~~~~~~~~~~~~~~~
 
-Great! Now if you head to your website in a browser ``http://**crsid**.user.srcf.net`` for an indvidual account or ``http://**groupname**.soc.srcf.net`` for a group account) you should see a friendly welcome screen. Fill in all of the details that it asks for - leave ``localhost`` as it is, try not to use ``wp_`` as the database prefix or ``admin`` as the administrator username *(this makes it harder for hackers to infiltrate your site).*
+Great! Now if you head to your website in a browser ``https://**crsid**.user.srcf.net`` for an indvidual account or ``https://**groupname**.soc.srcf.net`` for a group account) you should see a friendly welcome screen. Fill in all of the details that it asks for - leave ``localhost`` as it is, try not to use ``wp_`` as the database prefix or ``admin`` as the administrator username *(this makes it harder for hackers to infiltrate your site).*
 
-That's it - you have a website! We told you it was easy.
+6. Set up automatic updates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. danger::
-    While installing WordPress is quite simple, you must follow the instructions below to ensure that you take the right precautions and protect your website. WordPress is a regular target of hackers and instances of WordPress on the SRCF are regularly compromised in various ways, leading to private data leaks, tampered files, and website irregularities. Most of these risks can be minimized by following all steps in this tutorial. It is important you regularly check up on the status of your installation and keep an eye on any vulnerabilities in the plugins you use!
+WordPress will likely refuse to do automatic updates, instead requesting FTP credentials – this is because it assumes it can't write its own files on the server. To make this work you can add the following few lines to your ``wp-config``.php, near the bottom but above the line that says "stop editing":
 
-6. Customising WordPress
+.. code-block:: apacheconf
+
+  /**
+  * Force WordPress to use direct filesystem access so that upgrades work properly.
+  * https://core.trac.wordpress.org/ticket/10205
+  * https://codex.wordpress.org/Editing_wp-config.php
+  */
+  define('FS_METHOD', 'direct');
+  define('FS_CHMOD_DIR', (02775 & ~ umask()));
+  define('FS_CHMOD_FILE', (0664 & ~ umask()));
+
+If configured correctly, the updates page should include text similar to *Future security updates will be applied automatically*.
+
+If you have a low-traffic or private site, WordPress' cron service (which handles updates and other background tasks) may not run regularly enough. You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` in ``/public/societies/sample``.
+
+.. warning::
+  If you are installing WordPress for a group or society then you will need to ensure that the permissions on files in your group account directory are group-writable (and therefore writable by the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress. You can ensure the permissions are correct by running ``srcf-soc-permfix socname``.
+
+7. Harden your install
+~~~~~~~~~~~~~~~~~~~~~~
+
+WordPress is a regular hackers' target and instances of WordPress on the SRCF are regularly compromised in various ways, leading to private data leaks, tampered files, and website irregularities. Most of these risks can be minimized by following the hardening steps below.
+
+1. Ensure your ``wp-config.php`` is not world-readable, as that will contain your database credentials. You can set permissions in your FTP client or in the console by typing ``chmod 0660 wp-config.php``. If you are installing Wordpress under web space that belongs to a group or society then your ``wp-config.php`` file will be owned by that group or society's user account rather than your own personal account, in which case you will need to run the previous console command as that user: ``sudo -u socname chmod 0660 wp-config.php``. Unfortunately FTP clients won't let you do this so you will need to use the console.
+2. It is advised to lock down WordPress' admin panel at /wp-admin/ by putting that directory behind Raven authentication – see an example at ``/public/societies/sample/public_html/wordpress/wp-admin/.htaccess``.
+3. We also recommend you disable *Allow link notifications from other blogs (pingbacks and trackbacks)* on new posts, under ``Settings`` > ``Discussion`` in the admin panel.
+4. Activate a spam filtering plugin like Akismet and a capatcha system like reCAPTCHA. Akismet is installed by default and just needs activiating. Go to ``.../wp-admin/plugins.php`` to install and activate plugins.
+5. You may optionaly want to modify your theme so that it no longer puts the Wordpress version into the html - this may help stop hackers finding that you installation is outdated but it does not protect against problems caused by the version you are using being compromised.
+6. Regularly check up on the status of your installation and keep an eye on any vulnerabilities in the plugins you use.
+
+8. Customising WordPress
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-You'll probably want to make your site look a little different and certainly contain some content, so the first thing to do is log in to the WordPress administration panel. There's usually a link saying something obvious, but if you can't find it the URL should look like ``http://csrid.user.srcf.net/wp-admin``. Log in with the username and password set up in the previous step.
+You'll probably want to make your site look a little different and certainly contain some content, so the first thing to do is log in to the WordPress administration panel. There's usually a link saying something obvious, but if you can't find it the URL should look like ``https://csrid.user.srcf.net/wp-admin``. Log in with the username and password set up in the previous step.
 
 Content
 ^^^^^^^
@@ -74,56 +104,25 @@ Accounts
 
 * Log in to WP as ``admin`` using the password given at the end of the installation process.
 * Click on ``My Profile`` and change the ``admin`` password using the form provided.
-* Click on ``Users`` and create an account for yourself. 
+* Click on ``Users`` and create an account for yourself.
 
-7. Last (important!) touches
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. Ensure your ``wp-config.php`` is not world-readable, as that will contain your database credentials. You can set permissions in your FTP client or in the console, eg. ``chmod 0660`` to get ``-rw-rw----``
-2. It is advised to lock down WordPress' admin panel at /wp-admin/ by putting that directory behind Raven authentication – see an example at ``/public/societies/sample/public_html/wordpress/wp-admin/.htaccess``.
-3. We also recommend you disable *Allow link notifications from other blogs (pingbacks and trackbacks)* on new posts, under ``Settings`` > ``Discussion`` in the admin panel.
-4. To ensure your site is as secure as possible, you should make sure the latest security patches are added by enabling automatic updates. See section below.
-5. Activate a spam filtering plugin like Akismet and a capatcha system like reCAPTCHA. Akismet is installed by default and just needs activiating. Go to ``.../wp-admin/plugins.php`` to install and activate plugins.
-6. You may optionaly want to modify your theme so that it no longer puts the Wordpress version into the html - this may help stop hackers finding that you installation is outdated but it does not protect against problems caused by the version you are using being compromised.
-
-8. Optional steps
+9. Optional steps
 ~~~~~~~~~~~~~~~~~~
 
 Custom domain
 ^^^^^^^^^^^^^
 
-You may have thought that the web address of your spangly new site isn't particularly inspiring. Don't panic! You can register any domain you like (or even multiple domains) and point them to your SRCF address without anyone knowing. For instructions, check out :ref:`our documentation <custom-domains>`. Past users have usually bought domain names from `123-reg.co.uk <http://www.123-reg.co.uk>`__.
+You might be thinking that the ``*.user.srcf.net`` or ``*.soc.srcf.net`` web address of your spangly new site isn't particularly inspiring. Don't panic! You can register any domain you like (or even multiple domains) and point them to your new site by following :ref:`our custom domains documentation <custom-domains>`.
+
+There are a variety of registrars from whom you can purchase a domain name for a small yearly fee. The SRCF is sponsored by a local company called `Mythic Beasts <https://www.mythic-beasts.com>`__ which was founded by likeminded Cambridge University alumni and which we are more than happy to recommend to those who are in the market.
 
 Raven
 ^^^^^
 
 You can put any site (or parts of your site) behind Raven by following :ref:`our Raven guide <raven>`.
 
-Automatic updates
-^^^^^^^^^^^^^^^^^
-
-WordPress will likely refuse to do automatic updates, instead requesting FTP credentials – this is because it assumes it can't write its own files on the server. To make this work you can add the following few lines to your ``wp-config``.php, near the bottom but above the line that says "stop editing":
-
-.. code-block:: apacheconf
-
-  /**
-  * Force WordPress to use direct filesystem access so that upgrades work properly.
-  * https://core.trac.wordpress.org/ticket/10205
-  * https://codex.wordpress.org/Editing_wp-config.php
-  */
-  define('FS_METHOD', 'direct');
-  define('FS_CHMOD_DIR', (02775 & ~ umask()));
-  define('FS_CHMOD_FILE', (0664 & ~ umask()));
-
-If configured correctly, the updates page should include text similar to *Future security updates will be applied automatically*.
-
-If you have a low-traffic or private site, WordPress' cron service (which handles updates and other background tasks) may not run regularly enough. You can invoke ``wp-cron.php`` manually using cron or systemd timers – see ``crontab`` or ``wordpress-cron.timer`` respectively.
-
-.. warning::
-  Ensure that the **permissions on files in your group account directory are writable by the system group** (and therefore the user that WordPress will run as). WordPress will not check in advance – if some of your files are writable and some are not, you will end up with a half-upgraded WordPress.
-
-9. Closing remarks
-~~~~~~~~~~~~~~~~~~
+10. Closing remarks
+~~~~~~~~~~~~~~~~~~~
 
 Did you like this or find this cool? We invite you to check out :ref:`more tutorials <tutorials>`, :ref:`read our  recommended resources<recommended-resources>` or :ref:`talk to us <get-help>` to tell us what you thought!
 
