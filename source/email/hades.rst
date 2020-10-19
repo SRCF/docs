@@ -24,8 +24,7 @@ If you miss Hermes, you can set your @cam.ac.uk email address to deliver mail in
 
    You need to first enable Hades for your ``@srcf.net`` address as described above.  **It is very important** that you make sure that your SRCF email does not forward to your ``@cam.ac.uk`` address before you proceed!
 
-Go to `your page on the University lookup service <https://www.lookup.cam.ac.uk/self>`__.  Edit it, and change your
-"@cam delivery address" to your SRCF email address (for example ``spqr2@srcf.net``).
+Go to `your page on the University Lookup service <https://www.lookup.cam.ac.uk/self>`__.  Edit it, and change your "@cam delivery address" to your SRCF email address (for example ``spqr2@srcf.net``). If you have a University Exchange Online account then by default email sent by other Exchange Online users to your @cam.ac.uk address will bypass the setting in University Lookup and be delivered to you Exchange Online inbox regardless. To setup forwarding in ExOL, click on the settings cog icon and search for 'Forwarding'.
 
 Reading email
 ~~~~~~~~~~~~~
