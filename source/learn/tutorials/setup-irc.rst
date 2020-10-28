@@ -22,7 +22,8 @@ It's a great entrypoint to the terminal and beginners are encouraged to follow t
 
     The SRCF already has ``irssi`` and ``screen`` installed so you can skip this step but we include it here for completeness in case folks want to venture out and set up their own machine. As they are standard versions that come with the Long Term Release of Ubuntu they can be a bit outdated, so feel free to build the latest version in your directory from source: https://github.com/irssi/irssi.
 
-1) Install irssi.
+Install irssi
+^^^^^^^^^^^^^
 
 ::
 
@@ -30,7 +31,8 @@ It's a great entrypoint to the terminal and beginners are encouraged to follow t
    $ sudo yum install irssi (Redhat derivatives)
    $ sudo apt-get install irssi (Debian derivatives)
 
-2) Install screen.
+Install screen
+^^^^^^^^^^^^^^
 
 ::
 
@@ -41,7 +43,8 @@ It's a great entrypoint to the terminal and beginners are encouraged to follow t
 3. Configuring
 ~~~~~~~~~~~~~~
 
-1)
+Create logging directory
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
@@ -49,7 +52,8 @@ It's a great entrypoint to the terminal and beginners are encouraged to follow t
 
 Getting this ready for later...
 
-2) If screen was already installed (reported in step 2), check
+If screen was already installed (reported in step 2), check
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
@@ -58,7 +62,8 @@ Getting this ready for later...
 If there's more than one screen session, you'll have to enter its name
 at the end of the next command in Step 5.
 
-3) 
+Start a screen session
+^^^^^^^^^^^^^^^^^^^^^^ 
 
 ::
 
@@ -86,7 +91,8 @@ From the GNU screen manual
                Attach here and now. Whatever that means, just do it.
    Note: It is a good idea to check the status of your sessions with screen -list before using this option. 
 
-4) Start irssi:
+Start irssi
+^^^^^^^^^^^
 
 ::
 
@@ -94,7 +100,8 @@ From the GNU screen manual
 
 Having done this you should be presented with an empty irssi window.
 
-5) Tedious, yet essential settings (enter at irssi prompt):
+Tedious, yet essential settings (enter at irssi prompt)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
@@ -104,24 +111,29 @@ Having done this you should be presented with an empty irssi window.
    /SET real_name <real name>
    /SET use_msgs_window OFF
 
-6) Highlight lines containing your nick:
+Highlight lines containing your nick
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
    /HILIGHT <nick>
 
-7) Set timestamp to something sensible (day is particularly useful):
+Set timestamp to something sensible (day is particularly useful)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
    /SET timestamp_format %d.%H:%M:%S
 
-8) Set up logging. Logging is useful because the IRC connection is not
-    persistent over system restarts (logging will allow you to see any
-    messages you missed between the last time you checked IRC and the
-    time the system restarted). It's also useful if you're receiving
-    e.g. tech support, so you have a record of any instructions you were
-    given!
+Set up logging
+^^^^^^^^^^^^^^
+
+Logging is useful because the IRC connection is not
+persistent over system restarts (logging will allow you to see any
+messages you missed between the last time you checked IRC and the
+time the system restarted). It's also useful if you're receiving
+e.g. tech support, so you have a record of any instructions you were
+given!
 
 ::
 
@@ -129,7 +141,8 @@ Having done this you should be presented with an empty irssi window.
    /SET autolog_level ALL -CRAP -CLIENTCRAP -CTCPS
    /SET autolog_path ~/irclogs/%Y/$tag/$0.%m-%d.log
 
-9) Set quit message:
+Set quit message
+^^^^^^^^^^^^^^^^
 
 ::
 
@@ -140,8 +153,8 @@ the closest Kirk ever came to saying the commonly misquoted "beam me up
 Scotty!" He never said anything remotely like this in the TV series but
 said the above in Star Trek IV).
 
-10) Add network(s):
-
+Add network(s)
+^^^^^^^^^^^^^^
 
 ::
 
@@ -149,7 +162,8 @@ said the above in Star Trek IV).
 
 For example, "srcf".
 
-11) Add one or more servers:
+Add one or more servers
+^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
@@ -157,7 +171,8 @@ For example, "srcf".
 
 The FQDN in our case is ``irc.srcf.net``.
 
-12) Add one or more channels:
+Add one or more channels
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
@@ -172,20 +187,25 @@ go to the window that you wish to move):
    <or>
    /window move <position to move to>
 
-13) Save settings and layout:
+Make sure to chcek out :ref:`an overview of the channels <channel-overview>` on our server to decide which ones to add.
+
+Save settings and layout
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
    /SAVE
    /LAYOUT SAVE
 
-14) Restart irssi and confirm everything is set correctly.
+Restart irssi and confirm everything is set correctly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
    /RESTART
 
-15) Ensure that screen and irssi are started on reboot
+Ensure that screen and irssi are started on reboot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will also need to create the screen session every time the SRCF reboots, unless you set up an ``@reboot`` `cron
 job <http://team.macnn.com/drafts/crontab_defs.html>`__ containing

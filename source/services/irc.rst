@@ -18,6 +18,7 @@ Important information
 
     We have a code of conduct to foster the above aims: inclusivity, collaboration and teamwork (https://www.srcf.net/code-of-conduct)
 
+.. _channel-overview:
 
 Overview of channels
 ~~~~~~~~~~~~~~~~~~~~
