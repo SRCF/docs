@@ -77,31 +77,23 @@ Supervising and starting your app
   We provide sample tutorials for common frameworks in our :ref:`tutorial section <tutorials>` 
 
 .. attention::
-  **Make sure you do these steps on the web server.** If you start
-  your app on ``pip``, the public shell server, it won't work.
+  **Make sure you do these steps on the web server.** If you start your app on ``pip``, the public shell server, it won't work.
 
-We may restart the application server as part of regular maintenance,
-and you'll want your app to start again when we do. You'll also want
-your app to automatically restart if it crashes.
-
-We highly recommend to use ``systemd`` to supervise your app. Our
-recommended setup is:
+The SRCF may restart any of its servers as part of regular or emergency maintenance. When this happens, you'll likely want your app to start up again. Similarly you may want your app to automatically restart if it crashes. We highly recommend using ``systemd`` to supervise your app. Our suggested setup is:
 
 1. Create a directory for your app ``~/myapp``.
 
 2. Place a startup script at ``~/myapp/run``. Your script should end by
    ``exec``\ ing the server process. If you followed one of our tutorials
-   for Django, Node or Rails,
-   you've already created this file, so can move on to the next step.
-
-   Otherwise, an example would be:
+   for Django, Node or Rails, you've already created this file, so can
+   move on to the next step. Otherwise, an example would be:
 
    ::
 
       #!/bin/sh -e
       exec ~/myapp/run-server
 
-   Your server should run in the *foreground* (it should not daemonize),
+   Your server should run in the *foreground* (it should not daemonise),
    and the ``run`` script should end with an ``exec`` line so that
    signals are sent to the server (and not to the shell that started
    it).
@@ -110,12 +102,12 @@ recommended setup is:
    (``chmod +x ~/myapp/run``). Test it by executing it in your terminal
    before moving on; it will be easier to debug problems.
 
-3. Write a systemd service file so your app will be supervised on startup. Save the following to the file ``~/.config/systemd/user/myapp.service``:
+3. Write a systemd service file so your app will be supervised on startup. Create the directory ``mkdir -p ~/.config/systemd/user`` and then save the following to the file ``~/.config/systemd/user/myapp.service``:
 
    ::
 
       [Unit]
-      Description={YOUR GROUP NAME} Webapp
+      Description={YOUR USER, SOCIETY OR GROUP NAME} Webapp
       ConditionHost=sinkhole
 
       [Install]
