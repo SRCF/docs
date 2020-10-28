@@ -40,12 +40,16 @@ So you want to learn how to make cool stuff on SRCF systems? We can help you wit
      - Learn how to deploy a Node web app 
      - Medium
      - 20 min
-   * - :ref:`Deploy a Ruby app <deploy-ruby>`
+   * - :ref:`Deploy a Ruby app <deploy-rails>`
      - Learn how to deploy a Ruby web app such as Rails
      - Medium
      - 20 min
    * - :ref:`Deploy a Python app <deploy-python>`
      - Learn how to deploy Python web app like Django or Flask
+     - Medium
+     - 20 min
+   * - :ref:`Connect to an IRC server <setup-irc>`
+     - Configure a persistent IRC connection with screen and irssi
      - Medium
      - 20 min
 

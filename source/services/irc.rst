@@ -1,8 +1,37 @@
 Internet Relay Chat (IRC)
 -------------------------
 
-Connecting
-~~~~~~~~~~
+Internet relay chat is a protocol for real-time text messaging between internet-connected computers. While it is dated in comparison to some other messaging protocols, it continues to be used regularly by SRCF members and as the emergency messaging platform of choice, with several servers located around the world.
+
+We have written a tutorial on getting started with IRC, :ref:`available here <setup-irc>`.
+
+Important information
+~~~~~~~~~~~~~~~~~~~~~
+
+.. success::
+
+    Much like you will find in other open source and similar communities, we have a few guidelines that we want to make clear:
+    
+    1. There are no technical prerequisites
+    2. Anyone can contribute
+    3. By students for students
+
+    We have a code of conduct to foster the above aims: inclusivity, collaboration and teamwork (https://www.srcf.net/code-of-conduct)
+
+
+Overview of channels
+~~~~~~~~~~~~~~~~~~~~
+
+* #welcome — a place for newcomers to say hello
+* #general — chat about anything here, we’re humans after all :)
+* #society — questions and topics about the SRCF as a society
+* #support — tech questions, SRCF-specific or not
+* #hackday — home of volunteers, future home of interested volunteers
+* #ops — infra-specific discussion, invite only (interested sysadmins encouraged to email sysadmins@srcf.net to join!)
+* #srcf — alumni
+
+Server details
+~~~~~~~~~~~~~~
 
 You need to connect your client to
 `irc.srcf.net <irc://irc.srcf.net/srcf>`__. If you have a
@@ -19,31 +48,7 @@ people can continue to leave them messages for when they return. There
 are two main ways: a bouncer or a tmux/screen instance.
 
 For tmux/screen, a common choice is `irssi <http://www.irssi.org/>`__, although there are
-many others.
-
-When you set up your screen session with irssi for the first time, you
-will want to run ``screen -U irssi``. You will also need to do this
-every time the SRCF reboots, unless you set up an ``@reboot`` `cron
-job <http://team.macnn.com/drafts/crontab_defs.html>`__ containing
-``screen -Udm irssi`` using ``crontab -e``.
-
-Having done this you should be presented with an empty irssi window. To
-connect it to our IRC server, type
-``/SERVER ADD -auto -network SRCF irc.srcf.net``, press return, then
-type ``/CONNECT irc.srcf.net`` and press return again. You should see
-the server's message of the day fill your screen. You may want to change
-your nick (the name people will see attached to everything you type)
-using ``/nick yourname``, although you won't be allowed to use a nick
-that already exists. ``/join #srcf`` will connect you to the main IRC
-channel, or you can replace ``#srcf`` with a different channel to go
-somewhere else. ``/SAVE`` will save all this to the configuration file.
-
-To disconnect from screen without quitting IRC press Ctrl-A, and then
-press D. This will place you back onto the command line, where you can
-just type Ctrl-D to quit.
-
-When you want to reconnect later use ``screen -rd`` after you have
-logged in, and your should find your irssi exactly as you left it.
+many others. We've written :ref:`a tutorial for this <setup-irc>`.
 
 If you want to use a bouncer, we recommend ZNC.
 
