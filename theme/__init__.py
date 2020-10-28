@@ -13,6 +13,7 @@ from sphinx.writers.html import HTMLTranslator
 ALERTS = {
     "attention": "primary",
     "caution": "warning",
+    "success": "success",
     "danger": "danger",
     "error": "danger",
     "example": "info",
