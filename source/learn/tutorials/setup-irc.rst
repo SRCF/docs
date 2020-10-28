@@ -18,7 +18,7 @@ It's a great entrypoint to the terminal and beginners are encouraged to follow t
 2. Installing
 ~~~~~~~~~~~~~
 
-.. success::
+.. hint::
 
     The SRCF already has ``irssi`` and ``screen`` installed so you can skip this step but we include it here for completeness in case folks want to venture out and set up their own machine. As they are standard versions that come with the Long Term Release of Ubuntu they can be a bit outdated, so feel free to build the latest version in your directory from source: https://github.com/irssi/irssi.
 

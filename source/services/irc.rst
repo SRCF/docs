@@ -8,7 +8,7 @@ We have written a tutorial on getting started with IRC, :ref:`available here <se
 Important information
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. success::
+.. hint::
 
     Much like you will find in other open source and similar communities, we have a few guidelines that we want to make clear:
     
