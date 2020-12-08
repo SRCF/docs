@@ -20,7 +20,7 @@ ALERTS = {
     "important": "primary",
     "note": "info",
     "seealso": "secondary",
-    "tip": "warning",
+    "tip": "info",
     "todo": "info",
     "warning": "warning",
 }

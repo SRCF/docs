@@ -102,45 +102,63 @@ The SRCF may restart any of its servers as part of regular or emergency maintena
    (``chmod +x ~/myapp/run``). Test it by executing it in your terminal
    before moving on; it will be easier to debug problems.
 
-3. Write a systemd service file so your app will be supervised on startup. Create the directory ``mkdir -p ~/.config/systemd/user`` and then save the following to the file ``~/.config/systemd/user/myapp.service``:
+3. Write a systemd service file so your app will be supervised on startup.
 
-   ::
+   For applications in your personal account, create the unit directory if it doesn't exist::
 
-      [Unit]
-      Description={YOUR USER, SOCIETY OR GROUP NAME} Webapp
-      ConditionHost=sinkhole
+       mkdir -p ~/.config/systemd/user
 
-      [Install]
-      WantedBy=default.target
+   For a society account, substitute ``~`` for ``/societies/foosoc``, where ``foosoc`` is the short name of the account.
 
-      [Service]
-      ExecStart=/home/{CRSid}/myapp/run
-      Restart=always
+   Then, save the following to the file ``~/.config/systemd/user/myapp.service`` (or ``/societies/foosoc/.config/systemd/user/myapp.service`` for groups)::
+
+       [Unit]
+       Description={YOUR USER, SOCIETY OR GROUP NAME} Webapp
+       ConditionHost=sinkhole
+
+       [Install]
+       WantedBy=default.target
+
+       [Service]
+       ExecStart=/home/{CRSid}/myapp/run
+       Restart=always
 
 4. Tell systemd to start your app on startup, by running ``systemctl --user enable myapp``.
 
 5. You'll need to start your app manually once (on future reboots, it will be started for you). To do that, run ``systemctl --user start myapp``.
 
-To control your app, you can use the ``systemctl`` tool. See ``man systemctl`` for full details. In summary,
+   To control your app, you can use the ``systemctl`` tool. See ``man systemctl`` for full details. In summary,
 
--  **Restart an app.** ``systemctl --user restart myapp``
--  **Bring an app offline.** ``systemctl --user stop myapp``
--  **Bring an app back online.** ``systemctl --user start myapp``
--  **Check the status of an app.** ``systemctl --user status myapp``
+   -  **Restart an app.** ``systemctl --user restart myapp``
+   -  **Bring an app offline.** ``systemctl --user stop myapp``
+   -  **Bring an app back online.** ``systemctl --user start myapp``
+   -  **Check the status of an app.** ``systemctl --user status myapp``
 
-Due to an implementation detail, you must call ``systemctl`` as follows when using a society account: ``sudo -Hu foosoc XDG_RUNTIME_DIR=/run/user/$(id -u foosoc) systemctl --user ...``. You might like to add a function to your ``~/.bashrc`` to make this easier to remember:
+   By default, your app's standard output and error streams are sent to systemd's journal however only the root user can access these. You will want to make your app write to a logfile rather than stdout or stderr.
 
-   ::
+``systemctl`` with group accounts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-      socsudo () {
-          soc=$1
-          shift
-          sudo -Hu $soc XDG_RUNTIME_DIR=/run/user/$(id -u $soc) "$@"
-      }
+Due to an implementation detail, you must call ``systemctl`` as follows when interacting with a group account's services (here using ``foosoc`` for the account name)::
 
-and then run ``socsudo foosoc systemctl --user ...``.
+    sudo -Hu foosoc XDG_RUNTIME_DIR=/run/user/$(id -u foosoc) systemctl --user ...
 
-By default, your app's standard output and error streams are sent to systemd's journal however only the root user can access these. You will want to make your app write to a logfile rather than stdout or stderr.
+.. tip::
+    You might like to add a function to your ``~/.bashrc`` to make this easier to remember::
+
+        socsudo () {
+            soc=$1
+            shift
+            sudo -Hu $soc XDG_RUNTIME_DIR=/run/user/$(id -u $soc) "$@"
+        }
+
+    ...and then run ``socsudo foosoc systemctl --user ...``.
+
+If you receive an error like this setting up your group account's first service::
+
+    Failed to connect to bus: No such file or directory
+
+...then you may need to wait up to 20 minutes for lingering to be switched on -- this will happen automatically once a service file is detected with a valid ``ConditionHost`` line.
 
 Frequently asked questions
 --------------------------
