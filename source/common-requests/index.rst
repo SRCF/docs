@@ -6,16 +6,22 @@ Before contacting the sysadmins, check we haven't already answered your question
 .. _join-group:
 
 I want to gain access to an existing group account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are a prospective admin seeking access to an existing group account, you should first contact the existing admins to request access.  If you're unable to make contact with them, you may `ask the system administrators <https://www.srcf.net/contact>`__ for assistance.
+As a prospective admin seeking access to manage a group account, you should first contact its existing admins and request access from them.  You'll need to know the short name of the account (e.g. ``cuxs``, which may appear in the society's website URL *cuxs.soc.srcf.net* or email addresses *cuxs-role@srcf.net* if hosted with us), with which you can email ``cuxs-admins@srcf.net`` to reach all current admins of the account.  If you don't know the short name, you can check `this list of group accounts <https://www.srcf.net/groups>`__.
+
+If you're unable to make contact with them, you may `ask the system administrators <https://www.srcf.net/contact>`__ for assistance, who will then attempt their own contact, and may remove inactive admins or transfer ownership as needed.
+
+Group accounts are considered *unmaintained* if they have no active admins remaining.  Accounts in this state will display an *Unmaintained group website* page if you visit their SRCF-hosted website.  You'll need to contact the sysadmins in the first instance to recover such an account.
 
 .. _grant-group:
 
 I want to grant group admin access to someone else
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are an existing admin wanting to pass on adminship, you can use the `control panel <https://control.srcf.net>`__ to promote other users.  Each new admin will need to create a personal SRCF account first if they don't currently have one.
+As an existing admin of a group account, you can use the `control panel <https://control.srcf.net>`__ to promote other users.  Each new admin will need to create a personal SRCF account first if they don't currently have one.
+
+If you are stepping down from managing a group account, you can remove yourself as long as there's at least one additional admin present.
 
 I'm getting permission errors writing files in a group account space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
