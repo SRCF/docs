@@ -9,6 +9,7 @@ project = "SRCF"
 author = "The Student-Run Computing Facility"
 
 extensions = []
+exclude_patterns = ["**/_template.rst"]
 
 master_doc = "index"
 
