@@ -56,7 +56,11 @@ If you're a beginner then take a look at some of the starter projects below.
 Django
 ~~~~~~
 
-To create a skeleton Django project::
+First, install Django in your venv::
+
+       pip install django
+
+Then, to create a skeleton Django project::
 
       django-admin startproject example
       mv example python
@@ -66,6 +70,10 @@ Now take a look at ``django/example/settings.py`` for how to configure your site
 
 Flask
 ~~~~~
+
+Install Flask in your venv::
+
+      pip install flask
 
 There is a demo flask app setup at https://sample.soc.srcf.net/flask/. See ``flask/app.py`` for a minimum base application.
 
