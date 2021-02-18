@@ -53,13 +53,15 @@ The SRCF uses Apache to serve websites so if you need to run a backend web app, 
 Using UNIX sockets
 ^^^^^^^^^^^^^^^^^^
 
-You will need to configure your application to use a UNIX socket. You should make sure the socket is only accessible to you, either by using appropriate file modes or by picking a path that is only accessible to you such as ``/home/crsid/myapp/web.sock``. Then add the following to your ``.htaccess`` file, replacing as necessary::
+You will need to configure your application to use a UNIX socket. The socket should only be accessible to you, which can be done by picking a path in your area (e.g. ``/home/ab123/myapp/web.sock``) or by using appropriate file modes.
+
+Then add the following to your ``.htaccess`` file, replacing ``<path-to-socket>`` with the path to your socket (e.g. ``/home/ab123/myapp/web.sock``) and ``<url>`` with your domain name (e.g. ``ab123.user.srcf.net``)  ::
 
     RequestHeader set Host expr=%{HTTP_HOST}
     RequestHeader set X-Forwarded-For expr=%{REMOTE_ADDR}
     RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
     RequestHeader set X-Real-IP expr=%{REMOTE_ADDR}
-    RewriteRule ^(.*)$ unix:/home/crsid/myapp/web.sock|http://your.hostname.tld/$1 [P,NE,L,QSA]
+    RewriteRule ^(.*)$ unix:<path-to-socket>|http://<url>/$1 [P,NE,L,QSA]
 
 Using TCP ports
 ^^^^^^^^^^^^^^^
