@@ -75,7 +75,7 @@ Install Flask in your venv::
 
       pip install flask
 
-There is a demo flask app setup at https://sample.soc.srcf.net/flask/. See ``flask/app.py`` for a minimum base application.
+There is a demo flask app setup at https://sample.soc.srcf.net/flask/. If you're logged in via ssh, you can find the code at ``/public/societies/sample/flask/app.py``.
 
 Installing gunicorn
 ^^^^^^^^^^^^^^^^^^^
@@ -107,7 +107,11 @@ Replace ``main:app`` with the module containing the app, and name of your app, t
 
    chmod +x ~/myapp/run
 
-You then need to configure Apache to forward web requests to the ``web.sock`` socket specified in the ``run`` script. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
+You then need to configure Apache to forward web requests to the ``web.sock`` socket specified in the ``run`` script. We explain how to do this in the :ref:`app hosting docs <forward-requests>`. 
+
+If your app is serving a page at the route ``/`` (e.g. by using ``@app.route('/')``), you'll need to add the following line to `.htaccess`:
+::
+   DirectoryIndex disabled
 
 You should now be able to execute the script and access your website (or see any errors in your terminal).
 
