@@ -53,7 +53,7 @@ The SRCF uses Apache to serve websites so if you need to run a backend web app, 
 Using UNIX sockets
 ^^^^^^^^^^^^^^^^^^
 
-You will need to configure your application to use a UNIX socket. The socket should only be accessible to you, which can be done by picking a path in your area (e.g. ``/home/ab123/myapp/web.sock``) or by using appropriate file modes.
+You will need to configure your application to use a UNIX socket. The socket should only be accessible to you, which can be done by picking a path in your home directory (e.g. ``/home/ab123/myapp/web.sock``) or by using appropriate file modes.
 
 Then add the following to your ``.htaccess`` file, replacing ``<path-to-socket>`` with the path to your socket (e.g. ``/home/ab123/myapp/web.sock``) and ``<url>`` with your domain name (e.g. ``ab123.user.srcf.net``)  ::
 
