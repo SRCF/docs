@@ -52,6 +52,10 @@ So you want to learn how to make cool stuff on SRCF systems? We can help you wit
      - Configure a persistent IRC connection with screen and irssi
      - Medium
      - 20 min
+   * - :ref:`Virtual desktops over VNC <virtual-desktop>`
+     - Use graphical Linux applications on a remote desktop
+     - Medium
+     - 20 min
 
 These tutorials show you how to do a variety of things on the *SRCF systems*. They may assume some prior knowledge in the relevant sections. If you're starting out from scratch, check out our :ref:`recommended learning resources <recommended-resources>` for a curated list of resources on web development, linux, networking and more.
 

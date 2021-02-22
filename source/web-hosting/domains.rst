@@ -53,10 +53,21 @@ You may wish to run more than one website under a single account.  This can be d
 
 For example, you may wish to serve ``example.com`` from */societies/<groupname>/public_html*, and ``bubbles.example.com`` from */societies/<groupname>/public_html/bubbles*.  This means that */societies/<groupname>/public_html/bubbles/index.html* would be served as the index page of ``bubbles.example.com``.
 
-SSL
-~~~
+HTTPS
+~~~~~
 
-Once you have a domain configured you can request a lets-encrypt SSL certificate from https://srcf-admin.soc.srcf.net/lets-encrypt/.
+HTTPS provides secure communication between our servers and your website visitors, and is recommended for any site that handles personal information or provides password authentication.  In comparison, HTTP transmits in plain text, and is susceptible to eavesdropping over an untrusted network (such as public wi-fi or other shared networks).
+
+Websites served from ``.user.srcf.net`` and ``.soc.srcf.net`` addresses come with working HTTPS by default, but custom domains must be opted-in manually.  This can be done using the `Let's Encrypt form <https://srcf-admin.soc.srcf.net/lets-encrypt/>`_.  Requests will be queued, and processed together at the end of each day.
+
+Note that your domains need to be actively resolving to us in order to have certificates issued -- if not, they will be dropped from the queue.  The resulting certificate we'll serve will list each of your domains as a Subject Alternative Name (SAN).  Once opted in, no further action is required – certificates will automatically be renewed close to their expiry.
+
+.. note::
+    Custom domains are shown with **www** and **non-www** variants.  We serve your site on both of these domains, even if only one of the variants actually resolves to us.  If *via wildcard* is shown, we are actually accepting requests for any subdomain of the listed domain, though we are currently unable to issue wildcard certificates due to limitations with the issuer.  Please `contact the sysadmins <https://www.srcf.net/contact>`_ if you wish to request certificates for specific subdomains other than www.
+
+Websites that are not opted-in will not be served over HTTPS, so will only respond to plain HTTP.  Requests for an HTTPS version will show a "non-existent site" page.
+
+Note that we only handle serving your website over HTTPS, and will still accept HTTP connections.  If your site uses a CMS that stores a canonical domain, you'll need to update that to use HTTPS if desired. You can also use a .htaccess file to require secure connections, and redirect plain HTTP.
 
 What about email?
 ~~~~~~~~~~~~~~~~~

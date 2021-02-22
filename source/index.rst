@@ -134,3 +134,13 @@ More services
    services/mailman
    services/mattermost
    services/usenet
+
+Upgrade guidance
+~~~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 2
+
+   upgrade-guidance/sinkhole
+   upgrade-guidance/wordpress
+   upgrade-guidance/drupal
