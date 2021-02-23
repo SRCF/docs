@@ -141,6 +141,7 @@ Upgrade guidance
 .. toctree::
    :maxdepth: 2
 
+   upgrade-guidance/focal
    upgrade-guidance/sinkhole
    upgrade-guidance/wordpress
    upgrade-guidance/drupal
