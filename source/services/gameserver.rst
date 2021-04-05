@@ -2,7 +2,7 @@ Game servers
 ------------
 
 If you want to run a server for your favourite online game (or any other
-long-running application) you should use ``userservers.srcf.net``, as 
+long-running application) you should use ``doom.srcf.net``, as 
 described :ref:`here<ssh-gameserver>`.
 
 Please limit your server to around 1GB of RAM and set it to ``nice`` 
