@@ -56,6 +56,7 @@ Web applications should be run from **sinkhole**, our webserver.  This includes 
    RSA      MD5:76:aa:f1:63:ec:ca:ac:97:fb:05:35:3c:c7:8f:55:ff
    RSA      SHA256:DSC30UdUoQNYWhwU4icuPOyrDC9xVjsnKbRC3Mz9RZM
 
+.. _ssh-gameserver :
 Games
 ^^^^^
 
