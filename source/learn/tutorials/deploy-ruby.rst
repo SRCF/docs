@@ -13,7 +13,7 @@ You can find out more about the Ruby language here: https://www.ruby-lang.org/.
 Server
 ^^^^^^
 
-You must host the app from the correct server. Please see the `app hosting docs <forward-requests>`.
+You must host the app from the correct server. Please see the :ref:`app hosting docs <app-hosting>`.
 
 Setting up rbenv
 ^^^^^^^^^^^^^^^^

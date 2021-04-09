@@ -16,7 +16,7 @@ You can find out more about the Python language here: https://www.python.org.
 Server
 ^^^^^^
 
-You must host the app from the correct server. Please see the `app hosting docs <forward-requests>`.
+You must host the app from the correct server. Please see the :ref:`app hosting docs <app-hosting>`.
 
 Setting up a venv
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,7 +107,7 @@ Replace ``main:app`` with the module containing the app, and name of your app, t
 
    chmod +x ~/myapp/run
 
-You then need to configure Apache to forward web requests to the ``web.sock`` socket specified in the ``run`` script. We explain how to do this in the :ref:`app hosting docs <forward-requests>`. 
+You then need to configure Apache to forward web requests to the ``web.sock`` socket specified in the ``run`` script. We explain how to do this in the :ref:`app hosting docs <forward-requests>`.
 
 If your app is serving a page at the route ``/`` (e.g. by using ``@app.route('/')``), you'll need to add the following line to `.htaccess`:
 ::
