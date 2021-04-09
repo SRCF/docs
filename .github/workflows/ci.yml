@@ -1,0 +1,21 @@
+name: CI
+on: push
+
+jobs:
+  build-check:
+    name: Build check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        if: contains(github.event.head_commit.message, 'skip ci') == false
+        uses: actions/checkout@v1
+      - name: Set up Python 
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Create Makefile.local
+        run: touch Makefile.local
+      - name: Check that HTML output can be built
+        run: make html
