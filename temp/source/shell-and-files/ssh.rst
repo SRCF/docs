@@ -56,10 +56,11 @@ Web applications should be run from **sinkhole**, our webserver.  This includes 
    RSA      MD5:76:aa:f1:63:ec:ca:ac:97:fb:05:35:3c:c7:8f:55:ff
    RSA      SHA256:DSC30UdUoQNYWhwU4icuPOyrDC9xVjsnKbRC3Mz9RZM
 
+.. _ssh-gameserver :
 Games
 ^^^^^
 
-``userservers.srcf.net``
+``doom.srcf.net``
 
 If you'd like to run a game server or more CPU-intensive application, please use **doom**, which has fingerprints::
 
@@ -69,12 +70,3 @@ If you'd like to run a game server or more CPU-intensive application, please use
    ED25519  SHA256:kh1Sr6Nrlp/vK9ijKZ43/IQ2tqdPzY/fnZdnGBIKgIM
    RSA      MD5:f1:ee:8c:a7:7a:cb:f7:c7:dc:c5:7e:56:9a:83:f5:bc
    RSA      SHA256:c1dlaFnPyJ44CnjZIeV6zLHQCPlIH9Og0K3dL16XGfo
-
-We previously provided **cavein** for such long-running applications, and is the process of being decommissioned.  It has/had these fingerprints::
-
-   DSA      MD5:25:3b:4f:33:4a:db:23:3d:35:20:9b:fa:50:1c:30:fd
-   DSA      SHA256:0PpH0sMZgoVC871gOdSDeqA20nZiBcjEezaVjVTgUkE
-   ECDSA    MD5:88:0f:94:cb:82:d9:d3:01:98:a3:26:cd:24:d6:8c:55
-   ECDSA    SHA256:xF7livDAEASFJViD/TF9zsIu5yaxNMCUPQSzxF0Dc38
-   RSA      MD5:14:c9:ab:96:05:b5:91:fb:f3:b7:27:c3:75:2e:0a:3c
-   RSA      SHA256:p8Zu/kMB1Kf+O2ZYgO/xX0by+PbPkVPc9WdNcuT6YoA

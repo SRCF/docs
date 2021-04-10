@@ -134,6 +134,7 @@ More services
    services/mailman
    services/mattermost
    services/usenet
+   services/gameserver
 
 Upgrade guidance
 ~~~~~~~~~~~~~~~~

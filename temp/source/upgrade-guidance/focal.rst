@@ -2,7 +2,7 @@ Spring 2021 server upgrade
 ==========================
 
 .. warning::
-    These notes relate to the migration from Ubuntu 16.04 to 20.04, scheduled for March 2021.
+    These notes relate to the migration from Ubuntu 16.04 to 20.04, scheduled for 3rd/4th April 2021.
 
 Server changes
 ~~~~~~~~~~~~~~
