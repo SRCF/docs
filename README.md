@@ -19,8 +19,18 @@ The above is easy if you're on a UNIX-like system, such as any Linux distro or m
 
 ## Contributing
 
-To do fancier things with Hugo and improve our docs, you should check out their [great documentation](https://gohugo.io/getting-started/). You should also read the project structure section to understand how to add new pages.
+To do fancier things with Hugo and improve our docs, you should check out their [documentation](https://gohugo.io/getting-started/). You should also read the project structure section to understand how to add new pages.
 
 Editing is an important step, and for that you will need a good text editor. VS Code, Atom, Notepad++ are all solid choices with good extensions to make typing Markdown even easier.
 
 To contribute, you should first fork our repository into your own GitHub space, clone that repository and begin your work there. Once you've made your changes, stage and commit them ([a good message always helps!](https://chris.beams.io/posts/git-commit/)) and push to your repository. Once you load your repository, GitHub will kindly ask you if you want to create a pull request to merge your changes into our repository.
+
+### Project structure
+
+An important step to the second iteration of our documentation was addressing different *types* of information, nicely summarized by [this philosophy](https://diataxis.fr/). Accordingly, the `content` folder has subfolders to match the type of content it houses.
+
+Content is grouped in the sidebar according to its `group` property.
+
+## Credits
+
+This documentation is largely inspired by [Bootstrap](https://github.com/twbs/bootstrap/).
