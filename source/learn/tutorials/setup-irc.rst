@@ -202,7 +202,9 @@ Restart irssi and confirm everything is set correctly
 
 ::
 
-   /RESTART
+   /QUIT
+
+You should now arrive at a terminal, where you can type ``irssi`` to restart the client and check that everything is working.
 
 Ensure that screen and irssi are started on reboot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
