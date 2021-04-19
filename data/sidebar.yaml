@@ -3,86 +3,91 @@
 
 # YAML over TOML here because top-level arrays are cleaner
 
-# Singles
-
-- title: Introduction
-- title: Common requests
-
 # Guides
 
-- title: "Getting started: groups"
-- title: "Getting started: users"
-- title: Websites
-  pages:
-    - title: Securing WordPress
-    - title: Migrating to SRCF
-- title: 20.04 Upgrade guidance
-
-# Reference
-
-- title: Personal accounts
-  pages:
-    - title: User vs. Group
-    - title: Passwords
-    - title: After graduation
-    - title: SRCF Mailing lists
-
-- title: Group accounts
-  pages:
-    - title: Administrators
-    - title: Files
-    - title: Email
-
-- title: Shell & files
-  pages:
-    - title: SSH and servers
-    - title: Files and transfer
-    - title: Scheduled tasks
-    - title: Software and installation
-
-- title: Web hosting
-  pages:
-    - title: Web applications
-    - title: Raven authentication
-    - title: CGI and PHP scripts
-    - title: Custom domains
-    - title: Apache
-
-- title: Email
-  pages:
-    - title: Email accounts
-    - title: Hades email service
-    - title: Legacy mail on pip
-    - title: Filtering spam
-
-- title: Other services
-  pages:
-    - title: MySQL and PostgreSQL databases
-    - title: Gopher
-    - title: Internet Relay Chat (IRC)
-    - title: Mailing lists
-    - title: Mattermost
-    - title: Usenet (NNTP)
-    - title: Game servers
+- category: Guides
+  groups:
+    - title: "Getting started: groups"
+    - title: "Getting started: users"
+    - title: "Society handovers"
+    - title: Websites
+      pages:
+        - title: Securing WordPress
+        - title: Migrating to the SRCF
+    - title: 20.04 Upgrade guidance
 
 # Tutorials
 
-- title: Shell & files
-  pages:
-    - title: Logging in
-    - title: Uploading files
-    - title: Terminal guide
-    - title: Passwordless login
+- category: Tutorials
+  groups:
+    - title: Shell and files
+      pages:
+        - title: Logging in
+        - title: Uploading files
+        - title: Terminal guide
+        - title: Passwordless login
 
-- title: Websites
-  pages:
-    - title: WordPress from scratch
-    - title: Deploy a web app
-    - title: Statically-generated websites
+    - title: Websites
+      pages:
+        - title: WordPress from scratch
+        - title: Deploy a web app
+        - title: Statically-generated websites
 
-- title: Others
-  pages:
-    - title: Simple Minecraft server
-    - title: Virtual desktops over VNC
-    - title: Connect to IRC
+    - title: Others
+      pages:
+        - title: Simple Minecraft server
+        - title: Virtual desktops over VNC
+        - title: Connect to IRC
 
+# Reference
+
+- category: Reference
+  groups:
+    - title: Introduction
+    - title: Common requests
+      divider: true
+
+    - title: Personal accounts
+      pages:
+        - title: User vs Group
+        - title: Passwords
+        - title: After graduation
+        - title: SRCF Mailing lists
+
+    - title: Group accounts
+      pages:
+        - title: Administrators
+        - title: Files
+        - title: Email
+
+    - title: Shell and files
+      pages:
+        - title: SSH and servers
+        - title: Files and transfer
+        - title: Scheduled tasks
+        - title: Software and installation
+
+    - title: Web hosting
+      pages:
+        - title: Web applications
+        - title: Raven authentication
+        - title: CGI and PHP scripts
+        - title: Custom domains
+        - title: Apache
+
+    - title: Email
+      pages:
+        - title: Email accounts
+        - title: Hades email service
+        - title: Legacy mail on pip
+        - title: Filtering spam
+
+    - title: Other services
+      pages:
+        - title: MySQL and PostgreSQL databases
+        - title: Gopher
+        - title: Internet Relay Chat (IRC)
+        - title: Mailing lists
+        - title: Mattermost
+        - title: Usenet (NNTP)
+        - title: Game servers
