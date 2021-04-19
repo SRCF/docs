@@ -1,8 +1,16 @@
 baseURL = "http://docs.srcf.net"
 languageCode = "en-us"
-title = "SRCF Docs"
+title = "SRCF Documentation"
+
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    startLevel = 2
 
 [params]
     domain_web = "https://www.srcf.net"
     domain_control = "https://control.srcf.net"
     description = "The Student-Run Computing Facility is a volunteer-run student society that provides free, useful and flexible computing and network services for Cambridge University staff and students of all degrees of ability."
+    repo = "https://github.com/srcf/docs"

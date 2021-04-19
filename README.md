@@ -30,6 +30,8 @@ To contribute, you should first fork our repository into your own GitHub space, 
 An important step to the second iteration of our documentation was addressing different *types* of information, nicely summarized by [this philosophy](https://diataxis.fr/). Accordingly, the `content` folder has subfolders to match the type of content it houses.
 
 Content is grouped in the sidebar according to its `group` property.
+Sidebar logic also assumes that the urlized folder names directly correspond to group names in `sidebar.yaml`
+File names of docs files should be the "urlized" versions of their matching text in `sidebar.yaml`.
 
 ## Credits
 
