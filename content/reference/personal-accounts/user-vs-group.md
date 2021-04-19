@@ -1,12 +1,4 @@
-Getting started
-===============
-
-To start with, you\'ll need to [create a personal
-account](https://control.srcf.net/signup). This will allow you to use
-the control panel to add more services.
-
-Personal vs. group account
---------------------------
+# Personal vs. group account
 
 All SRCF users, whether they are looking for web hosting for themselves,
 or wish to administrate a group account, must first get a personal SRCF
