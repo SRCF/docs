@@ -1,0 +1,6 @@
+<li>
+  <span class="fa-li"><i class="{{ .fa }}"></i></span>
+  {{ with .ctx }}
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ end }}
+</li>
