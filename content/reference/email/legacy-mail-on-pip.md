@@ -5,11 +5,6 @@ group: legacy-mail-on-pip
 layout: docs
 ---
 
-::: {.note}
-::: {.admonition-title}
-Note
-:::
-
 {{< alert type="info" >}}
 
 This information applies only to users of the 'legacy' or 'advanced'
