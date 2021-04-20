@@ -1,21 +1,25 @@
-SSH and servers
-===============
+---
+title: "SSH and servers"
+date: 2021-04-20T09:27:49+01:00
+group: ssh
+layout: docs
+---
+
+## Overview
 
 You can connect to our servers over SSH in order to run programs, manage
 files, and change your password.
 
-Clients
--------
+## Clients
 
-You will need an SSH client \-- Mac and Linux come with `ssh` in the
+You will need an SSH client -- Mac and Linux come with `ssh` in the
 terminal; for Windows, you can enable OpenSSH in Optional Features, use
 a Linux distro in WSL, or install a Windows client like PuTTY.
 
 Alternatively, you can access a [web-based
 terminal](https://www.srcf.net/terminal/) in your browser.
 
-Passwordless SSH
-----------------
+## Passwordless SSH
 
 Passwordless SSH is often a point we get asked about.
 
@@ -29,8 +33,7 @@ readable by any other user. Therefore you should ensure that the file
 group that owns the `authorized_keys` file. The same caution about
 permissions applies to the `.ssh` directory itself.
 
-Available hosts
----------------
+## Available hosts
 
 ### Shell
 
@@ -62,11 +65,11 @@ as follows:
     RSA      MD5:76:aa:f1:63:ec:ca:ac:97:fb:05:35:3c:c7:8f:55:ff
     RSA      SHA256:DSC30UdUoQNYWhwU4icuPOyrDC9xVjsnKbRC3Mz9RZM
 
-------------------------------------------------------------------------
+## Games & others
 
 `doom.srcf.net`
 
-If you\'d like to run a game server or more CPU-intensive application,
+If you'd like to run a game server or more CPU-intensive application,
 please use **doom**, which has fingerprints:
 
     ECDSA    MD5:74:52:6e:52:d7:07:51:9e:93:12:51:82:8c:b4:ec:0a

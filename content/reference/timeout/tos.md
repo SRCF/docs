@@ -52,7 +52,7 @@ invalid.
 ### Introduction and contact
 
 This service is run by the Student-Run Computing Facility (referred to
-henceforth as \"the SRCF\", \"the Society\", \"we\", \"our\" or \"us\").
+henceforth as 'the SRCF', 'the Society', 'we', 'our' or 'us').
 
 The latest version of this statement can be found on our website at
 <https://docs.srcf.net/timeout/tos.html>. The SRCF is the data
@@ -70,32 +70,32 @@ data subject.
 
 ### Definitions
 
-\"Personal data\" or \"personal information\" means information relating
+'Personal data' or 'personal information' means information relating
 to you that can be used in some way to identify you, either on its own
 or in combination with other such information available to its holder.
 
-\"Processing\" of personal data is any action taken on that data, such
+'Processing' of personal data is any action taken on that data, such
 as storage, retrieval, organisation, transmission or erasure, and/or as
 defined by relevant legislation.
 
-\"University\" means the University of Cambridge.
+'University' means the University of Cambridge.
 
-A \"CRSid\" is a unique identifier issued to a person by the University.
+A 'CRSid' is a unique identifier issued to a person by the University.
 According to the University, CRSids are never reissued, so we assume
 that a CRSid will uniquely identify the same person forever. Usernames
-on our computer systems are also assigned to match a person\'s CRSid.
+on our computer systems are also assigned to match a person's CRSid.
 
 ### The bases on which we process personal data
 
-Timeout usually processes members\' personal data on the basis that it
+Timeout usually processes members' personal data on the basis that it
 is a legitimate interest of the service. Where we process your personal
 information for a purpose falling outside those listed in this statement
 or our other privacy statements (if applicable to you), we will seek
 your explicit consent before doing so.
 
-### How users\' personal data is used by Timeout
+### How users' personal data is used by Timeout
 
-Timeout collects and processes its users\' personal data for a number of
+Timeout collects and processes its users' personal data for a number of
 purposes, namely:
 
 -   Maintaining a list of users and associate rooms and recordings to
@@ -129,7 +129,7 @@ We primarily obtain your personal data through publicly accessible
 information via the University Lookup. The initial signup process
 involves automatic retrieval of your name from [the University Lookup
 Directory](https://help.uis.cam.ac.uk/service/collaboration/lookup)
-based on your CRSid, which itself is obtained from the University\'s
+based on your CRSid, which itself is obtained from the University's
 Raven service used to authenticate. You details are tied to the Lookup
 directory, so if you wish to change your name you are free to do so by
 editing your name on your Lookup page.
@@ -180,7 +180,7 @@ with whom we have shared your personal data.
 
 If you remain unhappy with the way your information is being handled, or
 with the response received from us, you have the right to lodge a
-complaint with the Information Commissioner\'s Office at Wycliffe House,
+complaint with the Information Commissioner's Office at Wycliffe House,
 Water Lane, Wilmslow, SK9 5AF or online at <https://ico.org.uk/>.
 
 ### Recordings {#Recordings}
@@ -188,7 +188,7 @@ Water Lane, Wilmslow, SK9 5AF or online at <https://ico.org.uk/>.
 When a room is created, the host can choose to recording the room. We
 consider the host of the room to be the data controller, and the SRCF
 acts as the data processor. The information presented below is for
-informational purposes only and is not part of Timeout\'s privacy
+informational purposes only and is not part of Timeout's privacy
 policy.
 
 When a room is created that allows recordings (i.e. the recording button
@@ -199,7 +199,7 @@ markers you set when you press stop/start recording. For technical
 reasons, the raw files are retained indefinitely after the meeting. This
 policy is likely to change in the future as technology evolves.
 
-By default, recordings are not publicly accessible. The room\'s hosts
+By default, recordings are not publicly accessible. The room's hosts
 may make the recording public and share with others directly via our
 platform or as downloaded files. If a recording is made public via our
 platform, anyone with the url can access the recording.

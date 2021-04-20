@@ -1,4 +1,9 @@
-# Personal vs. group account
+---
+title: "Personal vs. group accounts"
+date: 2021-04-20T09:27:49+01:00
+group: user-vs-group
+layout: docs
+---
 
 All SRCF users, whether they are looking for web hosting for themselves,
 or wish to administrate a group account, must first get a personal SRCF

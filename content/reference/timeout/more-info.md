@@ -1,7 +1,7 @@
 More information {#more-help}
 ================
 
-So you\'re excited to learn more about Timeout? Great! Let\'s start:
+So you're excited to learn more about Timeout? Great! Let's start:
 
 Registration and signing in
 ---------------------------
@@ -93,24 +93,24 @@ Guidelines for using Timeout
     too much background noise. This helps with intelligibility and
     ensures better transmission of the sound of the person speaking.
 -   Webcam use is allowed and encouraged provided that the webcam
-    quality is set to \"medium\" or lower.
+    quality is set to 'medium' or lower.
 
 Key features
 ------------
 
 BBB has an impressive range of features. To view all features available
-as well as those not covered here, please visit [BBB\'s official feature
+as well as those not covered here, please visit [BBB's official feature
 page](https://bigbluebutton.org/teachers/).
 
-### The \"presenter\" model
+### The 'presenter' model
 
 BBB operates on a presenter model. For this reason, it is not possible
 for all participants to simultaneously share their screens. The
 presenter is (though not necessarily) the host. By default, all
-moderators have the right to \"take presenter\" permission, allowing
+moderators have the right to 'take presenter' permission, allowing
 them to share their screen to all participants, control the whiteboard,
 control the presentation, share external YouTube videos (and play/pause
-them on all participants\' screens, and stage polls. A moderator may
+them on all participants' screens, and stage polls. A moderator may
 upgrade other users to moderator status and can also give presenter
 permission to a participant (who is not a moderator). The host is a
 moderator by default.
@@ -128,9 +128,9 @@ moderator by default.
 ### The whiteboard and presentations
 
 To share a presentation, you may opt to share your screen directly or
-use BBB\'s native presentation integration. You can upload a
+use BBB's native presentation integration. You can upload a
 presentation to BBB in either `.pptx` or `.pdf` format and it will be
-displayed on all the participants\' screens. You may annotate this
+displayed on all the participants' screens. You may annotate this
 presentation or allow multi-user editing. At the end of the session,
 users can choose to download the presentation (this can be disabled by
 the presenter).
@@ -141,24 +141,24 @@ slides in our default presentation.
 
 ### Recording
 
-In order to record a session, you must first turn on \"Record sessions\"
+In order to record a session, you must first turn on 'Record sessions'
 in the Room Settings before the meeting starts. Afterwards, during the
-meeting, the host can press the \"Start recording\" and \"Pause
-recording\" buttons at the top of the page to toggle recording.
+meeting, the host can press the 'Start recording' and 'Pause
+recording' buttons at the top of the page to toggle recording.
 
 The software is designed to first record the session in its entirety,
 and then processed and cut after the meeting ends. In particular, the
-session is recorded even if the \"Start recording\" button has never
-been pressed, as long as the \"Record sessions\" setting is enabled.
+session is recorded even if the 'Start recording' button has never
+been pressed, as long as the 'Record sessions' setting is enabled.
 Thus, if you forget to record the session, the system administrators may
 be able to help retrieve the recordings nevertheless. On the contrary,
-if you don\'t want to be recorded at all, turn off the \"Record
-sessions\" setting (it is off by default).
+if you don't want to be recorded at all, turn off the 'Record
+sessions' setting (it is off by default).
 
 Note that after the meeting, it may take a while for the recording to be
 processed. It will not show up immediately in the interface.
 
-Users joining a meeting for which \"Record sessions\" is enabled are
+Users joining a meeting for which 'Record sessions' is enabled are
 notified before they join. If no such notification is present, you can
 safely assume we are not recording you (of course, we make no guarantees
 about whether another participants is pointing a camera at their

@@ -1,22 +1,27 @@
-Files and transfer
-==================
+---
+title: "Files and transfer"
+date: 2021-04-20T09:27:49+01:00
+group: files
+layout: docs
+---
+
+## Basics
 
 Your home directory on SRCF servers is `/home/<crsid>` and is private to
 you. Group account files can be found at `/societies/<groupname>` and
 can only be accessed by group account admins.
 
-All accounts also come with a \"public\" directory (these are located at
+All accounts also come with a 'public' directory (these are located at
 `/public/home/<crsid>` and `/public/societies/<groupname>`
 respectively). This includes your website root `public_html`, but
-you\'re free to use them as you wish.
+you're free to use them as you wish.
 
 You can use SFTP or SCP to transfer files between your SRCF account and
 your personal computer. Mac and Linux come with `scp` for per-file
-transfer; you may prefer a graphical client \-- options include WinSCP
+transfer; you may prefer a graphical client -- options include WinSCP
 on Windows, or Cyberduck for Mac/Windows.
 
-Quotas
-------
+## Quotas
 
 We provide users with 2GB of space for their personal files, and each
 group account also comes with 2GB of its own space. If you run out, you
@@ -29,12 +34,11 @@ taking up unnecessary space, or compressing large files (e.g.
 high-resolution photos on websites).
 
 You can use the `srcf-quota` command over SSH to check your current
-quota and usage. You\'ll also receive email notifications when you
-approach your quota. Once the hard limit is reached, you\'ll no longer
+quota and usage. You'll also receive email notifications when you
+approach your quota. Once the hard limit is reached, you'll no longer
 be able to create or append to files.
 
-Ownership and permissions
--------------------------
+## Ownership and permissions
 
 Each file or directory stored on the SRCF have two ownership fields
 associated with it: an *owner* (a system user) and a *group* (a system
@@ -52,9 +56,7 @@ Because websites are served from here, you should ensure any files
 containing sensitive information (such as credentials for databases) are
 individually set to not be world-readable.
 
-::: {.seealso}
-[group-perms]{role="ref"}
-:::
+See also [group permissions]({{< relref "/reference/group-accounts/files-and-permissions" >}}).
 
 ### World-writable files
 
@@ -63,14 +65,14 @@ World writable files are files that anybody on the system can write to
 your files, there are several reasons why world-writable files are a
 problem:
 
--   People make mistakes. For instance, if you have a world-writable
+- People make mistakes. For instance, if you have a world-writable
     directory, and somebody runs `rm -r /` by mistake (this has happened
     at least once) then all the files in that directory will be deleted.
--   Users\' accounts may have been compromised. We have had one incident
+- Users' accounts may have been compromised. We have had one incident
     where a worm entered the computer via an insecure society website
     and proceeded to overwrite every world-writable file on the
     computer.
--   World writable files make things easier for attackers. If for
+- World writable files make things easier for attackers. If for
     instance a directory underneath your public\_html directory is
     world-writable then an attacker able to write files on the system
     could place a script there containing commands that he could execute
@@ -78,7 +80,7 @@ problem:
 
 To avoid problems like this you should avoid creating world-writable
 files and directories, and if you have created them then you change them
-to be non-world-writable. You can do this using the `chmod` command \--
+to be non-world-writable. You can do this using the `chmod` command --
 `chmod o-w filename` will remove world-writable permissions from a file
 and `chmod -R o-w ~` will do the same for all world-writable files in
 your home directory.
@@ -89,20 +91,20 @@ the SRCF system where CGI / PHP scripts run as the user that owns them
 rather than the webserver. For society accounts it is often necessary to
 make the files group-writable rather than world-writable (presuming that
 the intended effect is to allow multiple members of the society to write
-to them). If you can\'t get a script to work without world-writable
+to them). If you can't get a script to work without world-writable
 files / directories then [get in touch](https://www.srcf.net/contact)
-with the support team and we\'ll see what we can do to help.
+with the support team and we'll see what we can do to help.
 
-Snapshots
----------
+## Snapshots
 
-Although *the SRCF does not guarantee to take backups* of users\' data,
+Although *the SRCF does not guarantee to take backups* of users' data,
 snapshots of `/home`, `/public` and `/societies` are generally taken
 regularly for disaster recovery purposes. Snapshots may be accessed
 using the hidden (it will not show up in ls -a or in shell autocomplete)
 directory `.snapshot`, available at any level of the file hierarchy. For
 example:
 
+```bash
     spqr2@pip:~$ ls -lut .snapshot
     total 336
     drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 18:00 sv_hourly.0
@@ -147,6 +149,7 @@ example:
     drwxr-x--- 2 spqr2 spqr2 8192 Jun 23 01:00 sv_daily.13
     drwxr-x--- 2 spqr2 spqr2 8192 Jun 20 01:00 sv_weekly.2
     drwxr-x--- 2 spqr2 spqr2 8192 Jun 13 01:00 sv_weekly.3
+```
 
 Note that snapshots are named `sv_[type].[index]`, with index 0
 indicating the most recent snapshot of that type. The listing above
@@ -160,5 +163,5 @@ move) it out of the snapshot.
 
 Snapshots going further back in time *may* be available on an off-site
 disaster-recovery replica; if you need access to these, contact the
-sysadmins (but please don\'t count on them being available; you should
+sysadmins (but please don't count on them being available; you should
 take your own backups regardless).

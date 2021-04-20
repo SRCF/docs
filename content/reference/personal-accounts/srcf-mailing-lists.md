@@ -1,9 +1,11 @@
-contributors
+---
+title: "Soc-SRCF mailing lists"
+date: 2021-04-20T09:27:49+01:00
+group: srcf-mailing-lists
+layout: docs
+---
 
-:   Malcolm Scott
-
-Soc-SRCF mailing lists
-======================
+## Overview
 
 The SRCF needs to be able to keep in contact with our users at all times
 (a requirement imposed upon us). We therefore automatically subscribe
@@ -16,17 +18,16 @@ year---and we do our best to ensure that the messages sent are relevant
 to as many people as possible. We hope that you will not consider this
 to be an inconvenience.
 
-How we use these lists
-----------------------
+## How we use these lists
 
 ### Soc-SRCF
 
 This contains *members* of the SRCF (membership is for life), and
 receives messages from the committee about such things as:
 
--   major society event announcements (e.g. AGMs, garden parties) \--
+- major society event announcements (e.g. AGMs, garden parties) --
     usually about three events per year
--   rare but important society administrative information (e.g.
+- rare but important society administrative information (e.g.
     constitutional amendments) which affect all members
 
 ### Soc-SRCF-users
@@ -35,9 +36,9 @@ This contains *users* of the SRCF (which only applies whilst you have an
 active shell account), and receives messages from the sysadmins which
 are important to account holders, for example:
 
--   urgent messages which require the attention of every SRCF user (e.g.
-    security compromises) \-- very infrequent, we hope!
--   rare but important system administrative information (e.g. terms of
+- urgent messages which require the attention of every SRCF user (e.g.
+    security compromises) -- very infrequent, we hope!
+- rare but important system administrative information (e.g. terms of
     service changes) which affect all users
 
 ### Soc-SRCF-maintenance
@@ -61,8 +62,7 @@ The SRCF has in the past provided career opportunities informally. Join
 this new list to keep up to date with any employment opportunities,
 internships and news directly from companies we trust.
 
-Unsubscribing from Soc-SRCF and/or -users
------------------------------------------
+## Unsubscribing from Soc-SRCF and/or -users
 
 Because we must be able to contact everyone with an SRCF account, you
 may only unsubscribe from **Soc-SRCF** or **Soc-SRCF-users** if you are
@@ -77,22 +77,20 @@ case, you will be unsubscribed from Soc-SRCF-users, but *not* Soc-SRCF,
 and you are still welcome to attend SRCF events. As above, please
 contact the sysadmins to arrange this.
 
-Unsubscribing or rejoining -maintenance and/or -social
-------------------------------------------------------
+## Unsubscribing or rejoining other lists
 
 You can subscribe to or unsubscribe from a list from its information
 page:
 
--   [Soc-SRCF-maintenance](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-maintenance)
--   [Soc-SRCF-social](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-social)
--   [Soc-SRCF-careers](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-careers)
+- [Soc-SRCF-maintenance](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-maintenance)
+- [Soc-SRCF-social](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-social)
+- [Soc-SRCF-careers](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-careers)
 
-List archives
--------------
+## List archives
 
 Previous messages sent to these lists can be seen here:
 
--   [Soc-SRCF](https://lists.cam.ac.uk/pipermail/soc-srcf)
--   [Soc-SRCF-users](https://lists.cam.ac.uk/pipermail/soc-srcf-users)
--   [Soc-SRCF-maintenance](https://lists.cam.ac.uk/pipermail/soc-srcf-maintenance)
--   [Soc-SRCF-social](https://lists.cam.ac.uk/pipermail/soc-srcf-social)
+- [Soc-SRCF](https://lists.cam.ac.uk/pipermail/soc-srcf)
+- [Soc-SRCF-users](https://lists.cam.ac.uk/pipermail/soc-srcf-users)
+- [Soc-SRCF-maintenance](https://lists.cam.ac.uk/pipermail/soc-srcf-maintenance)
+- [Soc-SRCF-social](https://lists.cam.ac.uk/pipermail/soc-srcf-social)

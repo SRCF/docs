@@ -1,2 +1,9 @@
+---
+title: "Permissions"
+date: 2021-04-20T09:27:49+01:00
+group:
+layout: docs
+---
+
 Society accounts have been renamed to group accounts. This page has been
-[moved \<../group-accounts/permissions\>]{role="doc"}.
+[moved]({{< relref "/reference/group-accounts/files-and-permissions" >}}).

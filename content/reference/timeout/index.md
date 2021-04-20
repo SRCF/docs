@@ -4,11 +4,11 @@ Timeout
 What is Timeout?
 ----------------
 
-Timeout is the SRCF\'s solution to a free, robust and multipurpose video
+Timeout is the SRCF's solution to a free, robust and multipurpose video
 conferencing platform. Timeout is free for all members of the
 university, as are all of our other services :).
 
-**Timeout\'s key features are:**
+**Timeout's key features are:**
 
 -   Core video conferencing capabilities (video, audio)
 -   Live screensharing
@@ -25,7 +25,7 @@ See additional features [here](http://develop.bigbluebutton.org/).
 
 Want to request a feature? You can do so by emailing `support@srcf.net`.
 
-Here\'s a preview of what Timeout looks like:
+Here's a preview of what Timeout looks like:
 
 ![image](https://blindsidenetworks.com/wp-content/uploads/2020/02/bigbluebutton-html5-hero.png){width="600px"}
 
@@ -34,8 +34,8 @@ Why should I use Timeout?
 
 Timeout is built by the SRCF, a team of volunteers dedicated to
 providing robust and secure computing services for all University
-members. We\'ve been around since 1999 and we host over 800 active group
-account websites and over 1000 personal user accounts. If that\'s not
+members. We've been around since 1999 and we host over 800 active group
+account websites and over 1000 personal user accounts. If that's not
 enough to convince you, perhaps these might:
 
 -   Timeout is **fast** - our servers are located in Cambridge so your
@@ -80,17 +80,17 @@ I love Timeout. How can I help?
 -------------------------------
 
 Timeout is entirely run and hosted by a team of dedicated volunteers. If
-you\'d be interested in helping make this possible, consider joining us
+you'd be interested in helping make this possible, consider joining us
 or [donating to us](https://www.srcf.net/donate) to allow us to continue
 providing awesome services to the University community. Anyone can
-contribute to the SRCF and you don\'t have to know much to start with -
+contribute to the SRCF and you don't have to know much to start with -
 in fact this documentation was written by someone with little technical
 expertise before starting at the SRCF.
 
 Reporting problems and getting help
 -----------------------------------
 
-If you\'ve encountered any problem, it is most helpful if you report
+If you've encountered any problem, it is most helpful if you report
 this to us so we can fix it. Report problems to us at
 `support@srcf.net`.
 
