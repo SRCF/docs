@@ -16,31 +16,29 @@
 
     <hr class="col-3 col-md-2 mb-5 mt-3 mt-md-5" />
 
-    <div class="row g-5">
+    <div class="row g-5 row-cols-md-2">
       <div class="col-md-6">
-        {{ $heading := "Reference"}}
-        <h2>{{$heading}}</h2>
+        {{ $heading := "Reference" }}
+        <h2>{{ $heading }}</h2>
         <p>
           A detailed technical breakdown of our services, servers and overall
           set-up. If you want to know more about a particular aspect of the
           SRCF, this is the place.
         </p>
         <ul class="fa-ul">
-          <li>
-            <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
-            <a
-              href="https://github.com/twbs/bootstrap-npm-starter"
-              rel="noopener"
-              target="_blank"
-              >Bootstrap npm starter</a
-            >
-          </li>
-          <li>
-            <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
-            Bootstrap Parcel starter (coming soon!)
-          </li>
+          {{ $highlights := where .Site.Pages "Section" ($heading | urlize) }}
+
+          {{ range $highlights }}
+            {{ if (eq .Params.highlight true) }}
+              {{ partial "lists/fa-link" (dict "ctx" . "fa" "fas fa-arrow-circle-right") }}
+            {{ end }}
+          {{ end }}
+
+          {{ partial "lists/fa-text" (dict "fa" "fas fa-arrow-circle-right" "text" "...and more!") }}
         </ul>
-        <a class="btn btn-secondary" role="button" href="/reference">View the full reference »</a>
+        <a class="btn btn-secondary" role="button" href="/reference"
+          >View the full reference »</a
+        >
       </div>
 
       <div class="col-md-6">
@@ -56,9 +54,7 @@
           <li>
             <span class="fa-li"> <i class="fas fa-check-circle"></i></span>
             Check
-            <a href="/reference/common-requests"
-              >common requests</a
-            >
+            <a href="/reference/common-requests">common requests</a>
           </li>
           <li>
             <span class="fa-li"> <i class="fas fa-check-circle"></i></span>
@@ -71,54 +67,50 @@
           </li>
         </ul>
       </div>
-    </div>
-
-    <div class="row g-5">
       <div class="col-md-6">
-        {{ $heading = "Tutorials"}}
-        <h2>{{$heading}}</h2>
+        {{ $heading = "Tutorials" }}
+        <h2>{{ $heading }}</h2>
         <p>
           Want to learn how to do something on our servers and prefer a
           step-by-step approach?
         </p>
         <ul class="fa-ul">
-          <li>
-            <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
-            <a
-              href="https://github.com/twbs/bootstrap-npm-starter"
-              rel="noopener"
-              target="_blank"
-              >Bootstrap npm starter</a
-            >
-          </li>
-          <li>
-            <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span
-            >Bootstrap Parcel starter (coming soon!)
-          </li>
+          {{ $highlights := where .Site.Pages "Section" ($heading | urlize) }}
+
+          {{ range $highlights }}
+            {{ if (eq .Params.highlight true) }}
+              {{ partial "lists/fa-link" (dict "ctx" . "fa" "fas fa-arrow-circle-right") }}
+            {{ end }}
+          {{ end }}
+
+          {{ partial "lists/fa-text" (dict "fa" "fas fa-arrow-circle-right" "text" "...and more!") }}
         </ul>
-        <a class="btn btn-secondary" role="button" href="/tutorials">View all tutorials »</a>
+        <a class="btn btn-secondary" role="button" href="/tutorials"
+          >View all tutorials »</a
+        >
       </div>
 
       <div class="col-md-6">
-        {{ $heading = "Guides"}}
-        <h2>{{$heading}}</h2>
+        {{ $heading = "Guides" }}
+        <h2>{{ $heading }}</h2>
         <p>
-          Read more detailed and less prescriptive pages on more general SRCF matters.
+          Read more detailed and less prescriptive pages on more general SRCF
+          matters.
         </p>
         <ul class="fa-ul">
-            {{ $highlights := where .Site.Pages "Section" ($heading | urlize)}}
+          {{ $highlights := where .Site.Pages "Section" ($heading | urlize) }}
 
-            {{ range $highlights}}
-
-            {{ if (eq .Params.highlight true)}}
-            {{ partial "lists/fa-link" (dict "ctx" . "fa" "fas fa-arrow-circle-right")}}
+          {{ range $highlights }}
+            {{ if (eq .Params.highlight true) }}
+              {{ partial "lists/fa-link" (dict "ctx" . "fa" "fas fa-arrow-circle-right") }}
             {{ end }}
+          {{ end }}
 
-            {{ end }}
-            
-            {{ partial "lists/fa-text" (dict "fa" "fas fa-arrow-circle-right" "text" "...and more!")}}
+          {{ partial "lists/fa-text" (dict "fa" "fas fa-arrow-circle-right" "text" "...and more!") }}
         </ul>
-        <a class="btn btn-secondary" role="button" href="/guides">View all guides »</a>
+        <a class="btn btn-secondary" role="button" href="/guides"
+          >View all guides »</a
+        >
       </div>
     </div>
   </div>
