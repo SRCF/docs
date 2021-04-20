@@ -12,8 +12,8 @@
   <meta property="og:url" content="{{ $domain_web }}" />
   <meta property="og:image" content="{{ $domain_web }}/_srcf/images/logo.svg" />
 
-  {{ $title := print .Title " | " .Site.Title}} {{ if .IsHome }}{{ $title =
-  .Site.Title }}{{ end }}
+  {{ $title := print .Title " | " .Site.Title}} 
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 
   <meta property="og:title" content="{{ $title }}" />
 
