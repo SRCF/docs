@@ -78,4 +78,4 @@ If you need to use a lot of computing time for academic reasons your
 first port of call should be your department or college as they should
 provide you with the resources you need for your studies. If your
 reasons are non-academic,
-[get in touch with us]({{< relref "/" >}}).
+[get in touch with us]({{< relref "/#help-and-support" >}}).

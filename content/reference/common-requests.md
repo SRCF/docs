@@ -77,7 +77,7 @@ most likely need to consult your domain registrar to do this.
 Unfortunately, our support team does not have the capacity to maintain
 both our servers and the thousands of websites hosted on it. If you have
 a specific technical question (e.g. an error message you don't
-understand), [be sure to seek help]({{< relref "/" >}}).
+understand), [be sure to seek help]({{< relref "/#help-and-support" >}}).
 
 You may upload a website designed elsewhere to be hosted on the SRCF.
 However, it must be you who performs the upload -- you must not share
@@ -89,4 +89,4 @@ We recommend societies and groups have appointed webmasters that are in charge o
 ## Can you help me debug a program?
 
 Only if we have time - our support team are all volunteers, however we
-generally like hacking code, so if you're having problems [drop us a line]({{< relref "/" >}}) and we might be able to help you out.
+generally like hacking code, so if you're having problems [drop us a line]({{< relref "/#help-and-support" >}}) and we might be able to help you out.
