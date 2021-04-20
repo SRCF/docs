@@ -7,6 +7,7 @@
 
 - category: Guides
   groups:
+    - title: Introduction
     - title: "Getting started: groups"
     - title: "Getting started: users"
     - title: "Society handovers"
@@ -15,11 +16,17 @@
         - title: Securing WordPress
         - title: Migrating to the SRCF
     - title: 20.04 Upgrade guidance
+      pages:
+        - title: Focal
+        - title: Drupal
+        - title: Sinkhole
+        - title: WordPress
 
 # Tutorials
 
 - category: Tutorials
   groups:
+    - title: Introduction
     - title: Shell and files
       pages:
         - title: Logging in
@@ -45,6 +52,7 @@
   groups:
     - title: Introduction
     - title: Common requests
+    - title: Rules and principles
       divider: true
 
     - title: Personal accounts
@@ -57,19 +65,20 @@
     - title: Group accounts
       pages:
         - title: Administrators
-        - title: Files
+        - title: Files and permissions
         - title: Email
 
     - title: Shell and files
       pages:
-        - title: SSH and servers
-        - title: Files and transfer
+        - title: SSH
+        - title: Files
         - title: Scheduled tasks
         - title: Software and installation
 
     - title: Web hosting
       pages:
         - title: Web applications
+        - title: Regular hosting
         - title: Raven authentication
         - title: CGI and PHP scripts
         - title: Custom domains
