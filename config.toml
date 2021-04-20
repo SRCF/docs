@@ -4,6 +4,9 @@ title = "SRCF Documentation"
 
 disableKinds = ["taxonomy", "term"]
 
+# see motivation in README
+uglyURLs = false
+
 [markup]
   [markup.tableOfContents]
     endLevel = 4
