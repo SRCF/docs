@@ -96,11 +96,6 @@ footer,
   border-color: #ccc;
 }
 
-h3:not(.card-title),
-h4:not(.card-title) {
-  margin-bottom: 1rem;
-}
-
 .lead {
   font-weight: inherit;
 }
@@ -383,7 +378,7 @@ a.nav-link,
 }
 
 .srcf-content > h3 {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .srcf-content > ul li,
