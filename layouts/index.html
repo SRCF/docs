@@ -17,7 +17,7 @@
     <hr class="col-3 col-md-2 mb-5 mt-3 mt-md-5" />
 
     <div class="row g-5 row-cols-md-2">
-      <div class="col-md-6">
+      <div class="col">
         {{ $heading := "Reference" }}
         <h2>{{ $heading }}</h2>
         <p>
@@ -41,7 +41,7 @@
         >
       </div>
 
-      <div class="col-md-6">
+      <div class="col">
         <h2 id="help-and-support">Help & support</h2>
         <p>
           In addition to this growing collection of help pages, our volunteers
@@ -67,7 +67,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-6">
+      <div class="col">
         {{ $heading = "Tutorials" }}
         <h2>{{ $heading }}</h2>
         <p>
@@ -90,7 +90,7 @@
         >
       </div>
 
-      <div class="col-md-6">
+      <div class="col">
         {{ $heading = "Guides" }}
         <h2>{{ $heading }}</h2>
         <p>
@@ -110,6 +110,17 @@
         </ul>
         <a class="btn btn-secondary" role="button" href="/guides"
           >View all guides »</a
+        >
+      </div>
+
+      <div class="col">
+        {{ $heading = "Internal docs" }}
+        <h2>{{ $heading }}</h2>
+        <p>
+          Internal non user-facing documentation for volunteers.
+        </p>
+        <a class="btn btn-secondary" role="button" href="/internal"
+          >View all docs »</a
         >
       </div>
     </div>
