@@ -36,7 +36,7 @@ code {
   color: #6f23f6;
 }
 
-pre {
+.highlight > pre {
   border-radius: 5px;
   padding-top: 1rem;
   padding-bottom: 1rem;
