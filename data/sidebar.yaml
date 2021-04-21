@@ -27,6 +27,7 @@
 - category: Tutorials
   groups:
     - title: Introduction
+      override: /tutorials
     - title: Shell and files
       pages:
         - title: Logging in
@@ -51,6 +52,7 @@
 - category: Reference
   groups:
     - title: Introduction
+      override: /reference
     - title: Common requests
     - title: Rules and principles
       divider: true
@@ -93,7 +95,7 @@
 
     - title: Other services
       pages:
-        - title: MySQL and PostgreSQL databases
+        - title: SQL databases
         - title: Gopher
         - title: Internet Relay Chat (IRC)
         - title: Mailing lists
