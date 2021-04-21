@@ -62,7 +62,7 @@ Then add the following to your `.htaccess` file, replacing
 `/home/ab123/myapp/web.sock`) and `<url>` with your domain name (e.g.
 `ab123.user.srcf.net`) :
 
-```apache
+```ApacheConf
     RequestHeader set Host expr=%{HTTP_HOST}
     RequestHeader set X-Forwarded-For expr=%{REMOTE_ADDR}
     RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
@@ -81,7 +81,7 @@ the headers we do above as they can easily be forged by another user.
 Those things being considered, you can put the following in your
 `.htaccess` file to enable forwarding requests to a port:
 
-```
+```ApacheConf
     RewriteRule "^(.*)$" http://localhost:999/$1 [P,NE,L,QSA]
 ```
 
