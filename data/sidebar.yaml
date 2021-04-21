@@ -102,3 +102,16 @@
         - title: Mattermost
         - title: Usenet (NNTP)
         - title: Game servers
+
+- category: Internal
+  groups:
+    - title: Introduction
+      override: /internal
+      divider: true
+
+    - title: Documentation
+      pages:
+        - title: How it works
+        - title: Building
+        - title: Managing content
+        - title: Reference
