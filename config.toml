@@ -9,7 +9,7 @@ uglyURLs = false
 
 [markup]
   [markup.tableOfContents]
-    endLevel = 4
+    endLevel = 3
     startLevel = 2
 
 [params]
