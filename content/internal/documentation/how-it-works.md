@@ -1,5 +1,5 @@
 ---
-title: "How It Works"
+title: "How it works"
 date: 2021-04-21T16:44:58+01:00
 group: documentation
 layout: docs
@@ -16,7 +16,7 @@ These docs evolved from the original "Frequently Asked Questions" pages that wer
 
 Around March of 2020, the FAQs were re-organized into a series of pages that addressed technical aspects of our services. These now form the bulk of what is now the "technical reference". They were generated with Sphinx and accordingly written in reStructuredText (the choice for this was nothing other than an academic exercise at the time). Over time, though, as the docs were expanded, it became apparent that:
 
-* certain issues arose more than others and consequently needed more detail in the docs
+* certain user issues arose more than others and consequently needed more detail in the docs
 * step-by-step instructions were beginning to emerge in some pages, mixed in with other content
 * there was a growing need for tutorials and guides after a few were written up and positive feedback was received
 

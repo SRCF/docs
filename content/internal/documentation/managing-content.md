@@ -1,5 +1,5 @@
 ---
-title: "Updating a Page"
+title: "Managing content"
 date: 2021-04-21T16:44:39+01:00
 group: documentation
 layout: docs
