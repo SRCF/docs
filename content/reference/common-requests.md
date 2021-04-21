@@ -4,6 +4,7 @@ date: 2021-04-20T09:27:49+01:00
 group: common-requests
 highlight: true
 layout: docs
+toc: true
 ---
 
 This is a list of all queries and issues we receive often. Please check we haven't already answered your question here before contacting the sysadmins.

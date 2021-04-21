@@ -3,6 +3,7 @@ title: "Files and transfer"
 date: 2021-04-20T09:27:49+01:00
 group: shell-and-files
 layout: docs
+toc: true
 ---
 
 ## Basics

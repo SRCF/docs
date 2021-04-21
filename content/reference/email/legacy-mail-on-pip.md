@@ -3,6 +3,7 @@ title: "Legacy mail on pip"
 date: 2021-04-20T09:27:49+01:00
 group: email
 layout: docs
+toc: true
 ---
 
 {{< alert type="info" >}}

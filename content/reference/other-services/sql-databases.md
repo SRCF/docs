@@ -3,6 +3,7 @@ title: "MySQL and PostgreSQL databases"
 date: 2021-04-20T09:27:49+01:00
 group: other-services
 layout: docs
+toc: true
 ---
 
 ## Overview

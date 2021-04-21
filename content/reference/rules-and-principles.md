@@ -3,6 +3,7 @@ title: "Rules and principles"
 date: 2021-04-20T09:27:49+01:00
 group: rules-and-principles
 layout: docs
+toc: true
 ---
 
 ## Commercial hosting
