@@ -6,8 +6,7 @@ highlight: true
 layout: docs
 ---
 
-Before contacting the sysadmins, check we haven't already answered your
-question here.
+This is a list of all queries and issues we receive often. Please check we haven't already answered your question here before contacting the sysadmins.
 
 ## Gain access to an existing group account
 

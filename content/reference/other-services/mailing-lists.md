@@ -1,7 +1,7 @@
 ---
 title: "Mailing lists"
 date: 2021-04-20T09:27:49+01:00
-group: mailing-lists
+group: other-services
 layout: docs
 ---
 

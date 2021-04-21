@@ -1,8 +1,9 @@
 ---
 title: "Internet Relay Chat (IRC)"
 date: 2021-04-20T09:27:49+01:00
-group: internet-relay-chat-irc
+group: other-services
 layout: docs
+toc: true
 ---
 
 ## Overview

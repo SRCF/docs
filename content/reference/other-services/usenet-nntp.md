@@ -1,7 +1,7 @@
 ---
 title: "Usenet (NNTP)"
 date: 2021-04-20T09:27:49+01:00
-group: usenet-nntp
+group: other-services
 layout: docs
 ---
 

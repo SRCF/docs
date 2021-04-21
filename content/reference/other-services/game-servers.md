@@ -1,7 +1,8 @@
 ---
 title: "Game servers"
 date: 2021-04-20T09:27:49+01:00
-group: game-servers
+group: other-services
+slug: game-servers
 layout: docs
 ---
 
@@ -15,7 +16,7 @@ Please limit your server to around 1GB of RAM and set it to `nice` level
 19 to avoid causing problems for other users. For example, if you are
 running a Minecraft server, then the following should work:
 
-```
+```bash
     nice -n 19 java -Xms1024m -Xmx1024m -jar minecraft_server.jar
 ```
 
