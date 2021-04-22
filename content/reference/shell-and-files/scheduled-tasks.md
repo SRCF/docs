@@ -133,11 +133,11 @@ You might like to add a function to your `~/.bashrc` to make this easier
 to remember:
 
 ```bash
-socsudo () {
+    socsudo () {
 
-   soc=\$1 shift sudo -Hu \$soc XDG\_RUNTIME\_DIR=/run/user/\$(id -u
-    \$soc) '\$@'
-}
+    soc=\$1 shift sudo -Hu \$soc XDG\_RUNTIME\_DIR=/run/user/\$(id -u
+        \$soc) '\$@'
+    }
 ```
 
 {{< /alert >}}
