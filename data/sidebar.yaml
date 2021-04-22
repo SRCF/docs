@@ -8,16 +8,19 @@
 - category: Guides
   groups:
     - title: Introduction
+      divider: true
+      override: /guides
     - title: "Getting started: groups"
     - title: "Getting started: users"
     - title: "Society handovers"
+      divider: true
     - title: Websites
       pages:
         - title: Securing WordPress
         - title: Migrating to the SRCF
-    - title: 20.04 Upgrade guidance
+    - title: Upgrade guidance
       pages:
-        - title: Focal
+        - title: Focal changes
         - title: Drupal
         - title: Sinkhole
         - title: WordPress
@@ -28,6 +31,8 @@
   groups:
     - title: Introduction
       override: /tutorials
+      divider: true
+
     - title: Shell and files
       pages:
         - title: Logging in
@@ -37,9 +42,9 @@
 
     - title: Websites
       pages:
-        - title: WordPress from scratch
         - title: Deploy a web app
-        - title: Statically-generated websites
+        - title: WordPress from scratch
+        - title: Static site generators
 
     - title: Others
       pages:

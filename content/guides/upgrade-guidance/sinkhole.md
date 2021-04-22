@@ -1,17 +1,17 @@
-Ubuntu 16.04 webserver migration
-================================
+---
+title: "Web server migration"
+date: 2021-04-21T16:44:31+01:00
+group: upgrade-guidance
+layout: docs
+toc: true
+---
 
-::: {.warning}
-::: {.admonition-title}
-Warning
-:::
-
+{{< alert type="warning" >}}
 These notes relate to a previous migration from Ubuntu 12.04 to 16.04,
 completed in summer 2017.
-:::
+{{<  /alert >}}
 
-Apache
-------
+## Apache
 
 Upgraded from 2.2 to 2.4. See [Apache\'s own upgrade
 documentation](https://httpd.apache.org/docs/2.4/upgrading.html) for a
@@ -38,8 +38,7 @@ proxy to it via htaccess, these server processes need to be run from the
 webserver rather than the shell server. As above, SSH to
 `webserver.srcf.net` and run them from there.
 
-PHP
----
+## PHP
 
 Upgraded from 5.3 to 7.0. This jumps multiple minor versions \-- the
 bulk of the changes can be found in [PHP\'s own migration guide for 5.6
@@ -62,7 +61,7 @@ remaining methods.
 
 Sample MySQL library code:
 
-``` {.sourceCode .php}
+```php
 mysql_connect("localhost", "<user>", "<password>");
 $result = mysql_query("...");
 while ($row = mysql_fetch_assoc($result)) { ... }
@@ -70,7 +69,7 @@ while ($row = mysql_fetch_assoc($result)) { ... }
 
 Equivalent MySQLi code:
 
-``` {.sourceCode .php}
+```php
 $conn = mysqli_connect("localhost", "<user>", "<password>");
 $result = mysqli_query($conn, "...");
 while ($row = mysqli_fetch_assoc($result)) { ... }
@@ -81,12 +80,14 @@ while ($row = mysqli_fetch_assoc($result)) { ... }
 Versions prior to 0.53 include a function call with an argument ignored
 in PHP 5.x but removed in 7.x. Error logs will contain something like:
 
+```php
     PHP Warning:  gmmktime() expects at most 6 parameters, 7 given in .../ucam_webauth.php on line 388
+```
 
 The latest version can be obtained from
 [GitHub](https://github.com/cambridgeuniversity/ucam-webauth-php).
 
-### php\_override.ini
+### php_override.ini
 
 PHP is now run as an Apache module rather than CGI, so override files
 are no longer supported. You can however override settings using
@@ -94,14 +95,17 @@ htaccess.
 
 Example php\_override.ini setting:
 
+```ini
     key = value
+```
 
 Equivalent htaccess setting:
 
+```ini
     php_value key value
+```
 
-PostgreSQL
-----------
+## PostgreSQL
 
 The Postgres server has also moved to the new webserver. For websites
 connecting to a database, it\'s still accessible locally (socket
@@ -112,14 +116,10 @@ database, these need updating to connect over TCP to hostname
 `postgres`. Ident auth is available so you still shouldn\'t need to
 provide a password.
 
-::: {.note}
-::: {.admonition-title}
-Note
-:::
-
+{{< alert type="danger" >}}
 **The webserver is not a shell server**
 
 Whilst we provide SSH access to read logs and start servers (see below),
 it lacks the resources of the main shell server, and should therefore
 not be used as one.
-:::
+{{<  /alert >}}

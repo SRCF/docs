@@ -1,24 +1,25 @@
-Upgrading a Drupal installation
-===============================
+---
+title: "Upgrading a Drupal installation"
+date: 2021-04-21T16:44:31+01:00
+group: upgrade-guidance
+layout: docs
+---
 
-::: {.note}
-::: {.admonition-title}
-Note
-:::
+## Overview
 
+{{< alert type="info" >}}
 Version 6 releases are no longer supported by Drupal, and are liable to
 have compatibility issues with PHP 7.
-:::
+{{<  /alert >}}
 
 The notes below assume your Drupal site is at `drupal.soc.srcf.net` \--
-substitute this for your own site\'s URL.
+substitute this for your own site's URL.
 
 Drupal provide [their own extensive guide for
 upgrades](https://www.drupal.org/updating-and-upgrading-drupal-core),
 which covers the below information in more detail.
 
-Upgrading files in-place
-------------------------
+## Upgrading files in-place
 
 This method is suitable for minor version upgrades (e.g. from an old 7.x
 to the latest 7.x release). See also: [Update procedure (minor version

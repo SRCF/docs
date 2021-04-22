@@ -413,7 +413,7 @@ a.nav-link,
   }
 }
 
-.srcf-content > .table th:first-child,
+/* .srcf-content > .table th:first-child,
 .srcf-content > .table td:first-child {
   padding-left: 0;
 }
@@ -421,8 +421,12 @@ a.nav-link,
 .srcf-content > .table th:not(:last-child),
 .srcf-content > .table td:not(:last-child) {
   padding-right: 1.5rem;
-}
+} */
 
 .srcf-content > .table td:first-child > code {
   white-space: nowrap;
+}
+
+.srcf-content div.alert > p:last-child {
+  margin-bottom: 0;
 }

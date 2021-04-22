@@ -1,23 +1,22 @@
-Spring 2021 server upgrade
-==========================
+---
+title: "Changes in 20.04 Focal"
+date: 2021-04-21T16:44:31+01:00
+group: upgrade-guidance
+layout: docs
+toc: true
+---
 
-::: {.warning}
-::: {.admonition-title}
-Warning
-:::
-
+{{< alert type="warning" >}}
 These notes relate to the migration from Ubuntu 16.04 to 20.04,
-scheduled for 3rd/4th April 2021.
-:::
+scheduled for 3rd/4th April 2021.{{<  /alert >}}
 
-Server changes
---------------
+## Server changes
 
 The following shell-accessible servers, currently on Ubuntu 16.04
 \'Xenial Xerus\', will be upgraded to 20.04 \'Focal Fossa\':
 
--   `pip` (aka. *shell.srcf.net*), the main shell server
--   `sinkhole` (aka. *webserver.srcf.net*), the web server
+- `pip` (aka. *shell.srcf.net*), the main shell server
+- `sinkhole` (aka. *webserver.srcf.net*), the web server
 
 As we already have `doom`, a 20.04 server for games and long-running
 processes, we\'ll be decommissioning the old games server `cavein`
@@ -27,15 +26,14 @@ tasks ahead of the upgrade.
 We\'ll also be upgrading other servers hosting various SRCF services,
 which will experience some downtime:
 
--   `blizzard`, the DNS server (though access to other services on the
+- `blizzard`, the DNS server (though access to other services on the
     *srcf.net* domain will be unaffected by this)
--   `flame`, the news server
--   `squirrel`, the MySQL server
+- `flame`, the news server
+- `squirrel`, the MySQL server
 
-Software updates
-----------------
+## Software updates
 
-If you\'d like to check what version of a particular package will be
+If you'd like to check what version of a particular package will be
 installed after the upgrade, you can search for it on the [Ubuntu
 package directory](https://packages.ubuntu.com). If a package is listed
 for `xenial`, but not for `focal`, then it is liable to be removed
@@ -43,27 +41,17 @@ following the upgrade \-- [contact the
 sysadmins](https://www.srcf.net/contact) if there\'s a package you need
 that\'s slated for removal, and we can see what can be done.
 
-  ------------------------------------------------------------------------------------------------------------------------
-  Name           Current        New version    Links
-                 version                       
-  -------------- -------------- -------------- ---------------------------------------------------------------------------
-  Apache         2.4.18         2.4.41         [CHANGES file](https://github.com/apache/httpd/blob/2.4.41/CHANGES)
-
-  MySQL          5.5            8.0            [Release Notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)
-
-  Node.js        4.2.6          10.19.0        [Changelogs](https://github.com/nodejs/node/tree/v10.19.0/doc/changelogs)
-
-  PHP            7.0            7.4            [Appendices (Migrating from
-                                               \...)](https://www.php.net/manual/en/appendices.php)
-
-  PostgreSQL     9.5            12             [Release Notes](https://www.postgresql.org/docs/release/)
-
-  Python         3.5            3.8            [What\'s New in Python](https://docs.python.org/3.8/whatsnew/index.html)
-
-  Ruby           2.3            2.7            [Ruby Releases](https://www.ruby-lang.org/en/downloads/releases/)
-  ------------------------------------------------------------------------------------------------------------------------
-
-  : Notable version changes
+{{< table "table table-striped" >}}
+| Name       | Current version | New version | Links                                                                          |
+| ---------- | --------------- | ----------- | ------------------------------------------------------------------------------ |
+| Apache     | 2.4.18          | 2.4.41      | [CHANGES file](https://github.com/apache/httpd/blob/2.4.41/CHANGES)            |
+| MySQL      | 5.5             | 8.0         | [Release Notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)              |
+| Node.js    | 4.2.6           | 10.19.0     | [Changelogs](https://github.com/nodejs/node/tree/v10.19.0/doc/changelogs)      |
+| PHP        | 7.0             | 7.4         | [Appendices (Migrating from...)](https://www.php.net/manual/en/appendices.php) |
+| PostgreSQL | 9.5             | 12          | [Release Notes](https://www.postgresql.org/docs/release/)                      |
+| Python     | 3.5             | 3.8         | [What\'s New in Python](https://docs.python.org/3.8/whatsnew/index.html)       |
+| Ruby       | 2.3             | 2.7         | [Ruby Releases](https://www.ruby-lang.org/en/downloads/releases/)              |
+{{< /table >}}
 
 If you\'ve built or compiled your own software linked to libraries on
 the system, you\'ll likely need to recompile them following the upgrade.

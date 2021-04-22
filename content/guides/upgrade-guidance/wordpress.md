@@ -1,11 +1,11 @@
-Upgrading WordPress
-===================
+---
+title: "Upgrading WordPress"
+date: 2021-04-21T16:44:31+01:00
+group: upgrade-guidance
+layout: docs
+---
 
-::: {.note}
-::: {.admonition-title}
-Note
-:::
-
+{{< alert type="warning" >}}
 Version 3.7 of WordPress introduced an automatic updater, which should
 keep your instance up-to-date (as long as someone visits every so often
 to kick off the update process).
@@ -13,7 +13,7 @@ to kick off the update process).
 Versions below 4.4 are likely not compatible with PHP 7, meaning the
 admin pages and automatic updates won\'t work. In this case, such an
 instance would need to be upgraded manually.
-:::
+{{< /alert >}}
 
 The notes below assume your WordPress site is at wordpress.soc.srcf.net
 \-- substitute this for your own site\'s URL.
@@ -22,8 +22,7 @@ WordPress provide [their own extensive guide for
 upgrades](https://codex.wordpress.org/Updating_WordPress), which covers
 the below information in more detail.
 
-Allow WordPress to write its own files
---------------------------------------
+## Allow WordPress to write its own files
 
 WordPress includes an update utility, but this can be quite tedious
 about not correctly detecting that it can update itself; it may fail
@@ -33,15 +32,15 @@ To make this work, you can add the following to your site\'s
 configuration (wp-config.php), near the bottom but above the line that
 says \"stop editing\":
 
-``` {.sourceCode .php}
-/**
- * Force wordpress to use direct filesystem access so that upgrades work
- * properly. See: http://core.trac.wordpress.org/ticket/10205
- * http://codex.wordpress.org/Editing_wp-config.php
- */
-define('FS_METHOD', 'direct');
-define('FS_CHMOD_DIR', (02775 & ~ umask()));
-define('FS_CHMOD_FILE', (0664 & ~ umask()));
+```php
+    /**
+    * Force wordpress to use direct filesystem access so that upgrades work
+    * properly. See: http://core.trac.wordpress.org/ticket/10205
+    * http://codex.wordpress.org/Editing_wp-config.php
+    */
+    define('FS_METHOD', 'direct');
+    define('FS_CHMOD_DIR', (02775 & ~ umask()));
+    define('FS_CHMOD_FILE', (0664 & ~ umask()));
 ```
 
 **You must ensure all WordPress files have the correct group
@@ -54,8 +53,7 @@ This should be the case by default, but some SFTP clients may override
 it. In addition, files moved/copied from your home directory may still
 have your personal group set, rather than that of the target society.
 
-Upgrade through the admin panel
--------------------------------
+## Upgrade through the admin panel
 
 Head over to `http://wordpress.soc.srcf.net/wp-admin/`, log in with your
 WordPress username and password if you haven\'t already (remember, these
@@ -70,8 +68,7 @@ sure to pick the one with the correct language.
 If you\'re prompted for SFTP credentials, see the section above for how
 to grant direct file access.
 
-Upgrade files manually
-----------------------
+## Upgrade files manually
 
 **Take backups of your files and database before attempting an
 upgrade.**
