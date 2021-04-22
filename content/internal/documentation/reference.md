@@ -28,6 +28,22 @@ Pre-defined bits of HTML that the user can easily inject into the Markdown.
 some content in here
 {{<  /alert >}}
 
+### Tables
+
+Default Markdown tables don't come out looking very nice, so we use a shortcode to add Bootstrap classes to them.
+
+Shortcode borrowed from [here](https://willschenk.com/articles/2020/styling_tables_with_hugo/).
+
+Example:
+
+```Go
+    {{</* table “table table-striped table-bordered" */>}}
+    |———-|———-|———-|
+    | Item 1   | Item 2   | Item 3   |
+    | Item 1a  | Item 2a  | Item 3a  |
+    {{</* /table */ >}}
+```
+
 ## Front matter params
 
 ### Front page favs
