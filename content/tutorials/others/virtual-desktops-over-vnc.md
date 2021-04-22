@@ -1,5 +1,12 @@
-Virtual desktops over VNC {#virtual-desktop}
-=========================
+---
+title: "Virtual desktops over VNC"
+date: 2021-04-21T16:44:58+01:00
+group: others
+layout: docs
+toc: true
+---
+
+## Introduction
 
 The SRCF desktop server `shell.srcf.net` has VNC server software
 installed (we're using [TightVNC](http://www.tightvnc.com)). This
@@ -15,31 +22,33 @@ terminal command; Windows users may download
 [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) for a
 native SSH client.
 
-Setting a VNC password
-----------------------
+## Setting a VNC password
 
 SSH to `shell.srcf.net` using your SRCF username and password (SSH keys
 for your account are also valid), then run the `vncpasswd` command:
 
+```bash
     spqr2@pip:~$ vncpasswd
     Using password file /home/spqr2/.vnc/passwd
     Password:
     Verify:
     Would you like to enter a view-only password (y/n)? n
+```
 
 You can say no to a view-only password, for this use case it's unlikely
 to be useful.
 
-Starting a new VNC session
---------------------------
+## Starting a new session
 
 To start a new VNC server process in the background:
 
+```bash
     spqr2@pip:~$ vncserver -geometry 1920x1080
     New 'X' desktop is pip:12
 
     Starting applications specified in /home/spqr2/.vnc/xstartup
     Log file is /home/spqr2/.vnc/pip:12.log
+```
 
 Geometry is of the form `<width>x<height>` and may be customised as
 desired (the VNC window cannot be resized after you have started the VNC
@@ -52,13 +61,14 @@ number.
 Add 5900 to the display number to obtain the **port number** (in this
 example, the port number is 5912).
 
-\_(Note that our configuration imposes some additional options upon your
+{{< alert type="info" >}}
+Note that our configuration imposes some additional options upon your
 VNC server for security: specifically, `-localhost -nolisten tcp`, to
 prevent insecure direct connections to your VNC server from outside of a
-SSH connection.)\_
+SSH connection.
+{{<  /alert >}}
 
-Tunneling over SSH
-------------------
+## Tunneling over SSH
 
 As noted above, VNC server connections are insecure. Instead, you should
 use an SSH tunnel -- this provides encryption over the wire for free,
@@ -73,14 +83,18 @@ your choosing on your local machine.
 Back on your local machine, SSH to `shell.srcf.net` again, but request
 forwarding for your chosen port:
 
+```bash
     you@home:~$ ssh -N -L 5901:localhost:5912 shell.srcf.net
+```
 
 Replace `5912` with the **port number** for your VNC server (the display
 number shown when you started `vncserver`, plus 5900).
 
+{{< alert type="info" >}}
 (`5901` is your local port on your home machine; leave that set as
 shown. Adding `-N` is optional; it tells SSH not to give you a shell
 prompt.)
+{{<  /alert >}}
 
 ### Windows
 
@@ -93,8 +107,7 @@ local port on your home machine), and the destination to
 server (the display number shown when you started `vncserver`, plus
 5900).
 
-Connecting with a VNC client
-----------------------------
+## Connecting with a VNC client
 
 At this stage, you should now have port `5901` on your local machine
 acting as a tunnel to your VNC server instance on `shell.srcf.net`. The
@@ -112,12 +125,13 @@ your new desktop.
 You can disconnect and later reconnect, and the state should be
 preserved.
 
-Ending the VNC session
-----------------------
+## Ending the session
 
 Back over SSH to `shell.srcf.net`:
 
+```bash
     spqr2@pip:~$ vncserver -kill :12
+```
 
 Replace `:12` with the **port number** for your VNC server.
 

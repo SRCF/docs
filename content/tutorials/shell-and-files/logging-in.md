@@ -1,13 +1,20 @@
-Hello World: logging into the SRCF for the first time {#first-ssh}
-=====================================================
+---
+title: "Using SSH to log in"
+date: 2021-04-21T16:44:58+01:00
+group: shell-and-files
+layout: docs
+toc: true
+highlight: true
+---
+
+## Overview
 
 Just as a butterfly emerges from its coccoon to explore the great
 wonders of the world, you, too, will also uncover the great wonders of
 Linux with the SRCF by your side. In this tutorial, we'll show you how
 to log in to a UNIX-like shell and use the basics of the command line.
 
-1. Introduction
----------------
+## Background
 
 Much of the functionality offered by the SRCF is accessible via a
 text-mode 'shell' interface on our server --- using this interface you
@@ -17,25 +24,22 @@ connect to the server and issue commands by typing them. If you're not
 used to this, don't worry --- it's much less primitive than it sounds
 and very powerful!
 
-2. Logging in
--------------
+Because you are remotely accessing our servers, as opposed to your own computer, we will need a communication protocol. The most widely used one is called SSH, [secure shell protocol](https://en.wikipedia.org/wiki/Secure_Shell_Protocol).
 
-### Linux distros or macOS
+## Logging in
+
+### Linux or macOS
 
 If you're running a Unix-based computer (including macOS) then logging
 in is easy as it's built into the system:
 
-1.  Start your terminal
-2.  Type in `ssh <username>@shell.srcf.net`
-3.  Enter your password when prompted
+1. Start your terminal
+2. Type in `ssh <username>@shell.srcf.net`
+3. Enter your password when prompted
 
-::: {.hint}
-::: {.admonition-title}
-Hint
-:::
-
+{{< alert type="warning" >}}
 You will not see your password as you type it. This is intentional!
-:::
+{{<  /alert >}}
 
 ### Windows
 
@@ -47,23 +51,17 @@ application, downloadable for free
 
 Once downloaded,
 
-1.  Run PuTTY
-2.  Enter the server name as `shell.srcf.net`, the protocol as SSH
+1. Run PuTTY
+2. Enter the server name as `shell.srcf.net`, the protocol as SSH
     (port 22) and click to connect
-3.  Enter your username and SRCF password when prompted
+3. Enter your username and SRCF password when prompted
 
-::: {.note}
-::: {.admonition-title}
-Note
-:::
-
+{{< alert type="warning" >}}
 Note that for obvious reasons your password will not be printed on the
 screen. The password is case-sensitive, so make sure that caps lock is
-not on if you are having problems.
-:::
+not on if you are having problems.{{<  /alert >}}
 
-3. Baby steps
--------------
+## First steps
 
 Now you're in! Let's see what this terminal is capable of!
 
@@ -87,11 +85,7 @@ The `public_html` directory is special. Any content placed here will be
 served by our web server, Apache. Check out the tutorials to learn what
 to do
 
-::: {.tip}
-::: {.admonition-title}
-Tip
-:::
-
+{{< alert type="info" >}}
 You can use `cd` with either absolute or relative paths.
 
 `.` represents your current directory. So `cd .` should not do anything,
@@ -103,18 +97,15 @@ If you want to go to your home directory you can use `cd ~`.
 `~` has a special meaning like `..` does, it points to your home
 directory. Can you guess what `cd ~/public_html` does? Try it out and
 see if you were right!
-:::
+{{<  /alert >}}
 
-If you're interested in what else you can do with the shell, check out
-[our more advanced tutorial\<more-terminal\>]{role="ref"}.
+If you're interested in what else you can do with the shell, check out [our more advanced tutorial]({{< relref "/tutorials/shell-and-files/terminal-guide" >}}).
 
-4. Closing remarks
-------------------
+## Closing remarks
 
 Did you like this or find this cool? We invite you to check out
-[more tutorials \<tutorials\>]{role="ref"},
-[read our  recommended resources\<recommended-resources\>]{role="ref"}
-or [talk to us \<get-help\>]{role="ref"} to tell us what you thought!
+[more tutorials]({{< relref "/tutorials" >}})
+or [get in touch]({{< relref "/#help-and-support" >}}) to tell us what you thought!
 
 If you have any suggestions for how we could improve this documentation
 please send us an email at `support@srcf.net` or submit a Pull Request

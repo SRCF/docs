@@ -1,18 +1,20 @@
 ---
-title: "Simple Minecraft Server"
-date: 2021-04-20T09:41:56+01:00
+title: "How it works"
+date: 2021-04-21T16:44:58+01:00
+group: others
+layout: docs
+toc: true
 ---
 
-Title here {#template-tutorial}
-==========
+## Overview
 
-Closing remarks
----------------
+## Introduction
+
+## Closing remarks
 
 Did you like this or find this cool? We invite you to check out
-[more tutorials \<tutorials\>]{role="ref"},
-[read our  recommended resources\<recommended-resources\>]{role="ref"}
-or [talk to us \<get-help\>]{role="ref"} to tell us what you thought!
+[more tutorials]({{< relref "/tutorials" >}})
+or [get in touch]({{< relref "/#help-and-support" >}}) to tell us what you thought!
 
 If you have any suggestions for how we could improve this documentation
 please send us an email at `support@srcf.net` or submit a Pull Request
