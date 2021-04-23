@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{- partial "head.html" . -}}
+  <body>
+    <div class="container-xxl my-5">
+      <section class="break-after d-flex flex-column align-items-center justify-content-center">
+        <h1 class="display-3">SRCF Documentation</h1>
+        <p class="lead">
+          This is a slimmed-down, reader friendly version of the SRCF docs ideal
+          for searching or printing to a PDF.
+        </p>
+        <p><mark>Last built on {{ now.Format "January 2, 2006" }} </mark></p>
+      </section>
+
+      {{- range $section := .Site.Sections -}}
+        {{- $section_name := $section.Section -}}
+        <section class="break-after">
+          <h1>{{ $section_name | humanize }}</h1>
+          {{- .Content -}}
+          {{- range $section.RegularPages -}}
+            {{- if gt (len .Content) 0 -}}
+            <article class="break-after">
+              <h2 id="{{ .Title |urlize }}">{{ .Title }}</h2>
+              {{- .Content -}}
+            </article>
+            {{- end -}}
+          {{- end -}}
+        </section>
+      {{- end -}}
+    </div>
+  </body>
+</html>
