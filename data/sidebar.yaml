@@ -31,6 +31,7 @@
   groups:
     - title: Introduction
       override: /tutorials
+    - title: Recommended resources
       divider: true
 
     - title: Shell and files

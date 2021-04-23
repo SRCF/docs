@@ -6,15 +6,12 @@ The previous iteration of our documentation was built with Sphinx, but after fac
 
 ## Contributing
 
-All contributions to our documentation are very welcome. We have more detailed information for beginners and advanced users alike on our internal documentation.
-
-TODO ^^^ add link
+All contributions to our documentation are very welcome. We have more detailed information for beginners and advanced users alike on our [internal documentation](https://docs.srcf.net/internal/documentation/building/).
 
 ### TODO
 
-* add contributors list
 * add search
-* add "all" layout for PDF
+* vendor static assets centrally
 
 ## Credits
 

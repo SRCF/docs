@@ -20,3 +20,9 @@ Sometimes it is useful to preview changes locally, either for convenience or nec
 3. Run: `./hugo`
 
 The above is easy if you're on a UNIX-like system, such as any Linux distro or macOS. If you're on Windows, then [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or any terminal emulator for Windows ([Microsoft Terminal](https://github.com/microsoft/terminal) is good) will do just fine but can be fiddly.
+
+## Building in production
+
+The production version of these docs is available at https://docs.srcf.net.
+
+There is a Makefile to facilitate generating the docs and associated files.

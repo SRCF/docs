@@ -62,17 +62,17 @@ remaining methods.
 Sample MySQL library code:
 
 ```php
-mysql_connect("localhost", "<user>", "<password>");
-$result = mysql_query("...");
-while ($row = mysql_fetch_assoc($result)) { ... }
+    mysql_connect("localhost", "<user>", "<password>");
+    $result = mysql_query("...");
+    while ($row = mysql_fetch_assoc($result)) { ... }
 ```
 
 Equivalent MySQLi code:
 
 ```php
-$conn = mysqli_connect("localhost", "<user>", "<password>");
-$result = mysqli_query($conn, "...");
-while ($row = mysqli_fetch_assoc($result)) { ... }
+    $conn = mysqli_connect("localhost", "<user>", "<password>");
+    $result = mysqli_query($conn, "...");
+    while ($row = mysqli_fetch_assoc($result)) { ... }
 ```
 
 ### ucam-webauth-php

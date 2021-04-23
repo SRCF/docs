@@ -25,10 +25,6 @@ See additional features [here](http://develop.bigbluebutton.org/).
 
 Want to request a feature? You can do so by emailing `support@srcf.net`.
 
-Here's a preview of what Timeout looks like:
-
-![image](https://blindsidenetworks.com/wp-content/uploads/2020/02/bigbluebutton-html5-hero.png){width="600px"}
-
 Why should I use Timeout?
 -------------------------
 
