@@ -111,7 +111,7 @@ example:
 .. code-block:: bash
 
    pip:~$ cd my_dir
-   pip:~/my_dir$ 
+   pip:~/my_dir$
 
 Notice how the working directory is displayed as part of the command
 prompt. The symbol '~' is an abbreviation for your *home directory*, in
@@ -168,9 +168,10 @@ The following table gives some common commands used to manipulate files:
 |    nano <file>                    |                                   |
 +-----------------------------------+-----------------------------------+
 
-Note that the last command starts the nano text editor. This is a very
-powerful editor which is worth getting to know, but it can seem complex
-at first. If you get stuck in it, pressing control-x will return to the command prompt.
+Note that the last command starts the nano text editor. This is a simple editor
+which is sufficient for most tasks. If you get stuck in it, pressing control-x
+will return to the command prompt. If you are looking for a more powerful
+editor, albeit with a steeper learning curve, you might want to try vim.
 
 Exiting
 ~~~~~~~
