@@ -22,8 +22,7 @@ the versions we have installed are rather outdated (typically several
 years behind). As packages are managed by Ubuntu maintainers, security
 fixes are backported and applied to these versions, but new features are
 not. This means some custom software may incorrectly detect our versions
-as insecure, as Ubuntu-patched releases add a version suffix (for
-example, PHP is `7.0.33-0ubuntu0.16.04.15`).
+as insecure, as Ubuntu-patched releases add a version suffix (for example, PHP is ``7.4.3-4ubuntu2.4``).
 
 Whilst some software can be updated through the use of third-party
 distributions, or by building the latest version from source, this would
@@ -40,7 +39,7 @@ vulnerabilities may be suspended without notice.
 
 Every few years, we need to move to a newer version of Ubuntu in order
 to continue receiving security updates. As a side-effect, this will
-introduce significantly-newer versions of most installed software, which
+introduce significantly newer versions of most installed software, which
 is liable to break any unusual software configurations of our users. In
 the past we've seen significant changes with Apache and PHP, which many
 users use for their personal or group websites.
@@ -53,28 +52,27 @@ minimise disruption to our users.
 
 ### Node.js
 
-Ubuntu comes with node version 4.2.6, npm version 3.5.2. Note that the
-Node binary is called `nodejs`. If you need a newer version, consider
+Ubuntu comes with node version 10.19.0. If you need a newer version, consider
 using [Node Version Manager](https://github.com/nvm-sh/nvm).
 
 ### PHP
 
-Ubuntu provides version 7.0 of PHP, along with a handful of modules.
+Ubuntu provides version 7.4 of PHP, along with a handful of modules.
 We're aware that various web applications will flag this version as
 outdated or insecure -- see above for how this is catered for.
 
 ### Python
 
-We have Python versions 2.7 and 3.5. Note that the `python` and `pip`
-binaries are Python 2, use `python3` and `pip3` for Python 3. Assorted
-Python modules (as packaged by Ubuntu) are installed for both, and
-others can be installed on request (subject to the notes above). If you
-need a newer version of Python, consider using
-[pyenv](https://github.com/pyenv/pyenv).
+We have Python versions 2.7 and 3.8. Note that the `python` and `pip`
+binaries are Python 2, use `python3` and `pip3` for Python 3. If you
+need a newer version of Python, consider using [pyenv](https://github.com/pyenv/pyenv).
+
+Assorted Python modules (as packaged by Ubuntu) are installed for both, and
+others can be installed for Python 3 on request (subject to the notes above). Module support for Python 2 is limited -- if you're unable to migrate code to Python 3, you'll likely need to use a virtualenv and manage package installation yourself.
 
 ### Ruby
 
-The servers have version 2.3 of Ruby installed together with a handful
+The servers have version 2.7 of Ruby installed together with a handful
 of useful gems and development dependencies. If you need a more recent
 version then you might consider using
 [ruby-build](https://github.com/rbenv/ruby-build) and/or

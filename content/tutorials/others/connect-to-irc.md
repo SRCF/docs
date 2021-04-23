@@ -178,8 +178,10 @@ server to decide which ones to add.
 ### Restart irssi and confirm everything is set correctly
 
 ```irc
-    /RESTART
+   /QUIT
 ```
+
+You should now arrive at a terminal, where you can type ``irssi`` to restart the client and check that everything is working.
 
 ### Scheduled restarts
 
