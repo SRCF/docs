@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ partial "subnav" . }}
+
   <div class="container-xxl my-md-4 srcf-layout">
     <aside class="srcf-sidebar">
       {{ partial "sidebar" . }}
@@ -11,7 +13,7 @@
         >
           <a
             class="btn btn-sm btn-outline-danger mb-2 mb-md-0"
-            href="{{ .Site.Params.repo }}/blob/main/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
+            href="{{ .Site.Params.repo }}/blob/{{ .Site.Params.repo_branch }}/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
             title="View and edit this file on GitHub"
             target="_blank"
             rel="noopener"
@@ -48,6 +50,9 @@
         {{ end }}
 
         {{ .Content }}
+        <div class="alert alert-dark" role="alert">
+          <a href="{{ .Site.Params.repo}}/commit/{{.GitInfo.Hash}}" target="_blank" rel="noopener">Last modified</a> on {{.Lastmod | dateFormat "Monday Jan 2, 2006"}} by {{ .GitInfo.AuthorName }}
+        </div>
       </div>
     </main>
   </div>
