@@ -221,6 +221,20 @@ docs-specific classes
   background-color: rgba(0, 123, 255, 0.1);
 }
 
+.srcf-links .srcf-sidebar-title {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  border: 0;
+}
+
+.srcf-links .srcf-sidebar-active {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* for sidebar with dropdowns 
+
 .srcf-links .btn {
   padding: 0.25rem 0.5rem;
   font-weight: 600;
@@ -259,7 +273,9 @@ docs-specific classes
 
 .srcf-links .btn[aria-expanded="true"]::before {
   transform: rotate(90deg);
-}
+} 
+
+*/
 
 .srcf-links .active {
   font-weight: 600;

@@ -15,11 +15,11 @@
 
     <li class="mb-1">
     {{- if $group.pages }}
-      <span class="rounded srcf-sidebar-title {{ if $is_active_group }} srcf-sidebar-active {{ end }}">
+      <button class="btn d-inline-flex align-items-center rounded {{ if not $is_active_group }} collapsed {{ end }}" data-bs-toggle="collapse" data-bs-target="#{{ $group_slug }}-collapse" aria-expanded="{{ $is_active_group }}"{{ if $is_active_group }} aria-current="true"{{ end }}>
         {{ $group.title }}
-      </span>
+      </button>
 
-      <div>
+      <div class="collapse{{ if $is_active_group }} show{{ end }}" id="{{ $group_slug }}-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           {{- range $doc := $group.pages -}}
             {{- $doc_slug := $doc.title | urlize -}}
@@ -41,7 +41,7 @@
     </li>
 
     {{ if (eq $group.divider true) }}
-    <li class="my-3 mx-3 border-bottom"></li>
+    <li class="my-3 mx-4 border-bottom"></li>
     {{ end }}
     
     {{- end -}}
