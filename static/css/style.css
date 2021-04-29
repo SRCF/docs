@@ -280,6 +280,7 @@ docs-specific classes
 .srcf-links .active {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(220, 53, 69, 0.25);
 }
 
 /* subnavbar with search */
@@ -529,6 +530,14 @@ docs-specific classes
   border-radius: 5px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover, a:focus {
+  text-decoration: underline;
 }
 
 /*
