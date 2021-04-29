@@ -2,12 +2,14 @@ BUILDDIR ?= public_html/_docs
 PDF_OUTFILE = docs
 PDF_URL = localhost
 PDF_PORT = 1313
+CACHEDIR = $(shell mktemp -d)
 
 all: clean build
 
 .PHONY: build
 build:
-	hugo -d $(BUILDDIR)
+	hugo -d $(BUILDDIR) --cacheDir $(CACHEDIR)
+	rm -rf $(CACHEDIR)  
 
 .PHONY: clean
 clean:
