@@ -536,7 +536,7 @@ docs-specific classes
   text-decoration: none;
 }
 
-.footer a:hover, a:focus {
+.footer a:hover, .footer a:focus {
   text-decoration: underline;
 }
 
