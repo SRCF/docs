@@ -47,7 +47,7 @@ and password.
 
 The SRCF uses Apache to serve websites so if you need to run a backend
 web app, for example a Django, Rails or Express server, then you will
-need to forward web requests. See also our guidance on [port binding]({{ relref "/reference/shell-and-files/software-and-installation#port-binding}}).
+need to forward web requests. See also our guidance on [port binding]({{< relref "/reference/shell-and-files/software-and-installation#port-binding" >}}).
 
 ### Using UNIX sockets
 

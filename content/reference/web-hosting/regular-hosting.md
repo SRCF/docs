@@ -29,7 +29,7 @@ by default.
 ### [WordPress](https://sample.soc.srcf.net/wordpress/)
 
 Follow
-[our full WordPress installation tutorial \<website-wordpress\>]{role="ref"}.
+[our full WordPress installation tutorial ]({{< relref "tutorials/websites/wordpress-from-scratch.md" >}}).
 
 ## Static site generators
 
