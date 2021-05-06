@@ -6,8 +6,6 @@ RewriteCond %{HTTP_HOST} ^docs.srcf.net$
 RewriteRule ^learn/tutorials/deploy-django(\.html)?$ /learn/tutorials/deploy-python [R=permanent,L]
 RewriteRule ^learn/tutorials/deploy-rails(\.html)?$ /learn/tutorials/deploy-ruby [R=permanent,L]
 
-RewriteRule ^$  [R=permanent,L]
-
 # --- tutorials ---
 
 RewriteRule ^learn/index.html$ /tutorials/ [R=permanent,L]
