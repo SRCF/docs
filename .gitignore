@@ -4,3 +4,4 @@ Makefile.local
 .vscode
 .idea/
 .venv/
+public/*

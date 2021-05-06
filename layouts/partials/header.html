@@ -1,0 +1,107 @@
+{{ $domain_web := .Site.Params.domain_web }}
+{{ $domain_control := .Site.Params.domain_control }}
+
+<header>
+  <nav class="srcf-navbar navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="{{ $domain_web }}/">
+        <img src="{{$domain_web}}/_srcf/images/logo.svg" />
+        <span class="d-none d-lg-inline">
+          <span class="text-danger">Student-Run</span>
+          <span class="text-primary">Computing Facility</span>
+        </span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#srcfNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="srcfNavbar">
+        <ul class="navbar-nav ms-auto pt-5 py-md-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              <i class="fa-fw fas fa-cubes" aria-hidden="true"></i>
+              <span>Services</span>
+            </a>
+            <ul class="dropdown-menu">
+              <a class="dropdown-item" href="https://webmail.srcf.net"
+                ><i class="fa-fw far fa-envelope-open me-1"></i> Webmail</a
+              >
+              <a class="dropdown-item" href="https://lists.srcf.net"
+                ><i class="fas fa-fw fa-bullhorn me-1"></i> Mailing lists</a
+              >
+              <a class="dropdown-item" href="https://www.srcf.net/terminal/"
+                ><i class="fas fa-fw fa-terminal me-1"></i> Web terminal</a
+              >
+              <a class="dropdown-item" href="https://timeout.srcf.net"
+                ><i class="far fa-fw fa-comment-dots me-1"></i> Timeout</a
+              >
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              <i class="fas fa-fw fa-users" aria-hidden="true"></i>
+              <span>Society</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="{{ $domain_web }}/about"
+                ><i class="far fa-fw fa-bookmark me-1" aria-hidden="true"></i
+                >About us</a
+              >
+              <a class="dropdown-item" href="{{ $domain_web }}/committee"
+                ><i class="fas fa-fw fa-id-card me-1"></i> Committee</a
+              >
+              <a class="dropdown-item" href="{{ $domain_web }}/minutes"
+                ><i class="fas fa-fw fa-book me-1"></i> Minutes</a
+              >
+              <a class="dropdown-item" href="{{ $domain_web }}/constitution"
+                ><i class="fas fa-fw fa-gavel me-1"></i> Constitution</a
+              >
+              <a class="dropdown-item" href="{{ $domain_web }}/roles"
+                ><i class="fas fa-fw fa-university me-1"></i> Roles</a
+              >
+              <a class="dropdown-item" href="https://blog.srcf.net"
+                ><i class="fas fa-fw fa-rss me-1"></i> Blog</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.srcf.net"
+              ><i class="me-1 fas fa-fw fa-info-circle" aria-hidden="true"></i
+              ><span>Docs</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ $domain_web }}/donate"
+              ><i class="me-1 fas fa-fw fa-heart" aria-hidden="true"></i
+              ><span>Donate</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ $domain_control }}"
+              ><i class="me-1 fas fa-fw fa-wrench" aria-hidden="true"></i
+              ><span>Control Panel</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

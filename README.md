@@ -1,18 +1,18 @@
-# docs
-A repository for SRCF documentation.
+# SRCF Documentation
 
-## Building
+This is the Git repository for the SRCF's documentation, available at [docs.srcf.net](https://docs.srcf.net). It is built with Hugo, a static site generator written in Go. You can read, contribute and build these docs yourself, just keep reading!
 
-Windows: `./make.bat html`
+The previous iteration of our documentation was built with Sphinx, but after facing several shortcomings we decided to move to a static site generator.
 
-Linux/macOS: `make html`
+## Contributing
 
-## Setting the output path
+All contributions to our documentation are very welcome. We have more detailed information for beginners and advanced users alike on our [internal documentation](https://docs.srcf.net/internal/documentation/building/).
 
-1.  Create a file `Makefile.local` in the root of this repository.  This is an
-    optional snippet of Makefile that is automatically sourced in the main
-    Makefile.
+### TODO
 
-2.  Set variables, e.g.:
+* add search
+* vendor static assets centrally
 
-        BUILDDIR = /public/home/spqr2/srcf-docs
+## Credits
+
+This documentation is largely inspired by [Bootstrap](https://github.com/twbs/bootstrap/).

@@ -1,0 +1,22 @@
+baseURL = "http://docs.srcf.net"
+languageCode = "en-us"
+title = "SRCF Documentation"
+
+disableKinds = ["taxonomy", "term"]
+
+# see motivation in README
+uglyURLs = false
+enableGitInfo = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 2
+
+[params]
+    domain_web = "https://www.srcf.net"
+    domain_control = "https://control.srcf.net"
+    description = "The Student-Run Computing Facility is a volunteer-run student society that provides free, useful and flexible computing and network services for Cambridge University staff and students of all degrees of ability."
+    repo = "https://github.com/matiasilva/docs"
+    repo_branch = "move-to-hugo"
+    pdf_path = "docs.pdf"

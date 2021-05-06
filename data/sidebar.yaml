@@ -1,0 +1,123 @@
+# This file holds all sidebar menu's entries.
+# The logic for the sidebar generation is in "layouts/partials/sidebar.html".
+
+# YAML over TOML here because top-level arrays are cleaner
+
+# Guides
+
+- category: Guides
+  groups:
+    - title: Introduction
+      divider: true
+      override: /guides
+    - title: "Getting started: groups"
+    - title: "Getting started: users"
+    - title: "Society handovers"
+      divider: true
+    - title: Websites
+      pages:
+        - title: Securing WordPress
+        - title: Migrating to the SRCF
+    - title: Upgrade guidance
+      pages:
+        - title: Focal changes
+        - title: Drupal
+        - title: Sinkhole
+        - title: WordPress
+
+# Tutorials
+
+- category: Tutorials
+  groups:
+    - title: Introduction
+      override: /tutorials
+    - title: Recommended resources
+      divider: true
+
+    - title: Shell and files
+      pages:
+        - title: Logging in
+        - title: Uploading files
+        - title: Terminal guide
+        - title: Passwordless login
+
+    - title: Websites
+      pages:
+        - title: Deploy a web app
+        - title: WordPress from scratch
+        - title: Static site generators
+
+    - title: Others
+      pages:
+        - title: Simple Minecraft server
+        - title: Virtual desktops over VNC
+        - title: Connect to IRC
+
+# Reference
+
+- category: Reference
+  groups:
+    - title: Introduction
+      override: /reference
+    - title: Common requests
+    - title: Rules and principles
+      divider: true
+
+    - title: Personal accounts
+      pages:
+        - title: User vs group
+        - title: Passwords
+        - title: After graduation
+        - title: SRCF mailing lists
+
+    - title: Group accounts
+      pages:
+        - title: Administrators
+        - title: Files and permissions
+        - title: Email
+
+    - title: Shell and files
+      pages:
+        - title: SSH
+        - title: Files
+        - title: Scheduled tasks
+        - title: Software and installation
+
+    - title: Web hosting
+      pages:
+        - title: Web applications
+        - title: Regular hosting
+        - title: Raven authentication
+        - title: CGI and PHP scripts
+        - title: Custom domains
+        - title: Apache
+
+    - title: Email
+      pages:
+        - title: Email accounts
+        - title: Hades email service
+        - title: Legacy mail on pip
+        - title: Filtering spam
+
+    - title: Other services
+      pages:
+        - title: SQL databases
+        - title: Gopher
+        - title: Internet Relay Chat (IRC)
+        - title: Mailing lists
+        - title: Mattermost
+        - title: Usenet (NNTP)
+        - title: Game servers
+
+- category: Internal
+  groups:
+    - title: Introduction
+      override: /internal
+      divider: true
+
+    - title: Documentation
+      pages:
+        - title: How it works
+        - title: Building
+        - title: Managing content
+        - title: Reference

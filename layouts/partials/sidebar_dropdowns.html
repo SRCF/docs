@@ -1,0 +1,52 @@
+<nav class="collapse srcf-links" id="srcf-docs-nav">
+  {{- $url := split .Permalink "/" -}}
+  {{- $page_slug := index $url (sub (len $url) 2) -}}
+
+    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+    {{- range $section := .Site.Data.sidebar -}}
+    {{- $section_slug := $section.category | urlize -}}
+    {{- $is_active_section := eq $.Type $section_slug -}}
+
+    {{ if $is_active_section }}
+    
+    {{- range $group := $section.groups -}}
+    {{- $group_slug := $group.title | urlize -}}
+    {{- $is_active_group := eq $.Page.Params.group $group_slug -}}
+
+    <li class="mb-1">
+    {{- if $group.pages }}
+      <button class="btn d-inline-flex align-items-center rounded {{ if not $is_active_group }} collapsed {{ end }}" data-bs-toggle="collapse" data-bs-target="#{{ $group_slug }}-collapse" aria-expanded="{{ $is_active_group }}"{{ if $is_active_group }} aria-current="true"{{ end }}>
+        {{ $group.title }}
+      </button>
+
+      <div class="collapse{{ if $is_active_group }} show{{ end }}" id="{{ $group_slug }}-collapse">
+        <ul class="list-unstyled fw-normal pb-1 small">
+          {{- range $doc := $group.pages -}}
+            {{- $doc_slug := $doc.title | urlize -}}
+            {{- $is_active := and $is_active_group (eq $page_slug $doc_slug) -}}
+            {{- $href := printf "/%s/%s/%s" $section_slug $group_slug $doc_slug }}
+            <li><a href="{{ with $.Site.GetPage $href }}{{.Permalink}}{{end}}" class="d-inline-flex align-items-center rounded{{ if $is_active }} active{{ end }}"{{ if $is_active }} aria-current="page"{{ end }}>{{ $doc.title }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+    {{- else }}
+      {{- $href := printf "/%s/%s" $section_slug $group_slug }}
+      {{ with $group.override }}
+        {{ $href = . }}
+      {{ end }}
+      <a href="{{ with $.Site.GetPage $href }}{{.Permalink}}{{end}}" class="d-inline-flex align-items-center rounded{{ if $is_active_group }} active{{ end }}"{{ if $is_active_group }} aria-current="page"{{ end }}>
+        {{ $group.title }}
+      </a>
+    {{- end }}
+    </li>
+
+    {{ if (eq $group.divider true) }}
+    <li class="my-3 mx-4 border-bottom"></li>
+    {{ end }}
+    
+    {{- end -}}
+    {{ end }}
+
+    {{- end }}
+    </ul>
+  </nav>

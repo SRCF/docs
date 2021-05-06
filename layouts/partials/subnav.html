@@ -1,0 +1,16 @@
+<nav class="srcf-subnavbar py-2" aria-label="secondary navigation">
+    <div class="container-xxl d-flex align-items-md-center justify-content-end">
+      {{/* 
+      <form class="srcf-search me-auto">
+        <input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off">
+      </form>
+      */}}
+
+      {{ partial "subnav-categories" . }}
+  
+      <button class="btn srcf-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#srcf-docs-nav" aria-controls="srcf-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+        {{ partial "icons/expand.svg" (dict "class" "bi bi-expand" "width" "24" "height" "24") }}
+        {{ partial "icons/collapse.svg" (dict "class" "bi bi-collapse" "width" "24" "height" "24") }}
+      </button>
+    </div>
+  </nav>

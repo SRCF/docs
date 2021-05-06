@@ -1,0 +1,12 @@
+<div class="dropdown ms-3">
+    <button class="btn btn-outline-primary dropdown-toggle" id="srcf-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+      {{ .Section | humanize }}
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        {{ range $section := .Site.Data.sidebar }}
+        {{ $section_slug := $section.category | urlize}}
+        {{ $is_current := eq $section_slug $.Section }}
+        <li><a class="dropdown-item {{if $is_current}}current{{end}}" href="/{{$section_slug}}">{{$section.category}}</a></li>
+        {{ end }}
+    </ul>
+  </div>

@@ -1,0 +1,65 @@
+{{ $domain_web := .Site.Params.domain_web }}
+{{ $domain_control := .Site.Params.domain_control }}
+
+<footer class="footer py-4">
+  <div class="container">
+    <div class="row justify-content-evenly px-3">
+      <div class="col-auto">
+        <h5>Membership</h5>
+        <ul class="fa-ul mb-0">
+          <li>
+            <a href="{{ $domain_control }}/signup"
+              ><i class="fa-li fas fa-user"></i> Join the SRCF</a
+            >
+          </li>
+          <li>
+            <a href="{{ $domain_web }}/services"
+              ><i class="fa-li fas fa-cubes"></i> List of services</a
+            >
+          </li>
+          <li>
+            <a href="{{ $domain_web }}/tos"
+              ><i class="fa-li fas fa-balance-scale"></i> Terms of service</a
+            >
+          </li>
+          <li>
+            <a href="{{ $domain_web }}/privacy"
+              ><i class="fa-li fas fa-user-secret"></i> Privacy statement</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-auto">
+        <h5>Help and support</h5>
+        <ul class="fa-ul mb-0">
+          <li>
+            <a href="{{ .Site.BaseURL }}"
+              ><i class="fa-li fas fa-info-circle"></i> Documentation</a
+            >
+          </li>
+          <li>
+            <a href="{{ $domain_web }}/get-involved"
+              ><i class="fa-li fas fa-code-branch"></i> Get involved</a
+            >
+          </li>
+          <li>
+            <a href="{{ $domain_web }}/contact"
+              ><i class="fa-li far fa-paper-plane"></i> Contact addresses</a
+            >
+          </li>
+          <li>
+            <a href="https://status.srcf.net"
+              ><i class="fa-li fas fa-toggle-on"></i> Server status</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="mt-4" />
+    <p class="text-center text-muted mb-0">
+      The Student-Run Computing Facility is a society at the University of
+      Cambridge run entirely by student volunteers &mdash;
+      <a href="https://github.com/srcf"><i class="ms-2 fab fa-github"></i></a>
+    </p>
+  </div>
+</footer>

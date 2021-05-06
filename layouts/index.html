@@ -1,0 +1,128 @@
+{{ define "main" }}
+  <div class="container p-3 py-md-5">
+    <h1>SRCF Documentation</h1>
+    <p class="fs-5 col-md-8">
+      Hello there! This is the Student-Run Computing Facility's documentation.
+      Our revamped docs contain all manner of useful pages, such as getting
+      started guides, tutorials and a technical reference. In this revision
+      we've placed an emphasis on learning, tutorials and making information
+      more technically accessible so that you can fully leverage our services.
+    </p>
+
+    <p class="fs-5 col-md-8">
+      You can navigate the docs by exploring our links below, using our search,
+      or <a href="all/">generating</a> a single PDF</a> at your leisure.
+    </p>
+
+    <hr class="col-3 col-md-2 mb-5 mt-3 mt-md-5" />
+
+    <div class="row g-5 row-cols-md-2">
+      <div class="col">
+        {{ $heading := "Reference" }}
+        <h2>{{ $heading }}</h2>
+        <p>
+          A detailed technical breakdown of our services, servers and overall
+          set-up. If you want to know more about a particular aspect of the
+          SRCF, this is the place.
+        </p>
+        <ul class="fa-ul">
+          {{ $highlights := where .Site.Pages "Section" ($heading | urlize) }}
+
+          {{ range $highlights }}
+            {{ if (eq .Params.highlight true) }}
+              {{ partial "lists/fa-link" (dict "ctx" . "fa" "fas fa-arrow-circle-right") }}
+            {{ end }}
+          {{ end }}
+
+          {{ partial "lists/fa-text" (dict "fa" "fas fa-arrow-circle-right" "text" "...and more!") }}
+        </ul>
+        <a class="btn btn-secondary" role="button" href="reference"
+          >View the full reference »</a
+        >
+      </div>
+
+      <div class="col">
+        <h2 id="help-and-support">Help & support</h2>
+        <p>
+          In addition to this growing collection of help pages, our volunteers
+          operate a support list and live chat. Please do not be afraid to ask
+          for help! Asking for help is an essential stage of the learning
+          process and we often find asking a simple question can cut down (or
+          completely avoid) hours of painful debugging.
+        </p>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"> <i class="fas fa-check-circle"></i></span>
+            Check
+            <a href="reference/common-requests">common requests</a>
+          </li>
+          <li>
+            <span class="fa-li"> <i class="fas fa-check-circle"></i></span>
+            Email list:
+            <code> <span class="pre">support@srcf.net</span> </code>
+          </li>
+          <li>
+            <span class="fa-li"> <i class="fas fa-check-circle"></i></span>
+            <a href="https://webchat.srcf.net/?channels=support">Live chat</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        {{ $heading = "Tutorials" }}
+        <h2>{{ $heading }}</h2>
+        <p>
+          Want to learn how to do something on our servers and prefer a
+          step-by-step approach?
+        </p>
+        <ul class="fa-ul">
+          {{ $highlights := where .Site.Pages "Section" ($heading | urlize) }}
+
+          {{ range $highlights }}
+            {{ if (eq .Params.highlight true) }}
+              {{ partial "lists/fa-link" (dict "ctx" . "fa" "fas fa-arrow-circle-right") }}
+            {{ end }}
+          {{ end }}
+
+          {{ partial "lists/fa-text" (dict "fa" "fas fa-arrow-circle-right" "text" "...and more!") }}
+        </ul>
+        <a class="btn btn-secondary" role="button" href="tutorials"
+          >View all tutorials »</a
+        >
+      </div>
+
+      <div class="col">
+        {{ $heading = "Guides" }}
+        <h2>{{ $heading }}</h2>
+        <p>
+          Read more detailed and less prescriptive pages on more general SRCF
+          matters.
+        </p>
+        <ul class="fa-ul">
+          {{ $highlights := where .Site.Pages "Section" ($heading | urlize) }}
+
+          {{ range $highlights }}
+            {{ if (eq .Params.highlight true) }}
+              {{ partial "lists/fa-link" (dict "ctx" . "fa" "fas fa-arrow-circle-right") }}
+            {{ end }}
+          {{ end }}
+
+          {{ partial "lists/fa-text" (dict "fa" "fas fa-arrow-circle-right" "text" "...and more!") }}
+        </ul>
+        <a class="btn btn-secondary" role="button" href="guides"
+          >View all guides »</a
+        >
+      </div>
+
+      <div class="col">
+        {{ $heading = "Internal docs" }}
+        <h2>{{ $heading }}</h2>
+        <p>
+          Internal non user-facing documentation for volunteers.
+        </p>
+        <a class="btn btn-secondary" role="button" href="internal"
+          >View all docs »</a
+        >
+      </div>
+    </div>
+  </div>
+{{ end }}

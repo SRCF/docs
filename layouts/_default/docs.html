@@ -1,0 +1,62 @@
+{{ define "main" }}
+  {{ partial "subnav" . }}
+
+  <div class="container-xxl my-md-4 srcf-layout">
+    <aside class="srcf-sidebar">
+      {{ partial "sidebar" . }}
+    </aside>
+
+    <main class="srcf-main order-1">
+      <div class="srcf-intro ps-lg-4">
+        <div
+          class="d-md-flex flex-md-row-reverse align-items-center justify-content-between"
+        >
+          <a
+            class="btn btn-sm btn-outline-danger mb-2 mb-md-0"
+            href="{{ .Site.Params.repo }}/blob/{{ .Site.Params.repo_branch }}/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
+            title="View and edit this file on GitHub"
+            target="_blank"
+            rel="noopener"
+            ><i class="fab fa-github me-1"></i>View on GitHub</a
+          >
+          <h1 class="srcf-title" id="content">{{ .Title | markdownify }}</h1>
+        </div>
+      </div>
+
+      {{ if (eq .Page.Params.toc true) }}
+        <div class="srcf-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+          <strong class="d-block h6 my-2 pb-2 border-bottom"
+            >On this page</strong
+          >
+          {{ .TableOfContents }}
+        </div>
+      {{ end }}
+
+      <div class="srcf-content ps-lg-4">
+        {{ if .Page.Params.sections }}
+          <div class="row g-3">
+            {{ range .Page.Params.sections }}
+              <div class="col-md-6">
+                <a
+                  class="d-block text-decoration-none"
+                  href="../{{ urlize .title }}/"
+                >
+                  <strong class="d-block h5 mb-0">{{ .title }}</strong>
+                  <span class="text-secondary">{{ .description }}</span>
+                </a>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ .Content }}
+
+        <hr>
+        <p class="text-muted">
+          <a href="{{ .Site.Params.repo}}/commit/{{.GitInfo.Hash}}" target="_blank" rel="noopener">Last modified</a> on {{.Lastmod | dateFormat "Monday Jan 2, 2006"}} by {{ .GitInfo.AuthorName }}
+        </p>
+
+      </div>
+    </main>
+  </div>
+{{ end }}
