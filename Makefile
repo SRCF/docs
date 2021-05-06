@@ -5,7 +5,7 @@ all: clean build
 
 .PHONY: build
 build:
-	hugo -d $(BUILDDIR) --cacheDir $(CACHEDIR)
+	hugo -d $(BUILDDIR) --cacheDir $(CACHEDIR) --noTimes
 	rm -rf $(CACHEDIR)
 
 
