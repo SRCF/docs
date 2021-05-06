@@ -1,7 +1,5 @@
-BUILDDIR ?= public_html/_docs
-PDF_OUTFILE = docs
-PDF_URL = localhost
-PDF_PORT = 1313
+BUILDDIR ?= ../public_html/_docs
+INPUTDIR = public
 CACHEDIR = $(shell mktemp -d)
 
 all: clean build
@@ -9,13 +7,11 @@ all: clean build
 .PHONY: build
 build:
 	hugo -d $(BUILDDIR) --cacheDir $(CACHEDIR)
-	rm -rf $(CACHEDIR)  
+	rm -rf $(CACHEDIR)
+	mv $(INPUTDIR)/* $(BUILDDIR)/
+	mv $(INPUTDIR)/.[!.]* $(BUILDDIR)/
 
 .PHONY: clean
 clean:
-	rm -rf $(BUILDDIR)
-
-.PHONY: pdf
-pdf:
-	wkhtmltopdf  --margin-bottom 1in --margin-top 1in --margin-left 1in --margin-right 1in --viewport-size 1024x768 http://$(PDF_URL):$(PDF_PORT)/all $(PDF_OUTFILE).pdf
-	mv $(PDF_OUTFILE).pdf $(BUILDDIR)/$(PDF_OUTFILE).pdf
+	rm -rf $(INPUTDIR)/*
+	rm -rf $(BUILDDIR)/*
