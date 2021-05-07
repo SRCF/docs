@@ -8,7 +8,6 @@
 - category: Guides
   groups:
     - title: Introduction
-      divider: true
       override: /guides
     - title: "Getting started: groups"
     - title: "Getting started: users"
