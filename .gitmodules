@@ -1,0 +1,3 @@
+[submodule "themes/srcf-hugo-theme"]
+	path = themes/srcf-hugo-theme
+	url = https://github.com/srcf/srcf-hugo-theme.git
