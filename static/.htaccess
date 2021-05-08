@@ -25,7 +25,7 @@ RewriteRule ^learn/recommended-resources.html$ /tutorials/recommended-resources/
 # singles
 
 RewriteRule ^read-first/important.html$ /reference/rules-and-principles/ [R=permanent,L]
-RewriteRule ^common-requests/index.html$ /reference/common.requests/ [R=permanent,L]
+RewriteRule ^common-requests/index.html$ /reference/common-requests/ [R=permanent,L]
 
 
 # personal accounts
