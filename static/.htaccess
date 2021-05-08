@@ -29,7 +29,7 @@ RewriteRule ^common-requests/index.html$ /reference/common-requests/ [R=permanen
 
 # mistakes
 
-RewriteRule ^/reference/common.requests/$ /reference/common-requests/ [R=permanent,L]
+RewriteRule ^/reference/common\.requests/$ /reference/common-requests/ [R=permanent,L]
 
 
 # personal accounts
