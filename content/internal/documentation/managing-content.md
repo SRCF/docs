@@ -21,6 +21,10 @@ Depending on the complexity of your change, you can either:
 * use the GitHub web UI (click "edit this file") to make your change. GitHub automatically forks the repository you're trying to edit.
 * [clone your forked repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository), edit locally, optionally test your changes, push to your repository and finally make a pull request back to ours
 
+{{< alert type="warning" >}}
+These docs use our Hugo theme, which is a Git submodule. Therefore, when cloning, be sure to add `--recurse-submodules` to `git clone` in order to pull the theme repository as well.
+{{<  /alert >}}
+
 The above process is known as the ["GitHub flow"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/github-flow) and is standard practice across many distributed projects under version control.
 
 If you are creating pages, then you will need to clone the repository locally.

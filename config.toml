@@ -1,6 +1,7 @@
 baseURL = "https://docs.srcf.net"
 languageCode = "en-us"
 title = "SRCF Documentation"
+theme = "srcf-hugo-theme"
 
 disableKinds = ["taxonomy", "term"]
 
