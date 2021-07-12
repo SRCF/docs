@@ -160,7 +160,7 @@ You should not rely on the system-wide versions of web frameworks present on our
 * Node: `npm i express`
 * Python: `pip install flask` or `pip install django`
 * Ruby: `gem install rails`
-  
+
 ## Create your app
 
 If you have an existing `node.js` app you can simply copy the code to a
@@ -171,7 +171,7 @@ control tool.
 If you're new to web apps, though, it's recommended you follow the getting started guide (or equivalent) for your language/framework of interest:
 
 * Node: https://nodejs.org/en/docs/guides/getting-started-guide/
-* Express: http://expressjs.com/en/starter/installing.html
+* Express: https://expressjs.com/en/starter/installing.html
 * Ruby on Rails: https://guides.rubyonrails.org/getting_started.html
 * Flask: https://flask.palletsprojects.com/en/1.1.x/quickstart/
 

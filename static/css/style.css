@@ -2,7 +2,7 @@
 docs-specific classes
 */
 
-/* overall grid layout 
+/* overall grid layout
   mobile or less than 768px: no sidebar nor toc
   md to lg: sidebar and content, no toc
   lg and beyond: sidebar, content and toc
@@ -34,7 +34,7 @@ docs-specific classes
   }
 }
 
-/* 
+/*
   srcf-sidebar is the sidebar container
   2 breakpoints for srcf-links: sm and below, md and above
 */
@@ -91,7 +91,7 @@ docs-specific classes
   color: rgba(0, 0, 0, 0.85);
 }
 
-/* for sidebar with dropdowns 
+/* for sidebar with dropdowns
 
 .srcf-links .btn {
   padding: 0.25rem 0.5rem;
@@ -131,7 +131,7 @@ docs-specific classes
 
 .srcf-links .btn[aria-expanded="true"]::before {
   transform: rotate(90deg);
-} 
+}
 
 */
 

@@ -25,7 +25,7 @@ there is an additional method of running CGI scripts which is to place
 them in the cgi-bin directory in your group account user area (i.e. not
 in public\_html). If you do this, the script names do not need to end
 '.cgi'. The URL to access CGI scripts in the cgi-bin directory is
-`http://<groupname>.soc.srcf.net/cgi-bin`, where \<groupname\> is the
+`https://<groupname>.soc.srcf.net/cgi-bin`, where \<groupname\> is the
 group account name.
 
 ## Users

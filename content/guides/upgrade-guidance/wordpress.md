@@ -35,8 +35,8 @@ says \"stop editing\":
 ```php
     /**
     * Force wordpress to use direct filesystem access so that upgrades work
-    * properly. See: http://core.trac.wordpress.org/ticket/10205
-    * http://codex.wordpress.org/Editing_wp-config.php
+    * properly. See: https://core.trac.wordpress.org/ticket/10205
+    * https://codex.wordpress.org/Editing_wp-config.php
     */
     define('FS_METHOD', 'direct');
     define('FS_CHMOD_DIR', (02775 & ~ umask()));
@@ -55,7 +55,7 @@ have your personal group set, rather than that of the target society.
 
 ## Upgrade through the admin panel
 
-Head over to `http://wordpress.soc.srcf.net/wp-admin/`, log in with your
+Head over to `https://wordpress.soc.srcf.net/wp-admin/`, log in with your
 WordPress username and password if you haven\'t already (remember, these
 are distinct from any SRCF-provided accounts).
 
@@ -93,7 +93,7 @@ new files provide complete copies of these folders. The contents of
 retain plugins and themes.
 
 Once the new files are in place, head over to
-`http://wordpress.soc.srcf.net/wp-admin/` and log in with your WordPress
+`https://wordpress.soc.srcf.net/wp-admin/` and log in with your WordPress
 username and password to check if things are working. You may be
 prompted to complete a database upgrade \-- this is normally a one-click
 step, just follow the instructions it provides.

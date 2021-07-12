@@ -47,7 +47,7 @@ customisations. If you\'ve made any changes to `.htaccess` or
 `robots.txt`, you\'ll also need to merge these into the updated files.
 
 Once the new files are in place, head over to
-`http://drupal.soc.srcf.net/update.php` to prepare the database for the
+`https://drupal.soc.srcf.net/update.php` to prepare the database for the
 new version. When complete, take the site out of maintenance mode.
 
 Migrating a site between instances
@@ -59,13 +59,13 @@ Similar to the above, download the latest version, but extract/upload it
 to a different location than the current site. Configure this as a new
 installation. It still needs to be under your account\'s `public_html`
 root, so you may need to use a subdirectory. This page assumes you have
-`http://drupal.soc.srcf.net/new/`.
+`https://drupal.soc.srcf.net/new/`.
 
 Go to the \'\'Modules\'\' section on the new site, and enable the
 \'\'Migrate\'\', \'\'Migrate Drupal\'\', and \'\'Migrate Drupal UI\'\'
 modules.
 
-Now head over to `http://drupal.soc.srcf.net/new/upgrade`, which will
+Now head over to `https://drupal.soc.srcf.net/new/upgrade`, which will
 prompt for database credentials \-- here, you can specify those of the
 old site, which will import all its content into the new installation.
 
