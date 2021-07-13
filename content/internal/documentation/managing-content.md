@@ -49,7 +49,7 @@ Ensure that you are in the cloned directory for any commands.
 
 ## Commit, push and PR
 
-Now it is time to commit your changes, push them to your repository and make a pull request into our repository. If any of those words are foreign to you, you might want to [visit a Git tutorial](http://git-scm.com/book/en/v2) or [browse a quick primer](https://training.github.com/downloads/github-git-cheat-sheet/).
+Now it is time to commit your changes, push them to your repository and make a pull request into our repository. If any of those words are foreign to you, you might want to [visit a Git tutorial](https://git-scm.com/book/en/v2) or [browse a quick primer](https://training.github.com/downloads/github-git-cheat-sheet/).
 
 Before you commit, make sure your message is informative by following [these tips](https://chris.beams.io/posts/git-commit/). After you've pushed your changes to your local repository, navigating to your repository on GitHub should show a prompt asking you to make a pull request back to upstream (us). If not, then you can [create your own pull request](https://github.com/SRCF/docs/pulls) manually. Be sure to add informative details as to what the nature of your PR is and what issues it solves (if any).
 

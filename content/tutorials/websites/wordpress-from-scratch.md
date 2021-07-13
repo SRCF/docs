@@ -183,6 +183,6 @@ If you have any suggestions for how we could improve this documentation
 please send us an email at `support@srcf.net` or submit a Pull Request
 on [GitHub](https://github.com/SRCF/docs)!
 
-A big thanks to [Phil Ewels](http://phil.ewels.co.uk/) for writing this
+A big thanks to [Phil Ewels](https://phil.ewels.co.uk/) for writing this
 on his own blog and to hmw26 for some of their tips. This tutorial
 contains some adaptations to their work.

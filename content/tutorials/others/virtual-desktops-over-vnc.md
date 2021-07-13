@@ -9,7 +9,7 @@ toc: true
 ## Introduction
 
 The SRCF desktop server `shell.srcf.net` has VNC server software
-installed (we're using [TightVNC](http://www.tightvnc.com)). This
+installed (we're using [TightVNC](https://www.tightvnc.com)). This
 allows you run a graphical desktop on our server, and connect to it
 remotely.
 

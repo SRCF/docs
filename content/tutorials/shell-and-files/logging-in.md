@@ -47,7 +47,7 @@ If you're running a system without a native console, such as MS
 Windows, then things are *slightly* trickier. Not much though, you just
 have to go and get a console program. We recommend the PuTTY
 application, downloadable for free
-[here](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+[here](https://www.chiark.greenend.org.uk/~sgtatham/putty/).
 
 Once downloaded,
 

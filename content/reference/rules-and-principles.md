@@ -13,10 +13,8 @@ Data Network (CUDN), and as such all users of the SRCF are bound by its
 rules, which explicitly forbids any use of the CUDN for commercial or
 for-profit activities. Therefore it is not possible for commercial
 websites to be hosted on our machines. For more details, please refer to
-the [Authorization for Use of the CUDN
-Rules](http://www.uis.cam.ac.uk/governance/information-services-committee/rules-and-guidelines/other-guidelines/network-use/cudn-rules)
-and the [Rules Made by the Information Services
-Committee](http://www.uis.cam.ac.uk/governance/information-services-committee/rules-and-guidelines/rules).
+the [Authorisation for use of the CUDN](https://help.uis.cam.ac.uk/cudn-rules)
+and the [Rules made by the Information Services Committee](https://help.uis.cam.ac.uk/policies/governance-and-policy-documents/rules-made-by-the-information-services-committee).
 
 Our interpretation of these rules is that including a sponsor's logo on
 a group account website is acceptable, however selling web space or
@@ -52,14 +50,14 @@ consider it inappropriate, and explain why with reference to the SRCF's
 Terms of Service, CUDN rules and guidelines, or JANET AUP. For pages
 with URLs of the form:
 
-`http://spqr2.user.srcf.net/` or `http://www.srcf.ucam.org/~spqr2/`
+`https://spqr2.user.srcf.net/` or `https://www.srcf.ucam.org/~spqr2/`
 
 you should email **spqr2**\@srcf.net
 
 For pages with URLs of the form:
 
-`http://groupname.soc.srcf.net/` or
-`http://www.srcf.ucam.org/groupname/`
+`https://groupname.soc.srcf.net/` or
+`https://www.srcf.ucam.org/groupname/`
 
 you should email \*\*<groupname**-webmaster@srcf.net>
 

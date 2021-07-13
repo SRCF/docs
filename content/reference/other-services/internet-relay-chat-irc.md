@@ -60,7 +60,7 @@ when they are away from their computer, or have turned it off, so that
 people can continue to leave them messages for when they return. There
 are two main ways: a bouncer or a tmux/screen instance.
 
-For tmux/screen, a common choice is [irssi](http://www.irssi.org/),
+For tmux/screen, a common choice is [irssi](https://irssi.org/),
 although there are many others.
 
 If you want to use a bouncer, we recommend ZNC.

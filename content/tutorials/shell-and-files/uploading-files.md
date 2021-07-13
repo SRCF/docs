@@ -32,15 +32,15 @@ website.
 
 We recommend one of the following:
 
-- [Cyberduck](http://cyberduck.io)
-- [WinSCP](http://winscp.net/eng/index.php)
+- [Cyberduck](https://cyberduck.io)
+- [WinSCP](https://winscp.net/eng/index.php)
 
 Some of these might only be available for macOS or Windows or vice
 versa.
 
 {{< alert type="info" >}}
 If you use WinSCP then [this
-documentation](http://winscp.net/eng/docs/introduction) and also the
+documentation](https://winscp.net/eng/docs/introduction) and also the
 win-built documentation (in the 'Help' menu) will be handy.
 {{<  /alert >}}
 

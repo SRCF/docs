@@ -78,7 +78,7 @@ at the end of the next command in Step 5.
 ```
 
 Consult the GNU screen manual
-([<http://www.gnu.org/software/screen/manual/screen.html>](http://www.gnu.org/software/screen/manual/screen.html)).
+([<https://www.gnu.org/software/screen/manual/screen.html>](https://www.gnu.org/software/screen/manual/screen.html)).
 
 ### Start irssi
 
@@ -186,8 +186,7 @@ You should now arrive at a terminal, where you can type ``irssi`` to restart the
 ### Scheduled restarts
 
 You will also need to create the screen session every time the SRCF
-reboots, unless you set up an `@reboot` [cron
-job](http://team.macnn.com/drafts/crontab_defs.html) containing
+reboots, unless you set up an `@reboot` cron job containing
 `screen -Udm irssi` using `crontab -e`.
 
 To disconnect from screen without quitting IRC press Ctrl-A, and then
@@ -199,16 +198,14 @@ in, and your should find your irssi exactly as you left it.
 
 ## References & recommended reading
 
-1) [<http://www.irchelp.org/irchelp/new2irc.html>](http://www.irchelp.org/irchelp/new2irc.html)
-2) [<http://www.irchelp.org/irchelp/changuide.html>](http://www.irchelp.org/irchelp/changuide.html)
-3) [<http://www.srcf.net/faq/irc#persistent>](http://www.srcf.net/faq/irc#persistent)
-4) [<http://www.irssi.org/documentation/manual>](http://www.irssi.org/documentation/manual)
-5) [<http://irssi.org/beginner/#c3>](http://irssi.org/beginner/#c3)
-6) [<http://quadpoint.org/articles/irssi/>](http://quadpoint.org/articles/irssi/)
+1) [<https://www.irchelp.org/irchelp/new2irc.html>](https://www.irchelp.org/irchelp/new2irc.html)
+2) [<https://www.irchelp.org/irchelp/changuide.html>](https://www.irchelp.org/irchelp/changuide.html)
+3) [<https://www.srcf.net/faq/irc#persistent>](https://www.srcf.net/faq/irc#persistent)
+4) [<https://irssi.org/documentation/manual/>](https://irssi.org/documentation/manual/)
+5) [<https://irssi.org/beginner/#c3>](https://irssi.org/beginner/#c3)
+6) [<https://quadpoint.org/articles/irssi/>](https://quadpoint.org/articles/irssi/)
 7) [<http://www.kuro5hin.org/story/2004/3/9/16838/14935>](http://www.kuro5hin.org/story/2004/3/9/16838/14935)
-8) [<http://www.gnu.org/software/screen/manual/screen.html>](http://www.gnu.org/software/screen/manual/screen.html)
-9) [<http://team.macnn.com/drafts/crontab_defs.html>](http://team.macnn.com/drafts/crontab_defs.html)
-10) [<http://crunchbanglinux.org/wiki/irssi>](http://crunchbanglinux.org/wiki/irssi)
+8) [<https://www.gnu.org/software/screen/manual/screen.html>](https://www.gnu.org/software/screen/manual/screen.html)
 
 ## Appendix A: useful irssi commands
 
@@ -235,7 +232,7 @@ commands are not, so /NETWORK is precisely equivalent to /network.{{<  /alert >}
     `/quit`
 
 - Leave channel (after having gone to the channel's window):
-  
+
     ```irc
         /part
         <or>
@@ -307,7 +304,7 @@ windows for discussion), see
 Screen is an incredibly useful tool for keeping any process (not just
 IRC) running after you terminate an ssh section. There are lots of
 useful commands listed in the screen manual, and a few are listed below
-[<http://www.gnu.org/software/screen/manual/screen.html>](http://www.gnu.org/software/screen/manual/screen.html)
+[<https://www.gnu.org/software/screen/manual/screen.html>](https://www.gnu.org/software/screen/manual/screen.html)
 
 - `ctrl+a x` locks screen.
 - `ctrl+a c` creates a new window.
