@@ -24,7 +24,7 @@ RewriteRule   ^learn/recommended-resources(\.html)?$          /tutorials/recomme
 
 RewriteRule   ^read-first/important(\.html)?$                 /reference/rules-and-principles/                        [R=permanent,L]
 RewriteRule   ^common-requests/index(\.html)?$                /reference/common-requests/                             [R=permanent,L]
-RewriteRule   ^/reference/common\.requests/$                  /reference/common-requests/                             [R=permanent,L]
+RewriteRule   ^reference/common\.requests/$                  /reference/common-requests/                             [R=permanent,L]
 RewriteRule   ^personal-accounts/start(\.html)?$              /reference/personal-accounts/user-vs-group/             [R=permanent,L]
 RewriteRule   ^personal-accounts/passwords(\.html)?$          /reference/personal-accounts/passwords/                 [R=permanent,L]
 RewriteRule   ^personal-accounts/after-graduation(\.html)?$   /reference/personal-accounts/after-graduation/          [R=permanent,L]
