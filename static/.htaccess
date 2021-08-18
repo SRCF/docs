@@ -31,7 +31,7 @@ RewriteRule   ^personal-accounts/after-graduation(\.html)?$   /reference/persona
 RewriteRule   ^personal-accounts/soc-srcf-lists(\.html)?$     /reference/personal-accounts/srcf-mailing-lists/        [R=permanent,L]
 RewriteRule   ^group-accounts/administrators(\.html)?$        /reference/group-accounts/administrators/               [R=permanent,L]
 RewriteRule   ^group-accounts/permissions(\.html)?$           /reference/group-accounts/files-and-permissions/        [R=permanent,L]
-RewriteRule   ^shell-and-files/ssh(\.html)?$                  /reference/shell-and-files/ssh/.                        [R=permanent,L]
+RewriteRule   ^shell-and-files/ssh(\.html)?$                  /reference/shell-and-files/ssh/                         [R=permanent,L]
 RewriteRule   ^shell-and-files/files(\.html)?$                /reference/shell-and-files/files/                       [R=permanent,L]
 RewriteRule   ^shell-and-files/schedule(\.html)?$             /reference/shell-and-files/scheduled-tasks/             [R=permanent,L]
 RewriteRule   ^shell-and-files/software(\.html)?$             /reference/shell-and-files/software-and-installation/   [R=permanent,L]
