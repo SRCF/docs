@@ -3,83 +3,60 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^docs.srcf.net$
 
-RewriteRule ^learn/tutorials/deploy-django(\.html)?$ /learn/tutorials/deploy-python [R=permanent,L]
-RewriteRule ^learn/tutorials/deploy-rails(\.html)?$ /learn/tutorials/deploy-ruby [R=permanent,L]
+RewriteRule ^learn/tutorials/deploy-django(\.html)?$        /learn/tutorials/deploy-python                            [R=permanent,L]
+RewriteRule ^learn/tutorials/deploy-rails(\.html)?$         /learn/tutorials/deploy-ruby                              [R=permanent,L]
 
 # --- tutorials ---
 
-RewriteRule ^learn/index.html$ /tutorials/ [R=permanent,L]
-RewriteRule ^learn/tutorials/how-to-ssh.html$ /tutorials/shell-and-files/logging-in/ [R=permanent,L]
-RewriteRule ^learn/tutorials/how-to-file-upload.html$ /tutorials/shell-and-files/uploading-files/ [R=permanent,L]
-RewriteRule ^learn/tutorials/more-terminal.html$ /tutorials/shell-and-files/terminal-guide/ [R=permanent,L]
-RewriteRule ^learn/tutorials/wordpress.html$ /tutorials/others/wordpress-from-scratch/ [R=permanent,L]
-RewriteRule ^learn/tutorials/deploy-node.html$ /tutorials/websites/deploy-a-web-app/ [R=permanent,L]
-RewriteRule ^learn/tutorials/deploy-ruby.html$ /tutorials/websites/deploy-a-web-app/ [R=permanent,L]
-RewriteRule ^learn/tutorials/deploy-python.html$ /tutorials/websites/deploy-a-web-app/ [R=permanent,L]
-RewriteRule ^learn/tutorials/setup-irc.html$ /tutorials/other/connect-to-irc/ [R=permanent,L]
-RewriteRule ^learn/tutorials/virtual-desktop.html$ /tutorials/other/virtual-desktops-over-vnc/ [R=permanent,L]
-RewriteRule ^learn/recommended-resources.html$ /tutorials/recommended-resources/ [R=permanent,L]
+RewriteRule   ^learn/index(\.html)?$                          /tutorials/                                             [R=permanent,L]
+RewriteRule   ^learn/tutorials/how-to-ssh(\.html)?$           /tutorials/shell-and-files/logging-in/                  [R=permanent,L]
+RewriteRule   ^learn/tutorials/how-to-file-upload(\.html)?$   /tutorials/shell-and-files/uploading-files/             [R=permanent,L]
+RewriteRule   ^learn/tutorials/more-terminal(\.html)?$        /tutorials/shell-and-files/terminal-guide/              [R=permanent,L]
+RewriteRule   ^learn/tutorials/wordpress(\.html)?$            /tutorials/others/wordpress-from-scratch/               [R=permanent,L]
+RewriteRule   ^learn/tutorials/deploy-node(\.html)?$          /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
+RewriteRule   ^learn/tutorials/deploy-ruby(\.html)?$          /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
+RewriteRule   ^learn/tutorials/deploy-python(\.html)?$        /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
+RewriteRule   ^learn/tutorials/setup-irc(\.html)?$            /tutorials/other/connect-to-irc/                        [R=permanent,L]
+RewriteRule   ^learn/tutorials/virtual-desktop(\.html)?$      /tutorials/other/virtual-desktops-over-vnc/             [R=permanent,L]
+RewriteRule   ^learn/recommended-resources(\.html)?$          /tutorials/recommended-resources/                       [R=permanent,L]
 
 # --- reference ---
 
-# singles
+RewriteRule   ^read-first/important(\.html)?$                 /reference/rules-and-principles/                        [R=permanent,L]
+RewriteRule   ^common-requests/index(\.html)?$                /reference/common-requests/                             [R=permanent,L]
+RewriteRule   ^/reference/common\.requests/$                  /reference/common-requests/                             [R=permanent,L]
+RewriteRule   ^personal-accounts/start(\.html)?$              /reference/personal-accounts/user-vs-group/             [R=permanent,L]
+RewriteRule   ^personal-accounts/passwords(\.html)?$          /reference/personal-accounts/passwords/                 [R=permanent,L]
+RewriteRule   ^personal-accounts/after-graduation(\.html)?$   /reference/personal-accounts/after-graduation/          [R=permanent,L]
+RewriteRule   ^personal-accounts/soc-srcf-lists(\.html)?$     /reference/personal-accounts/srcf-mailing-lists/        [R=permanent,L]
+RewriteRule   ^group-accounts/administrators(\.html)?$        /reference/group-accounts/administrators/               [R=permanent,L]
+RewriteRule   ^group-accounts/permissions(\.html)?$           /reference/group-accounts/files-and-permissions/        [R=permanent,L]
+RewriteRule   ^shell-and-files/ssh(\.html)?$                  /reference/shell-and-files/ssh/                         [R=permanent,L]
+RewriteRule   ^shell-and-files/files(\.html)?$                /reference/shell-and-files/files/                       [R=permanent,L]
+RewriteRule   ^shell-and-files/schedule(\.html)?$             /reference/shell-and-files/scheduled-tasks/             [R=permanent,L]
+RewriteRule   ^shell-and-files/software(\.html)?$             /reference/shell-and-files/software-and-installation/   [R=permanent,L]
+RewriteRule   ^web-hosting/apache(\.html)?$                   /reference/web-hosting/apache/                          [R=permanent,L]
+RewriteRule   ^web-hosting/domains(\.html)?$                  /reference/web-hosting/custom-domains/                  [R=permanent,L]
+RewriteRule   ^web-hosting/cgi-php(\.html)?$                  /reference/web-hosting/cgi-and-php-scripts/             [R=permanent,L]
+RewriteRule   ^web-hosting/raven(\.html)?$                    /reference/web-hosting/raven-authentication/            [R=permanent,L]
+RewriteRule   ^web-hosting/hosting(\.html)?$                  /reference/web-hosting/regular-hosting                  [R=permanent,L]
+RewriteRule   ^app-hosting/index(\.html)?$                    /reference/web-hosting/web-applications/                [R=permanent,L]
+RewriteRule   ^web-hosting/index(\.html)?$                    /reference/web-hosting/regular-hosting/                 [R=permanent,L]
+RewriteRule   ^email/summary(\.html)?$                        /reference/email/email-accounts/                        [R=permanent,L]
+RewriteRule   ^email/hades(\.html)?$                          /reference/email/hades-email-service/                   [R=permanent,L]
+RewriteRule   ^email/pip(\.html)?$                            /reference/email/legacy-mail-on-pip/                    [R=permanent,L]
+RewriteRule   ^email/group-accounts(\.html)?$                 /reference/group-accounts/email/                        [R=permanent,L]
+RewriteRule   ^services/databases(\.html)?$                   /reference/other-services/sql-databases/                [R=permanent,L]
+RewriteRule   ^services/gopher(\.html)?$                      /reference/other-services/gopher/                       [R=permanent,L]
+RewriteRule   ^services/irc(\.html)?$                         /reference/other-services/internet-relay-chat-irc/      [R=permanent,L]
+RewriteRule   ^services/mailman(\.html)?$                     /reference/other-services/mailing-lists/                [R=permanent,L]
+RewriteRule   ^services/mattermost(\.html)?$                  /reference/other-services/mattermost/                   [R=permanent,L]
+RewriteRule   ^services/usenet(\.html)?$                      /reference/other-services/usenet-nntp/                  [R=permanent,L]
+RewriteRule   ^services/gameserver(\.html)?$                  /reference/other-services/game-servers/                 [R=permanent,L]
 
-RewriteRule ^read-first/important.html$ /reference/rules-and-principles/ [R=permanent,L]
-RewriteRule ^common-requests/index.html$ /reference/common-requests/ [R=permanent,L]
+# --- guides ---
 
-# mistakes
-
-RewriteRule ^/reference/common\.requests/$ /reference/common-requests/ [R=permanent,L]
-
-
-# personal accounts
-
-RewriteRule ^personal-accounts/start.html$ /reference/personal-accounts/user-vs-group/ [R=permanent,L]
-RewriteRule ^personal-accounts/passwords.html$ /reference/personal-accounts/passwords/ [R=permanent,L]
-RewriteRule ^personal-accounts/after-graduation.html$ /reference/personal-accounts/after-graduation/ [R=permanent,L]
-RewriteRule ^personal-accounts/soc-srcf-lists.html$ /reference/personal-accounts/srcf-mailing-lists/ [R=permanent,L]
-
-# group accounts
-
-RewriteRule ^group-accounts/administrators.html$ /reference/group-accounts/administrators/ [R=permanent,L]
-RewriteRule ^group-accounts/permissions.html$ /reference/group-accounts/files-and-permissions/ [R=permanent,L]
-
-# shell and files
-
-RewriteRule ^shell-and-files/ssh.html$ /reference/shell-and-files/ssh/ [R=permanent,L]
-RewriteRule ^shell-and-files/files.html$ /reference/shell-and-files/files/ [R=permanent,L]
-RewriteRule ^shell-and-files/schedule.html$ /reference/shell-and-files/scheduled-tasks/ [R=permanent,L]
-RewriteRule ^shell-and-files/software.html$ /reference/shell-and-files/software-and-installation/ [R=permanent,L]
-
-# web hosting
-RewriteRule ^web-hosting/apache.html$ /reference/web-hosting/apache/ [R=permanent,L]
-RewriteRule ^web-hosting/domains.html$ /reference/web-hosting/custom-domains/ [R=permanent,L]
-RewriteRule ^web-hosting/cgi-php.html$ /reference/web-hosting/cgi-and-php-scripts/ [R=permanent,L]
-RewriteRule ^web-hosting/raven.html$ /reference/web-hosting/raven-authentication/ [R=permanent,L]
-RewriteRule ^web-hosting/hosting.html$ /reference/web-hosting/regular-hosting [R=permanent,L]
-RewriteRule ^app-hosting/index.html$ /reference/web-hosting/web-applications/ [R=permanent,L]
-RewriteRule ^web-hosting/index.html$ /reference/web-hosting/regular-hosting/ [R=permanent,L]
-
-# email
-
-RewriteRule ^email/summary.html$ /reference/email/email-accounts/ [R=permanent,L]
-RewriteRule ^email/hades.html$ /reference/email/hades-email-service/ [R=permanent,L]
-RewriteRule ^email/pip.html$ /reference/email/legacy-mail-on-pip/ [R=permanent,L]
-RewriteRule ^email/group-accounts.html$ /reference/group-accounts/email/ [R=permanent,L]
-
-# other services
-
-RewriteRule ^services/databases.html$ /reference/other-services/sql-databases/ [R=permanent,L]
-RewriteRule ^services/gopher.html$ /reference/other-services/gopher/ [R=permanent,L]
-RewriteRule ^services/irc.html$ /reference/other-services/internet-relay-chat-irc/ [R=permanent,L]
-RewriteRule ^services/mailman.html$ /reference/other-services/mailing-lists/ [R=permanent,L]
-RewriteRule ^services/mattermost.html$ /reference/other-services/mattermost/ [R=permanent,L]
-RewriteRule ^services/usenet.html$ /reference/other-services/usenet-nntp/ [R=permanent,L]
-RewriteRule ^services/gameserver.html$ /reference/other-services/game-servers/ [R=permanent,L]
-
-# upgrade
-
-RewriteRule ^upgrade-guidance/focal.html$ /guides/upgrade-guidance/focal-changes/ [R=permanent,L]
-RewriteRule ^upgrade-guidance/sinkhole.html$ /guides/upgrade-guidance/sinkhole/ [R=permanent,L]
-RewriteRule ^upgrade-guidance/wordpress.html$ /guides/upgrade-guidance/wordpress/ [R=permanent,L]
-RewriteRule ^upgrade-guidance/drupal.html$ /guides/upgrade-guidance/drupal/ [R=permanent,L]
+RewriteRule   ^upgrade-guidance/focal(\.html)?$               /guides/upgrade-guidance/focal-changes/                 [R=permanent,L]
+RewriteRule   ^upgrade-guidance/sinkhole(\.html)?$            /guides/upgrade-guidance/sinkhole/                      [R=permanent,L]
+RewriteRule   ^upgrade-guidance/wordpress(\.html)?$           /guides/upgrade-guidance/wordpress/                     [R=permanent,L]
+RewriteRule   ^upgrade-guidance/drupal(\.html)?$              /guides/upgrade-guidance/drupal/                        [R=permanent,L]
