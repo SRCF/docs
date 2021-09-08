@@ -17,7 +17,7 @@ This guide is written with societies in mind as they tend to have regular annual
 
 ## New webmasters
 
-It is becoming increasingly common that the role of "webmaster" is merged into the job of the secretary or the publicity officer. This often means that modifying the website becomes a daunting task due to unfamiliarity with the relevant technical aspects and/or the SRCF. We've tried to lower the barriers to entry by writing helpful tutorials with beginners in mind. If you are new to this, please do not be discouraged as we are here to help! We offer several ways of [getting help]({{< relref "/#help-and-support" >}}), including live chat.
+It is becoming increasingly common that the role of "webmaster" is merged into the job of the secretary or the publicity officer. This often means that modifying the website becomes a daunting task due to unfamiliarity with the relevant technical aspects and/or the SRCF. We've tried to lower the barriers to entry by writing helpful tutorials with beginners in mind. If you are new to this, please do not be discouraged as we are here to help! We offer several ways of [getting help]({{< relref "/#help-and-support" >}}), including a live chat.
 
 As a quick introduction, the Student-Run Computing Facility is best known for providing free web hosting and email forwarding for students in Cambridge.
 
