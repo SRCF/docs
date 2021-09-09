@@ -3,8 +3,12 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^docs.srcf.net$
 
-RewriteRule ^learn/tutorials/deploy-django(\.html)?$        /learn/tutorials/deploy-python                            [R=permanent,L]
-RewriteRule ^learn/tutorials/deploy-rails(\.html)?$         /learn/tutorials/deploy-ruby                              [R=permanent,L]
+#####################################################################################################################################
+#####################################################################################################################################
+##########       In a previous life, the SRCF used Sphinx to build its documentation site. Since we now use Hugo, we       ##########
+##########       keep the redirects below from resources' former locations to new in order to prevent dead links.          ##########
+#####################################################################################################################################
+#####################################################################################################################################
 
 # --- tutorials ---
 
@@ -13,6 +17,8 @@ RewriteRule   ^learn/tutorials/how-to-ssh(\.html)?$           /tutorials/shell-a
 RewriteRule   ^learn/tutorials/how-to-file-upload(\.html)?$   /tutorials/shell-and-files/uploading-files/             [R=permanent,L]
 RewriteRule   ^learn/tutorials/more-terminal(\.html)?$        /tutorials/shell-and-files/terminal-guide/              [R=permanent,L]
 RewriteRule   ^learn/tutorials/wordpress(\.html)?$            /tutorials/others/wordpress-from-scratch/               [R=permanent,L]
+RewriteRule   ^learn/tutorials/deploy-django(\.html)?$        /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
+RewriteRule   ^learn/tutorials/deploy-rails(\.html)?$         /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
 RewriteRule   ^learn/tutorials/deploy-node(\.html)?$          /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
 RewriteRule   ^learn/tutorials/deploy-ruby(\.html)?$          /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
 RewriteRule   ^learn/tutorials/deploy-python(\.html)?$        /tutorials/websites/deploy-a-web-app/                   [R=permanent,L]
@@ -24,7 +30,7 @@ RewriteRule   ^learn/recommended-resources(\.html)?$          /tutorials/recomme
 
 RewriteRule   ^read-first/important(\.html)?$                 /reference/rules-and-principles/                        [R=permanent,L]
 RewriteRule   ^common-requests/index(\.html)?$                /reference/common-requests/                             [R=permanent,L]
-RewriteRule   ^reference/common\.requests/$                  /reference/common-requests/                             [R=permanent,L]
+RewriteRule   ^reference/common\.requests/$                   /reference/common-requests/                             [R=permanent,L]
 RewriteRule   ^personal-accounts/start(\.html)?$              /reference/personal-accounts/user-vs-group/             [R=permanent,L]
 RewriteRule   ^personal-accounts/passwords(\.html)?$          /reference/personal-accounts/passwords/                 [R=permanent,L]
 RewriteRule   ^personal-accounts/after-graduation(\.html)?$   /reference/personal-accounts/after-graduation/          [R=permanent,L]
