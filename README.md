@@ -14,7 +14,10 @@ Our [Hugo theme](https://github.com/SRCF/srcf-hugo-theme) is a git submodule
 imported into this one, so make sure to pass `--recursive` to `git clone`:
 
 ```
-$ git clone --recursive https://github.com/SRCF/docs.git
+$ git clone --recursive https://github.com/SRCF/docs.git srcf-docs
+Cloning into 'srcf-docs'...
+[...]
+$ cd srcf-docs
 ```
 
 If you have an older checkout of the repository from when we used Sphinx rather
