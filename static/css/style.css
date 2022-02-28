@@ -389,6 +389,18 @@ docs-specific classes
   padding: 0.5rem 0.8rem;
 }
 
+.highlight code.language-bash::before {
+  content: "$ ";
+  position: absolute;
+  left: 0;
+  color: #aaa;
+}
+.highlight code.language-bash {
+  display: inline-block;
+  position: relative;
+  padding-left: 1rem;
+}
+
 .footer a {
   text-decoration: none;
 }
