@@ -106,50 +106,50 @@ directory `.snapshot`, available at any level of the file hierarchy. For
 example:
 
 ```bash
-    spqr2@pip:~$ ls -lut .snapshot
-    total 336
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 18:00 sv_hourly.0
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 17:00 sv_hourly.1
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 16:00 sv_hourly.2
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 15:00 sv_hourly.3
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 14:00 sv_hourly.4
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 13:00 sv_hourly.5
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 12:00 sv_hourly.6
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 11:00 sv_hourly.7
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 10:00 sv_hourly.8
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 09:00 sv_hourly.9
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 08:00 sv_hourly.10
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 07:00 sv_hourly.11
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 06:00 sv_hourly.12
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 05:00 sv_hourly.13
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 04:00 sv_hourly.14
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 03:00 sv_hourly.15
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 02:00 sv_hourly.16
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 01:00 sv_hourly.17
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 01:00 sv_daily.0
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 00:00 sv_hourly.18
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 23:00 sv_hourly.19
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 22:00 sv_hourly.20
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 21:00 sv_hourly.21
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 20:00 sv_hourly.22
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 19:00 sv_hourly.23
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 01:00 sv_daily.1
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  4 01:00 sv_weekly.0
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  4 01:00 sv_daily.2
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  3 01:00 sv_daily.3
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  2 01:00 sv_daily.4
-    drwxr-x--- 2 spqr2 spqr2 8192 Jul  1 01:00 sv_daily.5
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun  2 01:00 sv_daily.6
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 29 01:00 sv_daily.7
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 28 01:00 sv_daily.8
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 27 01:00 sv_weekly.1
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 27 01:00 sv_daily.9
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 26 01:00 sv_daily.10
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 25 01:00 sv_daily.11
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 24 01:00 sv_daily.12
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 23 01:00 sv_daily.13
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 20 01:00 sv_weekly.2
-    drwxr-x--- 2 spqr2 spqr2 8192 Jun 13 01:00 sv_weekly.3
+spqr2@pip:~$ ls -lut .snapshot
+total 336
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 18:00 sv_hourly.0
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 17:00 sv_hourly.1
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 16:00 sv_hourly.2
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 15:00 sv_hourly.3
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 14:00 sv_hourly.4
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 13:00 sv_hourly.5
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 12:00 sv_hourly.6
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 11:00 sv_hourly.7
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 10:00 sv_hourly.8
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 09:00 sv_hourly.9
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 08:00 sv_hourly.10
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 07:00 sv_hourly.11
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 06:00 sv_hourly.12
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 05:00 sv_hourly.13
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 04:00 sv_hourly.14
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 03:00 sv_hourly.15
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 02:00 sv_hourly.16
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 01:00 sv_hourly.17
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 01:00 sv_daily.0
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 00:00 sv_hourly.18
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 23:00 sv_hourly.19
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 22:00 sv_hourly.20
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 21:00 sv_hourly.21
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 20:00 sv_hourly.22
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 19:00 sv_hourly.23
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  5 01:00 sv_daily.1
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  4 01:00 sv_weekly.0
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  4 01:00 sv_daily.2
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  3 01:00 sv_daily.3
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  2 01:00 sv_daily.4
+drwxr-x--- 2 spqr2 spqr2 8192 Jul  1 01:00 sv_daily.5
+drwxr-x--- 2 spqr2 spqr2 8192 Jun  2 01:00 sv_daily.6
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 29 01:00 sv_daily.7
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 28 01:00 sv_daily.8
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 27 01:00 sv_weekly.1
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 27 01:00 sv_daily.9
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 26 01:00 sv_daily.10
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 25 01:00 sv_daily.11
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 24 01:00 sv_daily.12
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 23 01:00 sv_daily.13
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 20 01:00 sv_weekly.2
+drwxr-x--- 2 spqr2 spqr2 8192 Jun 13 01:00 sv_weekly.3
 ```
 
 Note that snapshots are named `sv_[type].[index]`, with index 0

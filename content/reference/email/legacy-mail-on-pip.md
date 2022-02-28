@@ -87,21 +87,21 @@ addresses with a simpler syntax. You need to create a file called
 for your own roles), where each line consists of a role name, a colon,
 and a comma-separated list of target addresses:
 
-```
-    <role>:<email>,<email>...
+```text
+<role>:<email>,<email>...
 ```
 
 For example:
 
-```
-    treasurer:spqr2@cam.ac.uk,treasurer@example.com
+```text
+treasurer:spqr2@cam.ac.uk,treasurer@example.com
 ```
 
 Once you've defined your roles, you need to build the actual `.forward`
 file:
 
-```
-    srcf-autoforward <groupname>
+```bash
+srcf-autoforward <groupname>
 ```
 
 ## Mail filtering
@@ -118,24 +118,24 @@ your email into a custom program.
 Here are a few examples of basic forwarding for a group account. Note
 that the `# Exim filter` line is required.
 
-```exim
-    # Exim filter
+```text
+# Exim filter
 
-    # Forward emails for <groupname>-webmaster@srcf.net to spqr2@cam.ac.uk:
-    if ($local_part_suffix is "-webmaster") then
-       deliver spqr2@cam.ac.uk
-    endif
+# Forward emails for <groupname>-webmaster@srcf.net to spqr2@cam.ac.uk:
+if ($local_part_suffix is "-webmaster") then
+   deliver spqr2@cam.ac.uk
+endif
 
-    # Forward <groupname>-treasurer@srcf.net to spqr and an external address:
-    if ($local_part_suffix is "-treasurer") then
-       deliver spqr2@cam.ac.uk
-       deliver treasurer@example.com
-    endif
+# Forward <groupname>-treasurer@srcf.net to spqr and an external address:
+if ($local_part_suffix is "-treasurer") then
+   deliver spqr2@cam.ac.uk
+   deliver treasurer@example.com
+endif
 
-    # Forward anything not yet processed to a lists.cam mailing list:
-    if not delivered then
-       deliver group-example-committee@lists.cam.ac.uk
-    endif
+# Forward anything not yet processed to a lists.cam mailing list:
+if not delivered then
+   deliver group-example-committee@lists.cam.ac.uk
+endif
 ```
 
 ## Known quirks

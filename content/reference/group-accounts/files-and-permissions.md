@@ -21,9 +21,9 @@ permissions should include group-write. Directories should also be
 group-sticky, so that subdirectories will inherit the correct
 permissions. Example output from `ls -l`:
 
-```bash
-    drwxrwsr-x  2 <crsid> <groupname> 4.0K Jan  1  2020 directory
-    -rw-rw-r--  2 <crsid> <groupname>    0 Jan  1  2020 file
+```text
+drwxrwsr-x  2 <crsid> <groupname> 4.0K Jan  1  2020 directory
+-rw-rw-r--  2 <crsid> <groupname>    0 Jan  1  2020 file
 ```
 
 The important fields to note here are `rw` appearing in both of the

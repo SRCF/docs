@@ -62,11 +62,11 @@ Then add the following to your `.htaccess` file, replacing
 `ab123.user.srcf.net`) :
 
 ```ApacheConf
-    RequestHeader set Host expr=%{HTTP_HOST}
-    RequestHeader set X-Forwarded-For expr=%{REMOTE_ADDR}
-    RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
-    RequestHeader set X-Real-IP expr=%{REMOTE_ADDR}
-    RewriteRule ^(.*)$ unix:<path-to-socket>|http://<url>/$1 [P,NE,L,QSA]
+RequestHeader set Host expr=%{HTTP_HOST}
+RequestHeader set X-Forwarded-For expr=%{REMOTE_ADDR}
+RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
+RequestHeader set X-Real-IP expr=%{REMOTE_ADDR}
+RewriteRule ^(.*)$ unix:<path-to-socket>|http://<url>/$1 [P,NE,L,QSA]
 ```
 
 ### Using TCP ports
@@ -81,7 +81,7 @@ Those things being considered, you can put the following in your
 `.htaccess` file to enable forwarding requests to a port:
 
 ```ApacheConf
-    RewriteRule "^(.*)$" http://localhost:999/$1 [P,NE,L,QSA]
+RewriteRule "^(.*)$" http://localhost:999/$1 [P,NE,L,QSA]
 ```
 
 {{< alert type="info" >}}

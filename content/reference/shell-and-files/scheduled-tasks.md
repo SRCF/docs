@@ -20,12 +20,12 @@ Connect over SSH and run `crontab -e`, which will open an editor and an
 explanation of the file format. You can add entries to run something at
 a fixed interval, or on server reboot:
 
-```bash
-    # Run at 03:21 every day:
-    21 3 * * * /home/<crsid>/daily.sh
+```text
+# Run at 03:21 every day:
+21 3 * * * /home/<crsid>/daily.sh
 
-    # Run at server startup:
-    @reboot /home/<crsid>/startup.sh
+# Run at server startup:
+@reboot /home/<crsid>/startup.sh
 ```
 
 If you want to setup cron jobs for a group or society account then
@@ -45,16 +45,16 @@ A sample personal account unit file, `porridge.service`, might look like
 the following:
 
 ```ini
-    [Unit]
-    Description=spqr2 Porridge app
-    ConditionHost=pip
+[Unit]
+Description=spqr2 Porridge app
+ConditionHost=pip
 
-    [Install]
-    WantedBy=default.target
+[Install]
+WantedBy=default.target
 
-    [Service]
-    ExecStart=/home/spqr2/porridge/run.sh
-    Restart=on-failure
+[Service]
+ExecStart=/home/spqr2/porridge/run.sh
+Restart=on-failure
 ```
 
 `ExecStart` defines the command to be run. For group account services,
@@ -90,15 +90,15 @@ your program at system startup. To schedule execution, drop the
 corresponding timer file `porridge.timer`:
 
 ```ini
-    [Unit]
-    Description=spqr2 Porridge daily update
-    ConditionHost=pip
+[Unit]
+Description=spqr2 Porridge daily update
+ConditionHost=pip
 
-    [Install]
-    WantedBy=timers.target
+[Install]
+WantedBy=timers.target
 
-    [Timer]
-    OnCalendar=daily
+[Timer]
+OnCalendar=daily
 ```
 
 This will execute your program at midnight each day. The `OnCalendar`
@@ -125,7 +125,7 @@ when interacting with a group account's services (here using `foosoc`
 for the account name):
 
 ```bash
-    sudo -Hu foosoc XDG_RUNTIME_DIR=/run/user/$(id -u foosoc) systemctl --user ...
+sudo -Hu foosoc XDG_RUNTIME_DIR=/run/user/$(id -u foosoc) systemctl --user ...
 ```
 
 {{< alert type="info" >}}
@@ -133,11 +133,11 @@ You might like to add a function to your `~/.bashrc` to make this easier
 to remember:
 
 ```bash
-    socsudo () {
-
-    soc=\$1 shift sudo -Hu \$soc XDG\_RUNTIME\_DIR=/run/user/\$(id -u
-        \$soc) '\$@'
-    }
+socsudo () {
+    soc=$1
+    shift
+    sudo -Hu soc XDG_RUNTIME_DIR=/run/user/$(id -u $soc) '$@'
+}
 ```
 
 {{< /alert >}}
@@ -148,7 +148,7 @@ If you receive an error like this setting up your group account's first
 service:
 
 ```text
-    Failed to connect to bus: No such file or directory
+Failed to connect to bus: No such file or directory
 ```
 
 ...then you may need to wait up to 20 minutes for lingering to be

@@ -27,7 +27,7 @@ which are valid across all user-accessible servers.
 To connect to MySQL from an SRCF shell:
 
 ```bash
-    mysql -h mysql -p <database>
+mysql -h mysql -p <database>
 ```
 
 Here, `-h` specifies the hostname, `-p` prompts for your password, and
@@ -37,7 +37,7 @@ CRSid for your personal database, or a group database name.
 Similarly for PostgreSQL:
 
 ```bash
-    psql -h postgres [database]
+psql -h postgres [database]
 ```
 
 Providing a database is optional; by default, you'll be connected to

@@ -54,9 +54,9 @@ and must be owned by you. PHP scripts must be world-readable (but to
 keep database passwords secret, see the next question). For example:
 
 ```bash
-    pip$ ls -l
-    -rwx------  1 saw27  saw27  238 May  5 19:33 env.cgi
-    -rw-r--r--  1 saw27  saw27  265 May 13 19:34 phptest.php
+pip$ ls -l
+-rwx------  1 saw27  saw27  238 May  5 19:33 env.cgi
+-rw-r--r--  1 saw27  saw27  265 May 13 19:34 phptest.php
 ```
 
 CGI scripts and PHP scripts belonging to a group account must have their
@@ -66,9 +66,9 @@ must additionally be world readable (but to keep database passwords
 secret, see the next question). For example:
 
 ```bash
-    pip$ ls -l
-    -rwxrwx--- 1 saw27  casi  238 May  7 23:49 env.cgi
-    -rw-rw-r-- 1 saw27  casi  265 May 14 23:06 phptest.php
+pip$ ls -l
+-rwxrwx--- 1 saw27  casi  238 May  7 23:49 env.cgi
+-rw-rw-r-- 1 saw27  casi  265 May 14 23:06 phptest.php
 ```
 
 We recommend that you ensure that group account files are
@@ -103,8 +103,8 @@ even if you just wanted to download them. The following will turn off
 CGI handling for Python scripts, displaying them as plain text instead:
 
 ```apache
-    AddHandler default-handler .py
-    AddType text/plain .py
+AddHandler default-handler .py
+AddType text/plain .py
 ```
 
 Put those lines in a `.htaccess` file in the same directory as your

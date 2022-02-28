@@ -25,62 +25,62 @@ To protect a directory (whether `public_html` for your entire site, or a
 subdirectory of it), create or edit a `.htaccess` file in that
 directory, and add the following:
 
-```
-    AuthType Ucam-WebAuth
-    Require valid-user
+```apache
+AuthType Ucam-WebAuth
+Require valid-user
 ```
 
 This will permit access to anyone with a 'current' Raven account, i.e.
 active students and staff. To permit access to *any* Raven account
 (including graduated students), add a *Ptags* directive:
 
-```
-    AARequiredPtags none
+```apache
+AARequiredPtags none
 ```
 
 Alternatively, you may want to limit access to Raven-authenticated users
 or visitors within the cam.ac.uk domain:
 
-```
-    Order allow,deny
-    Allow from .cam.ac.uk
-    AuthType Ucam-WebAuth
-    Require valid-user
-    Satisfy any
+```apache
+Order allow,deny
+Allow from .cam.ac.uk
+AuthType Ucam-WebAuth
+Require valid-user
+Satisfy any
 ```
 
 To limit page access to group account admins only, add a `unix-group`
 *Require* directive:
 
-```
-    Require unix-group <groupname>
+```apache
+Require unix-group <groupname>
 ```
 
 You can also list specific users:
 
-```
-    Require user <crsid> <crsid>...
+```apache
+Require user <crsid> <crsid>...
 ```
 
 To create a 'logout' link, add the following to your .htaccess file
 (which will create `/logout` relative to the directory containing the
 `.htaccess` file):
 
-```
-    <FilesMatch "logout">
-        SetHandler AALogout
-    </FilesMatch>
+```apache
+<FilesMatch "logout">
+    SetHandler AALogout
+</FilesMatch>
 ```
 
 ### Example configuration:
 
-```
-    RewriteEngine On
-    RewriteCond %{HTTPS} off
-    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=permanent]
+```apache
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=permanent]
 
-    AuthType Ucam-WebAuth
-    Require user CRSID
+AuthType Ucam-WebAuth
+Require user CRSID
 ```
 
 Replace CRSID with your CRSID.

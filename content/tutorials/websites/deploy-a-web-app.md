@@ -44,20 +44,20 @@ created your `venv`.
 1. Create a directory for your app to live in:
 
     ```bash
-        mkdir -p ~/myapp
-        cd ~/myapp
+    mkdir -p ~/myapp
+    cd ~/myapp
     ```
 
 2. Set up a venv
 
     ```bash
-        python3 -m venv venv
+    python3 -m venv venv
     ```
 
 3. Activate the venv
 
     ```bash
-        . venv/bin/activate
+    . venv/bin/activate
     ```
 
     You should do this step every time before running your app or
@@ -79,8 +79,8 @@ responsibility to keep your node installations and `nvm` itself updated.
 1. Create a directory for your app to live in:
 
     ```bash
-        mkdir -p ~/myapp
-        cd ~/myapp
+    mkdir -p ~/myapp
+    cd ~/myapp
     ```
 
 2. Install `nvm` in your home directory. You'll need to find the
@@ -89,7 +89,7 @@ responsibility to keep your node installations and `nvm` itself updated.
     the time of writing, it looks like this:
 
     ```bash
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
     ```
 
     {{< alert type="danger" >}}
@@ -101,8 +101,8 @@ Piping a script straight into your shell is potentially dangerous as you are all
 3. Install whatever version of `node.js` you want.
 
     ```bash
-        nvm install 12
-        nvm alias default 12
+    nvm install 12
+    nvm alias default 12
     ```
 
 4. Done! The version of `node.js` you specified is now installed and
@@ -116,38 +116,38 @@ easily install and manage dependencies and versions.
 1. Create a directory for your app to live in:
 
     ```bash
-        mkdir -p ~/myapp
-        cd ~/myapp
+    mkdir -p ~/myapp
+    cd ~/myapp
     ```
 
 2. Install `rbenv` in your home directory:
 
     ```bash
-        git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-        cd ~/.rbenv && src/configure && make -C src
-        echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-        ~/.rbenv/bin/rbenv init
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    cd ~/.rbenv && src/configure && make -C src
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    ~/.rbenv/bin/rbenv init
     ```
 
 3. Follow the printed instructions on appending to your `~/.bashrc`
     file:
 
     ```bash
-        echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
     ```
 
 4. Install `ruby-build` as a plugin:
 
     ```bash
-        mkdir -p "$(rbenv root)"/plugins
-        git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+    mkdir -p "$(rbenv root)"/plugins
+    git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
     ```
 
 5. Install whichever version of Ruby you want.
 
     ```bash
-        rbenv install 2.6.6
-        rbenv local 2.6.6
+    rbenv install 2.6.6
+    rbenv local 2.6.6
     ```
 
 6. Done! You now have a working Ruby installation that's hooked into
@@ -188,9 +188,9 @@ If you're logged in via ssh, you can find the code at
 To create a skeleton Django project:
 
 ```bash
-    django-admin startproject example
-    mv example python
-    cd python
+django-admin startproject example
+mv example python
+cd python
 ```
 
 Now take a look at `django/example/settings.py` for how to configure
@@ -203,8 +203,8 @@ Ruby on Rails is arguably one of the most popular and influential web
 frameworks. To create a skeleton Rails project:
 
 ```bash
-    gem install rails
-    rails new myapp
+gem install rails
+rails new myapp
 ```
 
 You should now have a new Ruby on Rails project setup in the `myapp`
@@ -216,11 +216,11 @@ Sinatra is a lightweight web microframework that's well suited to
 simple projects. To install it run `gem install sinatra` and then put
 the following in `myapp.rb`:
 
-```bash
-    require 'sinatra'
-    get '/' do
-        'Hello world!'
-    end
+```ruby
+require 'sinatra'
+get '/' do
+    'Hello world!'
+end
 ```
 
 You can then run this by typing `ruby myapp.rb` and going to
@@ -255,11 +255,11 @@ The scripts provided here are just examples and won't necessarily be perfect for
 #### Python
 
 ```bash
-    #!/bin/bash -e
+#!/bin/bash -e
 
-    . ~/myapp/venv/bin/activate
-    exec gunicorn -w 2 -b unix:/home/crsid/myapp/web.sock \
-        --log-file - main:app
+. ~/myapp/venv/bin/activate
+exec gunicorn -w 2 -b unix:/home/crsid/myapp/web.sock \
+    --log-file - main:app
 ```
 
 Replace `main:app` with the module containing the app, and name of your
@@ -268,15 +268,15 @@ app.
 #### Node
 
 ```bash
-    #!/bin/bash -e
+#!/bin/bash -e
 
-    USER="$(whoami)"
-    [ -e "/home/crsid/myapp/web.sock" ] && rm "/home/crsid/myapp/web.sock"
-    umask 0
+USER="$(whoami)"
+[ -e "/home/crsid/myapp/web.sock" ] && rm "/home/crsid/myapp/web.sock"
+umask 0
 
-    . ~/.nvm/nvm.sh
-    NODE_ENV=production PORT="/home/crsid/myapp/web.sock" \
-        exec ~/myapp/src/bin/www
+. ~/.nvm/nvm.sh
+NODE_ENV=production PORT="/home/crsid/myapp/web.sock" \
+    exec ~/myapp/src/bin/www
 ```
 
 Replace `~/myapp/src/bin/www` with the path to your app.
@@ -284,12 +284,12 @@ Replace `~/myapp/src/bin/www` with the path to your app.
 #### Ruby
 
 ```bash
-    #!/bin/bash -e
+#!/bin/bash -e
 
-    eval "$(rbenv init -)"
-    cd ~/myapp/src
-    RAILS_ENV=production \
-          exec bin/rails server -b /home/crsid/myapp/web.sock
+eval "$(rbenv init -)"
+cd ~/myapp/src
+RAILS_ENV=production \
+      exec bin/rails server -b /home/crsid/myapp/web.sock
 ```
 
 Replace `~/myapp/src` with the path to your app.
@@ -297,7 +297,7 @@ Replace `~/myapp/src` with the path to your app.
 Now, for all frameworks, make the `run.sh` script executable:
 
 ```bash
-    chmod +x ~/myapp/run
+chmod +x ~/myapp/run
 ```
 
 You should now be able to execute the script and access your website (or
@@ -317,8 +317,8 @@ crashes. We highly recommend using `systemd` to supervise your app.
     move on to the next step. Otherwise, an example would be:
 
     ```bash
-        #!/bin/sh -e
-        exec ~/myapp/run-server
+    #!/bin/sh -e
+    exec ~/myapp/run-server
     ```
 
     Your server should run in the *foreground* (it should not
@@ -337,7 +337,7 @@ crashes. We highly recommend using `systemd` to supervise your app.
     if it doesn't exist:
 
     ```bash
-        mkdir -p ~/.config/systemd/user
+    mkdir -p ~/.config/systemd/user
     ```
 
     For a group account, substitute `~` for `/societies/foosoc`, where
@@ -348,20 +348,21 @@ crashes. We highly recommend using `systemd` to supervise your app.
     `/societies/foosoc/.config/systemd/user/myapp.service` for groups):
 
     ```ini
-        [Unit]
-        Description={YOUR USER, SOCIETY OR GROUP NAME} Webapp
-        ConditionHost=sinkhole
+    [Unit]
+    Description={YOUR USER, SOCIETY OR GROUP NAME} Webapp
+    ConditionHost=sinkhole
 
-        [Install]
-        WantedBy=default.target
+    [Install]
+    WantedBy=default.target
 
-        [Service]
-        ExecStart=/home/{CRSid}/myapp/run
-        Restart=always
+    [Service]
+    ExecStart=/home/{CRSid}/myapp/run
+    Restart=always
     ```
 
 4. Tell systemd to start your app on startup, by running
     `systemctl --user enable myapp`.
+
 5. You'll need to start your app manually once (on future reboots, it
     will be started for you). To do that, run
     `systemctl --user start myapp`.
@@ -401,14 +402,14 @@ systemd that fact by adding the following line under `[Service]` in your
 systemd unit file:
 
 ```ini
-    ExecReload=/bin/kill -HUP $MAINPID
+ExecReload=/bin/kill -HUP $MAINPID
 ```
 
 and then running `systemctl --user daemon-reload`. After that, you can
 use `systemctl` to reload your app:
 
 ```bash
-    systemctl --user reload myapp
+systemctl --user reload myapp
 ```
 
 ### Notes for Ruby

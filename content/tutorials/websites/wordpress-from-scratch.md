@@ -86,14 +86,14 @@ files on the server. To make this work you can add the following few
 lines to your `wp-config`.php, near the bottom but above the line that
 says 'stop editing':
 
-```ApacheConf
-    # Force WordPress to use direct filesystem access so that upgrades work properly.
-    # https://core.trac.wordpress.org/ticket/10205
-    # https://codex.wordpress.org/Editing_wp-config.php
+```php
+# Force WordPress to use direct filesystem access so that upgrades work properly.
+# https://core.trac.wordpress.org/ticket/10205
+# https://codex.wordpress.org/Editing_wp-config.php
 
-    define('FS_METHOD', 'direct');
-    define('FS_CHMOD_DIR', (02775 & ~ umask()));
-    define('FS_CHMOD_FILE', (0664 & ~ umask()));
+define('FS_METHOD', 'direct');
+define('FS_CHMOD_DIR', (02775 & ~ umask()));
+define('FS_CHMOD_FILE', (0664 & ~ umask()));
 ```
 
 If configured correctly, the updates page should include text similar to

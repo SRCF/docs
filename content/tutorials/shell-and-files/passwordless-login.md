@@ -25,13 +25,13 @@ When logging in to a server, the SSH client on your computer requests the public
 2. Paste in the following command with an email of your choice
 
     ```bash
-        $ ssh-keygen -t ed25519 -C "your_email@example.com"
+    $ ssh-keygen -t ed25519 -C "your_email@example.com"
     ```
 
     This creates an SSH key pair, using your email as a label. You should wee the following output
 
-    ```bash
-        > Generating public/private ed25519 key pair.
+    ```text
+    Generating public/private ed25519 key pair.
     ```
 
 3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location, which is in the `.ssh` directory in your home directory.
@@ -52,7 +52,7 @@ You now need to add your public key to one of our servers. Since all of our user
 A handy utility exists for this:
 
 ```bash
-    ssh-copy-id -i ~/.ssh/mykey spqr2@pip.srcf.net
+ssh-copy-id -i ~/.ssh/mykey spqr2@pip.srcf.net
 ```
 
 More useful information on that [here](https://www.ssh.com/academy/ssh/copy-id).
@@ -63,9 +63,9 @@ If that doesn't work, you can always upload your public key to the server as you
 Make sure you upload your **public** key, not your **private** key. To check, you can always open the file in question and if it contains something like the following then you know it's the private key.
 
 ```text
-    -----BEGIN PRIVATE KEY-----
-    BASE64 ENCODED DATA
-    -----END PRIVATE KEY-----
+-----BEGIN PRIVATE KEY-----
+BASE64 ENCODED DATA
+-----END PRIVATE KEY-----
 ```
 
 {{<  /alert >}}

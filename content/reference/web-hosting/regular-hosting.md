@@ -41,26 +41,26 @@ output into your account's `public_html` directory.
 To create the skeleton project:
 
 ```bash
-    jekyll new jekyll
-    cd jekyll
+jekyll new jekyll
+cd jekyll
 ```
 
 For a root site (i.e. top of public\_html):
 
 ```bash
-    ln -s /public/societies/sample/public_html _site
+ln -s /public/societies/sample/public_html _site
 ```
 
 ..or for a site in a subdirectory, edit `_config.yaml` to set
 `baseurl` to e.g. `/jekyll`, then:
 
 ```bash
-    mkdir /public/societies/sample/public_html/jekyll
-    ln -s /public/societies/sample/public_html/jekyll _site
+mkdir /public/societies/sample/public_html/jekyll
+ln -s /public/societies/sample/public_html/jekyll _site
 ```
 
 To (re)build the site:
 
 ```bash
-    jekyll build
+jekyll build
 ```

@@ -34,15 +34,15 @@ If you are not familiar with HTML and CSS and how websites work, then don't fret
 {{< /alert >}}
 
 ```html
-    <!DOCTYPE html>
-    <html lang="en">
-        <meta charset="UTF-8">
-        <title>I love the SRCF</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <body>
-            <h1>Hello there!</h1>
-        </body>
-    </html> 
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>I love the SRCF</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <body>
+        <h1>Hello there!</h1>
+    </body>
+</html>
 ```
 
 Now press "ctrl-o" then enter to confirm the file name, followed by "ctrl-x" to exit the editor. You should now be able to see a "Hello there!" on your SRCF domain.

@@ -28,11 +28,11 @@ SSH to `shell.srcf.net` using your SRCF username and password (SSH keys
 for your account are also valid), then run the `vncpasswd` command:
 
 ```bash
-    spqr2@pip:~$ vncpasswd
-    Using password file /home/spqr2/.vnc/passwd
-    Password:
-    Verify:
-    Would you like to enter a view-only password (y/n)? n
+spqr2@pip:~$ vncpasswd
+Using password file /home/spqr2/.vnc/passwd
+Password:
+Verify:
+Would you like to enter a view-only password (y/n)? n
 ```
 
 You can say no to a view-only password, for this use case it's unlikely
@@ -43,11 +43,11 @@ to be useful.
 To start a new VNC server process in the background:
 
 ```bash
-    spqr2@pip:~$ vncserver -geometry 1920x1080
-    New 'X' desktop is pip:12
+spqr2@pip:~$ vncserver -geometry 1920x1080
+New 'X' desktop is pip:12
 
-    Starting applications specified in /home/spqr2/.vnc/xstartup
-    Log file is /home/spqr2/.vnc/pip:12.log
+Starting applications specified in /home/spqr2/.vnc/xstartup
+Log file is /home/spqr2/.vnc/pip:12.log
 ```
 
 Geometry is of the form `<width>x<height>` and may be customised as
@@ -84,7 +84,7 @@ Back on your local machine, SSH to `shell.srcf.net` again, but request
 forwarding for your chosen port:
 
 ```bash
-    you@home:~$ ssh -N -L 5901:localhost:5912 shell.srcf.net
+you@home:~$ ssh -N -L 5901:localhost:5912 shell.srcf.net
 ```
 
 Replace `5912` with the **port number** for your VNC server (the display
@@ -130,7 +130,7 @@ preserved.
 Back over SSH to `shell.srcf.net`:
 
 ```bash
-    spqr2@pip:~$ vncserver -kill :12
+spqr2@pip:~$ vncserver -kill :12
 ```
 
 Replace `:12` with the **port number** for your VNC server.

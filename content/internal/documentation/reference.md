@@ -16,10 +16,10 @@ Pre-defined bits of HTML that the user can easily inject into the Markdown.
 
 ### Alert
 
-```Go
-    {{</* alert type="info" */>}}
-        some content in here
-    {{</*  /alert */>}}
+```Markdown
+{{</* alert type="info" */>}}
+    some content in here
+{{</*  /alert */>}}
 ```
 
 `type` can be any valid Bootstrap [alert type](https://getbootstrap.com/docs/5.0/components/alerts/). The above produces
@@ -36,12 +36,12 @@ Shortcode borrowed from [here](https://willschenk.com/articles/2020/styling_tabl
 
 Example:
 
-```Go
-    {{</* table “table table-striped table-bordered" */>}}
-    |———-|———-|———-|
-    | Item 1   | Item 2   | Item 3   |
-    | Item 1a  | Item 2a  | Item 3a  |
-    {{</* /table */ >}}
+```Markdown
+{{</* table “table table-striped table-bordered" */>}}
+|———-|———-|———-|
+| Item 1   | Item 2   | Item 3   |
+| Item 1a  | Item 2a  | Item 3a  |
+{{</* /table */ >}}
 ```
 
 ## Front matter params
@@ -64,7 +64,7 @@ A quick glance at the structure of the `yaml` file should reveal most of the com
 Use a regular Markdown link but with the `relref` shortcode as such:
 
 ```Markdown
-    [mail forwarding]({{</* relref "#mail-forwarding" */>}})
+[mail forwarding]({{</* relref "#mail-forwarding" */>}})
 ```
 
 ### Syntax highlighting

@@ -39,17 +39,17 @@ from source: <https://github.com/irssi/irssi>.
 ### Install irssi
 
 ```bash
-    $ sudo pacman -S irssi (Arch)
-    $ sudo yum install irssi (Redhat derivatives)
-    $ sudo apt-get install irssi (Debian derivatives)
+$ sudo pacman -S irssi (Arch)
+$ sudo yum install irssi (Redhat derivatives)
+$ sudo apt-get install irssi (Debian derivatives)
 ```
 
 ### Install screen
 
 ```bash
-    $ sudo pacman -S screen (Arch)
-    $ sudo yum install screen (Redhat derivatives)
-    $ sudo apt-get install screen (Debian derivatives)
+$ sudo pacman -S screen (Arch)
+$ sudo yum install screen (Redhat derivatives)
+$ sudo apt-get install screen (Debian derivatives)
 ```
 
 ## Configuring
@@ -57,7 +57,7 @@ from source: <https://github.com/irssi/irssi>.
 ### Create logging directory
 
 ```bash
-    mkdir ~/irclogs
+$ mkdir ~/irclogs
 ```
 
 Getting this ready for later...
@@ -65,7 +65,7 @@ Getting this ready for later...
 ### Check if screen is installed
 
 ```bash
-    screen -list
+$ screen -list
 ```
 
 If there's more than one screen session, you'll have to enter its name
@@ -74,7 +74,7 @@ at the end of the next command in Step 5.
 ### Start a screen session
 
 ```bash
-    screen -RD
+$ screen -RD
 ```
 
 Consult the GNU screen manual
@@ -83,7 +83,7 @@ Consult the GNU screen manual
 ### Start irssi
 
 ```bash
-    $ irssi
+$ irssi
 ```
 
 Having done this you should be presented with an empty `irssi` window.
@@ -92,18 +92,18 @@ Having done this you should be presented with an empty `irssi` window.
 
 Enter these commands in your `irssi` prompt.
 
-```irc
-    /SET nick <nick>
-    /SET alternate_nick <alternate nick>
-    /SET user_name <username>   # not necessary if ident enabled
-    /SET real_name <real name>
-    /SET use_msgs_window OFF
+```text
+/SET nick <nick>
+/SET alternate_nick <alternate nick>
+/SET user_name <username>   # not necessary if ident enabled
+/SET real_name <real name>
+/SET use_msgs_window OFF
 
-    # Highlight lines containing your nick
-    /HILIGHT <nick>
+# Highlight lines containing your nick
+/HILIGHT <nick>
 
-    # Set timestamp to something useful
-    /SET timestamp_format %d.%H:%M:%S
+# Set timestamp to something useful
+/SET timestamp_format %d.%H:%M:%S
 ```
 
 ### Set up logging
@@ -114,16 +114,16 @@ between the last time you checked IRC and the time the system
 restarted). It's also useful if you're receiving e.g. tech support, so
 you have a record of any instructions you were given!
 
-```irc
-    /SET autolog ON
-    /SET autolog_level ALL -CRAP -CLIENTCRAP -CTCPS
-    /SET autolog_path ~/irclogs/%Y/$tag/$0.%m-%d.log
+```text
+/SET autolog ON
+/SET autolog_level ALL -CRAP -CLIENTCRAP -CTCPS
+/SET autolog_path ~/irclogs/%Y/$tag/$0.%m-%d.log
 ```
 
 ### Set quit message
 
-```irc
-    /SET quit_message <message>
+```text
+/SET quit_message <message>
 ```
 
 Default is 'leaving,' mine is 'Scotty, beam me up!' (which is
@@ -135,34 +135,38 @@ TV series but said the above in Star Trek IV).
 
 For example, 'srcf'.
 
-```irc
-    /NETWORK ADD [-nick <nick>] <Network name (your choice)>
+```text
+/NETWORK ADD [-nick <nick>] <Network name (your choice)>
 ```
 
 ### Add one or more servers
 
 The FQDN in our case is `irc.srcf.net`.
 
-```irc
-    /SERVER ADD [-auto] -network <network name> <server FQDN>
+```text
+/SERVER ADD [-auto] -network <network name> <server FQDN>
 ```
 
 ### Add one or more channels
 
 Commands as follows:
 
-```irc
-    /CHANNEL ADD -auto #<channel name> <network name>
+```text
+/CHANNEL ADD -auto #<channel name> <network name>
 ```
 
 Move around windows until you get them in an order that you like (first
 go to the window that you wish to move):
 
-````irc
-    /wm <position to move to>
-    <or>
-    /window move <position to move to>
-````
+```text
+/wm <position to move to>
+```
+
+(or)
+
+```text
+/window move <position to move to>
+```
 
 Make sure to check out
 [an overview of the channels]({{< relref "/reference/other-services/internet-relay-chat-irc" >}}) on our
@@ -170,15 +174,15 @@ server to decide which ones to add.
 
 ### Save settings and layout
 
-```irc
-    /SAVE
-    /LAYOUT SAVE
+```text
+/SAVE
+/LAYOUT SAVE
 ```
 
 ### Restart irssi and confirm everything is set correctly
 
-```irc
-   /QUIT
+```text
+/QUIT
 ```
 
 You should now arrive at a terminal, where you can type ``irssi`` to restart the client and check that everything is working.
@@ -218,25 +222,35 @@ commands are not, so /NETWORK is precisely equivalent to /network.{{<  /alert >}
 - Remove servers (especially useful for getting rid of irssi's
     default servers):
 
-    `/NETWORK REMOVE <server>`
+    ```text
+    /NETWORK REMOVE <server>
+    ```
 
 - See all settings (to verify that there's nothing unexpected in
     there): switch to status window and type `/set`.
 - Indent (useful with very long lines, so messages can be
     distinguished; experiment with exact value):
 
-    `/SET indent 4`
+    ```text
+    /SET indent 4
+    ```
 
 - Quit irssi:
 
-    `/quit`
+    ```text
+    /quit
+    ```
 
 - Leave channel (after having gone to the channel's window):
 
-    ```irc
-        /part
-        <or>
-        /part <message>
+    ```text
+    /part
+    ```
+
+    (or)
+
+    ```text
+    /part <message>
     ```
 
 An alternative, but less elegant way, is to just close the window. This
@@ -254,21 +268,21 @@ window): `/wc` or, in full, `/WINDOW CLOSE`
 
 - Reload configuration:
 
-    ```irc
-        /RELOAD
-        /RELOAD <filename>   # for loading a different config file
+    ```text
+    /RELOAD
+    /RELOAD <filename>   # for loading a different config file
     ```
 
 - List users in the current channel:
 
-    ```irc
+    ```text
     /names
     /n
     ```
 
 - Display user information for a given \<nick\>:
 
-    ```irc
+    ```text
     /whois
     /wi
     ```
@@ -280,9 +294,9 @@ A number of useful things can be done here.
 If you are in relatively few channels that have problems with people
 joining/leaving frequently, then just ignore for that channel:
 
-```irc
-    /ignore #<channel> MODES JOINS PARTS QUITS
-    /ignore -except -pattern <yourNick> #<channel>
+```text
+/ignore #<channel> MODES JOINS PARTS QUITS
+/ignore -except -pattern <yourNick> #<channel>
 ```
 
 Replace \# with the wildcard operator (\*) to do this for all channels.
@@ -290,8 +304,8 @@ Replace \# with the wildcard operator (\*) to do this for all channels.
 An alternative way for doing this for all channels is to add the
 following to \~/.irssi/conf:
 
-```conf
-    ignores = ( { level = "JOINS PARTS QUITS"; } );
+```text
+ignores = ( { level = "JOINS PARTS QUITS"; } );
 ```
 
 For a more in depth discussion of levels, and how to put all

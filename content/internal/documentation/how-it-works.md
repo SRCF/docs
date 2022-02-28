@@ -29,31 +29,31 @@ An important step to the second iteration of our documentation was addressing di
 It helps to be familiar with Hugo's directory structure, but the two main folders of interest are `content` and `layouts`, seen below.  
 
 ```bash
-    docs
-    ┣ archetypes
-    ┣ content
-    ┃ ┣ guides
-    ┃ ┣ internal
-    ┃ ┃ ┣ documentation
-    ┃ ┃ ┃ ┗ updating-a-page.md
-    ┃ ┃ ┗ _index.md
-    ┃ ┣ reference
-    ┃ ┣ tutorials
-    ┃ ┗ _index.md
-    ┣ data
-    ┃ ┗ sidebar.yaml
-    ┣ layouts
-    ┃ ┣ _default
-    ┃ ┣ partials
-    ┃ ┣ shortcodes
-    ┃ ┗ index.html
-    ┣ resources
-    ┣ static
-    ┃ ┣ css
-    ┃ ┃ ┗ style.css
-    ┃ ┣ vendor
-    ┃ ┗ .htaccess
-    ┗ config.toml
+docs
+┣ archetypes
+┣ content
+┃ ┣ guides
+┃ ┣ internal
+┃ ┃ ┣ documentation
+┃ ┃ ┃ ┗ updating-a-page.md
+┃ ┃ ┗ _index.md
+┃ ┣ reference
+┃ ┣ tutorials
+┃ ┗ _index.md
+┣ data
+┃ ┗ sidebar.yaml
+┣ layouts
+┃ ┣ _default
+┃ ┣ partials
+┃ ┣ shortcodes
+┃ ┗ index.html
+┣ resources
+┣ static
+┃ ┣ css
+┃ ┃ ┗ style.css
+┃ ┣ vendor
+┃ ┗ .htaccess
+┗ config.toml
 ```
 
 An overview of the purpose of all folders and files:
@@ -63,7 +63,7 @@ An overview of the purpose of all folders and files:
     An archetype is essentially a template for a new section entry, like `reference`, `tutorials`, and other root-level dirs below `content`. Hugo looks in this folder when using the `hugo new` command like so:
 
     ```bash
-        hugo new internal/documentation/another-page.md
+    hugo new internal/documentation/another-page.md
     ```
 
     and creates an empty page with the pre-filled boilerplate in the archetype.
@@ -93,18 +93,18 @@ Content is grouped in the sidebar according to its `group` property. Sidebar log
 The sidebar sources its text from a `yaml` data file in the `data` folder. At a glance, this file has a top-level list of category objects.
 
 ```yaml
-    # category object
-    - category: Internal 
-      # list of groups
-      groups:
-        # a group called "documentation"
-        - title: Documentation
-          # pages under this group
-          pages:
-            - title: How it works
-            - title: Building
-            - title: Managing content
-            - title: Reference
+# category object
+- category: Internal
+  # list of groups
+  groups:
+    # a group called "documentation"
+    - title: Documentation
+      # pages under this group
+      pages:
+        - title: How it works
+        - title: Building
+        - title: Managing content
+        - title: Reference
 ```
 
 Each category object has a name, which must correspond to the Hugo section name (when urlized), eg. "tutorials", "reference", essentially the name of the folder.

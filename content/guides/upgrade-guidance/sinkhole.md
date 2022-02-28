@@ -62,17 +62,17 @@ remaining methods.
 Sample MySQL library code:
 
 ```php
-    mysql_connect("localhost", "<user>", "<password>");
-    $result = mysql_query("...");
-    while ($row = mysql_fetch_assoc($result)) { ... }
+mysql_connect("localhost", "<user>", "<password>");
+$result = mysql_query("...");
+while ($row = mysql_fetch_assoc($result)) { ... }
 ```
 
 Equivalent MySQLi code:
 
 ```php
-    $conn = mysqli_connect("localhost", "<user>", "<password>");
-    $result = mysqli_query($conn, "...");
-    while ($row = mysqli_fetch_assoc($result)) { ... }
+$conn = mysqli_connect("localhost", "<user>", "<password>");
+$result = mysqli_query($conn, "...");
+while ($row = mysqli_fetch_assoc($result)) { ... }
 ```
 
 ### ucam-webauth-php
@@ -81,7 +81,7 @@ Versions prior to 0.53 include a function call with an argument ignored
 in PHP 5.x but removed in 7.x. Error logs will contain something like:
 
 ```php
-    PHP Warning:  gmmktime() expects at most 6 parameters, 7 given in .../ucam_webauth.php on line 388
+PHP Warning:  gmmktime() expects at most 6 parameters, 7 given in .../ucam_webauth.php on line 388
 ```
 
 The latest version can be obtained from
@@ -96,13 +96,13 @@ htaccess.
 Example php\_override.ini setting:
 
 ```ini
-    key = value
+key = value
 ```
 
 Equivalent htaccess setting:
 
 ```ini
-    php_value key value
+php_value key value
 ```
 
 ## PostgreSQL

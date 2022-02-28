@@ -20,18 +20,18 @@ Even as a society webmaster, or someone looking to setup a website for a group, 
 In your home directory, a shortcut (symbolic link) to your group's file space is automatically created, and in it is the `public_html` you will want. This is also a shortcut to your group's *public* file space, which contains the actual `public_html` directory. Here is a useful breakdown that also includes the absolute file paths:
 
 ```bash
-    spqr2@pip:~$ ls -l
-    mysociety1 -> /societies/mysociety1
-    mysociety2 -> /societies/mysociety2
-    public_html -> /public/home/spqr2/public_html
+spqr2@pip:~$ ls -l
+mysociety1 -> /societies/mysociety1
+mysociety2 -> /societies/mysociety2
+public_html -> /public/home/spqr2/public_html
 ```
 
 ```bash
-    spqr2@pip:~$ cd mysociety1
-    spqr2@pip:~$ pwd -P
-    /societies/mysociety1
-    spqr2@pip:~$ ls -l
-    public_html -> /public/societies/mysociety1
+spqr2@pip:~$ cd mysociety1
+spqr2@pip:~$ pwd -P
+/societies/mysociety1
+spqr2@pip:~$ ls -l
+public_html -> /public/societies/mysociety1
 ```
 
 ## Your options

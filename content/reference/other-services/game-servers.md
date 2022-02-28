@@ -18,7 +18,7 @@ Please limit your server to around 1GB of RAM and set it to `nice` level
 running a Minecraft server, then the following should work:
 
 ```bash
-    nice -n 19 java -Xms1024m -Xmx1024m -jar minecraft_server.jar
+nice -n 19 java -Xms1024m -Xmx1024m -jar minecraft_server.jar
 ```
 
 It is possible (and probable, in the case of Minecraft) that the default

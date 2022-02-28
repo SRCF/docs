@@ -33,14 +33,14 @@ configuration (wp-config.php), near the bottom but above the line that
 says \"stop editing\":
 
 ```php
-    /**
-    * Force wordpress to use direct filesystem access so that upgrades work
-    * properly. See: https://core.trac.wordpress.org/ticket/10205
-    * https://codex.wordpress.org/Editing_wp-config.php
-    */
-    define('FS_METHOD', 'direct');
-    define('FS_CHMOD_DIR', (02775 & ~ umask()));
-    define('FS_CHMOD_FILE', (0664 & ~ umask()));
+/**
+* Force wordpress to use direct filesystem access so that upgrades work
+* properly. See: https://core.trac.wordpress.org/ticket/10205
+* https://codex.wordpress.org/Editing_wp-config.php
+*/
+define('FS_METHOD', 'direct');
+define('FS_CHMOD_DIR', (02775 & ~ umask()));
+define('FS_CHMOD_FILE', (0664 & ~ umask()));
 ```
 
 **You must ensure all WordPress files have the correct group
