@@ -25,7 +25,7 @@ When logging in to a server, the SSH client on your computer requests the public
 2. Paste in the following command with an email of your choice
 
     ```bash
-    $ ssh-keygen -t ed25519 -C "your_email@example.com"
+    ssh-keygen -t ed25519 -C "your_email@example.com"
     ```
 
     This creates an SSH key pair, using your email as a label. You should wee the following output

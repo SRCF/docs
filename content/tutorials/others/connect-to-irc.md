@@ -39,17 +39,17 @@ from source: <https://github.com/irssi/irssi>.
 ### Install irssi
 
 ```bash
-$ sudo pacman -S irssi (Arch)
-$ sudo yum install irssi (Redhat derivatives)
-$ sudo apt-get install irssi (Debian derivatives)
+sudo pacman -S irssi # Arch
+sudo yum install irssi # Red Hat derivatives
+sudo apt-get install irssi # Debian derivatives
 ```
 
 ### Install screen
 
 ```bash
-$ sudo pacman -S screen (Arch)
-$ sudo yum install screen (Redhat derivatives)
-$ sudo apt-get install screen (Debian derivatives)
+sudo pacman -S screen # Arch
+sudo yum install screen # Red Hat derivatives
+sudo apt-get install screen # Debian derivatives
 ```
 
 ## Configuring
@@ -57,7 +57,7 @@ $ sudo apt-get install screen (Debian derivatives)
 ### Create logging directory
 
 ```bash
-$ mkdir ~/irclogs
+mkdir ~/irclogs
 ```
 
 Getting this ready for later...
@@ -65,7 +65,7 @@ Getting this ready for later...
 ### Check if screen is installed
 
 ```bash
-$ screen -list
+screen -list
 ```
 
 If there's more than one screen session, you'll have to enter its name
@@ -74,7 +74,7 @@ at the end of the next command in Step 5.
 ### Start a screen session
 
 ```bash
-$ screen -RD
+screen -RD
 ```
 
 Consult the GNU screen manual
@@ -83,7 +83,7 @@ Consult the GNU screen manual
 ### Start irssi
 
 ```bash
-$ irssi
+irssi
 ```
 
 Having done this you should be presented with an empty `irssi` window.

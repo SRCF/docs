@@ -27,7 +27,7 @@ native SSH client.
 SSH to `shell.srcf.net` using your SRCF username and password (SSH keys
 for your account are also valid), then run the `vncpasswd` command:
 
-```bash
+```text
 spqr2@pip:~$ vncpasswd
 Using password file /home/spqr2/.vnc/passwd
 Password:
@@ -42,7 +42,7 @@ to be useful.
 
 To start a new VNC server process in the background:
 
-```bash
+```text
 spqr2@pip:~$ vncserver -geometry 1920x1080
 New 'X' desktop is pip:12
 
@@ -83,7 +83,7 @@ your choosing on your local machine.
 Back on your local machine, SSH to `shell.srcf.net` again, but request
 forwarding for your chosen port:
 
-```bash
+```text
 you@home:~$ ssh -N -L 5901:localhost:5912 shell.srcf.net
 ```
 
@@ -129,7 +129,7 @@ preserved.
 
 Back over SSH to `shell.srcf.net`:
 
-```bash
+```text
 spqr2@pip:~$ vncserver -kill :12
 ```
 

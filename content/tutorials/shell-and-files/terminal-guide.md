@@ -32,8 +32,8 @@ After sucessfully loging in you will see a few lines of text welcoming
 you to the system and telling you any recent news, followed by a
 *command prompt*:
 
-```bash
-pip:~$
+```text
+sqpr2@pip:~$
 ```
 
 You are now logged in and can give the system commands by typing them
@@ -41,10 +41,10 @@ after the prompt. If you wish to start a particular program, the command
 is just the name of the program you wish to run. For example typing
 'date' and pressing return will tell you the current date and time:
 
-```bash
-pip:~$ date
+```text
+spqr2@pip:~$ date
 Wed Apr  5 22:29:11 BST 2020
-pip:~$
+spqr2@pip:~$
 ```
 
 After each command has finished, a new prompt will be displayed ready
@@ -59,8 +59,8 @@ alter the way that they run, for example the command 'ping', which is
 used to check the speed of an Internet connection, requires the name of
 a host as an argument:
 
-```bash
-pip:~$ ping www.bbc.co.uk
+```text
+spqr2@pip:~$ ping www.bbc.co.uk
 PING www.bbc.net.uk (212.58.224.35): 56 data bytes
 64 bytes from 212.58.224.35: icmp_seq=0 ttl=247 time=4.9 ms
 64 bytes from 212.58.224.35: icmp_seq=1 ttl=247 time=4.6 ms
@@ -68,7 +68,7 @@ PING www.bbc.net.uk (212.58.224.35): 56 data bytes
 --- www.bbc.net.uk ping statistics ---
 2 packets transmitted, 2 packets received, 0% packet loss
 round-trip min/avg/max = 4.6/4.7/4.9 ms
-pip:~$
+spqr2@pip:~$
 ```
 
 (To stop the 'ping' program, press control-c)
@@ -109,18 +109,18 @@ working directory. All directories have a special subdirectory called
 
 To find out your current directory, use the command `pwd`:
 
-```bash
-pip:~$ pwd
+```text
+spqr2@pip:~$ pwd
 /users/abc45
-pip:~$
+spqr2@pip:~$
 ```
 
 You can change the working directory by using the `cd` command, for
 example:
 
-```bash
-pip:~$ cd my_dir
-pip:~/my_dir$
+```text
+spqr2@pip:~$ cd my_dir
+spqr2@pip:~/my_dir$
 ```
 
 Notice how the working directory is displayed as part of the command
@@ -129,10 +129,10 @@ in other words the directory you start off in when you first log in.
 
 To view the contents of the working directory, use the command 'ls':
 
-```bash
-pip:~$ ls
+```text
+spqr2@pip:~$ ls
 public_html  mygroup  my_file.txt
-pip:~$
+spqr2@pip:~$
 ```
 
 Alternatively, use `ls -alF` to give more detailed information. The

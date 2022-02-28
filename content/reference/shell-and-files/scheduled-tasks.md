@@ -132,7 +132,7 @@ sudo -Hu foosoc XDG_RUNTIME_DIR=/run/user/$(id -u foosoc) systemctl --user ...
 You might like to add a function to your `~/.bashrc` to make this easier
 to remember:
 
-```bash
+```sh
 socsudo () {
     soc=$1
     shift

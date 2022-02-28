@@ -53,8 +53,8 @@ For personal users, CGI scripts must be readable and executable by you,
 and must be owned by you. PHP scripts must be world-readable (but to
 keep database passwords secret, see the next question). For example:
 
-```bash
-pip$ ls -l
+```text
+spqr2@pip$ ls -l
 -rwx------  1 saw27  saw27  238 May  5 19:33 env.cgi
 -rw-r--r--  1 saw27  saw27  265 May 13 19:34 phptest.php
 ```
@@ -65,8 +65,8 @@ must be system group readable and executable. Group account PHP scripts
 must additionally be world readable (but to keep database passwords
 secret, see the next question). For example:
 
-```bash
-pip$ ls -l
+```text
+spqr2@pip$ ls -l
 -rwxrwx--- 1 saw27  casi  238 May  7 23:49 env.cgi
 -rw-rw-r-- 1 saw27  casi  265 May 14 23:06 phptest.php
 ```

@@ -105,7 +105,7 @@ using the hidden (it will not show up in ls -a or in shell autocomplete)
 directory `.snapshot`, available at any level of the file hierarchy. For
 example:
 
-```bash
+```text
 spqr2@pip:~$ ls -lut .snapshot
 total 336
 drwxr-x--- 2 spqr2 spqr2 8192 Jul  6 18:00 sv_hourly.0

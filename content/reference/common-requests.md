@@ -50,8 +50,8 @@ tool over SSH, which can fix your own files and those of the group
 account:
 
 ```bash
-$ srcf-soc-permfix <groupname>
-$ sudo -u <groupname> srcf-soc-permfix <groupname>
+srcf-soc-permfix <groupname>
+sudo -u <groupname> srcf-soc-permfix <groupname>
 ```
 
 However, this won't be able to fix files owned by other admins. If you

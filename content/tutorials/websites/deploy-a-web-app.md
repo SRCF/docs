@@ -254,7 +254,7 @@ The scripts provided here are just examples and won't necessarily be perfect for
 
 #### Python
 
-```bash
+```sh
 #!/bin/bash -e
 
 . ~/myapp/venv/bin/activate
@@ -267,7 +267,7 @@ app.
 
 #### Node
 
-```bash
+```sh
 #!/bin/bash -e
 
 USER="$(whoami)"
@@ -283,7 +283,7 @@ Replace `~/myapp/src/bin/www` with the path to your app.
 
 #### Ruby
 
-```bash
+```sh
 #!/bin/bash -e
 
 eval "$(rbenv init -)"
@@ -316,7 +316,7 @@ crashes. We highly recommend using `systemd` to supervise your app.
     for Django, Node or Rails, you've already created this file, so can
     move on to the next step. Otherwise, an example would be:
 
-    ```bash
+    ```sh
     #!/bin/sh -e
     exec ~/myapp/run-server
     ```
