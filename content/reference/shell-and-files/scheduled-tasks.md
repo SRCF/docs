@@ -136,7 +136,7 @@ to remember:
 socsudo () {
     soc=$1
     shift
-    sudo -Hu soc XDG_RUNTIME_DIR=/run/user/$(id -u $soc) '$@'
+    sudo -Hu $soc XDG_RUNTIME_DIR=/run/user/$(id -u $soc) "$@"
 }
 ```
 
