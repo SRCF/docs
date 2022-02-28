@@ -386,8 +386,7 @@ docs-specific classes
 
 .highlight > pre {
   border-radius: 5px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0.8rem;
 }
 
 .footer a {
