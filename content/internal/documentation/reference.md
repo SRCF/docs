@@ -16,7 +16,7 @@ Pre-defined bits of HTML that the user can easily inject into the Markdown.
 
 ### Alert
 
-```Markdown
+```go-text-template
 {{</* alert type="info" */>}}
     some content in here
 {{</*  /alert */>}}
@@ -36,7 +36,7 @@ Shortcode borrowed from [here](https://willschenk.com/articles/2020/styling_tabl
 
 Example:
 
-```Markdown
+```go-text-template
 {{</* table “table table-striped table-bordered" */>}}
 |———-|———-|———-|
 | Item 1   | Item 2   | Item 3   |
