@@ -165,6 +165,12 @@ on our server to decide which ones to add.
 
 Once on a server you can use `Alt+num`, where `num` is 0-9, to change channel.
 
+### Joining channels whilst on a server
+
+```text
+/JOIN #<channel name>
+```
+
 ### Window Positioning
 
 Move around windows until you get them in an order that you like (first
