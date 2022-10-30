@@ -149,11 +149,23 @@ The FQDN in our case is `irc.srcf.net`.
 
 ### Add one or more channels
 
-Commands as follows:
+Check out
+[an overview of the channels]({{< relref "/reference/other-services/internet-relay-chat-irc" >}})
+on our server to decide which ones to add.
 
 ```text
 /CHANNEL ADD -auto #<channel name> <network name>
 ```
+
+### Connect to a server
+
+```text
+/CONNECT <network name>
+```
+
+Once on a server you can use `Alt+num`, where `num` is 0-9, to change channel.
+
+### Window Positioning
 
 Move around windows until you get them in an order that you like (first
 go to the window that you wish to move):
@@ -167,10 +179,6 @@ go to the window that you wish to move):
 ```text
 /window move <position to move to>
 ```
-
-Make sure to check out
-[an overview of the channels]({{< relref "/reference/other-services/internet-relay-chat-irc" >}}) on our
-server to decide which ones to add.
 
 ### Save settings and layout
 
