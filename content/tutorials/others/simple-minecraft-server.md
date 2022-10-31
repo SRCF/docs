@@ -104,6 +104,7 @@ and paste the following into it, replacing both instances of `CRSID` with your C
 ```ini
 [Unit]
 Description=Minecraft Server
+ConditionHost=doom
 After=network.target
 
 [Service]
@@ -134,6 +135,9 @@ If you ever want to stop your server or check its status you can use
 systemctl --user stop mcserver.service
 systemctl --user status mcserver.service
 ```
+  
+To learn more about running systemd services with the SRCF see
+[here](https://docs.srcf.net/reference/shell-and-files/scheduled-tasks/#systemd).
   
 Now that the setup is finished you can log out of doom.srcf.net using `logout`.
 
