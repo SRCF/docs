@@ -1,6 +1,6 @@
 ---
 title: "Simple Minecraft Server"
-date: 2021-04-21T16:44:58+01:00
+date: 2022-10-31T17:20:00+00:00
 group: others
 layout: docs
 toc: true
@@ -43,10 +43,11 @@ cd mc
 The machine already has java set up, so that you can avoid the hassle of getting it working.
 
 The JAR file for the server can be found [here](https://www.minecraft.net/en-us/download/server). To download the JAR
-file on the server you must copy the download link from the page and then run the `wget` command.
+file on the server you must copy the download link from the page and then run the `wget` command, replacing the url 
+with the address you copied from the download page.
 
 ```
-wget https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar
+wget https://piston-data.mojang.com/.../server.jar
 ```
 
 You can now run the server using the command
