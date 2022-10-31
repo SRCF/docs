@@ -27,7 +27,7 @@ Before starting you must log in to `doom.srcf.net` via SSH. You will have to use
 
 Log in using your computer's terminal (PowerShell on Windows) with the following command.
 
-```
+```bash
 ssh CRSid@doom.srcf.net
 ```
 
@@ -35,7 +35,7 @@ ssh CRSid@doom.srcf.net
 
 I suggest you create a directory for the server using these commands.
 
-```
+```bash
 mkdir mc
 cd mc
 ```
@@ -46,20 +46,20 @@ The JAR file for the server can be found [here](https://www.minecraft.net/en-us/
 file on the server you must copy the download link from the page and then run the `wget` command, replacing the url 
 with the address you copied from the download page.
 
-```
+```bash
 wget https://piston-data.mojang.com/.../server.jar
 ```
 
 You can now run the server using the command
 
-```
+```bash
 nice -n 19 java -Xms1024m -Xmx1024m -jar server.jar nogui
 ```
 
 It will set up some directories and then quit, saying that you need to accept the end user license agreement. To do this,
 open the `eula.txt` file that was created with a text editor such as
 
-```
+```bash
 nano eula.txt
 ```
 
@@ -68,7 +68,7 @@ press Y to save your changes.
 
 It's also necessary to change the port number the server will run on. To do this, open the `server.properties` file
 
-```
+```bash
 nano server.properties
 ```
 
@@ -79,7 +79,7 @@ If you want to change the gamemode you can do this here by amending the line `ga
 
 You can now run the server again using
 
-```
+```bash
 nice -n 19 java -Xms1024m -Xmx1024m -jar server.jar nogui
 ```
 
@@ -89,27 +89,53 @@ This time you should find that the server starts successfully. If you open your 
 ## Running the server in the background
 
 At the moment you have to log into the machine and start the minecraft server manually every time you want to
-use it. You can use GNU screen to leave it running.
-
-To do this, type
-
+use it. You can set it up as a systemd service to allow it to run in the background and start up automatically 
+when the machine restarts.
+  
+To do this you need to create a service unit file using the commands
+  
+```bash
+mkdir -p ~/.config/systemd/user/
+nano ~/.config/systemd/user/mcserver.service
 ```
-screen -dR
-```
+  
+and paste the following into it, replacing both instances of `CRSID` with your CRSid.
+  
+```ini
+[Unit]
+Description=Minecraft Server
+After=network.target
 
-In the new terminal that opens, start the server.
+[Service]
+Type=simple
+WorkingDirectory=/home/CRSID/mc
+ExecStart=/usr/bin/nice -n 19 /usr/bin/java -Xms1024m -Xmx1024m -jar /home/CRSID/mc/server.jar nogui
+Restart=always
+RestartSec=20
 
+[Install]
+WantedBy=default.target
 ```
-nice -n 19 java -Xms1024m -Xmx1024m -jar server.jar nogui
-```
-
-You can then leave the new terminal using CTRL-A then pressing d. Now you can log out of the doom machine using
-
-```
-logout
+  
+Get `systemctl` to reload the service unit files, enable your service so that it starts up on reboot and start the 
+service using the commands
+  
+```bash
+systemctl --user daemon-reload
+systemctl --user enable mcserver.service
+systemctl --user start mcserver.service
 ```
 
 You should now have a Java Minecraft server ready to play!
+  
+If you ever want to stop your server or check its status you can use
+
+```bash
+systemctl --user stop mcserver.service
+systemctl --user status mcserver.service
+```
+  
+Now that the setup is finished you can log out of doom.srcf.net using `logout`.
 
 {{ < alert type="warning" > }}
 
