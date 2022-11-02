@@ -72,9 +72,15 @@ To create a 'logout' link, add the following to your .htaccess file
 </FilesMatch>
 ```
 
-You can access a Raven-authenticated user's crsid in PHP using `$_SERVER["AAPRINCIPAL"]`. For example, adding the following to `index.php` will display a customised welcome message on login:
-```
-echo "Hello $_SERVER['AAPRINCIPAL']!"
+You can access a Raven-authenticated user's CRSid using the
+`REMOTE_USER` (or `AAPRINCIPAL`) environment variables. For example,
+adding the following to a PHP page like `index.php` will display a
+customised welcome message on login:
+
+```php
+<?php
+echo "Hello {$_SERVER['REMOTE_USER']}!"
+?>
 ```
 
 ### Example configuration:
