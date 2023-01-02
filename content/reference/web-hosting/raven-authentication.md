@@ -15,11 +15,10 @@ authentication system.
 ## With .htaccess
 
 The SRCF has the
-[mod\_ucam\_webauth](https://raven.cam.ac.uk/project/apache/) module
-installed, which makes it easy to do basic authentication using Raven.
-[Full
-documentation](https://raven.cam.ac.uk/project/apache/README.Config) is
-available, though here are a few common cases.
+[mod\_ucam\_webauth](https://github.com/cambridgeuniversity/mod_ucam_webauth)
+module installed, which makes it easy to do basic authentication using Raven.
+[Full documentation](https://github.com/cambridgeuniversity/mod_ucam_webauth/blob/master/README.Config)
+is available, though here are a few common cases.
 
 To protect a directory (whether `public_html` for your entire site, or a
 subdirectory of it), create or edit a `.htaccess` file in that
