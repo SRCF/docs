@@ -20,8 +20,9 @@ October 2018 for two reasons:
 ## For `@srcf.net` addresses
 
 Use the [control panel](https://control.srcf.net/member) to switch to
-Hades. When you choose to switch your email to Hades, the control panel
-will explain the consequences which depend upon your current
+Hades: from your member page, select _Change email configuration_ under
+**Email**. When you choose to switch your email to Hades, the control
+panel will explain the consequences which depend upon your current
 configuration. You will have a chance to cancel the migration after
 seeing this information.
 
