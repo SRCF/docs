@@ -28,7 +28,7 @@ to you under your usual operating system.
 
 ## Basic commands
 
-After sucessfully loging in you will see a few lines of text welcoming
+After successfully logging in, you will see a few lines of text welcoming
 you to the system and telling you any recent news, followed by a
 *command prompt*:
 
