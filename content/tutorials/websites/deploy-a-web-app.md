@@ -25,8 +25,8 @@ and you can take a look at their configuration inside
 
 Before starting,
 
-* ensure that you are comfortable in some capacity with the terminal
-* ensure that you are performing any subsequent commands on our **web server**, `webserver.srcf.net`
+1. Ensure that you are comfortable in some capacity with the terminal
+2. Ensure that you are performing any subsequent commands on our **web server**, `webserver.srcf.net`
 
 ## Environments
 
