@@ -28,7 +28,7 @@ When logging in to a server, the SSH client on your computer requests the public
     ssh-keygen -t ed25519 -C "your_email@example.com"
     ```
 
-    This creates an SSH key pair, using your email as a label. You should wee the following output
+    This creates an SSH key pair, using your email as a label. You should see the following output
 
     ```text
     Generating public/private ed25519 key pair.
