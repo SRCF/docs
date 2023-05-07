@@ -12,7 +12,7 @@ RewriteCond %{HTTP_HOST} ^docs.srcf.net$
 
 # --- tutorials ---
 
-RewriteRule   ^learn/index(\.html)?$                          /tutorials/                                             [R=permanent,L]
+RewriteRule   ^learn/(index(\.html)?)?$                       /tutorials/                                             [R=permanent,L]
 RewriteRule   ^learn/tutorials/how-to-ssh(\.html)?$           /tutorials/shell-and-files/logging-in/                  [R=permanent,L]
 RewriteRule   ^learn/tutorials/how-to-file-upload(\.html)?$   /tutorials/shell-and-files/uploading-files/             [R=permanent,L]
 RewriteRule   ^learn/tutorials/more-terminal(\.html)?$        /tutorials/shell-and-files/terminal-guide/              [R=permanent,L]
