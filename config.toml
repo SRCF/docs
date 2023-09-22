@@ -13,6 +13,9 @@ enableGitInfo = true
   [markup.tableOfContents]
     endLevel = 3
     startLevel = 2
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+       linkify = false
 
 [params]
     domain_web = "https://www.srcf.net"

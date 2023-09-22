@@ -9,14 +9,53 @@ toc: true
 
 This is a list of all queries and issues we receive often. Please check we haven't already answered your question here before contacting the sysadmins.
 
+## Contact owners of a personal or group website or account
+
+The SRCF hosts user websites and mailing lists on its systems, and we
+provide domains of the form *{{< var >}}CRSid{{< /var >}}.user.srcf.net*
+or *{{< var >}}acronym{{< /var >}}.soc.srcf.net*, along with matching
+email addresses like *{{< var >}}CRSid{{< /var >}}@srcf.net* and
+*{{< var >}}acronym{{< /var >}}-{{< var >}}role{{< /var >}}@srcf.net*.
+
+**The SRCF itself is not immediately responsible for content under these
+domains.** In the first instance, you should direct queries to the
+owners of the relevant account.
+
+* For websites like *{{< var >}}spqr2{{< /var >}}.**user**.srcf.net*
+  or email addresses like *{{< var >}}spqr2{{< /var >}}@srcf.net*,
+  the responsible individual can be reached directly via
+  `{{< var >}}spqr2{{< /var >}}@srcf.net`.
+
+* For websites like *{{< var >}}sample{{< /var >}}.**soc**.srcf.net*
+  or email addresses like
+  *{{< var >}}sample{{< /var >}}-{{< var >}}role{{< /var >}}@srcf.net*,
+  the responsible group of people who manage the account (its "admins")
+  can be reached collectively via
+  `{{< var >}}sample{{< /var >}}-webmaster@srcf.net` for queries about
+  its website specifically, or
+  `{{< var >}}sample{{< /var >}}-admins@srcf.net` for anything else.
+
+{{< alert type="info" >}}
+Make sure to substitute the example owning account (**spqr2** or
+**sample** above) with the matching account name that you're looking to
+contact.
+{{< /alert >}}
+
+If your communication relates to infringing copyrighted material or
+other abuse, please also CC [the SRCF system
+administrators](https://www.srcf.net/contact).
+
+We also host websites on *custom domains*, which do not end in
+*.user.srcf.net* or *.soc.srcf.net*.  Please [contact the system
+administrators](https://www.srcf.net/contact) if you're getting in
+touch about a website hosted by us under a custom domain and are
+unsure how to reach the site's owners.
+
 ## Gain access to an existing group account
 
 As a prospective admin seeking access to manage a group account, you
 should first contact its existing admins and request access from them.
-You'll need to know the short name of the account (e.g. `cuxs`, which
-may appear in the society's website URL *cuxs.soc.srcf.net* or email
-addresses *<cuxs-role@srcf.net>* if hosted with us), with which you can
-email `cuxs-admins@srcf.net` to reach all current admins of the account.
+See the answer above for how to identify the short name of the account.
 If you don't know the short name, you can check [this list of group
 accounts](https://www.srcf.net/groups).
 
