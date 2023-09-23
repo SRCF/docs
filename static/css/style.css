@@ -47,9 +47,9 @@ docs-specific classes
   .srcf-links {
     position: -webkit-sticky;
     position: sticky;
-    top: 5rem;
+    top: 2rem;
     display: block !important;
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 4rem);
     padding-left: 0.25rem;
     margin-left: -0.25rem;
   }
@@ -164,12 +164,9 @@ docs-specific classes
   background-size: 0.75rem 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .srcf-subnavbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
+/* Allow primary nav to appear on top of subnav */
+.srcf-navbar {
+  z-index: 1021;
 }
 
 .srcf-search {
@@ -273,10 +270,10 @@ docs-specific classes
   .srcf-toc {
     position: -webkit-sticky;
     position: sticky;
-    top: 5rem;
+    top: 2rem;
     right: 0;
     z-index: 2;
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 4rem);
     overflow-y: auto;
   }
 }
