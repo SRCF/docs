@@ -53,6 +53,9 @@ unsure how to reach the site's owners.
 
 ## Gain access to an existing group account
 
+[Read more about group admins and unmaintained
+accounts]({{< relref "group-accounts/administrators" >}})
+
 As a prospective admin seeking access to manage a group account, you
 should first contact its existing admins and request access from them.
 See the answer above for how to identify the short name of the account.
@@ -66,9 +69,7 @@ transfer ownership as needed.
 
 Group accounts are considered *unmaintained* if they have no active
 admins remaining. Accounts in this state will display an *Unmaintained
-group website* page if you visit their SRCF-hosted website. You'll need
-to contact the sysadmins in the first instance to recover such an
-account.
+group website* page if you visit their SRCF-hosted website.
 
 ## Grant group admin access to someone else
 
