@@ -12,10 +12,29 @@
         <p><mark>Last built on {{ now.Format "January 2, 2006" }} </mark></p>
       </section>
 
+      <h1>Table of Contents</h1>
+      <ul>
+        {{- range $section := .Site.Sections -}}
+        <li>
+          {{- $section_name := $section.Section -}}
+          <a href="#{{ $section_name | urlize }}">{{ $section_name | humanize }}</a>
+          <ul>
+            {{- range $section.RegularPages -}}
+              {{- if gt (len .Content) 0 -}}
+            <li>
+              <a href="#{{ .Title | urlize }}">{{ .Title }}</a>
+            </li>
+              {{- end -}}
+            {{- end -}}
+          </ul>
+        </li>
+        {{- end -}}
+      </ul>
+
       {{- range $section := .Site.Sections -}}
         {{- $section_name := $section.Section -}}
         <section class="break-after">
-          <h1>{{ $section_name | humanize }}</h1>
+          <h1 id="{{ $section_name | urlize }}">{{ $section_name | humanize }}</h1>
           {{- .Content -}}
           {{- range $section.RegularPages -}}
             {{- if gt (len .Content) 0 -}}
