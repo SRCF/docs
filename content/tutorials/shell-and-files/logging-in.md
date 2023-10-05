@@ -81,25 +81,8 @@ organized mess!
 {{< alert type="info" >}}
 If the terminal behaves incorrectly on certain keypresses - such as by
 outputting weird glyphs, or by not removing characters when inputting a
-backspace - then it is possible ssh has misconfigured the `TERM`
-environment variable.
-
-This can be checked by running `toe -a | grep $TERM`. (`toe -a` lists
-all supported values for the `TERM` variable, and `| grep $TERM`
-performs a search within `toe`'s output to try to find your session's
-value of `$TERM`). If running the command shows no output, then your
-value of `TERM` is unsupported.
-
-You can manually correct this by running `export TERM=xterm-256color`.
-This command would have to be ran once at the start of each session.
-To correct this persistently, create a file named `config` (with no
-file extension) **on your device** at the path `~/.ssh/config` (on
-Linux or macOS) or `$HOME\.ssh\config` (on Windows) containing this
-text:
-```
-Host shell.srcf.net
-    SetEnv TERM=xterm-256color
-```
+backspace - [then it is possible ssh has misconfigured the `TERM`
+environment variable.]({{< relref "/reference/shell-and-files/ssh#unsupported-term-type-environment-variable" >}})
 {{<  /alert >}}
 
 The last command we'll try is `cd public_html`. This **changes your
