@@ -95,12 +95,16 @@ performs a search within `toe`'s output to try to find your session's
 value of `$TERM`). If running the command shows no output, then your
 value of `TERM` is unsupported.
 
-You can manually correct this by running `export TERM=xterm-256color`.
-This command would have to be ran once after the start of each session.
-To correct this persistently, run the following command **on your
-device**:
+You can temporarily select a more general terminal type
+(`xterm-256color` should work) for your session by setting the `TERM`
+environment variable when running `ssh`:
+```bash
+TERM=xterm-256color ssh ...
 ```
-infocmp -a $TERM | ssh <Your CRSid>@shell.srcf.net tic -x -o \~/.terminfo/ -
+To correct this persistently, run the following command (on your
+device):
+```bash
+infocmp -a $TERM | ssh <Your CRSid>@shell.srcf.net tic -x -
 ```
 This will install your device's terminal-type to your account's home
 directory (inside `~/.terminfo/`). You will not need to make any manual
