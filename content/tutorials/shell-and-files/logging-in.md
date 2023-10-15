@@ -78,6 +78,13 @@ complex and multi-layered file system on our shell server, which happens
 to be your home directory. `pwd` tells you where you are in this
 organized mess!
 
+{{< alert type="info" >}}
+If the terminal behaves incorrectly on certain keypresses - such as by
+outputting weird glyphs, or by not removing characters when inputting a
+backspace - [then it is possible ssh has misconfigured the `TERM`
+environment variable.]({{< relref "/reference/shell-and-files/ssh#unsupported-term-type-environment-variable" >}})
+{{<  /alert >}}
+
 The last command we'll try is `cd public_html`. This **changes your
 directory** to `public_html`. You're now on a different street!
 

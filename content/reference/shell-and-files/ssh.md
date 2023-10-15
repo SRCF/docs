@@ -79,3 +79,34 @@ please use **doom**, which has fingerprints:
     ED25519  SHA256:kh1Sr6Nrlp/vK9ijKZ43/IQ2tqdPzY/fnZdnGBIKgIM
     RSA      MD5:f1:ee:8c:a7:7a:cb:f7:c7:dc:c5:7e:56:9a:83:f5:bc
     RSA      SHA256:c1dlaFnPyJ44CnjZIeV6zLHQCPlIH9Og0K3dL16XGfo
+
+
+## Troubleshooting
+
+### Unsupported term-type environment variable
+If the terminal behaves incorrectly on certain keypresses - such as by
+outputting weird glyphs, or by not removing characters when inputting a
+backspace - then it is possible ssh has misconfigured the `TERM`
+environment variable.
+
+This can be checked by running `toe -a | grep $TERM`. (`toe -a` lists
+all supported values for the `TERM` variable, and `| grep $TERM`
+performs a search within `toe`'s output to try to find your session's
+value of `$TERM`). If running the command shows no output, then your
+value of `TERM` is unsupported.
+
+You can temporarily select a more general terminal type
+(`xterm-256color` should work) for your session by setting the `TERM`
+environment variable when running `ssh`:
+```bash
+TERM=xterm-256color ssh ...
+```
+To correct this persistently, run the following command (on your
+device):
+```bash
+infocmp -a $TERM | ssh <Your CRSid>@shell.srcf.net tic -x -
+```
+This will install your device's terminal-type to your account's home
+directory (inside `~/.terminfo/`). You will not need to make any manual
+changes to contents of this directory. Your terminal should now work
+correctly for all subsequent sessions.
