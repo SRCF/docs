@@ -51,10 +51,12 @@
 
         {{ .Content }}
 
+        {{ if .GitInfo }}
         <hr>
         <p class="text-muted">
           <a href="{{ .Site.Params.repo}}/commit/{{.GitInfo.Hash}}" target="_blank" rel="noopener">Last modified</a> on {{.Lastmod | dateFormat "Monday Jan 2, 2006"}} by {{ .GitInfo.AuthorName }}
         </p>
+        {{ end }}
 
       </div>
     </main>
