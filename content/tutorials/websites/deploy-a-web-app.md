@@ -258,6 +258,7 @@ The scripts provided here are just examples and won't necessarily be perfect for
 #!/bin/bash -e
 
 . ~/myapp/venv/bin/activate
+export PYTHONPATH='/home/crsid/myapp'
 exec gunicorn -w 2 -b unix:/home/crsid/myapp/web.sock \
     --log-file - main:app
 ```
