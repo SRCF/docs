@@ -5,8 +5,10 @@ group: personal-accounts
 layout: docs
 ---
 
-SRCF membership is for life, but you can also retain access to our
-services provided we have a valid contact address for you.
+Membership of the SRCF as a society is for life. Access to our services
+is initially granted to current members of the university, but accounts
+will remain active, including after graduation or otherwise leaving the
+university, as long as we have a valid contact address for their owners.
 
 If you're leaving the university and losing your *\@cam.ac.uk* email
 address, make sure to update the email address we have on record for you
