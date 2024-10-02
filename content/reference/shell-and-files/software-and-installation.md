@@ -50,6 +50,13 @@ minimise disruption to our users.
 
 ## Program-specific notes
 
+### Docker
+
+We don't provide Docker or other container management software -- a
+system-wide Docker service is not suitable for a multi-user environment,
+and "rootless" Docker requires user namespaces which are incompatible
+with our virtual machine servers.
+
 ### Node.js
 
 Ubuntu comes with node version 10.19.0. If you need a newer version, consider
