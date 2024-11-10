@@ -1,5 +1,5 @@
 ---
-title: "Raven authentication"
+title: "University Account authentication"
 date: 2021-04-20T09:27:49+01:00
 group: web-hosting
 layout: docs
@@ -9,10 +9,22 @@ toc: true
 ## Overview
 
 You can configure your site, or a subset of pages, to require user
-authentication with [Raven](https://raven.cam.ac.uk), the university's
-authentication system.
+authentication with a University Account (formerly known as Raven).
 
-## With .htaccess
+## With .htaccess using Ucam-WebAuth
+
+{{< alert type="warning" >}}
+Legacy Raven is being retired in December 2024, which means Ucam-WebAuth
+will no longer be an option to directly authenticate University Accounts
+against the official university-provided service.
+
+The SRCF hosts [Nevar](https://nevar.srcf.net), an alternative service
+which allows site visitors to authenticate with their University Account
+over a university-supported protocol (OAuth2), and allows websites to
+continue requesting authentication information via Ucam-WebAuth.  This
+replacement service will be made the default on the SRCF webserver when
+Legacy Raven is switched off, in order to maintain site availability.
+{{< /alert >}}
 
 The SRCF has the
 [mod\_ucam\_webauth](https://github.com/cambridgeuniversity/mod_ucam_webauth)
@@ -82,7 +94,7 @@ echo "Hello {$_SERVER['REMOTE_USER']}!"
 ?>
 ```
 
-### Example configuration:
+### Example configuration
 
 ```apache
 RewriteEngine On
@@ -110,7 +122,8 @@ using something else you should be able to work out what to do.)
 ## Within an application
 
 If you're writing or maintaining a webapp that needs to authenticate
-users for certain pages, you'll likely need a Raven or UCamWebAuth
-library. The [Raven developer
-documentation](https://docs.raven.cam.ac.uk) may be useful for finding a
-suitable integration.
+users for certain pages, you'll likely need a Raven, Ucam-WebAuth or
+OAuth2 library.
+
+The [Raven developer documentation](https://docs.raven.cam.ac.uk) may be
+useful for finding a suitable integration.
