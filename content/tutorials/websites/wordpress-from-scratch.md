@@ -171,7 +171,7 @@ and point them to your new site by following
 ### Raven
 
 You can put any site (or parts of your site) behind Raven by following
-[our Raven docs]({{< relref "/reference/web-hosting/raven-authentication" >}}).
+[University Account authentication]({{< relref "/reference/web-hosting/university-account-authentication" >}}).
 
 ## Closing remarks
 

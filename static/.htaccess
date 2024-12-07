@@ -3,6 +3,9 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^docs.srcf.net$
 
+# Raven rebranded as University Account
+Redirect /reference/web-hosting/raven-authentication /reference/web-hosting/university-account-authentication
+
 #####################################################################################################################################
 #####################################################################################################################################
 ##########       In a previous life, the SRCF used Sphinx to build its documentation site. Since we now use Hugo, we       ##########

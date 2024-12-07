@@ -86,7 +86,7 @@
       pages:
         - title: Web applications
         - title: Regular hosting
-        - title: Raven authentication
+        - title: University account authentication
         - title: CGI and PHP scripts
         - title: Custom domains
         - title: Apache
