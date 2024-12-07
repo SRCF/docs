@@ -168,9 +168,11 @@ panic! You can register any domain you like (or even multiple domains)
 and point them to your new site by following
 [our custom domains documentation]({{< relref "/reference/web-hosting/custom-domains" >}}).
 
-### Raven
+### University Account authentication
 
-You can put any site (or parts of your site) behind Raven by following
+You can restrict any site (or parts of your site) so that it requires
+authentication using a University Account (formerly known as Raven) to
+access it by following
 [University Account authentication]({{< relref "/reference/web-hosting/university-account-authentication" >}}).
 
 ## Closing remarks

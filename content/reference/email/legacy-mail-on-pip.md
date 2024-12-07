@@ -40,9 +40,8 @@ will need the following details:
 - IMAP server: **pip.srcf.net**
 - Port: **993**
 - Security: **SSL**
-- Username: *your SRCF username*, e.g. **spqr2** (*not* your email
-    address)
-- Password: *your SRCF password* (*not* your Raven password)
+- Username: *your SRCF username*, e.g. **spqr2** (*not* your email address)
+- Password: *your SRCF password* (*not* your University Account password)
 
 Note that we do not run a POP3 server, as it is an older protocol and
 provides no additional functionality over IMAP.

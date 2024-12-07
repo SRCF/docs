@@ -22,8 +22,8 @@ risks can be minimized by following the hardening steps below.
     Unfortunately FTP clients won't let you do this so you will need to
     use the console.
 2. It is advised to lock down WordPress' admin panel at /wp-admin/ by
-    putting that directory behind Raven authentication -- see an example
-    at
+    putting that directory behind University Account authentication --
+    see an example at
     `/public/societies/sample/public_html/wordpress/wp-admin/.htaccess`.
 3. We also recommend you disable *Allow link notifications from other
     blogs (pingbacks and trackbacks)* on new posts, under `Settings` \>

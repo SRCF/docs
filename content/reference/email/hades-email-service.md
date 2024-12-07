@@ -64,9 +64,8 @@ will need the following details:
 - Server type: **IMAP**
 - IMAP server: **hades.srcf.net**
 - Security: **STARTTLS** (or SSL/TLS)
-- Username: *your SRCF username*, e.g. **spqr2** (*not* your email
-    address)
-- Password: *your SRCF password* (*not* your Raven password)
+- Username: *your SRCF username*, e.g. **spqr2** (*not* your email address)
+- Password: *your SRCF password* (*not* your University Account password)
 
 Some email apps such as Thunderbird will automatically configure this
 for you after you fill in your SRCF email address --- provided that you
@@ -84,9 +83,8 @@ Outside of webmail, you can use SMTP to send emails from your
 - SMTP server: **smtp.srcf.net**
 - Security: **STARTTLS**
 - Port: **587**
-- Username: *your SRCF username*, e.g. **spqr2** (*not* your email
-    address)
-- Password: *your SRCF password* (*not* your Raven password)
+- Username: *your SRCF username*, e.g. **spqr2** (*not* your email address)
+- Password: *your SRCF password* (*not* your University Account password)
 
 ## Mail forwarding
 

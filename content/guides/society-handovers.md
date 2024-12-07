@@ -30,7 +30,7 @@ The most important part of the handover is for the incumbent webmaster to add yo
 3. Under the "Administrators" card, click "Add new administrator"
 4. Type in the CRSid of the new admin
 
-This process implies two things: first, the new webmaster must have an SRCF account beforehand (easily done by going to our home page and clicking "Create an account") and second, any society admins must have Raven access, or in other words be member of Cambridge University.
+The new webmaster must register for an SRCF account beforehand, if they don't already have one (easily done by going to our home page and clicking "Create an account").  This necessarily requires the person to have a University Account with which to register, typically by being a student or staff member of the University.  We are unable to grant SRCF account to anyone who is not eligible for a University Account.
 
 If possible, you may consider keeping the old webmaster as an admin on the account. We recommend two or more admins to ensure the longevity of the society account in case one or more admins become unreachable.
 
