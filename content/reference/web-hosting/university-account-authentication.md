@@ -11,26 +11,41 @@ toc: true
 You can configure your site, or a subset of pages, to require user
 authentication with a University Account (formerly known as Raven).
 
-## With .htaccess using Ucam-WebAuth
+## Using Ucam-WebAuth
 
-{{< alert type="warning" >}}
-Legacy Raven is being retired in December 2024, which means Ucam-WebAuth
-will no longer be an option to directly authenticate University Accounts
-against the official university-provided service.
+*Ucam-WebAuth* is a simple
+[authentication protocol](https://nevar.srcf.net/static/waa2wls-protocol.txt),
+originally designed within the University for the Legacy Raven service.
+It works similarly to OAuth2, and consists of two parties:
 
-The SRCF hosts [Nevar](https://nevar.srcf.net), an alternative service
-which allows site visitors to authenticate with their University Account
-over a university-supported protocol (OAuth2), and allows websites to
-continue requesting authentication information via Ucam-WebAuth.  This
-replacement service will be made the default on the SRCF webserver when
-Legacy Raven is switched off, in order to maintain site availability.
-{{< /alert >}}
+- *Web Login Service* (servers like Raven, which ask you to authenticate
+  with your credentials and provide proof of authentication to a WAA)
 
-The SRCF has the
-[mod\_ucam\_webauth](https://github.com/cambridgeuniversity/mod_ucam_webauth)
-module installed, which makes it easy to do basic authentication using Raven.
+- *Web Application Agent* (clients like
+  [mod\_ucam\_webauth](https://github.com/cambridgeuniversity/mod_ucam_webauth)
+  for Apache or
+  [python-ucam-webauth](https://github.com/danielrichman/python-ucam-webauth),
+  which redirect you through a WLS in order to identify a site visitor)
+
+The SRCF hosts two of its own WLS servers:
+
+- [Nevar](https://nevar.srcf.net), an alternative to Raven which allows
+  site visitors to authenticate with their University Account over a
+  university-supported protocol (OAuth2)
+
+- [Goose](https://auth.srcf.net), a standalone service which allows site
+  visitors to authenticate with their SRCF account credentials
+
+As of December 2024, the University retired the Legacy Raven service,
+but they continue to run their own proxy service similar to Nevar.
+
+### Configuring Ucam-WebAuth in .htaccess
+
+The SRCF uses Apache as its webserver, with the mod\_ucam\_webauth
+module installed, which makes it easy to do basic authentication using
+the Ucam-WebAuth protocol.
 [Full documentation](https://github.com/cambridgeuniversity/mod_ucam_webauth/blob/master/README.Config)
-is available, though here are a few common cases.
+is available for the module, though here are a few common cases.
 
 To protect a directory (whether `public_html` for your entire site, or a
 subdirectory of it), create or edit a `.htaccess` file in that
@@ -41,9 +56,17 @@ AuthType Ucam-WebAuth
 Require valid-user
 ```
 
-This will permit access to anyone with a 'current' Raven account, i.e.
-active students and staff. To permit access to *any* Raven account
-(including graduated students), add a *Ptags* directive:
+{{< alert type="info" >}}
+A file beginning with a `.` is a hidden file on Linux and UNIX systems.
+You may need to manually disable the hiding of these files (e.g. Ctrl-h
+in Nautilus, the file manager program of the GNOME desktop environment).
+If using the web terminal or connecting over SSH, `ls -a` will include
+hidden files.
+{{< /alert >}}
+
+This will permit access to anyone with a 'current' University Account,
+i.e. active students and staff. To permit access to *any* University
+Account (including graduated students), add a *Ptags* directive:
 
 ```apache
 AARequiredPtags none
@@ -64,14 +87,17 @@ To limit page access to group account admins only, add a `unix-group`
 *Require* directive:
 
 ```apache
-Require unix-group <groupname>
+Require unix-group cuxs
 ```
 
-You can also list specific users:
+You can also list one or more specific users:
 
 ```apache
-Require user <crsid> <crsid>...
+Require user spqr2 spqr3
 ```
+
+(Of course, replace `cuxs` or `spqr2 spqr3` with the appropriate group
+names or CRSids.)
 
 To create a 'logout' link, add the following to your .htaccess file
 (which will create `/logout` relative to the directory containing the
@@ -83,41 +109,47 @@ To create a 'logout' link, add the following to your .htaccess file
 </FilesMatch>
 ```
 
-You can access a Raven-authenticated user's CRSid using the
-`REMOTE_USER` (or `AAPRINCIPAL`) environment variables. For example,
-adding the following to a PHP page like `index.php` will display a
-customised welcome message on login:
+`AAAuthService` and `AALogoutService` can be used to change the URLs to
+the WLS server.  Websites hosted on the SRCF (i.e. on webserver.srcf.net
+aka. sinkhole) use SRCF Nevar by default, which is equivalent to:
+
+```apache
+AAAuthService https://nevar.srcf.net/wls/authenticate
+AALogoutService https://nevar.srcf.net/oidc/logout
+```
+
+To use SRCF Goose instead:
+
+```apache
+AAAuthService https://auth.srcf.net/wls/authenticate
+AALogoutService https://auth.srcf.net/logout
+```
+
+{{< alert type="warning" >}}
+Goose does not provide the `current` ptag, so you must also set
+`AARequiredPtags none` in order to authenticate users.
+{{< /alert >}}
+
+Or to use the University's own Raven proxy:
+
+```apache
+AAAuthService https://legacy.raven.cam.ac.uk/auth/authenticate.html
+AALogoutService https://raven.cam.ac.uk/auth/logout.html
+```
+
+## Reading the user's CRSid
+
+You can access an authenticated user's CRSid using the `REMOTE_USER` (or
+`AAPRINCIPAL`) environment variables in PHP and CGI scripts.
+
+For example, adding the following to a PHP page like `index.php` will
+display a customised welcome message on login:
 
 ```php
 <?php
 echo "Hello {$_SERVER['REMOTE_USER']}!"
 ?>
 ```
-
-### Example configuration
-
-```apache
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=permanent]
-
-AuthType Ucam-WebAuth
-Require user CRSID
-```
-
-Replace CRSID with your CRSID.
-
-The `Rewrite` section makes all connections to `.../wp-admin/` use SSL
-which will protect your password, the `AuthType` section uses Raven to
-restrict access to the directory, you probably want to use your CRSID on
-the `Require` line.
-
-{{< alert type="info" >}}
-A file beginning with a `.` is a hidden file on unix. If you are using
-the gnome [graphical desktop](../webdesktop/) then pressing Ctrl-h in
-nautilus (the default file browser) will show hidden files. (If you are
-using something else you should be able to work out what to do.)
-{{< /alert >}}
 
 ## Within an application
 
