@@ -19,7 +19,7 @@ email addresses like *{{< var >}}CRSid{{< /var >}}@srcf.net* and
 
 **The SRCF itself is not immediately responsible for content under these
 domains.** In the first instance, you should direct queries to the
-owners of the relevant account.
+owners of the relevant account and allow them time to respond.
 
 * For websites like *{{< var >}}spqr2{{< /var >}}.**user**.srcf.net*
   or email addresses like *{{< var >}}spqr2{{< /var >}}@srcf.net*,
@@ -50,6 +50,16 @@ We also host websites on *custom domains*, which do not end in
 administrators](https://www.srcf.net/contact) if you're getting in
 touch about a website hosted by us under a custom domain and are
 unsure how to reach the site's owners.
+
+## Bounced or undeliverable messages to account owners
+
+If an email to an account owner bounces, you may [ask the SRCF system
+administrators](https://www.srcf.net/contact) for help with getting in
+contact -- please include a copy of any bounce messages you receive.
+
+Note that group accounts can have multiple listed admins, and a bounce
+from one of them doesn't rule out another, contactable admin still
+receiving and acting on it.
 
 ## Gain access to an existing group account
 
