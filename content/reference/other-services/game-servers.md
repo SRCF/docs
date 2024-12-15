@@ -26,6 +26,12 @@ port for your application will be in use. We don't have any specific
 rules for picking a port for your application, so just pick
 high-numbered ports at random until you find one that isn't in use.
 
+## Minecraft
+
+### Recommended server software
+
+To reduce the load on `doom.srcf.net`, please use a distribution such as [Purpur](https://purpurmc.org/).
+
 ## Running at startup
 
 If you want your server application to run at system startup, you can
