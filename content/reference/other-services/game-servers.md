@@ -28,9 +28,9 @@ high-numbered ports at random until you find one that isn't in use.
 
 ## Minecraft
 
-### Recommended server software
+### Suggested server software
 
-To reduce the load on `doom.srcf.net`, please use a distribution such as [Purpur](https://purpurmc.org/).
+For higher server performance, consider using a server distribution such as [Purpur](https://purpurmc.org/) or [Paper](https://papermc.io/)_.
 
 ## Running at startup
 
