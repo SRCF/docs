@@ -30,7 +30,7 @@ high-numbered ports at random until you find one that isn't in use.
 
 ### Suggested server software
 
-For higher server performance, consider using a server distribution such as [Purpur](https://purpurmc.org/) or [Paper](https://papermc.io/)_.
+For higher server performance, consider using a server distribution such as [Purpur](https://purpurmc.org/) or [Paper](https://papermc.io/).
 
 ## Running at startup
 
