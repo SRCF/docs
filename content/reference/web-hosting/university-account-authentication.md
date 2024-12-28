@@ -133,7 +133,7 @@ Goose does not provide the `current` ptag, so you must also set
 Or to use the University's own Raven proxy:
 
 ```apache
-AAAuthService https://legacy.raven.cam.ac.uk/auth/authenticate.html
+AAAuthService https://raven.cam.ac.uk/auth/authenticate.html
 AALogoutService https://raven.cam.ac.uk/auth/logout.html
 ```
 
