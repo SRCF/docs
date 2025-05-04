@@ -177,13 +177,7 @@ access it by following
 
 ## Closing remarks
 
-Did you like this or find this cool? We invite you to check out
-[more tutorials]({{< relref "/tutorials" >}})
-or [get in touch]({{< relref "/#help-and-support" >}}) to tell us what you thought!
-
-If you have any suggestions for how we could improve this documentation
-please send us an email at `support@srcf.net` or submit a Pull Request
-on [GitHub](https://github.com/SRCF/docs)!
+{{< closing_remarks >}}
 
 A big thanks to [Phil Ewels](https://phil.ewels.co.uk/) for writing this
 on his own blog and to hmw26 for some of their tips. This tutorial

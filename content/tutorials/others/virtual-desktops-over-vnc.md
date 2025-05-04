@@ -137,3 +137,7 @@ Replace `:12` with the **port number** for your VNC server.
 
 Make sure to close any running programs over VNC beforehand, as this
 will forcefully kill them too.
+
+## Closing remarks
+
+{{< closing_remarks >}}

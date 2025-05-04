@@ -338,15 +338,9 @@ useful commands listed in the screen manual, and a few are listed below
 - `ctrl+a c` creates a new window.
 - `ctrl+a n` switches to the next window.
 
-## Suggestions/improvements?
+## Closing remarks
 
-Did you like this or find this cool? We invite you to check out
-[more tutorials]({{< relref "/tutorials" >}})
-
-If you have a better way to join the SRCF IRC server (or any other
-suggestions for how we could improve this documentation), send us an
-email at `support@srcf.net` or submit a Pull Request on
-[GitHub](https://github.com/SRCF/docs)!
+{{< closing_remarks >}}
 
 {{< alert type="info" >}}
 This tutorial was based largely on content provided to us by Matthew
