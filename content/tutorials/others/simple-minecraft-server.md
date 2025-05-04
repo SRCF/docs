@@ -141,13 +141,14 @@ To learn more about running systemd services with the SRCF see
   
 Now that the setup is finished you can log out of doom.srcf.net using `logout`.
 
-{{ < alert type="warning" > }}
+{{< alert type="warning" >}}
 
 You may notice that in the command to start the server the memory it can use is limited to 1GB and its priority is set
 using `nice`. Please do not change the priority or memory usage of your server in order to be considerate to other
 users of the SRCF's systems!
 
-{{ < /alert > }}
+{{< /alert >}}
+
 ## Closing remarks
 
 Did you like this or find this cool? We invite you to check out
