@@ -34,7 +34,7 @@ The new webmaster must register for an SRCF account beforehand, if they don't al
 
 If possible, you may consider keeping the old webmaster as an admin on the account. We recommend two or more admins to ensure the longevity of the society account in case one or more admins become unreachable.
 
-If you are using a content mangement system like WordPress, this is also the time to add the new webmaster via the web interface as an administrator of the website.
+If you are using a content management system like WordPress, this is also the time to add the new webmaster via the web interface as an administrator of the website.
 
 ## Check details
 
@@ -46,7 +46,7 @@ Once the new webmaster is added, the incumbent webmaster should explain how the 
 
 In the majority of cases where a content management system is used (like WordPress), "updating" can be done via the handy web interface. If something goes wrong though, it is necessary to log in and poke around at the files. We've written tutorials for this.
 
-At this point, the new webmaster should also read our reference material on group accounts, especially on file permissions and how our web services work. The gist of it is that all content gets served from `/public/societies/<socname>/public_html` and private society files are located at `/societies/<socname>/`. Shortcutes (symbolic links) to these are automatically added to your home directory.
+At this point, the new webmaster should also read our reference material on group accounts, especially on file permissions and how our web services work. The gist of it is that all content gets served from `/public/societies/<socname>/public_html` and private society files are located at `/societies/<socname>/`. Shortcuts (symbolic links) to these are automatically added to your home directory.
 
 ## Email forwarding
 

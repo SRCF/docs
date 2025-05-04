@@ -9,7 +9,7 @@ toc: true
 {{< alert type="info" >}}
 
 This information applies only to users of the 'legacy' or 'advanced'
-SRCF mail server. It might apply to you if you had a SRCF account before
+SRCF mail server. It might apply to you if you had an SRCF account before
 October 2018, or you deliberately chose to handle your mail this way.
 
 To see which email system you are currently using, see the [control
@@ -154,7 +154,7 @@ files. This leads to confusion, and also can lead to your entire home
 directory being served over IMAP, which has been known to upset email
 software (unsurprisingly).
 
-And for added confusion, Mbox is incapable of storing any email containg
+And for added confusion, Mbox is incapable of storing any email containing
 a line of text starting with the word 'From'. Yes, really. (Mail
 software has to rewrite it as `>From` as a workaround.)
 

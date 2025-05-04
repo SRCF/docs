@@ -9,7 +9,7 @@ highlight: true
 
 ## Overview
 
-Just as a butterfly emerges from its coccoon to explore the great
+Just as a butterfly emerges from its cocoon to explore the great
 wonders of the world, you, too, will also uncover the great wonders of
 Linux with the SRCF by your side. In this tutorial, we'll show you how
 to log in to a UNIX-like shell and use the basics of the command line.
@@ -72,7 +72,7 @@ out in your home directory once you log in. The absolute path is
 you may have already discovered `ls` stands for list! You can pass in
 additional flags to change its output: `ls -la`.
 
-Now, try runnng `pwd`. This stands for *print working directory*. Think
+Now, try running `pwd`. This stands for *print working directory*. Think
 of this as a street sign. Right now, you're somewhere in the middle of
 complex and multi-layered file system on our shell server, which happens
 to be your home directory. `pwd` tells you where you are in this

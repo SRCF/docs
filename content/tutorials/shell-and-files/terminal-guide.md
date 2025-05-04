@@ -83,9 +83,9 @@ command. Use the arrow keys to scroll through the man text and press
 
 All files stored on the system reside in *directories* (this is the
 equivalent of Windows folders). The directories are arranged in a
-hierachical structure - directories may contain subdirectories and so
+hierarchical structure - directories may contain subdirectories and so
 on. The top of the hierarchy is called the *root directory*, and is
-represented by `/`. Other directories are refered to by their *path*,
+represented by `/`. Other directories are referred to by their *path*,
 for example, `/home/abc45/` represents the directory `abc45` which is a
 subdirectory of 'home', which in turn is a subdirectory of the root
 directory.
@@ -103,8 +103,8 @@ directory 'my\_dir', which is a subdirectory of the working directory.
 
 Filenames given without a preceding path are assumed to be in the
 working directory. All directories have a special subdirectory called
-`..` which refers to the directory one level higher up in the hierachy
-(the *parent direcvtory*), so `../some_file.txt` is the file
+`..` which refers to the directory one level higher up in the hierarchy
+(the *parent directory*), so `../some_file.txt` is the file
 `some_file.txt` in the parent directory of the working directory.
 
 To find out your current directory, use the command `pwd`:

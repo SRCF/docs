@@ -71,7 +71,7 @@ You can do this alternatively in the terminal by typing
 ## Configure WordPress
 
 Great! Now if you head to your website in a browser
-`https://**crsid**.user.srcf.net` for an indvidual account or
+`https://**crsid**.user.srcf.net` for an individual account or
 `https://**groupname**.soc.srcf.net` for a group account) you should see
 a friendly welcome screen. Fill in all of the details that it asks for -
 leave `localhost` as it is, try not to use `wp_` as the database prefix

@@ -28,13 +28,13 @@ risks can be minimized by following the hardening steps below.
 3. We also recommend you disable *Allow link notifications from other
     blogs (pingbacks and trackbacks)* on new posts, under `Settings` \>
     `Discussion` in the admin panel.
-4. Activate a spam filtering plugin like Akismet and a capatcha system
+4. Activate a spam filtering plugin like Akismet and a captcha system
     like reCAPTCHA. Akismet is installed by default and just needs
     activiating. Go to `.../wp-admin/plugins.php` to install and
     activate plugins.
-5. You may optionaly want to modify your theme so that it no longer
+5. You may optionally want to modify your theme so that it no longer
     puts the Wordpress version into the html - this may help stop
-    hackers finding that you installation is outdated but it does not
+    hackers finding that your installation is outdated but it does not
     protect against problems caused by the version you are using being
     compromised.
 6. Regularly check up on the status of your installation and keep an

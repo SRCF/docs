@@ -224,7 +224,7 @@ end
 ```
 
 You can then run this by typing `ruby myapp.rb` and going to
-<http://localhost:4567> in your web browser. For futher information See
+<http://localhost:4567> in your web browser. For further information See
 the [Sinatra documentation](http://sinatrarb.com/intro.html).
 
 ### Express
@@ -384,7 +384,7 @@ crashes. We highly recommend using `systemd` to supervise your app.
     You will want to make your app write to a log file rather than stdout
     or stderr.
 
-We have further more general reading [on `systemd` services]({{< relref "/reference/shell-and-files/scheduled-tasks#systemd" >}}).
+We have more general reading [on `systemd` services]({{< relref "/reference/shell-and-files/scheduled-tasks#systemd" >}}).
 
 ### Notes for Python
 
