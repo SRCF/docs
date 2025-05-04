@@ -5,3 +5,4 @@ Makefile.local
 .idea/
 .venv/
 public/*
+.hugo_build.lock
