@@ -1,0 +1,7 @@
+{{- $index := slice -}}
+{{- range .Site.RegularPages -}}
+    {{- $cleanContents := .Plain | htmlUnescape -}}
+
+    {{- $index = $index | append (dict "title" .Title "contents" $cleanContents "headings" .Fragments.Headings "permalink" .Permalink) -}}
+{{- end -}}
+{{- $index | jsonify -}}

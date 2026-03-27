@@ -1,6 +1,14 @@
 {{ define "main" }}
   <div class="container p-3 py-md-5">
-    <h1>SRCF Documentation</h1>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
+      <h1>SRCF Documentation</h1>
+
+      <form class="srcf-search">
+        <input type="search" class="form-control" id="srcf-search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off"/>
+        <ul id="srcf-search-results" class="dropdown-menu d-block d-none"></ul>
+      </form>
+    </div>
+
     <p class="fs-5 col-md-8">
       Hello there! This is the Student-Run Computing Facility's documentation.
       Our revamped docs contain all manner of useful pages, such as getting

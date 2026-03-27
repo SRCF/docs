@@ -205,6 +205,23 @@ docs-specific classes
   box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
 }
 
+#srcf-search-results {
+  font-size: 1rem;
+  max-height: 80vh;
+  overflow: auto;
+  min-width: 244px; /* to match parent width */
+}
+
+#srcf-search-results a.active {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+
+#srcf-search-results .search-result-subheader {
+  display: block;
+  margin-top: -4px;
+}
+
 .srcf-sidebar-toggle {
   color: #6c757d;
 }
