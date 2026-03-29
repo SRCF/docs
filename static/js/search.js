@@ -1,29 +1,43 @@
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function() {
     const elSearchQuery = document.getElementById("srcf-search-input");
     const elSearchResults = document.getElementById("srcf-search-results");
+
     let selectedIndex = 0;
+
     let fuse = null;
+    let fuseFetcher = null;
 
     elSearchQuery.addEventListener("input", debounce(async function(event) {
-        if (!fuse) {
-            let searchIndex = await fetch("/index.json").then(response => response.json());
-            flattenIndex(searchIndex);
+        if (fuseFetcher === null) {
+            fuseFetcher = fetch("/index.json")
+                .then(response => response.json())
+                .then(searchIndex => {
+                    flattenIndex(searchIndex);
 
-            fuse = new Fuse(searchIndex, {
-                keys: [
-                    { name: "title", weight: 1 },
-                    { name: "headings.title", weight: 0.7 },
-                    { name: "contents", weight: 0.4 },
-                ],
-                threshold: 0.4,
-                includeMatches: true,
-                minMatchCharLength: 3,
-                ignoreLocation: true,
-            });
+                    fuse = new Fuse(searchIndex, {
+                        keys: [
+                            { name: "title", weight: 1 },
+                            { name: "headings.title", weight: 0.7 },
+                            { name: "contents", weight: 0.4 },
+                        ],
+                        threshold: 0.4,
+                        includeMatches: true,
+                        minMatchCharLength: 3,
+                        ignoreLocation: true,
+                    });
+                })
+                .catch(error => {
+                    console.error("Error loading search index:", error);
+                    fuseFetcher = null;
+                });
+        }
+
+        if (fuse === null) {
+            await fuseFetcher;
         }
 
         const searchQuery = event.target.value;
-        console.log(searchQuery)
+
         if (searchQuery.length > 2) {
             elSearchResults.classList.remove("d-none");
             executeSearch(searchQuery);
