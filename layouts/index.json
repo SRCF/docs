@@ -1,7 +1,8 @@
 {{- $index := slice -}}
 {{- range .Site.RegularPages -}}
     {{- $cleanContents := .Plain | htmlUnescape -}}
+    {{- $headingTags := findRE "<a.*? href=\"#.*?\".*?>.*?</a>" .TableOfContents -}}
 
-    {{- $index = $index | append (dict "title" .Title "contents" $cleanContents "headings" .Fragments.Headings "permalink" .Permalink) -}}
+    {{- $index = $index | append (dict "title" .Title "contents" $cleanContents "headingTags" $headingTags "permalink" .Permalink) -}}
 {{- end -}}
 {{- $index | jsonify -}}

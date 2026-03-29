@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function() {
             fuseFetcher = fetch("/index.json")
                 .then(response => response.json())
                 .then(searchIndex => {
-                    flattenIndex(searchIndex);
+                    fixupIndex(searchIndex);
 
                     fuse = new Fuse(searchIndex, {
                         keys: [
@@ -95,18 +95,23 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function flattenIndex(index) {
-        function flattenHeadings(headings, result = []) {
-            for (const heading of headings) {
-                result.push({ id: heading.ID, title: heading.Title });
-                if (heading.Headings) {
-                    flattenHeadings(heading.Headings, result);
-                }
-            }
-            return result;
-        }
+    function fixupIndex(index) {
+        const parser = new DOMParser();
 
-        index.forEach(item => item.headings = flattenHeadings(item.headings));
+        index.forEach(item => {
+            if (!item.headingTags) {
+                item.headings = [];
+                return;
+            }
+
+            item.headings = item.headingTags.map(tag => {
+                const element = parser.parseFromString(tag, "text/html").body.firstChild
+                return {
+                    id: element.getAttribute("href").slice(1),
+                    title: element.textContent
+                };
+            });
+        });
     }
 
     function executeSearch(searchQuery) {
