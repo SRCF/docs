@@ -4,41 +4,76 @@ window.addEventListener("DOMContentLoaded", function() {
 
     let selectedIndex = 0;
 
-    let fuse = null;
-    let fuseFetcher = null;
+    let searcher = null;
+    let searchIndex = null;
+    let searcherFetcher = null;
 
-    elSearchQuery.addEventListener("input", debounce(async function(event) {
-        if (fuseFetcher === null) {
-            fuseFetcher = fetch("/index.json")
+    elSearchQuery.addEventListener("input", async function(event) {
+        if (searcherFetcher === null) {
+            searcherFetcher = fetch("/index.json")
                 .then(response => response.json())
-                .then(searchIndex => {
+                .then(index => {
+                    searchIndex = index;
                     fixupIndex(searchIndex);
 
-                    fuse = new Fuse(searchIndex, {
-                        keys: [
-                            { name: "title", weight: 1 },
-                            { name: "headings.title", weight: 0.7 },
-                            { name: "contents", weight: 0.4 },
-                        ],
-                        threshold: 0.4,
-                        includeMatches: true,
-                        minMatchCharLength: 3,
-                        ignoreLocation: true,
+                    searcher = new FlexSearch.Document({
+                        document: {
+                            id: "id",
+                            index: [
+                                {
+                                    field: "title-forward",
+                                    tokenize: "forward",
+                                    boost: 3
+                                },
+                                {
+                                    field: "title-tolerant",
+                                    tokenize: "tolerant",
+                                    boost: 3
+                                },
+                                {
+                                    field: "heading-title-forward",
+                                    tokenize: "forward",
+                                    boost: 1
+                                },
+                                {
+                                    field: "heading-title-tolerant",
+                                    tokenize: "tolerant",
+                                    boost: 1
+                                },
+                                {
+                                    field: "contents",
+                                    tokenize: "tolerant"
+                                }
+                            ]
+                        },
+                    });
+
+                    searchIndex.forEach(item => {
+                        let headings = item.headings.map(h => h.title);
+                        searcher.add({
+                            "id": item.id,
+                            "contents": item.contents,
+                            "title-forward": item.title,
+                            "title-tolerant": item.title,
+                            "heading-title-tolerant": headings,
+                            "heading-title-forward": headings,
+                            "permalink": item.permalink
+                        });
                     });
                 })
                 .catch(error => {
                     console.error("Error loading search index:", error);
-                    fuseFetcher = null;
+                    searcherFetcher = null;
                 });
         }
 
-        if (fuse === null) {
-            await fuseFetcher;
+        if (searcher === null) {
+            await searcherFetcher;
         }
 
         const searchQuery = event.target.value;
 
-        if (searchQuery.length > 2) {
+        if (searchQuery.length > 0) {
             elSearchResults.classList.remove("d-none");
             executeSearch(searchQuery);
             selectedIndex = 0;
@@ -46,7 +81,7 @@ window.addEventListener("DOMContentLoaded", function() {
         } else {
             elSearchResults.classList.add("d-none");
         }
-    }, 50));
+    });
 
     elSearchQuery.addEventListener("keydown", function(event) {
         const resultCount = elSearchResults.children.length;
@@ -78,14 +113,6 @@ window.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    function debounce(fn, delay) {
-        let timeout;
-        return function() {
-            clearTimeout(timeout);
-            timeout = setTimeout(() => fn.apply(this, arguments), delay);
-        };
-    }
-
     function updateSelected() {
         for (let child of elSearchResults.children) {
             child.classList.remove("active");
@@ -98,24 +125,26 @@ window.addEventListener("DOMContentLoaded", function() {
     function fixupIndex(index) {
         const parser = new DOMParser();
 
-        index.forEach(item => {
-            if (!item.headingTags) {
-                item.headings = [];
-                return;
-            }
+        index.forEach((item, index) => {
+            item.id = index;
 
-            item.headings = item.headingTags.map(tag => {
-                const element = parser.parseFromString(tag, "text/html").body.firstChild
-                return {
-                    id: element.getAttribute("href").slice(1),
-                    title: element.textContent
-                };
-            });
+            if (item.headingTags) {
+                item.headings = item.headingTags.map(tag => {
+                    const element = parser.parseFromString(tag, "text/html").body.firstChild
+                    return {
+                        id: element.getAttribute("href").slice(1),
+                        title: element.textContent
+                    };
+                });
+            } else {
+                item.headings = [];
+            }
         });
     }
 
     function executeSearch(searchQuery) {
-        var results = fuse.search(searchQuery);
+        var results = searcher.search({ query: searchQuery, merge: true, suggest: true });
+        console.log(results);
 
         elSearchResults.innerHTML = "";
 
@@ -128,21 +157,34 @@ window.addEventListener("DOMContentLoaded", function() {
         }
 
         results.forEach((result, index) => {
+            const doc = searchIndex.find(doc => doc.id == result.id);
+
             const elResult = document.createElement("a");
             elResult.className = "dropdown-item";
 
-            elResult.href = result.item.permalink;
+            elResult.href = doc.permalink;
+            elResult.innerText = doc.title;
 
-            elResult.innerText = result.item.title;
-            if (result.matches && result.matches.length > 0 && result.matches[0].key === "headings.title") {
-                const subheader = document.createElement("small");
-                subheader.className = "text-muted search-result-subheader";
-                subheader.innerHTML = result.matches[0].value;
-                elResult.appendChild(subheader);
-                elResult.href += "#" + result.item.headings[result.matches[0].refIndex].id;
+            // if the best match was a heading, conservatively estimate which one it was
+            // unfortunately this is the best we have as flexsearch won't highlight arrays at the moment
+            // TODO: find some kind of fix for the above
+            if (result.field.some(field => field.startsWith("heading-title")) && !result.field.some(field => field.startsWith("title"))) {
+                let terms = searchQuery.trim().toLowerCase().split(/ +/);
+                let estimatedHeadings = doc.headings.filter(h => terms.some(term => h.title.toLowerCase().includes(term)));
+
+                // if we know exactly which heading it was, show it.
+                // do not show if there are multiple matches in case we picked the wrong one - this could mislead
+                // users into thinking the content they want is not in the page as it is not under the suggested heading.
+                if (estimatedHeadings.length == 1) {
+                    const subheader = document.createElement("small");
+                    subheader.className = "text-muted search-result-subheader";
+                    subheader.innerText = estimatedHeadings[0].title;
+                    elResult.href += "#" + estimatedHeadings[0].id;
+                    elResult.appendChild(subheader);
+                }
             }
 
-            elResult.addEventListener("mouseenter", function() {
+            elResult.addEventListener("mousemove", function() {
                 selectedIndex = index;
                 updateSelected();
             });
