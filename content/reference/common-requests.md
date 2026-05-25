@@ -114,7 +114,7 @@ instead.
 Whoa, stop right there! That's the *University Information Services*
 mailing list system, not the *SRCF* one, and there's nothing we can do
 to help you. Try going to
-[lists.cam.ac.uk](https://lists.cam.ac.uk/mailman/) instead.
+[lists.cam.ac.uk](https://lists.cam.ac.uk/sympa/) instead.
 
 ## Update forwarding addresses on a domain
 
