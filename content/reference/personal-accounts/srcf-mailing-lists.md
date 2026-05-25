@@ -83,15 +83,15 @@ contact the sysadmins to arrange this.
 You can subscribe to or unsubscribe from a list from its information
 page:
 
-- [Soc-SRCF-maintenance](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-maintenance)
-- [Soc-SRCF-social](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-social)
-- [Soc-SRCF-careers](https://lists.cam.ac.uk/mailman/listinfo/soc-srcf-careers)
+- [Soc-SRCF-maintenance](https://lists.cam.ac.uk/sympa/info/soc-srcf-maintenance)
+- [Soc-SRCF-social](https://lists.cam.ac.uk/sympa/info/soc-srcf-social)
+- [Soc-SRCF-careers](https://lists.cam.ac.uk/sympa/info/soc-srcf-careers)
 
 ## List archives
 
 Previous messages sent to these lists can be seen here:
 
-- [Soc-SRCF](https://lists.cam.ac.uk/pipermail/soc-srcf)
-- [Soc-SRCF-users](https://lists.cam.ac.uk/pipermail/soc-srcf-users)
-- [Soc-SRCF-maintenance](https://lists.cam.ac.uk/pipermail/soc-srcf-maintenance)
-- [Soc-SRCF-social](https://lists.cam.ac.uk/pipermail/soc-srcf-social)
+- [Soc-SRCF](https://lists.cam.ac.uk/sympa/arc/soc-srcf)
+- [Soc-SRCF-users](https://lists.cam.ac.uk/sympa/arc/soc-srcf-users)
+- [Soc-SRCF-maintenance](https://lists.cam.ac.uk/sympa/arc/soc-srcf-maintenance)
+- [Soc-SRCF-social](https://lists.cam.ac.uk/sympa/arc/soc-srcf-social)
