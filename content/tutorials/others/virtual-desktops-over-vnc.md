@@ -115,7 +115,8 @@ last step is to actually point your VNC client to it.
 
 If you don't have a VNC client installed, [this Ubuntu
 page](https://help.ubuntu.com/community/VNC/Clients) lists some
-possibilities, though may be out of date.
+possibilities, though may be out of date. On macOS, the built-in *Screen
+Sharing.app* supports acting as a VNC client.
 
 Start your client and connect to `localhost:5901` (this is relative to
 your home machine). If all is well, you should be prompted for the VNC
