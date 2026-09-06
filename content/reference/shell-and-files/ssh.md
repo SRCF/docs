@@ -43,10 +43,12 @@ permissions applies to the `.ssh` directory itself.
 Our main server is **pip**. This is a general-purpose machine for
 running software. It has the following SSH fingerprints:
 
-    DSA  MD5:12:8f:8a:1c:e4:f7:a2:9d:80:a3:ef:85:f8:79:a4:ed
-    DSA  SHA256:fshymFC90Vd0BrlFnAdilNKSWNsoQVI7qa8/GIMBqtw
-    RSA  MD5:4d:da:7f:b2:99:9d:42:8b:10:b4:e5:37:d5:bd:43:b4
-    RSA  SHA256:ud4XwVhosGW3oHZ2POzW4oz0zGC2y7JWLGOM1dbIqZw
+    DSA      MD5:12:8f:8a:1c:e4:f7:a2:9d:80:a3:ef:85:f8:79:a4:ed
+    DSA      SHA256:fshymFC90Vd0BrlFnAdilNKSWNsoQVI7qa8/GIMBqtw
+    RSA      MD5:4d:da:7f:b2:99:9d:42:8b:10:b4:e5:37:d5:bd:43:b4
+    RSA      SHA256:ud4XwVhosGW3oHZ2POzW4oz0zGC2y7JWLGOM1dbIqZw
+    ED25519  MD5:b9:24:f9:05:b8:5d:d1:f5:29:7f:13:bd:09:8a:01:bd
+    ED25519  SHA256:CJh/H2zi+VHqTMQu5CqeXLvdIguXVVvqRVn6fddPeBk
 
 ### Web
 
