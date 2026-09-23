@@ -34,7 +34,7 @@ Submodule path 'themes/srcf-hugo-theme': checked out 'f6c43f8ca31241acb44c4a7493
 
 ### TODO
 
-* add search
+* refine search
 * vendor static assets centrally
 
 ## Credits
