@@ -6,6 +6,14 @@ layout: docs
 toc: true
 ---
 
+# DEPRECATION WARNING
+Pending the migration of most of our messaging platforms to rely on Matrix,
+Mattermost in particular is to be considered a legacy service that will
+have to be decommissioned at some point in the near future.
+
+Current Mattermost users (if any still exist) are advised to move
+over to IRC.
+
 ## Overview
 
 Mattermost is an open source messaging platform, similar to Slack. See
